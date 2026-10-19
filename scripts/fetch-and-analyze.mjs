@@ -269,9 +269,9 @@ ${JSON.stringify(candidates, null, 2)}
     try {
       console.log('Attempting AI analysis via Fallback (OpenRouter API)...');
       const orModels = [
+        'minimax/minimax-m3.1-flash:free',
         'google/gemma-4-31b-it:free',
         'nvidia/nemotron-3.5-lightning:free',
-        'minimax/minimax-m3.1-flash:free',
         'liquid/lfm-2.5-2.6b:free'
       ];
 
