@@ -123,28 +123,40 @@ async function fetchHackerNewsAI() {
 }
 
 async function fetchBluesky() {
-  try {
-    const res = await fetchWithTimeout('https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=simonwillison.net&limit=5');
-    if (!res.ok) throw new Error(`Bluesky HTTP ${res.status}`);
-    const data = await res.json();
-    if (!data.feed || !Array.isArray(data.feed)) return [];
+  const actors = ['simonwillison.net', 'huggingface.bsky.social', 'ollama.com', 'ggerganov.bsky.social'];
+  const actorPromises = actors.map(async (actor) => {
+    try {
+      const res = await fetchWithTimeout(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${actor}&limit=5`);
+      if (!res.ok) throw new Error(`Bluesky ${actor} HTTP ${res.status}`);
+      const data = await res.json();
+      if (!data.feed || !Array.isArray(data.feed)) return [];
 
-    return data.feed.map(item => {
-      const post = item.post;
-      const rKey = post.uri ? post.uri.split('/').pop() : post.cid;
-      const text = post.record?.text || '';
-      return {
-        id: `bsky_${post.cid || rKey}`,
-        title: `[Bluesky @simonwillison] ${text.slice(0, 80).replace(/\n/g, ' ')}...`,
-        description: text,
-        url: `https://bsky.app/profile/${post.author?.handle || 'simonwillison.net'}/post/${rKey}`,
-        published_at: post.record?.createdAt || new Date().toISOString()
-      };
-    });
-  } catch (err) {
-    console.error('Fetch Bluesky failed:', err.message);
-    return [];
+      return data.feed.map(item => {
+        const post = item.post;
+        const rKey = post.uri ? post.uri.split('/').pop() : post.cid;
+        const text = post.record?.text || '';
+        return {
+          id: `bsky_${post.cid || rKey}`,
+          title: `[Bluesky @${post.author?.handle || actor}] ${text.slice(0, 80).replace(/\n/g, ' ')}...`,
+          description: text,
+          url: `https://bsky.app/profile/${post.author?.handle || actor}/post/${rKey}`,
+          published_at: post.record?.createdAt || new Date().toISOString()
+        };
+      });
+    } catch (err) {
+      console.warn(`Fetch Bluesky for ${actor} failed:`, err.message);
+      return [];
+    }
+  });
+
+  const results = await Promise.allSettled(actorPromises);
+  const items = [];
+  for (const res of results) {
+    if (res.status === 'fulfilled' && Array.isArray(res.value)) {
+      items.push(...res.value);
+    }
   }
+  return items;
 }
 
 async function fetchGoogleNewsRSS() {
@@ -225,9 +237,8 @@ ${JSON.stringify(candidates, null, 2)}
   // Primary: Gemini
   if (env.GEMINI_API_KEY) {
     const geminiModels = [
-      'gemini-3.5-flash-lite',
-      'gemini-3.5-flash',
-      'gemini-3.8-flash',
+      'gemini-2.5-flash',
+      'gemini-2.0-flash',
       'gemini-flash-latest'
     ];
     for (const modelName of geminiModels) {
@@ -269,6 +280,8 @@ ${JSON.stringify(candidates, null, 2)}
     try {
       console.log('Attempting AI analysis via Fallback (OpenRouter API)...');
       const orModels = [
+        'nousresearch/hermes-3-llama-3.1-405b:free',
+        'google/gemini-2.0-flash-exp:free',
         'nvidia/nemotron-3.5-lightning:free',
         'nvidia/nemotron-3.5-super-vl:free',
         'minimax/minimax-m3.1-flash:free',

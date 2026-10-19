@@ -195,16 +195,27 @@ function escapeHtml(str) {
     .replace(/'/g, '&#039;');
 }
 
-// 4. Background Sync / Fetch from ./data/news.json
+// 4. Background Sync / Fetch from GitHub Raw or ./data/news.json
 async function fetchLatestNews(isManual = false) {
   if (isManual) {
     refreshIconEl.classList.add('animate-spin');
     syncStatusEl.textContent = 'กำลังดึงข้อมูลล่าสุด...';
   }
 
+  const githubRawUrl = `https://raw.githubusercontent.com/nengpk5/ai-radar/main/public/data/news.json?t=${Date.now()}`;
+  const localUrl = `./data/news.json?t=${Date.now()}`;
+
   try {
-    const res = await fetch(`./data/news.json?t=${Date.now()}`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    let res;
+    try {
+      res = await fetch(githubRawUrl);
+      if (!res.ok) throw new Error(`GitHub Raw HTTP ${res.status}`);
+    } catch (ghErr) {
+      console.warn('GitHub Raw fetch failed, falling back to local news.json:', ghErr.message);
+      res = await fetch(localUrl);
+      if (!res.ok) throw new Error(`Local news.json HTTP ${res.status}`);
+    }
+
     const data = await res.json();
 
     if (Array.isArray(data) && data.length > 0) {
