@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_17c8366b9ab648c3",
+    "timestamp": "2026-10-19T15:58:46.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "MiniMax เปิดตัว M3.1-Flash ประสิทธิภาพสูงขึ้นแต่ราคาถูกลงกว่าครึ่ง",
+    "summary_th": "โมเดลภาษาขนาดเล็กจาก MiniMax ที่ทำคะแนนบน Artificial Analysis สูงขึ้น 13 คะแนน | ดีกว่ารุ่นก่อนหน้าด้วยต้นทุนต่อภารกิจที่ถูกลงกว่าครึ่งแถมความแม่นยำเทียบเท่ารุ่นใหญ่ | นำไปประยุกต์ใช้กับงานแชทบอทหรือระบบประมวลผลข้อความที่ต้องการความเร็วและประหยัดต้นทุน",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51SzRnUmowemhHYjZ3Q1ZrekV1TWxBQnJiTnZQSkNFd2c4OGtqVUExb1J4ODZ2VnY5OUpjVmxqMURxZ0tlNXhzZ1doNDhiMVJvUlNNZGNLUmtLVU1aZnR3V0ZlalVwZ0U?oc=5"
+  },
+  {
+    "id": "gn_c10f2b45096f60dd",
+    "timestamp": "2026-10-16T20:27:13.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "อัปเดต GPT-6 Astra Pro เพิ่มฟีเจอร์รัน Agent แบบขนานและการตอบสนองที่เร็วขึ้น",
+    "summary_th": "โมเดลอัปเดตใหม่ใน ChatGPT ที่รองรับการทำงานแบบ Multi-agent พร้อมกันเพื่อแก้โจทย์ที่ซับซ้อน | ตอบสนองไวขึ้นและใช้งานเครื่องมือต่างๆ ได้มีประสิทธิภาพ พร้อมระบบติดตามความคืบหน้าแบบเรียลไทม์ | นำไปใช้สร้าง Workflow อัตโนมัติที่ซับซ้อนและต้องการการประมวลผลหลายขั้นตอนพร้อมกัน",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fVDlWV2tFZU5ORE93ZGx6SUNQVFRHUjB0WWlEOGlud1FmcldzUzJMUFhTVnZ6UFpWcWV5NGxsSi1pUGlOdzFLRmU5VnljQWNoUS1Xd3hRMWhuekU?oc=5"
+  },
+  {
     "id": "or_inception_mercury-3",
     "timestamp": "2026-10-16T13:45:37.000Z",
     "score": 8,
