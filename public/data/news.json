@@ -1,0 +1,152 @@
+[
+  {
+    "id": "or_minimax_minimax-m3_1-flash_free",
+    "timestamp": "2026-10-19T03:12:49.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "MiniMax M3.1 Flash เพิ่มความสามารถ agent และ coding",
+    "summary_th": "โมเดลมัลติโมดัล MiniMax M3.1 Flash สำหรับงาน agentic, coding และ cybersecurity\nรุ่นนี้ปรับดีขึ้นชัดเจนจาก M3 และเปิดใช้ผ่าน OpenRouter แบบไม่มีค่าใช้จ่าย\nใช้เป็นโมเดลหลักหรือทางเลือกสำรองใน agent ที่เรียก tool และระบบวิเคราะห์โค้ด",
+    "url": "https://openrouter.ai/minimax/minimax-m3.1-flash:free"
+  },
+  {
+    "id": "or_deepseek_deepseek-v4_1-flash-1017",
+    "timestamp": "2026-10-17T08:27:04.000Z",
+    "score": 8,
+    "vendor": "DeepSeek",
+    "category": "Model Release",
+    "title_th": "DeepSeek V4.1 Flash 1017 อัปเดตโมเดล Flash",
+    "summary_th": "โมเดลภาษา sparse MoE ของ DeepSeek เวอร์ชัน snapshot วันที่ 17 ตุลาคม 2026 ใช้ชื่อ API deepseek-flash\nเป็นรุ่นล่าสุดของ V4.1 Flash และ pin เวอร์ชันได้ ทำให้ตรวจสอบและทำซ้ำผลลัพธ์ได้\nเหมาะกับงาน latency ต่ำ เช่น classification, extraction และ agent tool-calling",
+    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+  },
+  {
+    "id": "or_meta_muse-spark-open",
+    "timestamp": "2026-10-15T17:57:49.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Meta เปิด Muse Spark สำหรับ coding agent",
+    "summary_th": "โมเดลเปิดน้ำหนักขนาด 816B แบบ MoE ที่มี 42B active ต่อ token ปรับฝึกสำหรับ agentic coding\nเน้น first-attempt accuracy, tool calling และความเข้าใจ codebase มากกว่าโมเดลเข้ารหัสทั่วไป\nใช้กับ coding agent ที่ต้องแก้ repository, เรียกเครื่องมือ และทำงานหลายขั้นตอน",
+    "url": "https://openrouter.ai/meta/muse-spark-open"
+  },
+  {
+    "id": "or_reflection_beam-1_0-501b-a23b",
+    "timestamp": "2026-10-16T14:21:39.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Reflection Beam 1.0 โมเดลเปิดสำหรับ coding agent ยาว",
+    "summary_th": "โมเดล reasoning แบบ MoE เปิดน้ำหนัก มี 501B total และ 23B active ต่อ token\nความจุขนาดใหญ่ช่วยให้รองรับงาน coding และ long-horizon agent ที่ต้องวางแผนและทำงานต่อเนื่องหลายขั้นตอน\nเหมาะกับทีมที่ต้องการประเมิน coding agent สำหรับ repository ขนาดใหญ่ผ่าน endpoint หรือระบบกระจายโมเดล",
+    "url": "https://openrouter.ai/reflection/beam-1.0-501b-a23b"
+  },
+  {
+    "id": "or_nvidia_nemotron-3_5-super-vl_free",
+    "timestamp": "2026-10-15T15:04:22.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "NVIDIA เปิด Nemotron 3.5 Super VL แบบฟรีบน OpenRouter",
+    "summary_th": "โมเดลมัลติโมดัล MoE แบบเปิดน้ำหนัก มี 120B total และ 12B active รับข้อความ รูปภาพ เอกสาร GUI และวิดีโอ\n12B active ช่วยลด computation ต่อ token เมื่อเทียบกับโมเดลเต็ม 120B และรวมหลาย modal ไว้ในโมเดลเดียว\nใช้กับ document AI, GUI agent, visual RAG และระบบวิเคราะห์วิดีโอ",
+    "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free"
+  },
+  {
+    "id": "hn_50151059",
+    "timestamp": "2026-10-19T11:28:45.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Google Research เปิด Harness2 สำหรับ recursive agents",
+    "summary_th": "เฟรมเวิร์ก Harness2 ให้ agent ทำงานแบบ recursive เพื่อวางแผน ลงมือ ตรวจผล และทำซ้ำ\nลูป recursive ช่วยให้งานหลายขั้นตอนดำเนินได้ลึกกว่าการเรียก agent ครั้งเดียวและเหมาะกับ coding หรือ research agent\nใช้เป็น harness สำหรับสร้าง agent ที่ทำงานอิสระและประเมินผลลัพธ์ในแต่ละรอบ",
+    "url": "https://github.com/google-research/harness2"
+  },
+  {
+    "id": "or_xingchen-agi_xing4_0-29b-a4b_free",
+    "timestamp": "2026-10-16T19:04:56.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Xing4.0 29B A4B โมเดล MoE ประหยัดแบบเปิดน้ำหนัก",
+    "summary_th": "โมเดลภาษาจาก TeleAI ต่อยอดซีรีส์ TeleChat มี 29B total และ 4B active ต่อ token\nactive เพียง 4B ช่วยให้ inference เบากว่า dense model ขนาด 29B ขณะรักษาความจุรวมของสถาปัตยกรรม MoE\nเหมาะกับ local หรือ on-prem RAG, tool-calling และงานภาษาทั่วไปที่ต้องคุมต้นทุน",
+    "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free"
+  },
+  {
+    "id": "or_moondream_moondream3_1-9b-a2b",
+    "timestamp": "2026-10-15T22:12:53.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Moondream 3.1 โมเดลมองเห็นขนาดเล็ก",
+    "summary_th": "โมเดล vision-language แบบ MoE มี 9B total และ 2B active รองรับ VQA, captioning, OCR และ visual reasoning\nรุ่น 3.1 ต่อยอดจาก Preview ด้วยโครงสร้างที่มี active parameters น้อย จึงเหมาะกับการประมวลผลภาพในเครื่องหรือ edge\nใช้กับ OCR pipeline, ค้นหาภาพ, visual QA และ agent ที่ต้องอ่านหน้าจอ",
+    "url": "https://openrouter.ai/moondream/moondream3.1-9b-a2b"
+  },
+  {
+    "id": "hn_50145337",
+    "timestamp": "2026-10-18T20:48:14.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "Hybrid Reasoning Agents ให้ agent คิดใน latent space",
+    "summary_th": "งานวิจัยเสนอ LLM agent ที่คิดใน latent space แล้วสื่อสารหรือลงมือผ่านข้อความ\nการย้ายส่วนการคิดออกจากการสร้าง token ต่อความคิดอาจลด overhead ของ reasoning ขณะคง action interface ที่ตรวจสอบได้\nใช้เป็นแนวทางออกแบบ reasoning agent ที่ต้องการลดต้นทุนและเพิ่มความเร็ว",
+    "url": "https://arxiv.org/abs/2610.18861"
+  },
+  {
+    "id": "or_elorian_glimpse",
+    "timestamp": "2026-10-17T03:10:29.000Z",
+    "score": 5,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Elorian Glimpse โมเดลคิดเห็นภาพและวิดีโอ",
+    "summary_th": "โมเดลมัลติโมดัลที่คิดเหตุผลโดยตรงบนภาพและวิดีโอสำหรับสถานการณ์ในโลกจริง\nเหมาะกับงาน visual reasoning ที่ต้องเชื่อมสิ่งที่เห็นกับเหตุผลเชิงกายภาพ มากกว่าการทำ caption อย่างเดียว\nใช้ทดลองกับ robotics, video QA และระบบตรวจสังเกตการณ์จากกล้อง",
+    "url": "https://openrouter.ai/elorian/glimpse"
+  },
+  {
+    "id": "hf_google_embeddinggemma-2",
+    "timestamp": "2026-09-14T14:53:42.000Z",
+    "score": 5,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิด EmbeddingGemma 2",
+    "summary_th": "โมเดล embedding ของ Google สำหรับแปลงข้อความเป็นเวกเตอร์สำหรับงานค้นหาและจัดกลุ่ม\nเป็นโมเดลเฉพาะทางสำหรับ retrieval จึงลดความซับซ้อนเมื่อเทียบกับการใช้โมเดล generative ทั่วไปสร้างเวกเตอร์\nใช้เป็น embedding backend ของ RAG, semantic search, deduplication และ clustering",
+    "url": "https://huggingface.co/google/embeddinggemma-2"
+  },
+  {
+    "id": "hf_openbmb_MiniCPM-V-4_7-35B-A3B",
+    "timestamp": "2026-10-07T07:07:30.000Z",
+    "score": 5,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "MiniCPM-V 4.7 โมเดลมองเห็น 35B A3B",
+    "summary_th": "โมเดล vision-language ขนาด 35B แบบ MoE ที่ใช้ 3B active ต่อ token และรองรับ image-text-to-text\nจำนวน active ที่น้อยช่วยให้ inference เบากว่าโมเดล 35B แบบ dense ขณะยังรองรับงาน multimodal\nใช้กับ OCR, visual QA, document understanding และ local multimodal agent",
+    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B"
+  },
+  {
+    "id": "hf_LiquidAI_LFM2_5-24B-A2B",
+    "timestamp": "2026-10-12T05:35:46.000Z",
+    "score": 5,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "LiquidAI LFM2.5 24B A2B โมเดลภาษาประหยัด",
+    "summary_th": "โมเดล text-generation แบบ MoE ขนาด 24B total ที่มี 2B active ต่อ token\nactive เพียง 2B ทำให้เหมาะกับ latency-sensitive inference และงาน edge มากกว่าโมเดล dense ขนาดเท่ากัน\nใช้กับ local assistant, RAG, routing และ agent งานซ้ำที่ต้องตอบเร็ว",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"
+  },
+  {
+    "id": "hn_50145507",
+    "timestamp": "2026-10-18T21:09:12.000Z",
+    "score": 5,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "ใช้ LLM proxy เพื่อควบคุมและตรวจสอบ AI traffic",
+    "summary_th": "บทความเสนอให้รัน LLM proxy ของตัวเอง เพื่อบันทึก request/response เลือก route และควบคุมการใช้ API\nช่วยเห็นพฤติกรรมและต้นทุนแบบ end-to-end มากกว่าการพึ่ง log ของผู้ให้บริการที่อาจไม่ครบถ้วน\nใช้สร้าง observability, routing, policy enforcement และ audit trail สำหรับระบบ LLM",
+    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/"
+  },
+  {
+    "id": "hn_50148855",
+    "timestamp": "2026-10-19T05:55:31.000Z",
+    "score": 5,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "tmux จัดการ Claude Code แบบหลาย session",
+    "summary_th": "คู่มือใช้ tmux จัดการ session ของ Claude Code ส่งคีย์ ควบคุม agent และทำงานหลาย session พร้อมกัน\nช่วยให้ session คงอยู่และควบคุมงาน agent ได้ยืดหยุ่นกว่าการรันทุกอย่างใน terminal เดียว\nใช้กับ remote coding agent, parallel tasks และการกลับมาใช้ session เดิม",
+    "url": "https://crystl.dev/guides/tmux-for-ai-agents/"
+  }
+]

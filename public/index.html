@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>AI & Tech News Radar | เรดาร์ข่าว AI สรุปไวเพื่อวิศวกร</title>
+  <meta name="description" content="เรดาร์ข่าวสาร AI & Deep Tech อัปเดตทุก 15 นาที คัดกรองและสรุปภาษาไทยแบบตรงประเด็นด้วย AI">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#090d16">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            radarDark: '#090d16',
+            radarCard: '#111827',
+            radarBorder: '#1f293d',
+            radarAccent: '#10b981',
+            radarCyan: '#06b6d4'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #090d16;
+      color: #f3f4f6;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #1f293d;
+      border-radius: 9999px;
+    }
+    .glass-nav {
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-16 flex flex-col selection:bg-emerald-500/30 selection:text-emerald-300">
+
+  <!-- Sticky Top Header -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-radarBorder px-4 py-3">
+    <div class="max-w-4xl mx-auto flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5">
+        <div class="relative flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+          <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          <span class="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+        </div>
+        <div>
+          <h1 class="text-base font-bold tracking-tight text-white flex items-center gap-1.5">
+            AI RADAR
+            <span class="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Live</span>
+          </h1>
+          <p class="text-[11px] text-gray-400" id="syncStatus">พร้อมใช้งานแบบ Offline-First</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <!-- Manual Refresh Button -->
+        <button id="refreshBtn" aria-label="รีเฟรชข้อมูล" class="p-2 rounded-lg bg-radarCard border border-radarBorder text-gray-300 hover:text-white hover:border-emerald-500/50 transition-all active:scale-95">
+          <svg id="refreshIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-4xl mx-auto w-full px-4 pt-4 flex-1">
+
+    <!-- Search & Breaking Filter Bar -->
+    <div class="space-y-3 mb-4">
+      <div class="relative">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="ค้นหาโมเดล, บริษัท, หัวข้อ หรือคีย์เวิร์ด..." 
+          class="w-full bg-radarCard border border-radarBorder rounded-xl pl-10 pr-10 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
+        />
+        <svg class="w-4 h-4 text-gray-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <button id="clearSearchBtn" class="hidden absolute right-3 top-3 text-gray-400 hover:text-white">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Quick Toggles (Breaking News & Vendor Filters) -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 custom-scrollbar text-xs">
+        <button data-score-filter="all" class="score-pill px-3 py-1.5 rounded-full font-medium transition-all bg-emerald-500 text-gray-950 font-semibold shadow-sm shadow-emerald-500/20 whitespace-nowrap">
+          ทั้งหมด
+        </button>
+        <button data-score-filter="8" class="score-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-amber-500/50 hover:text-amber-300 whitespace-nowrap flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          ⚡ Breaking Only (8+)
+        </button>
+
+        <div class="h-4 w-px bg-radarBorder mx-1 shrink-0"></div>
+
+        <!-- Vendor Filter Pills -->
+        <button data-vendor="all" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarBorder text-white whitespace-nowrap">
+          ทุก Vendor
+        </button>
+        <button data-vendor="OpenAI" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+          OpenAI
+        </button>
+        <button data-vendor="Anthropic" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+          Claude / Anthropic
+        </button>
+        <button data-vendor="DeepSeek" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+          DeepSeek
+        </button>
+        <button data-vendor="Google" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+          Google
+        </button>
+        <button data-vendor="OpenSource" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+          OpenSource
+        </button>
+        <button data-vendor="Tooling" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+          Tooling & Agent
+        </button>
+      </div>
+    </div>
+
+    <!-- Feed Meta / Stats -->
+    <div class="flex items-center justify-between text-xs text-gray-400 mb-3 px-1">
+      <span id="itemsCountDisplay">กำลังโหลดข่าว...</span>
+      <span id="lastUpdatedDisplay" class="text-[11px] text-gray-500"></span>
+    </div>
+
+    <!-- News List Container -->
+    <div id="newsFeed" class="space-y-3.5">
+      <!-- Loading Skeleton Placeholder -->
+      <div class="animate-pulse space-y-3">
+        <div class="h-28 bg-radarCard/60 rounded-xl border border-radarBorder/50"></div>
+        <div class="h-28 bg-radarCard/60 rounded-xl border border-radarBorder/50"></div>
+        <div class="h-28 bg-radarCard/60 rounded-xl border border-radarBorder/50"></div>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="hidden text-center py-16 px-4">
+      <div class="w-12 h-12 rounded-full bg-radarCard border border-radarBorder flex items-center justify-center mx-auto mb-3 text-gray-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <p class="text-sm font-medium text-gray-300">ไม่พบข่าวที่ตรงกับเงื่อนไข</p>
+      <p class="text-xs text-gray-500 mt-1">ลองเปลี่ยนคำค้นหา หรือเลือกตัวกรองเป็น "ทั้งหมด"</p>
+    </div>
+
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

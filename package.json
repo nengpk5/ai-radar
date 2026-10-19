@@ -1,0 +1,17 @@
+{
+  "name": "ai-radar",
+  "version": "1.0.0",
+  "description": "Automated AI & Tech News Radar (Zero-Cost Zero-X Account Architecture)",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/fetch-and-analyze.mjs"
+  },
+  "keywords": [
+    "ai",
+    "radar",
+    "news",
+    "pwa"
+  ],
+  "author": "",
+  "license": "MIT"
+}

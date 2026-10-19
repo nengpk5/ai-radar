@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  command = "echo 'Static PWA Ready'"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Access-Control-Allow-Origin = "*"

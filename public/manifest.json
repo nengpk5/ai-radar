@@ -1,0 +1,17 @@
+{
+  "name": "AI & Tech News Radar",
+  "short_name": "AI Radar",
+  "description": "Real-time AI & Tech Radar with curated intelligence for AI engineers",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%2310b981'/><polygon points='50,15 80,80 50,65 20,80' fill='%23090d16'/></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
