@@ -34,13 +34,29 @@ loadEnv();
 const PATH_NEWS = path.resolve(process.cwd(), 'public/data/news.json');
 const PATH_HASHES = path.resolve(process.cwd(), 'public/data/seen_hashes.json');
 
-// Helper for fetch with timeout
+// Helper for fetch with timeout (handles network and response parsing safely)
 async function fetchWithTimeout(url, options = {}, timeoutMs = 10000) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  const timer = setTimeout(() => controller.abort(new Error(`Timeout of ${timeoutMs}ms exceeded`)), timeoutMs);
   try {
     const res = await fetch(url, { ...options, signal: controller.signal });
     return res;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function fetchJsonWithTimeout(url, options = {}, timeoutMs = 25000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(new Error(`Timeout of ${timeoutMs}ms exceeded`)), timeoutMs);
+  try {
+    const res = await fetch(url, { ...options, signal: controller.signal });
+    if (!res.ok) {
+      const errText = await res.text();
+      throw new Error(`HTTP ${res.status}: ${errText}`);
+    }
+    const data = await res.json();
+    return data;
   } finally {
     clearTimeout(timer);
   }
@@ -239,13 +255,15 @@ ${JSON.stringify(candidates, null, 2)}
     const geminiModels = [
       'gemini-2.5-flash',
       'gemini-2.0-flash',
-      'gemini-flash-latest'
+      'gemini-flash-latest',
+      'gemini-3.8-flash',
+      'gemini-3.5-flash-lite'
     ];
     for (const modelName of geminiModels) {
       try {
         console.log(`Attempting AI analysis via Primary (Google ${modelName})...`);
         const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${env.GEMINI_API_KEY}`;
-        const res = await fetchWithTimeout(geminiUrl, {
+        const data = await fetchJsonWithTimeout(geminiUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -255,15 +273,8 @@ ${JSON.stringify(candidates, null, 2)}
               temperature: 0.2
             }
           })
-        }, 30000);
+        }, 20000);
 
-        if (!res.ok) {
-          const errText = await res.text();
-          console.warn(`Gemini model ${modelName} returned HTTP ${res.status}: ${errText}`);
-          continue;
-        }
-
-        const data = await res.json();
         const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
         if (!rawText) continue;
         const parsed = JSON.parse(rawText);
@@ -282,16 +293,16 @@ ${JSON.stringify(candidates, null, 2)}
       const orModels = [
         'nousresearch/hermes-3-llama-3.1-405b:free',
         'google/gemini-2.0-flash-exp:free',
+        'minimax/minimax-m3.1-flash:free',
         'nvidia/nemotron-3.5-lightning:free',
         'nvidia/nemotron-3.5-super-vl:free',
-        'minimax/minimax-m3.1-flash:free',
         'liquid/lfm-2.5-2.6b:free'
       ];
 
       for (const model of orModels) {
         try {
           console.log(`Trying OpenRouter model: ${model}...`);
-          const res = await fetchWithTimeout('https://openrouter.ai/api/v1/chat/completions', {
+          const data = await fetchJsonWithTimeout('https://openrouter.ai/api/v1/chat/completions', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -307,20 +318,13 @@ ${JSON.stringify(candidates, null, 2)}
               ],
               response_format: { type: 'json_object' }
             })
-          }, 35000);
+          }, 20000);
 
-          if (!res.ok) {
-            const errBody = await res.text();
-            console.warn(`OpenRouter model ${model} HTTP ${res.status}: ${errBody}`);
-            continue;
-          }
-
-          const data = await res.json();
           const content = data.choices?.[0]?.message?.content;
           if (content) {
             const cleanContent = content.replace(/^```json\s*/, '').replace(/\s*```$/, '').trim();
             const parsed = JSON.parse(cleanContent);
-            console.log(`OpenRouter fallback succeeded with ${parsed.events?.length || 0} events.`);
+            console.log(`OpenRouter (${model}) fallback succeeded with ${parsed.events?.length || 0} events.`);
             return parsed.events || [];
           }
         } catch (subErr) {

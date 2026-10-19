@@ -1,5 +1,55 @@
 [
   {
+    "id": "or_inception_mercury-3",
+    "timestamp": "2026-10-16T13:45:37.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Inception เปิดตัว Mercury 3 โมเดลภาษาแบบ Diffusion สำหรับงาน Agent",
+    "summary_th": "โมเดลภาษาขนาดใหญ่ที่ใช้เทคโนโลยี Diffusion เน้นงานเอเจนต์ (Agentic workflows) และแอปพลิเคชัน Real-time | มีจุดเด่นด้าน Latency ที่ต่ำกว่าโมเดลทั่วไปในระดับเดียวกัน | นำไปประยุกต์ใช้สร้างระบบ AI Agent หรือระบบตอบสนองแบบเรียลไทม์ที่ต้องการความเร็วสูง",
+    "url": "https://openrouter.ai/inception/mercury-3"
+  },
+  {
+    "id": "gn_02a03245a77bb31b",
+    "timestamp": "2026-10-19T16:25:46.000Z",
+    "score": 8,
+    "vendor": "DeepSeek",
+    "category": "Model Release",
+    "title_th": "DeepSeek ปล่อยอัปเดต V4.1 Flash 1017 ทำคะแนนบน Open Code Arena พุ่งขึ้นสู่อันดับ 1",
+    "summary_th": "โมเดลโอเพ่นเวทตัวอัปเดตล่าสุดจาก DeepSeek ที่ทำคะแนน Benchmark สูงขึ้นและขึ้นแท่นโมเดล Open-weights ด้าน WebDev อันดับ 1 | มีความสามารถสูงขึ้นในราคาประหยัดกว่าคู่แข่งหลายเท่า | นำไปใช้เป็น Backend สำหรับเครื่องมือเขียนโค้ดและพัฒนา Web Application ได้อย่างคุ้มค่า",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByUG11cDUwTWN4SUdtc1VqeGh5akxodW8teHQ1WkxfWXYxVEZNXzBKOWg2R1g1NWxxS0pfaVlmVUN3OFU4LVNfdG5wVEtGeVNWTEllaTFVZVhteDBhSDluclhjMWVVelk?oc=5"
+  },
+  {
+    "id": "gn_11e0bdc3fed4b432",
+    "timestamp": "2026-10-19T11:57:35.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "MiniMax เปิดตัว M3.1 Flash ท้าชนตลาดโมเดลความเร็วสูง",
+    "summary_th": "โมเดล Flash ตัวใหม่จาก MiniMax ที่ประสิทธิภาพเทียบเท่าและแซงหน้า DeepSeek V4.1 Flash ในหลาย Benchmark | ทำงานได้รวดเร็วและประหยัดต้นทุนในการเรียกใช้งาน API | ใช้เป็นทางเลือกเสริมในการทำ Task ย่อยๆ ของระบบ Agent ที่ต้องการความไว",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1CM0laa0NwV0lfdDBobl9zNGVpSW9yR2xMYmpFMXgtYkxxaktuMlVnby1GZzRGaVIwd1pvYXFKcENCYTFhOEJSemVBdkZfMktWYVNtU3hSV3luR2xzVmYzUGxn?oc=5"
+  },
+  {
+    "id": "gn_28b26ecae2324f56",
+    "timestamp": "2026-10-19T11:52:56.000Z",
+    "score": 7,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI ซุ่มทดสอบโมเดลภาพซีรีส์ใหม่ 'Aurora' และอัปเดตฟีเจอร์เดสก์ท็อป",
+    "summary_th": "การพบรหัสอ้างอิงโมเดลรูปภาพ Aurora บน API และฟีเจอร์แก้ไขข้อความเดิมใน Codex Desktop | เพิ่มทางเลือกในการสร้างสรรค์รูปภาพและจัดการ Prompt ได้ยืดหยุ่นขึ้น | นำไปใช้ทดลองสร้างภาพคุณภาพสูงผ่าน API และใช้ปรับปรุง Workflow การเขียนโค้ด",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LazkyWjdrVUJ1N1VkQVN4X1BocnFtUy1uVFlhVk04dmo2NV9tbktkZGdSZ3FIX2RENDBrNDVvQmZET21OVF96TjRMeUV0OEdRckhRdk84MmFnVVFLLU5oUXl4N1Z6QQ?oc=5"
+  },
+  {
+    "id": "gn_6e0bb9eabcc01dab",
+    "timestamp": "2026-10-19T14:14:19.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "ลือสะพัด Anthropic เตรียมคลอดโมเดลใหม่วิเคราะห์แก้ Bug เชิงลึกแบบองค์รวม",
+    "summary_th": "รายงานข่าววงในระบุถึงโมเดลใหม่ของ Anthropic ที่ไม่เพียงแก้ Bug เฉพาะหน้า แต่สามารถวิเคราะห์หาต้นตอและปัญหาที่เชื่อมโยงกันได้ | ช่วยให้การ Debug โค้ดมีความฉลาดและครอบคลุมข้อผิดพลาดเชิงโครงสร้างมากขึ้น | เตรียมนำมาใช้เป็นผู้ช่วย AI ขั้นสูงในการ Refactor และตรวจสอบความปลอดภัยซอร์ฟแวร์",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Td0d3Y1V3bUUzN0NUOUVUZmVzY005NkVvTXdxMUtrOGc0WkdDcGozYi02UFNINXQ2ZmU1SzZWczVQZ0hGLUhBZW1BYnM1ZHRZQ3VTcVpXb19UYmUxYlJ2enFn?oc=5"
+  },
+  {
     "id": "or_minimax_minimax-m3_1-flash_free",
     "timestamp": "2026-10-19T03:12:49.000Z",
     "score": 8,
