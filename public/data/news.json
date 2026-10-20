@@ -1,5 +1,35 @@
 [
   {
+    "id": "hf_OpenMOSS-Team_MOSS-Image-Base",
+    "timestamp": "2026-10-11T06:49:17.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว OpenMOSS-Team/MOSS-Image-Base โมเดล Text-to-Image บน Hugging Face",
+    "summary_th": "คือโมเดลแปลงข้อความ เป็นรูปภาพ (Text-to-Image) แบบโอเพนซอร์สจาก OpenMOSS-Team บน Hugging Face | ดีกว่าเดิมด้วยทางเลือกโมเดลฐานใหม่ที่นักพัฒนาสามารถนำไปปรับแต่งต่อได้ง่าย | นำไปใช้พัฒนาแอปพลิเคชันสร้างรูปภาพ หรือศึกษาโครงสร้างการทำงานของโมเดล diffusion",
+    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base"
+  },
+  {
+    "id": "gn_e69975590e8da76f",
+    "timestamp": "2026-10-20T17:56:38.000Z",
+    "score": 8,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "รองรับ Prompt Caching นานสูงสุด 12 ชั่วโมงผ่าน API แล้ว",
+    "summary_th": "คือฟีเจอร์แคชบริบท (Prompt Caching) ใน API ที่ขยายเวลาเก็บบริบทให้นานขึ้นถึง 12 ชั่วโมง | ดีกว่าเดิมตรงที่ Agent ทำงานต่อเนื่องได้ตลอดวันโดยไม่ต้องส่ง Prompt และ Tool ซ้ำ ช่วยประหยัดต้นทุนค่า Token ได้อย่างมาก | นำไปปรับใช้กับ Persistent Agent หรือบอทสนทนาที่ต้องเรียกใช้งานข้ามช่วงเวลา",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5rUFl1RjdNMkpjbllkOXJaR1liU0lzeDdMczZwNlNneXJhYll2cUhsRU9lenVhSWxtRmZsTHg2ZEdwS0MtQ3NodzVTRWxPbU54S0JHX0czNWNnQXYyWG8wYg?oc=5"
+  },
+  {
+    "id": "gn_2ab71d49aef7ca50",
+    "timestamp": "2026-10-20T16:51:00.000Z",
+    "score": 7,
+    "vendor": "DeepSeek",
+    "category": "Research",
+    "title_th": "DeepSeek เผยรายละเอียดอินฟราเรดและการอนุมานของ DeepSeek V4.1 Flash บน Zhihu",
+    "summary_th": "คือข้อมูลเชิงเทคนิคและสถาปัตยกรรมการให้บริการโมเดล DeepSeek V4.1 Flash แบบ High-throughput และ Low-latency | ดีกว่าเดิมด้วยระบบจัดการอินฟราเรดขนาดใหญ่ที่เพิ่มความเร็วและลดภาระประมวลผล | นำไปศึกษาแนวทางการออกแบบสถาปัตยกรรมระบบ LLM ที่เน้นความเร็วและการให้บริการสเกลใหญ่",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40Rzc2QTI5WGpaWXRwSVVjSDRRdERsX2FZWk5ZNHo5MVR6bTA1VnBNOW1qalAwRkViTGhlazdLR0FhLWNXbTJaT3czczhZc3dxZ2ZxRU00YzI?oc=5"
+  },
+  {
     "id": "hn_50167604",
     "timestamp": "2026-10-20T15:10:54.000Z",
     "score": 6,
