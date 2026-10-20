@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_cb131da120179019",
+    "timestamp": "2026-10-20T09:30:19.000Z",
+    "score": 9,
+    "vendor": "DeepSeek",
+    "category": "Dev Tool",
+    "title_th": "DeepSeek เปิดตัว DeepInfer เฟรมเวิร์กอนุมานโอเพนซอร์ส",
+    "summary_th": "คืออะไร: ระบบรันโมเดล AI (Inference Engine) ภายในที่ขับเคลื่อน DeepSeek-V4.1-Flash แบบโอเพนซอร์ส | ดีกว่าเดิมยังไง: ช่วยเพิ่ม throughput สูงและลด Latency รวมทั้งประหยัดต้นทุนค่าคอมพิวต์และพลังงานในระดับโปรดักชัน | เอาไปใช้อะไรต่อได้: นำไปปรับใช้เพื่อรันโมเดลขนาดใหญ่บนโครงสร้างพื้นฐานของตัวเองด้วยต้นทุนที่ต่ำลง",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TMTA3dG9NcFBxZXlTLVgzZWRCWGdESGZmM2hXSzZJSnZTM0ZQbmlSVDZISldpTjRWdEYwaGtHdE1ZVkVBOE5BWGJVN1hSMGZCM0VBeHhUQUdGWDFmakNsUlF3?oc=5"
+  },
+  {
+    "id": "gn_cd8b691db14fc034",
+    "timestamp": "2026-10-19T23:58:07.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "ฟีเจอร์ใหม่ Claude Projects สำหรับงาน Multi-Agent",
+    "summary_th": "คืออะไร: อินเทอร์เฟซใหม่ใน Claude สำหรับจัดการงานระบบหลายเอเจนต์ร่วมกัน (Multi-Agent) | ดีกว่าเดิมยังไง: มีตัวประสานงาน (Coordinator model) คอยควบคุมและให้เอเจนต์อิสระรับส่งข้อความทำงานร่วมกันได้ดีขึ้น | เอาไปใช้อะไรต่อได้: นำไปประยุกต์ออกแบบเวิร์กโฟลว์ซับซ้อนที่ต้องใช้ AI หลายตัวช่วยกันคิดและรันงานอัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4xYXlXVTJEalNVdmxuLVJaaUk0cEEtekNtRURtalNRcWg0ZUlXRFYzeGRscTJwQUNaU1M4S05LS3RfeTlURFlxb1pNcWItX1NVSzEtM01GcGZQSVdQV0E?oc=5"
+  },
+  {
     "id": "gn_1779440652c1fc66",
     "timestamp": "2026-10-19T18:18:50.000Z",
     "score": 8,
