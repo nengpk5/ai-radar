@@ -1,5 +1,45 @@
 [
   {
+    "id": "gn_cb131da120179019",
+    "timestamp": "2026-10-20T09:30:19.000Z",
+    "score": 9,
+    "vendor": "DeepSeek",
+    "category": "Dev Tool",
+    "title_th": "DeepSeek เปิดตัว DeepInfer เฟรมเวิร์กอนุมานโอเพนซอร์สระดับโปรดักชัน",
+    "summary_th": "DeepInfer คือเฟรมเวิร์ก in-house inference สำหรับรันโมเดล DeepSeek-V4.1-Flash ด้วยความเร็วสูงและต้นทุนต่ำ | ดีกว่าเดิมยังไงรองรับ distributed inference, speculative decoding และ high-throughput kernels | เอาไปใช้อะไรต่อได้นำไป deploy โมเดล LLM ขนาดใหญ่ในระบบ Production ของตัวเองได้อย่างมีประสิทธิภาพ",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TMTA3dG9NcFBxZXlTLVgzZWRCWGdESGZmM2hXSzZJSnZTM0ZQbmlSVDZISldpTjRWdEYwaGtHdE1ZVkVBOE5BWGJVN1hSMGZCM0VBeHhUQUdGWDFmakNsUlF3?oc=5"
+  },
+  {
+    "id": "gn_99dc34f59ea56201",
+    "timestamp": "2026-10-20T09:30:20.000Z",
+    "score": 8,
+    "vendor": "DeepSeek",
+    "category": "Dev Tool",
+    "title_th": "DeepSeek เปิดตัว deepseek-recipe สำหรับจัดการ Tokenization ที่ตรงกับ API ทางการ",
+    "summary_th": "deepseek-recipe คือคอมโพเนนต์เข้ารหัสและถอดรหัส Token สำหรับจำลองพฤติกรรม API ของ DeepSeek | ดีกว่าเดิมยังไงช่วยให้ระบบ deploy ภายในองค์กรมีพฤติกรรมและการประมวลผล Token ตรงกับ Official API ทุกประการ | เอาไปใช้อะไรต่อได้นำไปใช้ทำ API Gateway หรือจำลองสภาพแวดล้อมสำหรับการรันโมเดล DeepSeek ได้อย่างแม่นยำ",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jc0E5NTJNQ1lObE16NW9ZMnhrYnF1MlFoWVFrR1YtMGxmZEI5TG4zZXY3RkxfR0l4VVRhMUZHakpSNWdyOW8zbkxUU0ExSUV5WTdxZi1xbGh0RmlBbmJ0R1VB?oc=5"
+  },
+  {
+    "id": "gn_d127275456c4f1d2",
+    "timestamp": "2026-10-19T21:47:24.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI เปิดตัว OSS Scanner บริการสแกนช่องโหว่ซอฟต์แวร์ฟรีด้วยโมเดลพลังสูง",
+    "summary_th": "OSS Scanner คือระบบตรวจสอบช่องโหว่อัตโนมัติสำหรับโปรเจกต์ Open Source สำคัญโดยใช้โมเดลที่ดีที่สุดของ OpenAI | ดีกว่าเดิมยังไงตรวจจับปัญหาได้ลึกซึ้งพร้อมทั้งสร้าง Proof-of-concept และ Patch แก้ไขโค้ดให้โดยอัตโนมัติ | เอาไปใช้อะไรต่อได้ใช้เป็นแนวทางในการทำ Automated Security Audit หรือตรวจสอบความปลอดภัยโค้ดในโปรเจกต์ของคุณ",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBLWmVZZWM0VzBzeHpqWE5WNHlwMEVwR3gxTnd4UnZSakszSk5reXNZcVhuY2Fyd3JTckk0NUN2R2NUZmhxNEpzR29LX1oyYWxWaGdkMUhyWGo4Q2Nnc20zSQ?oc=5"
+  },
+  {
+    "id": "gn_cd8b691db14fc034",
+    "timestamp": "2026-10-19T23:58:07.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "อัปเดตใหม่ Claude Projects รองรับสถาปัตยกรรมการทำงานแบบ Multi-Agent",
+    "summary_th": "Claude Projects รูปแบบใหม่ที่ออกแบบอินเทอร์เฟซมารองรับระบบ Multi-Agent อย่างเต็มตัว | ดีกว่าเดิมยังไงมีโมเดล Coordinator คอยคุมภาพรวมและสั่งการ Agent ย่อยให้ทำงานแยก Thread กันได้อย่างเป็นระบบ | เอาไปใช้อะไรต่อได้นำไปประยุกต์สร้างระบบ AI Agent หลายตัวร่วมมือกันแก้โจทย์ที่มีความซับซ้อนสูง",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4xYXlXVTJEalNVdmxuLVJaaUk0cEEtekNtRURtalNRcWg0ZUlXRFYzeGRscTJwQUNaU1M4S05LS3RfeTlURFlxb1pNcWItX1NVSzEtM01GcGZQSVdQV0E?oc=5"
+  },
+  {
     "id": "hn_50163277",
     "timestamp": "2026-10-20T09:08:54.000Z",
     "score": 9,
