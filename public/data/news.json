@@ -1,5 +1,15 @@
 [
   {
+    "id": "hn_50163277",
+    "timestamp": "2026-10-20T09:08:54.000Z",
+    "score": 9,
+    "vendor": "DeepSeek",
+    "category": "Dev Tool",
+    "title_th": "DeepSeek เปิดตัวและโอเพนซอร์ส Inference Engine ของตัวเองอย่างเป็นทางการ",
+    "summary_th": "คือระบบรันโมเดล AI (Inference Engine) ของ DeepSeek ที่เปิดซอร์สโค้ดให้ใช้งานได้ฟรี | ช่วยให้การรันโมเดลมีความเร็วสูงและจัดการทรัพยากร GPU ได้คุ้มค่ายิ่งขึ้น | นำไปปรับใช้เพื่อสร้างโฮสต์รันโมเดลขนาดใหญ่ในโครงสร้างพื้นฐานขององค์กรเองได้",
+    "url": "https://github.com/deepseek-ai/DeepInfer"
+  },
+  {
     "id": "gn_17c8366b9ab648c3",
     "timestamp": "2026-10-19T15:58:46.000Z",
     "score": 6,

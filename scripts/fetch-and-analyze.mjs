@@ -139,7 +139,7 @@ async function fetchHackerNewsAI() {
 }
 
 async function fetchBluesky() {
-  const actors = ['simonwillison.net', 'huggingface.bsky.social', 'ollama.com', 'ggerganov.bsky.social'];
+  const actors = ['alexalbert.bsky.social', 'swyx.io', 'altryne.bsky.social', 'simonwillison.net'];
   const actorPromises = actors.map(async (actor) => {
     try {
       const res = await fetchWithTimeout(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${actor}&limit=5`);
@@ -147,18 +147,20 @@ async function fetchBluesky() {
       const data = await res.json();
       if (!data.feed || !Array.isArray(data.feed)) return [];
 
-      return data.feed.map(item => {
-        const post = item.post;
-        const rKey = post.uri ? post.uri.split('/').pop() : post.cid;
-        const text = post.record?.text || '';
-        return {
-          id: `bsky_${post.cid || rKey}`,
-          title: `[Bluesky @${post.author?.handle || actor}] ${text.slice(0, 80).replace(/\n/g, ' ')}...`,
-          description: text,
-          url: `https://bsky.app/profile/${post.author?.handle || actor}/post/${rKey}`,
-          published_at: post.record?.createdAt || new Date().toISOString()
-        };
-      });
+      return data.feed
+        .filter(item => item.post?.record?.text && item.post.record.text.trim().length > 15)
+        .map(item => {
+          const post = item.post;
+          const rKey = post.uri ? post.uri.split('/').pop() : post.cid;
+          const text = post.record?.text || '';
+          return {
+            id: `bsky_${post.cid || rKey}`,
+            title: `[Bluesky @${post.author?.handle || actor}] ${text.slice(0, 80).replace(/\n/g, ' ')}...`,
+            description: text,
+            url: `https://bsky.app/profile/${post.author?.handle || actor}/post/${rKey}`,
+            published_at: post.record?.createdAt || new Date().toISOString()
+          };
+        });
     } catch (err) {
       console.warn(`Fetch Bluesky for ${actor} failed:`, err.message);
       return [];
@@ -273,7 +275,7 @@ ${JSON.stringify(candidates, null, 2)}
               temperature: 0.2
             }
           })
-        }, 20000);
+        }, 50000);
 
         const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
         if (!rawText) continue;
@@ -318,7 +320,7 @@ ${JSON.stringify(candidates, null, 2)}
               ],
               response_format: { type: 'json_object' }
             })
-          }, 20000);
+          }, 50000);
 
           const content = data.choices?.[0]?.message?.content;
           if (content) {
@@ -435,7 +437,7 @@ async function main() {
   }
 
   // Limit chunk size per analysis to keep LLM context sharp and cost zero/minimal
-  const candidatesToAnalyze = newCandidates.slice(0, 25);
+  const candidatesToAnalyze = newCandidates.slice(0, 15);
 
   // 3.3 AI Analysis
   const scoredEvents = await analyzeWithAI(candidatesToAnalyze, process.env);

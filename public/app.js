@@ -85,6 +85,28 @@ function formatTimeAgo(isoString) {
   return date.toLocaleDateString('th-TH', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 }
 
+// Helper to resolve Source badge
+function getSourceBadge(item) {
+  const id = item.id || '';
+  const url = item.url || '';
+  if (id.startsWith('bsky_') || url.includes('bsky.app')) {
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-sky-500/20 text-sky-300 border border-sky-500/30 flex items-center gap-1">🌐 Bluesky</span>`;
+  }
+  if (id.startsWith('hn_') || url.includes('ycombinator.com')) {
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-orange-500/20 text-orange-300 border border-orange-500/30 flex items-center gap-1">🔥 Hacker News</span>`;
+  }
+  if (id.startsWith('hf_') || url.includes('huggingface.co')) {
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-amber-500/20 text-amber-300 border border-amber-500/30 flex items-center gap-1">🤗 Hugging Face</span>`;
+  }
+  if (id.startsWith('or_') || url.includes('openrouter.ai')) {
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-purple-500/20 text-purple-300 border border-purple-500/30 flex items-center gap-1">🤖 OpenRouter</span>`;
+  }
+  if (id.startsWith('gn_') || url.includes('news.google.com') || url.includes('x.com')) {
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-blue-500/20 text-blue-300 border border-blue-500/30 flex items-center gap-1">📰 X / Web</span>`;
+  }
+  return `<span class="px-2 py-0.5 rounded-full font-medium bg-gray-800 text-gray-300 border border-gray-700">📡 Web</span>`;
+}
+
 // 3. Render News Feed
 function renderFeed() {
   const filtered = allNews.filter((item) => {
@@ -99,7 +121,8 @@ function renderFeed() {
     const summary = (item.summary_th || '').toLowerCase();
     const vendor = (item.vendor || '').toLowerCase();
     const cat = (item.category || '').toLowerCase();
-    return title.includes(q) || summary.includes(q) || vendor.includes(q) || cat.includes(q);
+    const id = (item.id || '').toLowerCase();
+    return title.includes(q) || summary.includes(q) || vendor.includes(q) || cat.includes(q) || id.includes(q);
   });
 
   itemsCountDisplayEl.textContent = `พบ ${filtered.length} รายการ (จากทั้งหมด ${allNews.length})`;
@@ -134,6 +157,8 @@ function renderFeed() {
     if (item.category === 'Benchmark') catBadgeColor = 'bg-emerald-950/60 text-emerald-300 border-emerald-800/50';
     if (item.category === 'Research') catBadgeColor = 'bg-amber-950/60 text-amber-300 border-amber-800/50';
 
+    const sourceBadge = getSourceBadge(item);
+
     return `
       <article class="p-4 rounded-xl bg-radarCard border border-radarBorder hover:border-emerald-500/40 transition-all shadow-lg hover:shadow-emerald-950/20 space-y-2.5">
         <div class="flex items-start justify-between gap-2">
@@ -141,6 +166,7 @@ function renderFeed() {
             <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold border ${scoreBadgeStyle}">
               ${scoreIcon} ${item.score || 5}/10
             </span>
+            ${sourceBadge}
             <span class="px-2 py-0.5 rounded-full font-medium bg-radarBorder/80 text-gray-200 border border-gray-700/60">
               ${escapeHtml(item.vendor || 'AI')}
             </span>
