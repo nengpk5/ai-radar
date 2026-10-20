@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_36f7e21bf8350850",
+    "timestamp": "2026-10-19T22:30:05.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google อัปเดตความสามารถโมเดล รองรับการย้ายระบบภาษารุ่นเก่า (Legacy/Low-resource)",
+    "summary_th": "ความสามารถโมเดลใหม่จาก Google ที่ช่วยสร้างและย้ายซอฟต์แวร์ในภาษาโปรแกรมมิ่งยุคเก่า เช่น COBOL, Fortran และ Visual Basic | ดีกว่าเดิมตรงที่ช่วยแก้ปัญหาขาดแคลนเครื่องมือในระบบโครงสร้างพื้นฐานเดิมของธนาคารและภาครัฐ | นำไปใช้ทำ Legacy Code Migration และปรับปรุงระบบแบงก์หรือองค์กรใหญ่ให้ทันสมัยได้",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5KT2pkOFpzQU14cGtuOEpzMzA3cm1aLWFlVDNTbnI5Vm9Jc3BIamwwYmpPamp5ZnMyMFJETWY5TG1WOWRfa3ZfdFVjVkJRR1VCYlB1cVFPa19yRWs?oc=5"
+  },
+  {
+    "id": "gn_1eff87fd6f8f3489",
+    "timestamp": "2026-10-19T15:08:41.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Gemini 4 Argon แปลงภาพถ่ายพื้นที่จริงให้เป็นเกม 3D แบบอินเทอร์แอกทีฟ",
+    "summary_th": "โมเดลใหม่ Gemini 4 Argon ร่วมมือกับ Subagents, Blender MCP และ Nano Banana ในการแปลงภาพถ่ายโต๊ะหรือห้องจริงให้กลายเป็นสนามแข่งเกม 3D | ดีกว่าเดิมในด้านการประสานงานหลายเอเจนต์ (Multi-agent orchestration) เพื่อสร้างแอปพลิเคชันเชิงกายภาพ | นำไปประยุกต์สร้างเกม AR/VR หรือเครื่องมือจำลอง 3D จากโลกจริงอัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1yQmFKOGZVamU0YmNuazVkNVltLWlvanNwNWhXRWJQYnk5Mkd6Uy0zNzI2SjZrTjZBMDlEd011cjlBa0pRNmtybHFMamN4V1NmTXUzQjdfOExBdFE?oc=5"
+  },
+  {
     "id": "gn_17c8366b9ab648c3",
     "timestamp": "2026-10-19T15:58:46.000Z",
     "score": 6,
