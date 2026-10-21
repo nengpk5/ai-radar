@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50180079",
+    "timestamp": "2026-10-21T12:53:11.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "โมเดล OpenAI เตรียมใช้งานได้บน Google Cloud แล้ว",
+    "summary_th": "การขยายบริการให้โมเดล AI ของ OpenAI สามารถเข้าถึงได้ผ่านแพลตฟอร์ม Google Cloud | ช่วยให้นักพัฒนาและองค์กรที่มีโครงสร้างพื้นฐานบน Google Cloud สามารถเรียกใช้งานโมเดลของ OpenAI ได้สะดวกรวดเร็วขึ้นโดยไม่ต้องเปลี่ยนคลาวด์ | นำไปประยุกต์ใช้สร้างแอปพลิเคชันหรือระบบ AI บนสถาปัตยกรรม Google Cloud ได้อย่างไร้รอยต่อ",
+    "url": "https://openai.com/index/openai-models-google-cloud/"
+  },
+  {
+    "id": "hn_50183344",
+    "timestamp": "2026-10-21T16:09:28.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "โครงสร้างพื้นฐาน Git สำหรับรองรับ Agent ขนาดใหญ่จาก GitHub",
+    "summary_th": "สถาปัตยกรรมและเครื่องมือ Git ที่ออกแบบมาเพื่อรองรับการทำงานของ AI Agent จำนวนมากพร้อมๆ กัน | ช่วยจัดการความซับซ้อนและเพิ่มประสิทธิภาพในการเขียนโค้ดอัตโนมัติระดับสเกลใหญ่ได้ดีขึ้น | นำไปใช้ตั้งค่าระบบ CI/CD และจัดการ repository สำหรับให้ AI Agent เข้ามาทำงานร่วมกันในโปรเจกต์ใหญ่",
+    "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
+  },
+  {
+    "id": "gn_4efa1c347c439780",
+    "timestamp": "2026-10-21T17:40:31.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude Security ตรวจสอบความปลอดภัยโค้ดแบบเรียลไทม์",
+    "summary_th": "ฟีเจอร์ใหม่ใน Claude Enterprise ที่ช่วยสแกนและตรวจสอบช่องโหว่ความปลอดภัยของโค้ดอย่างต่อเนื่องตามการเปลี่ยนแปลงของ repository | ช่วยให้ทีมพัฒนาทราบปัญหาด้านความปลอดภัยใกล้เคียงกับโค้ดปัจจุบันมากที่สุดโดยไม่ต้องกดสแกนเองทุกครั้ง | นำไปใช้เป็นระบบตรวจสอบความปลอดภัยอัตโนมัติในกระบวนการพัฒนาซอฟต์แวร์ระดับองค์กร",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA3dUFVOVZfdUJ5Zk1DVE8tQmJKZE5EazNwTTQ4aXlwN0I2Q2w5aGphU212RVRSdWgwd3hYTllPd1p4c0JoMWthSHBMTDZnVlRqTVJJQ0RhbWc4Q3VfVGc?oc=5"
+  },
+  {
     "id": "hn_50179857",
     "timestamp": "2026-10-21T12:34:46.000Z",
     "score": 8,
