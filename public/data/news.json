@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50175779",
+    "timestamp": "2026-10-21T03:36:43.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "การใช้ Claude เพื่อลด Attack Surface ของโค้ด",
+    "summary_th": "งานวิจัยจาก Anthropic เกี่ยวกับการใช้โมเดล Claude ช่วยวิเคราะห์และลดจุดอ่อนในโค้ด | ช่วยอุดช่องโหว่ด้านความปลอดภัยได้แม่นยำกว่าวิธีดั้งเดิม | นำไปประยุกต์ทำ automated security code review ใน CI/CD pipeline",
+    "url": "https://www.anthropic.com/research/attack-surface-reduction"
+  },
+  {
+    "id": "gn_737e2d4213fb64d5",
+    "timestamp": "2026-10-20T15:24:47.000Z",
+    "score": 6,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "ฟีเจอร์ Team Tasks ใน ChatGPT สำหรับ automat งานวิศวกรรมซ้ำๆ",
+    "summary_th": "ฟีเจอร์ใหม่ใน ChatGPT ที่ช่วยตั้งเวลาทำงานซ้ำๆ เช่น สรุปงานประจำสัปดาห์ร่วมกับทีม | ช่วยลดภาระงานจิปาถะและให้ทีมร่วมตรวจสอบแก้ไขได้ง่ายขึ้น | นำไปใช้ช่วยสรุปสถานะโปรเจกต์และรายงานความคืบหน้าอัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1LZzlQQUxyNHk4LWZRN05sOWNXV0hxQmt3RlR2cnNiY2lRTFNRc1pUUTlHMlVhdHREZXk5MzNsZ2ZlNnZ2aHpKenRRelltaHd5UmFsMWVhQ184T0FvTVR0Ug?oc=5"
+  },
+  {
+    "id": "gn_094403858e2794d5",
+    "timestamp": "2026-10-21T04:45:18.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "การเปิดตัว Gemini 4 Argon ที่ประมวลผลสูงถึง 25 ล้านล้านโทเค็นใน 3 วันแรก",
+    "summary_th": "โมเดลใหม่ล่าสุด Gemini 4 Argon จาก Google ที่ได้รับความนิยมสูงมากในตลาด | รองรับการประมวลผลปริมาณมหาศาลด้วยความเร็วและประสิทธิภาพที่ดีขึ้น | นำไปพัฒนาแอปพลิเคชัน AI ขนาดใหญ่ที่ต้องการความฉลาดขั้นสูงและ Throughput สูง",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1MSG1tb05QVE1vV2JLTWdEUkFid0ptZ0lJbVcxN3FvaDcxOHd6emR0cXp5THRQU0VWOXc0eWppcHJXN2lZMVNGMUhCWHR3S0NUU3dkOGlKTU9BWkJiRGxLQi1lbnN6dw?oc=5"
+  },
+  {
     "id": "gn_664138c00ea6c24d",
     "timestamp": "2026-10-20T15:46:19.000Z",
     "score": 6,
