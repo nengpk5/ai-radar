@@ -1,5 +1,35 @@
 [
   {
+    "id": "or_recursive_flint-v1_0_free",
+    "timestamp": "2026-10-19T15:01:13.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Recursive: Flint โมเดล Open-weight ผสม Mixture-of-Experts สำหรับงาน Coding",
+    "summary_th": "คือโมเดล Open-weight ขนาด 40B (ใช้งานจริง 2.5B) จาก Recursive ที่ออกแบบมาเพื่อ Coding agents โดยเฉพาะ | โดดเด่นเรื่องประสิทธิภาพความเร็วและความแม่นยำในการเขียนโค้ดจากการเทรนด้วยระบบ Eureka Machine | นำไปประยุกต์ใช้เป็นแบ็คเอนด์สำหรับ AI Coding Assistant หรือ Agent รันโค้ดได้ฟรีผ่าน OpenRouter",
+    "url": "https://openrouter.ai/recursive/flint-v1.0:free"
+  },
+  {
+    "id": "gn_ee404ee540134d9e",
+    "timestamp": "2026-10-21T19:09:35.000Z",
+    "score": 9,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic เปิดตัว Claude Duet แอปพลิเคชัน Proactive Agent ทำงานแทนคุณอัตโนมัติ",
+    "summary_th": "คือแอปพลิเคชันใหม่จาก Anthropic ที่ให้ Claude ทำหน้าที่เป็น Proactive Agent คอยเข้ามาทักเมื่อมีงานต้องทำ ทำงานต่อเองได้เมื่อเราไม่อยู่ และขออนุญาตก่อนตัดสินใจ | ดีกว่าเดิมตรงที่เป็น Autonomous Agent เต็มตัว ไม่ต้องรอรับ Prompt อย่างเดียว | นำไปใช้เพิ่มประสิทธิภาพการทำงานอัตโนมัติ ลดงานจุกจิก และจัดการเวิร์กโฟลว์ซับซ้อน",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5RX1dEMm52QzJfZFFwbExHc1ptaGZrZ1dadXNiNExxQmtjSFR5emU5Y2JOUXc0emZwSUJqWm9BYXF0dVZPNkVQVUFEZ25BU3FKZFJrNWlGNl9RU3JtX3c?oc=5"
+  },
+  {
+    "id": "gn_fd79d22b3d27f6af",
+    "timestamp": "2026-10-21T19:23:19.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI ประกาศนำโมเดลเรือธงและระบบ Codex ลงสู่ Google Cloud Model Garden แล้ว",
+    "summary_th": "คือการจับมือกันระหว่าง OpenAI และ Google Cloud เพื่อนำโมเดลและ Codex agentic workflows มาให้บริการใน Model Garden | ดีกว่าเดิมตรงที่องค์กรที่ใช้โครงสร้างพื้นฐานบน Google Cloud สามารถเข้าถึงโมเดลและเครื่องมือระดับท็อปของ OpenAI ได้สะดวกยิ่งขึ้น | นำไปพัฒนา Enterprise Agent และแอปพลิเคชัน AI ระดับองค์กรบนแพลตฟอร์ม Google Cloud ได้ทันที",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52dUZBVUVhRzk1NVppYWVFSjdWQTJHMS1kdlJPSGM3eXNNLWJGenRJYS1YclFXTzlKTjVtM2owc2xRa3MzcjRvcE9tVzVmZU1PMTRJbXdhNnd1SEE?oc=5"
+  },
+  {
     "id": "hn_50180079",
     "timestamp": "2026-10-21T12:53:11.000Z",
     "score": 8,
