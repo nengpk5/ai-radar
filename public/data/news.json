@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_664138c00ea6c24d",
+    "timestamp": "2026-10-20T15:46:19.000Z",
+    "score": 6,
+    "vendor": "DeepSeek",
+    "category": "Benchmark",
+    "title_th": "ผลทดสอบ Benchmark ซ้ำ DeepSeek V4.1 Flash เทียบประสิทธิภาพบน 9 Evaluation Harness",
+    "summary_th": "การทดลองรันเบนช์มาร์กโมเดล DeepSeek V4.1 Flash ซ้ำ 89 ครั้งข้าม 9 เครื่องมือทดสอบโค้ด | เผยให้เห็นว่าเฟรมเวิร์กอย่าง Pi harness และ Grok Build CLI ดึงประสิทธิภาพโมเดลได้สูงสุด (40.4) ชนะ Claude Code และ OpenCode | ช่วยให้นักพัฒนาเลือกใช้ Agent harness และ Evaluation scaffold ที่รีดศักยภาพโมเดลโค้ดดิ้งได้สูงสุดในการทำงานจริง",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SMlVlNnVubWxJVzlURnVISXg1bklfQm5vaW56Sy1TcUlYa3R5VTl4aDBxX21xYklpTDRGYmE1X3Z4MURUekpaTWlVNENjQVlmazVsc0NwZWVPZl8wOW9ScQ?oc=5"
+  },
+  {
     "id": "hf_OpenMOSS-Team_MOSS-Image-Base",
     "timestamp": "2026-10-11T06:49:17.000Z",
     "score": 6,
