@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50179857",
+    "timestamp": "2026-10-21T12:34:46.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "LayerFS: ระบบไฟล์เฉพาะทางสำหรับ AI Coding Agents",
+    "summary_th": "ระบบไฟล์ที่ออกแบบมาเพื่อให้ AI coding agents ทำงานกับโปรเจกต์โค้ดได้อย่างมีประสิทธิภาพและรวดเร็วขึ้น | ช่วยจัดการสถานะและไฟล์โค้ดระหว่างที่ AI กำลังเขียนและแก้ไขโค้ดได้ดีกว่าระบบไฟล์ทั่วไป | นำไปใช้ต่อยอดสร้างสภาพแวดล้อมการพัฒนาซอฟต์แวร์ด้วย Autonomous Agents ที่เสถียรยิ่งขึ้น",
+    "url": "https://layerfs.ai/"
+  },
+  {
+    "id": "hn_50180836",
+    "timestamp": "2026-10-21T13:43:19.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Research",
+    "title_th": "PHP2Shell: การใช้ AI ค้นหาช่องโหว่ความปลอดภัยระดับวิกฤตใน PHP",
+    "summary_th": "งานวิจัยและเครื่องมือที่ใช้ AI ช่วยวิเคราะห์และค้นหาช่องโหว่ Remote Code Execution (RCE) ในภาษา PHP | ช่วยตรวจจับจุดอ่อนในโค้ดเบสขนาดใหญ่ได้อย่างรวดเร็วกว่าการตรวจสอบแบบดั้งเดิม | นำไปใช้เป็นแนวทางในการทำ Automated Security Auditing และเพิ่มความปลอดภัยให้ระบบซอฟต์แวร์",
+    "url": "https://www.wiz.io/blog/php2shell-php-rce"
+  },
+  {
+    "id": "gn_06468fac27c691e9",
+    "timestamp": "2026-10-21T12:02:29.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI จับมือ Google นำโมเดลล้ำสมัยสู่ Google Cloud Marketplace",
+    "summary_th": "ดีลประวัติศาสตร์ที่นำโมเดลเรือธงของ OpenAI เช่น GPT-6 Astra และ Codex มาให้บริการบนแพลตฟอร์ม Google Cloud | ทำให้ลูกค้าองค์กรสามารถเข้าถึงโมเดลทรงพลังผ่านโครงสร้างพื้นฐานของ Google ได้สะดวกขึ้น | นำไปประยุกต์ใช้พัฒนา Enterprise AI Solutions และเครื่องมือเขียนโค้ดภายในองค์กรขนาดใหญ่",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0ySnlPSnl2eU1SdUV6TlhPNFFnUG5Pdkt0X3lualBpOGtYS2dyYjlBVnQ0c2pTVjFzbGc2MjNYUVotNEMxak5WRy03aDJFLUJIR2NvMlluVUoxbWdLeHc?oc=5"
+  },
+  {
     "id": "hn_50175779",
     "timestamp": "2026-10-21T03:36:43.000Z",
     "score": 7,
