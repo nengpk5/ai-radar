@@ -1,5 +1,45 @@
 [
   {
+    "id": "or_minimax_minimax-m3_1-flash",
+    "timestamp": "2026-10-19T03:12:49.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว MiniMax M3.1 Flash โมเดล Multimodal รองรับงาน Agent และ Coding",
+    "summary_th": "คือโมเดล Multimodal จาก MiniMax รุ่นอัปเกรด | ดีกว่าเดิมในด้านงาน Agent ที่ซับซ้อน การเขียนโค้ด และ Cybersecurity ผ่านเกณฑ์ประเมินที่ดีขึ้น | นำไปประยุกต์ใช้สร้างระบบ AI Agent และผู้ช่วยเขียนโปรแกรมประสิทธิภาพสูง",
+    "url": "https://openrouter.ai/minimax/minimax-m3.1-flash"
+  },
+  {
+    "id": "hn_50198936",
+    "timestamp": "2026-10-22T18:02:38.000Z",
+    "score": 6,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "เปิดตัว agent-usage-guard ป้องกันการเปลืองโควต้าการใช้งาน Claude Code",
+    "summary_th": "คือเครื่องมือเสริมสำหรับผู้ใช้งาน Claude Code ช่วยจัดการและจำกัดโควต้าการใช้งาน | ดีกว่าเดิมตรงที่ช่วยป้องกันการส่ง Request ฟุ่มเฟือยโดยไม่จำเป็น ประหยัดค่าใช้จ่าย | นำไปติดตั้งร่วมกับ CLI ของนักพัฒนาเพื่อควบคุมงบประมาณการใช้งาน AI",
+    "url": "https://github.com/rbartoli/agent-usage-guard"
+  },
+  {
+    "id": "gn_024f57c91eb29354",
+    "timestamp": "2026-10-21T19:09:37.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic เปิดตัว Claude Duet (Research Preview) สำหรับผู้ใช้ Pro และ Max",
+    "summary_th": "คือพรีวิวฟีเจอร์ใหม่จาก Anthropic ที่เน้นงานประสานงานและการจัดการความเร่งด่วน | ดีกว่าเดิมในการช่วยจัดการ Workflow ที่ซับซ้อน แม้จะยังต้องปรับปรุงเรื่องการประเมินความสำคัญ | นำไปทดลองใช้งานจริงผ่านระบบ Waitlist เพื่อเพิ่มประสิทธิภาพงานพัฒนา",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ZaW15LTdvOWpPTjItSkdpblJfREdiX1ZHVzhaSDJhSTNUQ0hlVHJnNlM1OWhMZ01fNmhldF9IOW1PVnZlN0RRU2hHNTVlZERyc1dNSVpfT09nblJiNUE?oc=5"
+  },
+  {
+    "id": "gn_775ffbcb7a5ea165",
+    "timestamp": "2026-10-22T18:17:10.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic โอนย้ายมาตรฐาน Agent Skills ให้แก่มูลนิธิ Agentic AI",
+    "summary_th": "คือการส่งมอบมาตรฐาน Agent Skills ที่พัฒนาจาก Claude Code ให้กับ Agentic AI Foundation | ดีกว่าเดิมตรงที่จะกลายเป็นมาตรฐานกลางระดับอุตสาหกรรมร่วมกับ MCP | นำไปใช้พัฒนา AI Agent ที่รองรับมาตรฐานกลางเพื่อความเข้ากันได้ที่กว้างขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zR2licGFVVncxU2NpSkdMeUNtc2RjNmhCNGhFMW5SdWxsLWJqNDZIRFd6WHN0bVdUclFxY29lSUhkTzI2eHY2OFVzM2NWS2lOdEZmUXJUWTFHd3ZS?oc=5"
+  },
+  {
     "id": "hn_50191507",
     "timestamp": "2026-10-22T05:23:11.000Z",
     "score": 8,
