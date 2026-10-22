@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50191507",
+    "timestamp": "2026-10-22T05:23:11.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI เปิดตัวเครื่องมือ CLI อย่างเป็นทางการ",
+    "summary_th": "เครื่องมือ Command Line Interface จาก OpenAI สำหรับจัดการงานพัฒนาและเรียกใช้โมเดล | ใช้งานผ่าน Terminal ได้สะดวกรวดเร็วยิ่งขึ้นโดยไม่ต้องสลับไปหน้าเว็บ | นำไป integrate เข้ากับ CI/CD pipeline หรือ script อัตโนมัติในการเรียกใช้งาน AI ได้ง่ายขึ้น",
+    "url": "https://github.com/openai/openai-cli"
+  },
+  {
+    "id": "gn_7c29aa6a5b9d1230",
+    "timestamp": "2026-10-22T04:23:36.000Z",
+    "score": 8,
+    "vendor": "DeepSeek",
+    "category": "Model Release",
+    "title_th": "DeepSeek เปิดตัว Search API ใหม่ในราคาประหยัดที่สุดบนตลาด",
+    "summary_th": "API ค้นหาข้อมูลจาก DeepSeek ที่ออกแบบมาสำหรับ AI Agent โดยเฉพาะ | จุดเด่นคือราคาถูกที่สุดเมื่อเทียบกับ API ค้นหาตัวอื่นในระดับเดียวกัน | นำไปใช้เป็นเครื่องมือ Search Grounding ให้กับ Agent เพื่อค้นหาข้อมูลแบบเรียลไทม์ในต้นทุนที่ต่ำลง",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53THRjbG9lSnl4RG9ZempxRVRBa3c4TWMzX3FtVF8tM2EwSTllendsdUdBY3RORWduQWpENmd5UGN2Tm9adGtocGFQWXZrNUxYWTdyQndadThjSE5meTlYT1haQUcteU0?oc=5"
+  },
+  {
     "id": "hn_50176082",
     "timestamp": "2026-10-21T04:27:51.000Z",
     "score": 6,
