@@ -1,5 +1,35 @@
 [
   {
+    "id": "gn_ffec97da23689791",
+    "timestamp": "2026-10-21T21:03:10.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic ประกาศอัปเดต Claude API เวอร์ชันใหม่ 2026-10-21 ในรอบหลายปี",
+    "summary_th": "การออก API เวอร์ชันทางการใหม่ครั้งแรกของ Claude API นับตั้งแต่ปี 2023 ช่วยให้นักพัฒนามีรอบการอัปเกรดที่ชัดเจนและเตรียมรับมือ breaking changes ก่อนโมเดลใหม่จะถูกบังคับใช้ AI Engineer สามารถนำไปใช้วางแผน migration และปรับปรุง codebase ให้รองรับฟีเจอร์โมเดลในอนาคตได้อย่างมั่นคง",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RRnF3SHVvNWwwSUZKU3Bwb0ZqU204RVhLa0JNTFo2Z1p5NEo3c2JJRmlGNkk1V1BXMks3RllOQVBwX0pNVVhfeTBXUnBLdF9DM1hJQjVra0ozQXkwM0lYMw?oc=5"
+  },
+  {
+    "id": "gn_86f9c761be3cc8df",
+    "timestamp": "2026-10-21T19:16:34.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "Anthropic เปิดตัว Claude Duet ผู้ช่วยคู่คิดในการทำงานแบบ Research Preview",
+    "summary_th": "ระบบผู้ช่วย AI ตัวใหม่ที่ออกแบบมาเพื่อทำงานเคียงข้างผู้ใช้ทั้งเรื่องงานและเรื่องส่วนตัว เช่น สรุป Slack และช่วยร่างงาน ดีกว่าระบบแชตทั่วไปตรงที่สามารถเฝ้าติดตามบริบทและช่วยเหลืองานแบบ proactive ได้ สามารถลงทะเบียน Waitlist เพื่อทดลองใช้และนำแนวคิด human-agent collaboration ไปประยุกต์ใช้ในองค์กร",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBkS3Qta1IzOTI0LWVfaDFyMHd6M19FRlJYZWFaS0ZidHRGUUQ4OFl1N1BYSENvbGVZOTlXbFQ5ZFh1Q1F0RWNzVC1fU0cycEtDb2ZBTWVSRExwX28?oc=5"
+  },
+  {
+    "id": "hn_50183892",
+    "timestamp": "2026-10-21T16:44:53.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Omnara เฟรมเวิร์กโอเพนซอร์สทางเลือกสำหรับ Claude Managed Agents",
+    "summary_th": "เครื่องมือโอเพนซอร์สสำหรับการรันและควบคุม AI Agent ที่ออกแบบมาเป็นทางเลือกทดแทนระบบ Managed Agent ของ Claude ให้ความยืดหยุ่นสูงขึ้นและควบคุมสภาพแวดล้อมรวมถึงข้อมูลส่วนตัวได้เองโดยไม่ต้องผูกขาดกับ vendor นักพัฒนาสามารถนำไปติดตั้งบน private cloud เพื่อสร้างระบบ autonomous workflows ภายในองค์กรได้ทันที",
+    "url": "https://github.com/omnara-ai/omnara"
+  },
+  {
     "id": "or_recursive_flint-v1_0_free",
     "timestamp": "2026-10-19T15:01:13.000Z",
     "score": 6,
