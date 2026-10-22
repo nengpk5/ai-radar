@@ -1,5 +1,55 @@
 [
   {
+    "id": "hn_50198675",
+    "timestamp": "2026-10-22T17:44:06.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "NVIDIA เปิดตัว OpenShell รันไทม์ปลอดภัยสำหรับ AI Agent แบบกลุ่ม",
+    "summary_th": "OpenShell คือรันไทม์ (Runtime) แบบปลอดภัยและเป็นส่วนตัวสำหรับการรัน AI Agent หลายตัวพร้อมกัน | ดีกว่าเดิมตรงที่มีระบบป้องกันและจัดการความปลอดภัยที่ดีเยี่ยม เหมาะกับการทำงานอัตโนมัติสเกลใหญ่ | นำไปใช้พัฒนาและdeploy ฟลีทของ autonomous agents ได้อย่างมั่นใจไร้กังวลเรื่องความปลอดภัย",
+    "url": "https://github.com/NVIDIA/OpenShell"
+  },
+  {
+    "id": "gn_6da1405e221e2874",
+    "timestamp": "2026-10-22T20:04:24.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Claude เตรียมเปิดโหมด Auto เป็นค่าเริ่มต้นบนแพลตฟอร์มหลัก",
+    "summary_th": "ฟีเจอร์รันเซสชันของ Claude ในโหมดอัตโนมัติ (Auto mode) โดยมีระบบตรวจสอบความปลอดภัยคอยบล็อก actions ที่มีความเสี่ยง | ดีกว่าเดิมที่ไม่ต้องคอยกดอนุมัติทีละขั้นตอน ช่วยให้ทำงานต่อเนื่องได้รวดเร็วขึ้น | นำไปปรับใช้กับการทำงานพัฒนาซอฟต์แวร์และงานอัตโนมัติที่ต้องการความคล่องตัวสูง",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9JTDZGT01jWnJtaG5SV2xRQnJTQ0poTUduazFLaVFKaFNRZUhKTzFRV0lxT0hoWGplTzVYN0d0SXAtUktxOUlzOUYwY2pXY04xMmx1TGY3VjkyVHMwcUE?oc=5"
+  },
+  {
+    "id": "gn_282ba43b926e6b28",
+    "timestamp": "2026-10-22T21:21:00.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Claude บน Google Cloud เปิดให้บริการแบบ GA อย่างเป็นทางการ",
+    "summary_th": "โมเดล Claude ที่บริหารจัดการโดย Anthropic เปิดให้ใช้งานบน Google Cloud พร้อมฟีเจอร์เต็มรูปแบบ | ดีกว่าเดิมด้วยการเชื่อมต่อระบบ IAM, การเรียกเก็บเงิน และสิทธิประโยชน์ของ Google Cloud | นำไปรวมเข้ากับโครงสร้างพื้นฐานบน Cloud เดิมขององค์กรได้อย่างราบรื่นและปลอดภัย",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE93SG91bjBGb1dXYko1TEk0a1kydWhUQXItMmJTc3M1UFA4UkRvUTdNcEhhalRvUDI5aUhfRXBNUWg4eHlobFhKR2V3QWdxVWs0QXN0SE4tVk82ZWRDVWc?oc=5"
+  },
+  {
+    "id": "gn_8277dec065d1f623",
+    "timestamp": "2026-10-22T19:07:58.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Decisions API สำหรับการตัดสินใจแบบเกือบเรียลไทม์",
+    "summary_th": "Decisions API คือเครื่องมือสำหรับจำแนกข้อความ/รูปภาพ และประเมินอินพุตเพื่อเลือกขั้นตอนถัดไปโดยไม่ต้องสร้างข้อความยาวๆ | ดีกว่าเดิมเพราะทำงานได้เร็วขึ้นและประหยัดต้นทุนกว่าการเรียกใช้โมเดลเต็มรูปแบบ | นำไปใช้สร้าง Workflow อัตโนมัติและการตัดสินใจของ Agent ได้อย่างมีประสิทธิภาพ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9pUXl5ZWRqTWxTRmJqWktnV1VnT2Z5dmpzRk5HTTVOS0RJZEZnZl96V25haEdMMzF6WnVzVlRsSjE5TVR1VnlBUUpTNGRLZnlub1RoUlhfYXFLRmtFdmtqeg?oc=5"
+  },
+  {
+    "id": "gn_5e67d4d776f2bd19",
+    "timestamp": "2026-10-22T15:12:41.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Google เปิดตัว Gemini API CLI ในสถานะ Preview",
+    "summary_th": "เครื่องมือ Command Line Interface สำหรับเรียกใช้งาน Gemini API เพื่อจัดการมัลติมีเดียและ Agent | ดีกว่าเดิมที่ช่วยลดความยุ่งยากในการเขียนสคริปต์ชั่วคราวและการจำ Model String | นำไปใช้ทดสอบความสามารถด้านภาพ เสียง วิดีโอ และจัดการ Agent ได้อย่างรวดเร็วจาก Terminal",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE82cUlDcnhhc0Y3VFNqX2hkSFdySzZGTlhjV0RpZEZ6N3JXT2RIUzdOb3EtUjdCdXFzd1dfQVVQeVhaOXJfN0pFZkk3emlrNW5oemRYM2tVTE94WmpudTVHa21WVQ?oc=5"
+  },
+  {
     "id": "or_minimax_minimax-m3_1-flash",
     "timestamp": "2026-10-19T03:12:49.000Z",
     "score": 7,
