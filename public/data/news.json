@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50176082",
+    "timestamp": "2026-10-21T04:27:51.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "บทความวิเคราะห์เหตุผลว่าทำไมการใช้ LLM ประเมินความมั่นใจตัวเอง (Confidence Scoring) ถึงเป็นไอเดียที่ไม่ดี",
+    "summary_th": "บทความวิเคราะห์ข้อจำกัดของการให้ LLM ให้คะแนนความมั่นใจในคำตอบของตัวเอง | ช่วยให้เห็นจุดอ่อนในการนำความน่าจะเป็นที่ LLM ออกมาใช้ตรงๆ | นำไปปรับปรุงสถาปัตยกรรมการสร้างระบบประเมินความถูกต้องหรือใช้เทคนิคอื่นเช่น Evals แทน",
+    "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html"
+  },
+  {
+    "id": "hn_50190357",
+    "timestamp": "2026-10-22T02:17:58.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude รองรับการใช้งานร่วมกับ Google Docs, Sheets และ Slides แล้ว",
+    "summary_th": "ฟีเจอร์การเชื่อมต่อ Claude เข้ากับชุดโปรแกรมออฟฟิศของ Google | ช่วยให้ทำงานกับเอกสาร สเปรดชีต และงานนำเสนอได้สะดวกรวดเร็วยิ่งขึ้นโดยไม่ต้องสลับแอป | นำไปใช้พัฒนา Workflow อัตโนมัติสำหรับงานเอกสารและการวิเคราะห์ข้อมูลองค์กร",
+    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
+  },
+  {
+    "id": "gn_5e2884c9c178566e",
+    "timestamp": "2026-10-21T19:47:25.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic เปิดตัว Claude Duet ผู้ช่วย AI แบบ Always-on และ Proactive ขับเคลื่อนด้วย Opus 5.5",
+    "summary_th": "AI ผู้ช่วยอัจฉริยะที่ทำงานแบบเชิงรุกตลอดเวลา (Always-on agent) ขับเคลื่อนด้วยโมเดล Opus 5.5 | ทำงานเบื้องหลังและโต้ตอบได้ proactive มากขึ้นเทียบเท่าคู่แข่งในตลาด | นำไปประยุกต์ใช้เป็นผู้ช่วยส่วนตัวในการทำงานและพัฒนา Agentic Workflows ที่ซับซ้อน",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5HOUgxekJFcXlMdVBfXzluZkk3S3l0ZFI2em10RVBJa1FJak5uRW5NYVc3czdmQlNKVjJXMFpNSlllSmdqb0M5T1ByUXVKVUxkSzgxNDgydHdkSTdmcUZWdHZR?oc=5"
+  },
+  {
     "id": "gn_ffec97da23689791",
     "timestamp": "2026-10-21T21:03:10.000Z",
     "score": 8,
