@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_eeb26f37809dbe09",
+    "timestamp": "2026-10-22T22:01:06.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "การใช้ Claude ตรวจสอบความถูกต้องของซอฟต์แวร์สเกลใหญ่ด้วย Formal Verification",
+    "summary_th": "เทคนิคการใช้โมเดล Claude ช่วยตรวจสอบบั๊กเชิงลึกในโค้ดผ่าน Formal Verification ในสเกลที่ใหญ่ขึ้น | ดีกว่าเดิมที่ช่วยลดเวลาและความซับซ้อนที่ปกติทำได้ยากในโค้ดขนาดใหญ่ | นำไปประยุกต์ใช้กับระบบที่ต้องการความปลอดภัยสูงเพื่อการันตีว่าโค้ดไม่มีบั๊กสำคัญ",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ZeXdxWHNTdlU2Y01nNnpLYW5YTEdtMlBOX2MtX1lZV3NLSS00NTVkWTRmT0dFRGNHNktYTXVyVUt4aXVqSkVCMGNPZklTQnByNE55NHV1UTVQalkyWEQzVzRn?oc=5"
+  },
+  {
     "id": "hn_50198675",
     "timestamp": "2026-10-22T17:44:06.000Z",
     "score": 8,
