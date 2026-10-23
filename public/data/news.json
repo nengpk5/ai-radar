@@ -1,5 +1,35 @@
 [
   {
+    "id": "or_moonshotai_kimi-k3_1-pro",
+    "timestamp": "2026-10-23T17:56:28.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "MoonshotAI เปิดตัว Kimi K3.1 Pro โมเดล Multimodal รองรับ Context ยาว 1 ล้านโทเค็น",
+    "summary_th": "คือโมเดล Open-weight ระดับเรือธงที่เน้นการใช้เหตุผลและการเขียนโค้ดระยะยาว | ดีกว่าเดิมด้วย Context Window สูงถึง 1 ล้านโทเค็นและการประมวลผล Multimodal ที่แม่นยำขึ้น | นำไปใช้พัฒนา AI Agent ขั้นสูง งานวิเคราะห์โค้ดฐานข้อมูลใหญ่ หรือประมวลผลข้อมูลเอกสารยาวๆ ได้ทันที",
+    "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro"
+  },
+  {
+    "id": "bsky_bafyreieptbl2xokhfhq5oekxie4l47h4k2gotusohy3nwndo3wxqnltqwu",
+    "timestamp": "2026-10-23T16:45:01.940337+00:00",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic เปิดตัว Claude Duet ผู้ช่วยส่วนตัวรันบน Opus 5.5 ทำงานต่อได้แม้พับจอ",
+    "summary_th": "คือ Personal AI Agent ตัวใหม่จาก Anthropic ที่ขับเคลื่อนด้วยโมเดล Opus 5.5 | ดีกว่าเดิมตรงที่สามารถทำงานแบบ Background ได้อย่างต่อเนื่องแม้จะปิดหน้าจอแล็ปท็อปแล้ว | นำไปประยุกต์ใช้เป็นผู้ช่วยส่วนตัวในการจัดการงานอัตโนมัติ ติดตามงาน และเพิ่มประสิทธิภาพการทำงานรายวัน",
+    "url": "https://bsky.app/profile/altryne.bsky.social/post/3mykmtthyvq2u"
+  },
+  {
+    "id": "gn_cf4290ea61693dd9",
+    "timestamp": "2026-10-23T17:23:09.000Z",
+    "score": 8,
+    "vendor": "DeepSeek",
+    "category": "Benchmark",
+    "title_th": "DeepSeek V4.1 Flash ครองแชมป์อันดับ 1 บน Artificial Analysis Cyber Index",
+    "summary_th": "คือโมเดล AI แบบเปิดที่ทำคะแนนด้านความปลอดภัยไซเบอร์สูงสุดบนดัชนี Artificial Analysis | ดีกว่าเดิมด้วยประสิทธิภาพการป้องกันและตรวจสอบภัยคุกคามที่เทียบชั้นโมเดลปิดชั้นนำ | นำไปใช้พัฒนาเครื่องมือด้าน Security หรือระบบตรวจจับช่องโหว่ซอฟต์แวร์อัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HbUVxb2N5bUFFUFh1b3d2MkhiSk00N245QjJLVzNJdU1HZ2p1WlYwZjl4d0lJSDBJcU9kMHZ6NnV5V2pGVXdIQzF5WmFmX09BYlJmNVNvSExMeUwwRTlsZXRUZHU4Q0E?oc=5"
+  },
+  {
     "id": "hf_abenzerps_Qwen-Image-2_1-Uncensored-Quantized",
     "timestamp": "2026-09-20T15:51:13.000Z",
     "score": 6,
