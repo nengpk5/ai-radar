@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_0bead7797825aa5c",
+    "timestamp": "2026-10-22T21:27:56.000Z",
+    "score": 9,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic เปิดให้ใช้งาน Claude เต็มรูปแบบบน Google Cloud แล้ว",
+    "summary_th": "บริการ Claude API, Managed Agents และ Opus 5.5 บน Google Cloud | สะดวกสำหรับองค์กรที่ใช้โครงสร้างพื้นฐาน GCP อยู่แล้วและต้องการความปลอดภัยระดับองค์กร | นำไปพัฒนา Enterprise Agent และระบบ Automation ที่ต้องการความเสถียรสูง",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWWXhxV3ZQWXFkVEtPaTVpa0ExdDZ3U20tZ1R3c1hXcWhRbjVZeW40cnVSZ2J2NVB3MTdfVWdiLUhCeExUTnQ4M1duUVNpM1NyYzNnUFl6cE5janBfbnV5UA?oc=5"
+  },
+  {
     "id": "gn_eeb26f37809dbe09",
     "timestamp": "2026-10-22T22:01:06.000Z",
     "score": 8,
