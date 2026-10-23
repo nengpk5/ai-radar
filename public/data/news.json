@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_fa0277092e09c1f8",
+    "timestamp": "2026-10-23T00:17:33.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Benchmark",
+    "title_th": "เปิดตัว Artificial Analysis Coding Agent Index v2.0 และ Claude Opus 5.5 นำโด่ง",
+    "summary_th": "ดัชนีวัดประสิทธิภาพ Coding Agent เวอร์ชัน 2.0 ที่มีการปรับปรุงเกณฑ์การให้คะแนนและอัปเดตโมเดลใหม่ โดย Claude Opus 5.5 ใน Claude Code ทำคะแนนนำมาเป็นอันดับหนึ่งที่ 61.7 | แม่นยำและสะท้อนความสามารถในการเขียนโค้ดจริงได้ดีกว่าเดิม | นำไปใช้เป็นเกณฑ์อ้างอิงในการเลือกใช้ AI Coding Agent สำหรับงานพัฒนาซอฟต์แวร์ที่ซับซ้อน",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzZWFDNmFDT2N3UmF2RHVRbmFhbEdvazdoSU1qbTZxWEl1NGJ0U3hIQlF3NnlqTVAyelpHRVhMS1F3eDF1MEVoME80YWZBeFR0amxDSTMxSVJDN0FOZy1yd2lGYWx1anc?oc=5"
+  },
+  {
     "id": "gn_0bead7797825aa5c",
     "timestamp": "2026-10-22T21:27:56.000Z",
     "score": 9,
