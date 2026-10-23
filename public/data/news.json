@@ -1,5 +1,35 @@
 [
   {
+    "id": "bsky_bafyreibhpq2lwnxslqaxue45xyfxk4h3cbjmou745j43wasoz2ybaxkmqa",
+    "timestamp": "2026-10-23T19:45:54.167Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Kimi K3.1: โมเดล Open Weights ตัวแรกที่ท้าชนระดับ Frontier ได้อย่างสูสี",
+    "summary_th": "โมเดล Open Weights รุ่นใหม่ล่าสุดที่ทำผลงานได้ใกล้เคียงกับโมเดลปิดระดับแนวหน้าของโลก | มีประสิทธิภาพสูงและเปิดให้ใช้งานแบบเปิด ช่วยลดต้นทุนการรันโมเดลเอง | นำไป fine-tune หรือปรับใช้ในระบบ Agent ที่ต้องการความฉลาดเทียบเท่าโมเดลเรือธงได้",
+    "url": "https://bsky.app/profile/simonwillison.net/post/3mykwxawoa22u"
+  },
+  {
+    "id": "gn_8e6436f77ec6c854",
+    "timestamp": "2026-10-23T18:24:08.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude เพิ่มฟีเจอร์ MCP Tasks และ Elicitations รองรับงานรันเบื้องหลัง",
+    "summary_th": "อัปเดตความสามารถของ Model Context Protocol (MCP) ให้ Claude สั่งงานปลั๊กอินแบบรันระยะยาวได้ | ช่วยให้โมเดลทำงานซับซ้อน เช่น Deep Research แล้วค่อยส่งผลลัพธ์กลับมาทีหลังได้โดยไม่ต้องรอคิว | นำไปพัฒนา AI Agents ขั้นสูงที่สามารถจัดการงานเบื้องหลัง (Background jobs) ได้อย่างมีประสิทธิภาพ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkVWFMQ0lhaWlobUhwdjdZcGFRU2hva1ZhQWNnbXlGWTBwNE1uSDVDOXFoQVlTUWpoLUJHcVp2V09ndnlkNXRlREUyNlhCR2VtLWRUaWtXd1dtMVJSUmFjVA?oc=5"
+  },
+  {
+    "id": "hn_50214416",
+    "timestamp": "2026-10-23T19:50:56.000Z",
+    "score": 6,
+    "vendor": "OpenAI",
+    "category": "Research",
+    "title_th": "OpenAI ยกระดับความปลอดภัยสภาพแวดล้อมการเทรดโมเดล ตัดการเชื่อมต่ออินเทอร์เน็ตสด",
+    "summary_th": "มาตรการความปลอดภัยใหม่ของ OpenAI ในการตัดอินเทอร์เน็ตสดระหว่างเทรดโมเดล แล้วเปลี่ยนใช้ระบบจำลอง (Offline world) แทน | ป้องกันความเสี่ยงและเพิ่มความปลอดภัยระดับโครงสร้างพื้นฐานสำหรับ Frontier Models | ใช้เป็นกรณีศึกษาในการออกแบบสถาปัตยกรรมความปลอดภัยสำหรับการเทรด AI ในองค์กร",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
+  },
+  {
     "id": "or_moonshotai_kimi-k3_1-pro",
     "timestamp": "2026-10-23T17:56:28.000Z",
     "score": 8,
