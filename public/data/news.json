@@ -1,5 +1,15 @@
 [
   {
+    "id": "hf_Qwen_Qwen3_8-27B",
+    "timestamp": "2026-08-05T08:22:59.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Qwen 3.8-27B โมเดลโอเพนซอร์สประมวลผลภาพและข้อความรุ่นใหม่",
+    "summary_th": "โมเดล Multimodal รองรับทั้งภาพและข้อความขนาด 27B ตัวใหม่จากตระกูล Qwen | มีประสิทธิภาพสูงขึ้นและประมวลผลได้แม่นยำกว่ารุ่นก่อนหน้า | นำไป deploy เป็น Local Model สำหรับงานวิเคราะห์ภาพและแชทบอทอัจฉริยะ",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
+  },
+  {
     "id": "gn_da0a4968c4488a9d",
     "timestamp": "2026-10-23T19:53:23.000Z",
     "score": 8,
