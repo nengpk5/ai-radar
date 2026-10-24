@@ -1,5 +1,25 @@
 [
   {
+    "id": "bsky_bafyreiflclsmqiqh3yuyfqfs7zrjski4hsuetz6gne5aq63zowtm7dyx4i",
+    "timestamp": "2026-10-24T16:00:19.803245+00:00",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Flint โมเดลภาษาท้องถิ่นสำหรับเขียนโค้ด รองรับ MLX เต็มรูปแบบ",
+    "summary_th": "โมเดล Open Source สำหรับช่วยเขียนโค้ดที่รันบนเครื่องได้โดยตรง | ทำงานร่วมกับ MLX ตั้งแต่วันแรกและติดอันดับท็อป 3 สำหรับการใช้งานจริง | นำไปใช้เป็น AI คู่หูช่วยเขียนโค้ดแบบออฟไลน์และมีความเป็นส่วนตัวสูง",
+    "url": "https://bsky.app/profile/altryne.bsky.social/post/3myn2st37uh2l"
+  },
+  {
+    "id": "gn_12994da87e54b915",
+    "timestamp": "2026-10-23T21:55:50.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic ปิดให้บริการฟีเจอร์ Reverse Engineer Anything บน Claude",
+    "summary_th": "การถอดความสามารถในการวิเคราะห์และแกะรอยโค้ดซอฟต์แวร์ระดับลึกของ Claude ออก | ส่งผลให้ความสามารถในการทำ Reverse Engineering ลดลงเพื่อความปลอดภัย | ต้องปรับเปลี่ยนไปใช้เครื่องมือเฉพาะทางอื่นแทนสำหรับการวิเคราะห์โค้ดดิบ",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBoV0F1Z1pDOUlrc0MyUXdMMm5VQ3AwbktGZGUwS0czTE15RTRsWnJoNUg4REdlZ094Ukx3bmVJVW50dXREa2ExemV3X3RmZkZpR0U4YWFnVmRHOEt0akZGWHFR?oc=5"
+  },
+  {
     "id": "gn_fb5d79defbd947e0",
     "timestamp": "2026-10-23T17:41:48.000Z",
     "score": 8,
