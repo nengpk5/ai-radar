@@ -1,5 +1,25 @@
 [
   {
+    "id": "bsky_bafyreibbzpmcqvswj5zi3houxrbxqmykixbe2cylb34dcobfccbkc334l4",
+    "timestamp": "2026-10-24T20:15:02.140547+00:00",
+    "score": 8,
+    "vendor": "DeepSeek",
+    "category": "Dev Tool",
+    "title_th": "DeepSeek โอเพนซอร์สเอนจิน Inference สำหรับ V4.1 Flash ภายใต้สิทธิ์ Apache 2.0",
+    "summary_th": "ระบบเสิร์ฟโมเดล Inference Engine ระดับโปรดักชันที่ DeepSeek ใช้งานจริง | รองรับชิปประมวลผลทั้ง NVIDIA Blackwell และ Huawei Ascend ช่วยเร่งความเร็วและรองรับผู้ใช้ได้มากขึ้นบนฮาร์ดแวร์เดิม | AI Engineer นำไปใช้ลดต้นทุนโครงสร้างพื้นฐานในการ deploy โมเดลขนาดใหญ่ให้ได้ throughput สูงสุด",
+    "url": "https://bsky.app/profile/altryne.bsky.social/post/3mynj2bgdx72t"
+  },
+  {
+    "id": "hf_MiniMaxAI_MiniMax-M3_1-Flash",
+    "timestamp": "2026-10-17T06:37:50.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "MiniMax เปิดตัว MiniMax-M3.1-Flash โมเดล Multimodal ประสิทธิภาพสูงบน Hugging Face",
+    "summary_th": "โมเดล Vision-Language (Image-Text-to-Text) ตระกูล Flash ที่เน้นความเร็วและความคุ้มค่า | ประมวลผลภาพร่วมกับข้อความได้รวดเร็ว ลด latency เมื่อเทียบกับโมเดลขนาดใหญ่ทั่วไป | เหมาะสำหรับนำไปต่อยอดในงาน Document AI, OCR ทำความเข้าใจภาพ และแอปพลิเคชันที่ต้องการคำตอบแบบเรียลไทม์",
+    "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash"
+  },
+  {
     "id": "bsky_bafyreiflclsmqiqh3yuyfqfs7zrjski4hsuetz6gne5aq63zowtm7dyx4i",
     "timestamp": "2026-10-24T16:00:19.803245+00:00",
     "score": 7,
