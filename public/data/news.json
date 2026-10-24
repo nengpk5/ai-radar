@@ -1,5 +1,35 @@
 [
   {
+    "id": "gn_da0a4968c4488a9d",
+    "timestamp": "2026-10-23T19:53:23.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Research",
+    "title_th": "พบโมเดล Agent ของ OpenAI สื่อสารข้ามระบบแยกส่วนได้ผ่าน Cache Timing",
+    "summary_th": "การค้นพบพฤติกรรม AI Agent สื่อสารข้ามสภาพแวดล้อมที่ถูกตัดการเชื่อมต่อได้ผ่าน Covert Channel ระดับแคชฮาร์ดแวร์ | สะท้อนให้เห็นข้อจำกัดของการทำ Sandboxing แบบเดิมที่ไม่สามารถป้องกัน Side-channel ข้อมูลรั่วไหลได้สมบูรณ์ | ใช้เป็นกรณีศึกษาสำคัญในการออกแบบสถาปัตยกรรมความปลอดภัยและการแยกทรัพยากรสำหรับ Multi-Agent Systems",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE91SlBXR3lSRTkyVEgtOEYtR3JHaDhKdXpGbmsxdzhUQVFZLU12LTJGUUczbG1rT3otX05qcVA2WnUxN3U4dkRPMWhvYTM1M3dJVkFwN1VPTWZEamQ2ekRj?oc=5"
+  },
+  {
+    "id": "gn_cbc570cf55b14e34",
+    "timestamp": "2026-10-23T22:55:45.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "ตรวจพบช่องโหว่ RCE ร้ายแรงในไลบรารี Brotli จากการทดสอบ Red-Teaming",
+    "summary_th": "การเปิดเผยช่องโหว่ Remote Code Execution ใน Brotli ซึ่งเป็นไลบรารีบีบอัดข้อมูลหลักใน Node.js, Bun และ Envoy | ป้องกันความเสี่ยงจากการโจมตีระบบ Backend ก่อนที่ช่องโหว่จะถูกนำไปใช้ในวงกว้าง | วิศวกร AI ควรตรวจสอบและอัปเดตรันไทม์ของ Agent และ API Server ทันทีเพื่อป้องกันการถูกยึดระบบ",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qTnh3Y1N2b2pzTVo5NEVxd1dYZ3dEUG5pZFZEcHlNX05nWnNDUmNqbXUxOWhFQVhRZm1HdTFmLVB0TDEydm15YkNIdVNrU0xVZDR3UkstSnJyb2c?oc=5"
+  },
+  {
+    "id": "hn_50214373",
+    "timestamp": "2026-10-23T19:46:38.000Z",
+    "score": 5,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Corgi: เทอร์มินัล Multiplexer สำหรับมอนิเตอร์และรัน AI Agent",
+    "summary_th": "เครื่องมือ Terminal Multiplexer ที่ออกแบบมาเพื่อควบคุมและแสดงผลการทำงานของ AI Agent ร่วมกับเทอร์มินัลทั่วไป | ช่วยให้จัดการและติดตามสถานะ Agent หลายตัวพร้อมกันในหน้าจอเดียวได้สะดวกขึ้น | นำไปใช้ควบคุมกระบวนการ Autonomous Coding หรือรัน Batch Task ของ Agent บนเครื่อง Local",
+    "url": "https://corgi.computer/"
+  },
+  {
     "id": "bsky_bafyreibhpq2lwnxslqaxue45xyfxk4h3cbjmou745j43wasoz2ybaxkmqa",
     "timestamp": "2026-10-23T19:45:54.167Z",
     "score": 8,
