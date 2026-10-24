@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_fb5d79defbd947e0",
+    "timestamp": "2026-10-23T17:41:48.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Kimi K3.1 Pro ทะยานติด Top 4 โค้ดดิ้งอารนา ประสิทธิภาพเทียบเท่า Claude Opus-5 แต่ราคาถูกกว่า 70%",
+    "summary_th": "โมเดลภาษาตัวใหม่จาก Moonshot AI ที่โดดเด่นด้านการเขียนโค้ดและการพัฒนาเว็บ | ทำคะแนนใน Code Arena สูงเทียบเท่ารุ่นใหญ่แต่ต้นทุนถูกลงถึง 70% | นำมาใช้ลดต้นทุนงานพัฒนาระบบและเขียนโค้ดอัตโนมัติได้อย่างมีประสิทธิภาพ",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PMWM1ejV1LVBJU3FtNTdYcjB5OXBOZzF5WjR1Mm1CUWdRelJwdDVYX21MUHVMaGd3UkQxd2QtUklxcGNoLXc1bDZEbFM0MGtlMG1mT0t1anJNQQ?oc=5"
+  },
+  {
     "id": "hf_Qwen_Qwen3_8-27B",
     "timestamp": "2026-08-05T08:22:59.000Z",
     "score": 8,
