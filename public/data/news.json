@@ -1,5 +1,15 @@
 [
   {
+    "id": "hn_50227356",
+    "timestamp": "2026-10-25T01:33:49.000Z",
+    "score": 8,
+    "vendor": "Tooling",
+    "category": "Model Release",
+    "title_th": "Cerebras ประกาศความสำเร็จในการรันโมเดล AI ขนาด Trillion-parameter บนฮาร์ดแวร์เฉพาะทาง",
+    "summary_th": "ระบบประมวลผลความเร็วสูงจาก Cerebras ที่ออกแบบมาเพื่อรันโมเดลขนาดใหญ่ระดับ Trillion-parameter | มีความเร็วในการประมวลผลสูงกว่าฮาร์ดแวร์ทั่วไปอย่างมาก ลดเวลาในการรันโมเดลขนาดใหญ่ | นำไปประยุกต์ใช้ในการรันโมเดลฟรอนเทียร์ระดับองค์กรและการประมวลผล Agent ที่ซับซ้อนได้อย่างรวดเร็ว",
+    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
+  },
+  {
     "id": "gn_a4bf35a242de364a",
     "timestamp": "2026-10-24T17:59:51.000Z",
     "score": 8,
