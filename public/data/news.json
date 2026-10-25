@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_33082195e040e14e",
+    "timestamp": "2026-10-24T19:01:00.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic เพิ่มระบบตรวจสอบความปลอดภัย บล็อกการใช้งานเครื่องมือ REA สำหรับ Reverse Engineering",
+    "summary_th": "เครื่องมือ REA (Reverse Engineer Anything) บน MCP ถูกจำกัดการใช้งานจากระบบความปลอดภัยของ Claude | ป้องกันการนำไปใช้ทำวิศวกรรมย้อนกลับเชิงลึกที่อาจละเมิดนโยบาย | นักพัฒนาต้องระมัดระวังเงื่อนไขความปลอดภัยเมื่อสร้าง AI Agent หรือใช้ MCP ร่วมกับโค้ดเชิงลึก",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9lbHRBS0t5N0Q0czZSWlNJXzY2T2NqYnI5STR6bnY2bUFRMzRGMUdnYXBVZ1FZUVZsM3NaRlI0T3c4eDVLQlVMc3JaXzFYOUVHejNGVk5DaHREdTRmdFNLQk1OOA?oc=5"
+  },
+  {
     "id": "bsky_bafyreifwykqsbeygdny5ngtgui7pi5cc4qs4tw3msvpkez6wvv24rbpkki",
     "timestamp": "2026-10-25T16:00:15.762Z",
     "score": 6,
