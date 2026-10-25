@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_a4bf35a242de364a",
+    "timestamp": "2026-10-24T17:59:51.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "vLLM ทำความเร็วเทียบเท่า DeepInfer สำหรับโมเดล DeepSeek-V4.1-Flash",
+    "summary_th": "เฟรมเวิร์ก vLLM สามารถรันประมวลผลโมเดล DeepSeek-V4.1-Flash ได้เร็วเทียบเท่า DeepInfer ซึ่งเป็นเอนจินเฉพาะของ DeepSeek | ทำความเร็วได้เท่ากันโดยใช้ทรัพยากรน้อยกว่า (DEP32 เทียบกับ EP64DP64) | นำไปใช้เป็นทางเลือกหลักในการ Deploy และ Serving โมเดลขนาดใหญ่บนโครงสร้างพื้นฐานของตนเองให้ประหยัดต้นทุนขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9VaVBaMERRRUthM2NWWHFlSGNWYTdjZ0xURE42WGNTWlJUTnlRVEd4SS04LVptRHVXQm1SVjhDNUt0Z19GTWNGRHFWTHdkbG9wX0lacnJZVVNiUkNDRUp4TDBOMA?oc=5"
+  },
+  {
     "id": "bsky_bafyreibbzpmcqvswj5zi3houxrbxqmykixbe2cylb34dcobfccbkc334l4",
     "timestamp": "2026-10-24T20:15:02.140547+00:00",
     "score": 8,
