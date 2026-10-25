@@ -1,5 +1,15 @@
 [
   {
+    "id": "bsky_bafyreifwykqsbeygdny5ngtgui7pi5cc4qs4tw3msvpkez6wvv24rbpkki",
+    "timestamp": "2026-10-25T16:00:15.762Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "งานวิจัย Recursive เผยการทำ Quantize เลเยอร์ LM head เหลือ 4-bit สำเร็จด้วย Eureka Machine",
+    "summary_th": "เทคนิคการบีบอัดโมเดลโดยยอมทำ Quantize เลเยอร์ LM head เหลือ 4-bit ตามคำแนะนำของ AI scientist | ช่วยให้โมเดล Flint ทำงานบน Mac ได้เร็วขึ้นอย่างเหลือเชื่อ ทั้งที่ปกติไม่ควรทำ | นำไปประยุกต์ใช้เป็นแนวทางปรับแต่งโมเดลขนาดใหญ่ให้รันบนฮาร์ดแวร์จำกัดได้มีประสิทธิภาพยิ่งขึ้น",
+    "url": "https://bsky.app/profile/altryne.bsky.social/post/3myplbmo5ts2n"
+  },
+  {
     "id": "hn_50227356",
     "timestamp": "2026-10-25T01:33:49.000Z",
     "score": 8,
