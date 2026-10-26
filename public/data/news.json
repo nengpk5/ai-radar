@@ -1,5 +1,25 @@
 [
   {
+    "id": "or_openai_gpt-6_1-terra",
+    "timestamp": "2026-10-26T18:13:29.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI เปิดตัว GPT-6.1 Terra รุ่นกลาง เน้นประหยัดและรวดเร็ว",
+    "summary_th": "โมเดลระดับกลางตระกูลใหม่จาก OpenAI ที่เก่งเรื่องการประมวลผลหน้าจอและการเขียนโค้ด | ดีกว่าเดิมด้วยต้นทุนที่ถูกลงกว่าครึ่ง ($1/$5 ต่อล้าน token) แต่ฉลาดขึ้น | นำไปพัฒนา AI Agents และระบบอัตโนมัติที่ทำงานผ่านหน้าจอคอมพิวเตอร์ได้อย่างคุ้มค่าต้นทุน",
+    "url": "https://openrouter.ai/openai/gpt-6.1-terra"
+  },
+  {
+    "id": "gn_5ba386049723f5d2",
+    "timestamp": "2026-10-26T13:26:04.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "Anthropic ยื่นเอกสาร S-1 เตรียมตัว IPO เข้าตลาดหุ้น Nasdaq",
+    "summary_th": "เอกสารรายงานทางการเงินและแผนธุรกิจอย่างเป็นทางการของ Anthropic ในการเตรียมเสนอขายหุ้น IPO | เผยตัวเลขรายได้ครึ่งปีแรก 2026 สูงถึง 1.63 หมื่นล้านดอลลาร์ และวิสัยทัศน์ระบบ AI อัตโนมัติขั้นสูง | ใช้ศึกษาทิศทางและแนวโน้มเศรษฐกิจของอุตสาหกรรม Generative AI ระดับองค์กร",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lcXZHSEFxSENPd09RWmVaRlE4ejBlSkFKNkZhWkpEN1pHcWdlZ3ZtZ2tDXzJBZm42SmxWN3NKZ2NCaGZvVFJ1ei1LWkFBbmJ3VWJjTWRwdHFuOXpLSWZsTTl0SW8zQQ?oc=5"
+  },
+  {
     "id": "hn_50242939",
     "timestamp": "2026-10-26T13:04:50.000Z",
     "score": 8,
