@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50246238",
+    "timestamp": "2026-10-26T16:12:29.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Hob: เครื่องมือรัน AI แบบ On-device ทางเลือกใหม่แทน Claude Cowork และ ChatGPT",
+    "summary_th": "Hob เป็นโปรแกรมโอเพนซอร์สสำหรับรัน AI บนอุปกรณ์ส่วนตัว (On-device) | ทำงานได้โดยไม่ต้องพึ่งพาคลาวด์ภายนอก ช่วยรักษาความเป็นส่วนตัวของข้อมูลได้ดีขึ้น | นำไปปรับใช้สร้างผู้ช่วยส่วนตัวหรือรัน LLM บนฮาร์ดแวร์ภายในองค์กร",
+    "url": "https://github.com/FrigadeHQ/hob"
+  },
+  {
+    "id": "gn_5388ba9d56d67fa0",
+    "timestamp": "2026-10-26T18:06:28.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI เปิดตัว GPT-6.1 Terra โมเดลใหม่สำหรับ Agent ทำงานเร็วและถูกกว่าเดิม",
+    "summary_th": "โมเดล AI ใหม่จาก OpenAI ที่ออกแบบมาเพื่อการทำงานแบบ Agent โดยเฉพาะ ทำคะแนนสอบการใช้ซอฟต์แวร์ได้สูงกว่ารุ่นก่อนหน้า | เร็วกว่าเดิม 3 เท่าและมีราคาต่อโทเค็นถูกลงถึง 10 เท่า | เหมาะสำหรับนำไปพัฒนา Autonomous Agent และระบบอัตโนมัติปริมาณมากผ่าน API",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVNWVBVkU1QlJfWlQtdkUyT3Rmb3RQY1BVLUNuZVZPMXBjQm45d1RPZHkwa3ltRzEyV293eGpha295WnlrQUVzMEJXZExTOXBQM1VmYVlMQWh2VEU?oc=5"
+  },
+  {
     "id": "or_openai_gpt-6_1-terra",
     "timestamp": "2026-10-26T18:13:29.000Z",
     "score": 9,
