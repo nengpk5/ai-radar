@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50242939",
+    "timestamp": "2026-10-26T13:04:50.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic ยื่นเอกสาร S-1 สำหรับการเปิดตลาดหลักทรัพย์",
+    "summary_th": "คืออะไร: การยื่นเอกสาร S-1 ของ Anthropic สำหรับการเปิดตลาดหลักทรัพย์\nดีกว่าเดิม: เป็นข่าวสำคัญเกี่ยวกับการ IPO ของบริษัท\nเอาไปใช้: ติดตามข่าวสารทางการเงินและยุทธศาสตร์บริษัท",
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+  },
+  {
+    "id": "gn_e413cb043f1fd1ba",
+    "timestamp": "2026-10-25T19:00:00.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Gemini รันงานด้วยโมเดลที่เหมาะสมที่สุดด้วยระบบ Auto Mode",
+    "summary_th": "คืออะไร: ระบบ Auto ใน Gemini เลือกโมเดลที่เหมาะสมที่สุดสำหรับงานแต่ละรายการ\ndีกว่าเดิม: ลดต้นทุนและเพิ่มคุณภาพโดยการเลือกโมเดลที่เหมาะสมที่สุด\nเอาไปใช้: ใช้ระบบอัตโนมัติในการคัดเลือกโมเดลสำหรับงาน AI",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5KcE9mQ2lIQ25HRHU5Rm5wQ0ZNQjhkbWFiZkpFbmNhekV6X2RiRm10TFZZLTdNOWJFeGFlMS1wUjNJRU1NdjRyUFAxUHM4cjBZNmFSZ2V1R2hiUEU1R05ZNVFn?oc=5"
+  },
+  {
+    "id": "gn_f1fbaa36b10395c7",
+    "timestamp": "2026-10-26T03:27:36.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Gemini 4 Argon ปรับปรุงให้ดีขึ้นโดยใช้ Antigravity Harness",
+    "summary_th": "คืออะไร: การปรับปรุง Gemini 4 Argon โดยใช้ Antigravity Harness เพื่อเพิ่มประสิทธิภาพ\ndีกว่าเดิม: ปรับปรุงความแม่นยำและประสิทธิภาพในการทำงาน\nเอาไปใช้: ใช้โมเดลใหม่สำหรับงานที่ต้องการประสิทธิภาพสูง",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jaTdZaTB5SV93bW1POUwxSEVudGJtMUhYTG9JSUY3UlFvdGhFYjN2SVdEcmg4UTRWMVlGVXBnMnJoRVlRbWZnUDBZRUFONGdMTU9oY3dnbzh6MldHajVGaw?oc=5"
+  },
+  {
     "id": "hn_50238739",
     "timestamp": "2026-10-26T03:29:05.000Z",
     "score": 7,
