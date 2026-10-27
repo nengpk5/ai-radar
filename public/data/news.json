@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_3a8d593a3b255871",
+    "timestamp": "2026-10-26T18:06:27.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI เปิดตัว GPT-6.1 Terra โมเดลใหม่ฉลาดขึ้นและราคาถูกลง 50%",
+    "summary_th": "โมเดล AI รุ่นใหม่จาก OpenAI ที่พัฒนาขีดความสามารถด้านการคิดวิเคราะห์เหนือกว่ารุ่นก่อนหน้า | จุดเด่นคือราคา API ถูกลง 50% ทำให้ต้นทุนการรันระบบถูกลงมาก | นำไปใช้พัฒนา AI Agent หรือระบบแชทซับซ้อนในราคาที่ประหยัดขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE05VUNEcjdnLXpIM1hjTzBocGc2ZVd5WE9ZSDZnd0FWeC1MaENoampLNXdaYnNzMTRnbWpDQ1c5N2ptYW5RdkNEM29lekNQS0hIMkdYaHV6bDBVd2c?oc=5"
+  },
+  {
     "id": "hn_50246238",
     "timestamp": "2026-10-26T16:12:29.000Z",
     "score": 8,
