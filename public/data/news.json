@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50264853",
+    "timestamp": "2026-10-27T19:55:06.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Survival LLM: ผู้ช่วย AI และคลังข้อมูลฉุกเฉินที่รันบนคอมพิวเตอร์ของคุณเอง",
+    "summary_th": "คือชุดเครื่องมือและโมเดล LLM สำหรับใช้งานออฟไลน์ในภาวะฉุกเฉิน | ทำงานได้โดยไม่ต้องพึ่งพาอินเทอร์เน็ตและมีความเป็นส่วนตัวสูง | นำไปประยุกต์ใช้สร้างระบบ AI แบบ Local ที่ต้องการความปลอดภัยขั้นสุดได้",
+    "url": "https://www.brangus.io/survival-llm"
+  },
+  {
+    "id": "hn_50265609",
+    "timestamp": "2026-10-27T20:50:42.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "ความคืบหน้าในการเร่งพัฒนายาสมัยใหม่ด้วย Claude",
+    "summary_th": "ผลงานวิจัยความร่วมมือระหว่าง Anthropic และองค์กรพัฒนาตัวยาโดยใช้ Claude | ช่วยวิเคราะห์ข้อมูลชีวสารสนเทศและเร่งกระบวนการค้นคว้ายาได้ดีขึ้น | นำไปศึกษาเป็นแนวทางสร้าง Domain-Specific Agent สำหรับงานวิจัยทางวิทยาศาสตร์",
+    "url": "https://www.anthropic.com/research/early-progress-drug-development"
+  },
+  {
+    "id": "gn_d770e991c7028f04",
+    "timestamp": "2026-10-27T17:51:08.000Z",
+    "score": 7,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "ChatGPT เพิ่มปลั๊กอินเชื่อมต่อ iCloud Mail และ Calendar อย่างเป็นทางการ",
+    "summary_th": "การบูรณาการบริการอีเมลและปฏิทินของ Apple เข้ากับ ChatGPT บนทุกแพลตฟอร์ม | ช่วยให้ผู้ใช้จัดการตารางนัดหมายและอีเมลผ่านแชทได้สะดวกรวดเร็วขึ้น | ศึกษาการออกแบบ Plugin และ API Integration เพื่อสร้างผู้ช่วยส่วนตัวที่เชื่อมต่อกับแอปภายนอก",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9IU3JTeHF3bHlKOUNFVmxNWUxWaGtOU0hGWlo3S2JPaVJmMmFQME80WUh0MVNEYjhDMlJ5Z182bmIwaVZkdFByTi0wcGlwdU5ubDZVUE9QTmdpVUl3?oc=5"
+  },
+  {
     "id": "gn_85735dfc73e69f72",
     "timestamp": "2026-10-26T22:02:01.000Z",
     "score": 8,
