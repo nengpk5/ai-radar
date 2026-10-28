@@ -1,5 +1,35 @@
 [
   {
+    "id": "bsky_bafyreiasie3ek7mbltecvfw7tywjhqsm7cwu6nobmo6mk5fvljkse67sf4",
+    "timestamp": "2026-10-28T13:15:02.583894+00:00",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Flint โมเดล Open Source ขนาด 40B สำหรับรันโค้ดบน Mac โดยเฉพาะ",
+    "summary_th": "โมเดล Open Source แบบผสม (40B total, 2.5B active) ภายใต้ไลเซนส์ Apache 2 | ออกแบบมาให้รันบนเครื่อง Mac ในเครื่องตัวเองได้ปลอดภัยโดยไม่ต้องส่งข้อมูลออกภายนอก | นำไปใช้สร้าง Coding Agent ส่วนตัวที่ทำงานแบบ Local-first เพื่อความปลอดภัยของซอร์สโค้ด",
+    "url": "https://bsky.app/profile/altryne.bsky.social/post/3mywtgx42qc2s"
+  },
+  {
+    "id": "bsky_bafyreic7ouyjcseul3vy7gv4evxfhin4v35sxhkwyo3vgqxzwrcb2y2noy",
+    "timestamp": "2026-10-28T14:05:13.419Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "ก้าวกระโดดครั้งใหม่ของ AI Coding ด้วย Claude Opus 5.5",
+    "summary_th": "ความสามารถของ AI Coding และ Model ขยับขึ้นไปอีกขั้น โดย Claude Opus 5.5 สามารถสร้างวิดีโอเกมที่เล่นได้จริงแล้ว | มีความเข้าใจเชิงลึกและสร้างโค้ดที่ซับซ้อนได้ดีขึ้นอย่างเห็นได้ชัด | นำไปใช้พัฒนาซอฟต์แวร์ เกม หรืออัปเกรด workflow ของ Coding Agent ให้ทรงพลังยิ่งขึ้น",
+    "url": "https://bsky.app/profile/simonwillison.net/post/3mywwaogdac23"
+  },
+  {
+    "id": "gn_ed6a95eec7777f03",
+    "timestamp": "2026-10-28T06:15:43.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "คู่มือเริ่มต้นใช้งาน Claude Code Mods สำหรับนักพัฒนา",
+    "summary_th": "คำแนะนำและแนวทางการเขียน Mod ด้วย JavaScript หรือTypeScript เพื่อปรับแต่งการทำงานของ Claude Code | ช่วยให้ขยายความสามารถและปรับแต่งเครื่องมือให้เข้ากับ Developer Workflow ได้ง่ายขึ้น | นำไปประยุกต์เขียน Custom Extension เพื่อช่วยทำ Automate งานเฉพาะทางในโปรเจกต์",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5YX2tkamhfd2NBRXlQY0EyZ01QYU5wdnRNeEhEnBuaGIxMnNhYmpPYmNSVmduWUJWSnZDX3FGTWhNMTNaTk9yQ3J1QVlROVBQQzFXUG5sTHhCSG1sMDNTVA?oc=5"
+  },
+  {
     "id": "gn_5a79b470937eda5e",
     "timestamp": "2026-10-27T21:14:58.000Z",
     "score": 6,
