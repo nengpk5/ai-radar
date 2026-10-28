@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_5a79b470937eda5e",
+    "timestamp": "2026-10-27T21:14:58.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "งานวิจัยใหม่จาก Anthropic: ผลกระทบของ AI Agent ต่อการตัดสินใจของผู้เชี่ยวชาญ",
+    "summary_th": "งานวิจัยทดลองผลลัพธ์การทำงานร่วมกับนักวิเคราะห์ข้อมูลมืออาชีพ 50 คน | ช่วยให้เข้าใจพฤติกรรมการตัดสินใจเมื่อมอบหมายงานให้ Agent | นำไปประยุกต์ออกแบบ UX/UI และระบบ Human-in-the-loop สำหรับ AI Agents",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85NTBMR0hjaWs0WmJsV1lZeTB6QVJZQUE1cXRNcVU0N3J4UTVwSkdlNURtQTA4MGFnODhjZEM4MjYyQkFFMEZVeDdwTVRhS09zeHRLZS1fZTU2OUc5S0V3SA?oc=5"
+  },
+  {
     "id": "gn_4dfdc2e13b4f48bf",
     "timestamp": "2026-10-27T21:11:56.000Z",
     "score": 8,
