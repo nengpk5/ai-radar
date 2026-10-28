@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50276792",
+    "timestamp": "2026-10-28T17:01:23.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Gemini 4 Carbon โมเดลเรือธงรุ่นใหม่ล่าสุดจาก Google",
+    "summary_th": "โมเดล AI Frontier รุ่นใหม่จาก Google ที่ขึ้นแท่นอันดับ 1 บน Artificial Analysis v5 และทำผลงานได้ยอดเยี่ยมด้านการเขียนโค้ด งานระยะยาว และความปลอดภัยไซเบอร์ | ฉลาดและแม่นยำกว่ารุ่นก่อนหน้าอย่างก้าวกระโดด รองรับงานซับซ้อนได้ดีขึ้น | นำไปใช้พัฒนา AI Agent ขั้นสูง, งาน Coding อัตโนมัติ หรือระบบวิเคราะห์ความปลอดภัยไซเบอร์",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+  },
+  {
+    "id": "hn_50273731",
+    "timestamp": "2026-10-28T14:02:20.000Z",
+    "score": 8,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Cursor เปิดตัว The Agent SDK สำหรับนักพัฒนา",
+    "summary_th": "ชุดเครื่องมือพัฒนาซอฟต์แวร์ (SDK) จาก Cursor ที่ออกแบบมาเพื่อช่วยให้นักพัฒนาสร้างและปรับแต่ง AI Coding Agents ได้ง่ายขึ้น | ช่วยให้เชื่อมต่อและควบคุมโมเดลในการทำงานแบบอัตโนมัติหลายขั้นตอนได้อย่างมีประสิทธิภาพ | นำไปประยุกต์สร้าง Workflow การเขียนโค้ดและทดสอบระบบแบบอัตโนมัติภายในองค์กร",
+    "url": "https://cursor.com/blog/agent-sdk"
+  },
+  {
+    "id": "or_particle-ai_particle-1",
+    "timestamp": "2026-10-28T17:18:13.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Particle-1 โมเดลสำหรับงาน Coding ที่พัฒนาต่อจาก DeepSeek V4.1 Flash",
+    "summary_th": "โมเดล AI สายพันธุ์ใหม่จาก Particle AI ที่เน้นความประหยัดเรื่อง Token และออกแบบมาเพื่อการเขียนโค้ดและงาน Terminal โดยเฉพาะ | ทำงานได้รวดเร็วและประหยัดต้นทุนกว่าโมเดลทั่วไปในงานซอฟต์แวร์วิศวกรรม | นำไปใช้เป็น Backend ให้กับเครื่องมือ Dev Agent หรือระบบผู้ช่วยเขียนโค้ด",
+    "url": "https://openrouter.ai/particle-ai/particle-1"
+  },
+  {
     "id": "bsky_bafyreiasie3ek7mbltecvfw7tywjhqsm7cwu6nobmo6mk5fvljkse67sf4",
     "timestamp": "2026-10-28T13:15:02.583894+00:00",
     "score": 8,
