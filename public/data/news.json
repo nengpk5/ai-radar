@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_3f7bd3761ee67309",
+    "timestamp": "2026-10-28T17:23:00.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Benchmark",
+    "title_th": "ผลทดสอบประสิทธิภาพและต้นทุนของ Gemini 4 Carbon เทียบกับ Claude และ GPT",
+    "summary_th": "ผลประเมินต้นทุนต่อ Task ของโมเดล Gemini 4 Carbon ที่ถูกกว่า Claude Opus 5.5 แต่สูงกว่า GPT-6 Astra เล็กน้อย พร้อมใช้ Token น้อยลง | ช่วยให้ประเมินความคุ้มค่าและเลือกใช้โมเดลตามงบประมาณได้แม่นยำขึ้น | นำไปคำนวณต้นทุนระบบ LLM และเลือกโมเดลที่เหมาะสมที่สุดสำหรับงาน Production",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FSnNNMDRjVEZRak1GdXVhbTBrdWNJdzQtQ2kxZk53YnV4YmlNejJhZFBBNE9TVUVQREFuYW5kRnVtdU16Z1EwUEF2Z3JuMThaQkVwNkVtZ0dmU0RuMEZONzhJYzdLb0U?oc=5"
+  },
+  {
     "id": "hn_50276792",
     "timestamp": "2026-10-28T17:01:23.000Z",
     "score": 9,
