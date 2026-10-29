@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_07d392cae541fde7",
+    "timestamp": "2026-10-29T06:13:39.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "เทคนิคการเขียน Prompt สำหรับ Claude รุ่นใหม่ให้สั้นและมีประสิทธิภาพมากขึ้น",
+    "summary_th": "แนวทางปฏิบัติในการลดความซับซ้อนของ Prompt เมื่อใช้โมเดล Claude รุ่นใหม่ | ช่วยให้ประหยัด Token และโมเดลเข้าใจเป้าหมายได้แม่นยำขึ้นโดยไม่ต้องสั่งละเอียดยิบ | นำไปปรับใช้กับการเขียน System Prompt หรือ Agent Workflow ให้กระชับและมีประสิทธิภาพสูงสุด",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuYkVLb2JLb3JZSnJFSmg3SDFHMXkwU2lYb0ZQalFHRzZGeS1LTGYtVXJFd08zTDJwTzJZVzlEWUtHTF93MnlhSnVXTHVnODlCYWVKalJ3TmUxY21zTk5CZQ?oc=5"
+  },
+  {
     "id": "gn_a76f3ffe95ff9ce9",
     "timestamp": "2026-10-28T23:17:13.000Z",
     "score": 7,
