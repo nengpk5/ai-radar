@@ -1,5 +1,25 @@
 [
   {
+    "id": "hf_nvidia_NVIDIA-Nemotron-3_5-Transcribe-30B-A4B",
+    "timestamp": "2026-10-07T22:50:21.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว NVIDIA Nemotron-3.5-Transcribe-30B-A4B โมเดลแปลงเสียงเป็นข้อความขนาดใหญ่",
+    "summary_th": "โมเดล Open Source สำหรับการแปลงเสียงเป็นข้อความ (Automatic Speech Recognition) ขนาด 30B จาก NVIDIA | มีประสิทธิภาพสูงและแม่นยำกว่ารุ่นก่อนหน้าในการจัดการกับเสียงพูดที่ซับซ้อน | นำไปปรับใช้สร้างระบบถอดเสียงภาษาต่างๆ หรือพัฒนา Voice Assistant ในองค์กร",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+  },
+  {
+    "id": "hn_50292727",
+    "timestamp": "2026-10-29T17:24:25.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude Duet ชุดเครื่องมือผู้ช่วยส่วนบุคคลที่ใช้งานได้จริงจริง",
+    "summary_th": "แพลตฟอร์มหรือ Harness สำหรับใช้งาน Claude เป็นผู้ช่วยส่วนบุคคลที่ออกแบบมาให้ตอบโจทย์การทำงานจริง | ช่วยให้การเชื่อมต่อและสั่งการ AI ทำงานร่วมกับระบบผู้ใช้มีความลื่นไหลและมีประโยชน์สูงขึ้น | นำไปเป็นต้นแบบในการพัฒนา AI Agent หรือระบบ Automation ส่วนตัว",
+    "url": "https://fig.blue/posts/duet-is-the-future/"
+  },
+  {
     "id": "hn_50288019",
     "timestamp": "2026-10-29T12:41:56.000Z",
     "score": 9,
