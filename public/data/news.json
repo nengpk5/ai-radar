@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_7e2fe4703b69bb4e",
+    "timestamp": "2026-10-30T01:45:06.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Benchmark",
+    "title_th": "Google เผยผลทดสอบ Gemini 4 Carbon และ Argon บน FrontierCode 2.0",
+    "summary_th": "ผลประเมินความสามารถในการเขียนโค้ดที่เหนือกว่าข้อกำหนด บนเบนช์มาร์ก FrontierCode 2.0 | Gemini 4 Carbon ทำคะแนนเข้าใกล้ระดับ SOTA ที่ 40% ด้วยต้นทุนที่คุ้มค่า | นำไปพิจารณาเลือกใช้โมเดลสำหรับงานพัฒนาซอฟต์แวร์ที่ซับซ้อนและต้องการความแม่นยำสูง",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE93STZSSk53WGlFeUxITzlGd1V1ckZOX0ZmZXpsbFBUbHlJVUowcndEWU12M3VQcFNjYkJYVzlhdnpfLUJJb3pKNW5yU3psdDEzN0Z3aU5aN2ZrWEQ1ZDBr?oc=5"
+  },
+  {
     "id": "hf_baidu_Unlimited-OCR-2",
     "timestamp": "2026-10-26T03:57:46.000Z",
     "score": 6,
