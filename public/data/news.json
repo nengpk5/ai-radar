@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_62fdc4107c9ee603",
+    "timestamp": "2026-10-30T20:19:56.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Gemini 4 Carbon โมเดลใหม่เน้นงานวิจัยเชิงลึกระดับ SOTA",
+    "summary_th": "โมเดล AI ใหม่จาก Google ที่โดดเด่นด้านการทำวิจัยขนาดยาวและการตอบคำถามเชิงลึก | ทำคะแนนทุบสถิติใหม่บน WANDR benchmark เหนือกว่ารุ่นก่อนหน้า | นำไปประยุกต์ใช้สร้างระบบ Agent สำหรับค้นหาข้อมูลและทำรายงานอัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB2MWc5Sm1PbFhNWHpVNGQ1cXJidkJ1d2M3SVFFZ1BZWDN2ajlId1d4bWZER3dVblRhMVRoTDhtcDZiN1VUVFhuQXIwdkxzWFFoSGpQamNyTzZOcnJ2MHdDZTJRbw?oc=5"
+  },
+  {
+    "id": "gn_af02d073716375da",
+    "timestamp": "2026-10-30T14:08:46.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "แจ้งเตือนความปลอดภัย: พบส่วนเสริม Claude Code ปลอมบน Cursor Marketplace",
+    "summary_th": "เหตุการณ์แฮกเกอร์อัปโหลดส่วนเสริม Claude Code ปลอมเข้าไปใน Cursor marketplace | แจ้งเตือนให้นักพัฒนาตรวจสอบความปลอดภัยและที่มาของเครื่องมืออย่างรอบคอบ | ใช้เป็นกรณีศึกษาในการตรวจสอบ Supply Chain Security และความปลอดภัยของ IDE Extension",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9YNjE5N3hUVExuVGQ2MnJRZlZMMy1rZ2YtU01vakFNZldVTTZoX284UHVSRkx5b19DYjJYZDhocUFwako4UDVjMF9vcVJiUjJkU3gyWUJWMF9WRjJmSTNwZnVnWFNPUQ?oc=5"
+  },
+  {
     "id": "hn_50306442",
     "timestamp": "2026-10-30T16:40:22.000Z",
     "score": 7,
