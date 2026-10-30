@@ -1,5 +1,25 @@
 [
   {
+    "id": "hf_baidu_Unlimited-OCR-2",
+    "timestamp": "2026-10-26T03:57:46.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Baidu เปิดตัว Unlimited-OCR-2 โมเดล OCR รุ่นใหม่บน HuggingFace",
+    "summary_th": "โมเดลประมวลผลภาพและข้อความ (Image-text-to-text) สำหรับงาน OCR ความแม่นยำสูง | รองรับการแปลงเอกสารที่ซับซ้อนได้ดีขึ้นและเร็วกว่าเดิม | นำไปประยุกต์ใช้สร้างไปป์ไลน์ดึงข้อมูลจากเอกสารหรือใบเสร็จอัตโนมัติ",
+    "url": "https://huggingface.co/baidu/Unlimited-OCR-2"
+  },
+  {
+    "id": "gn_142b7f97233d0178",
+    "timestamp": "2026-10-29T17:32:43.000Z",
+    "score": 5,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "แอป Claude บน iPhone รองรับการใช้งานผ่าน Apple CarPlay แล้ว",
+    "summary_th": "ฟีเจอร์ Voice Mode ของ Claude บน iOS ที่ใช้งานร่วมกับระบบ Apple CarPlay ได้ | ช่วยให้สั่งงานด้วยเสียงและพูดคุยกับ AI ได้สะดวกยิ่งขึ้นขณะขับรถโดยไม่ต้องละสายตา | นำไปใช้เพิ่มความคล่องตัวในการเรียกดูข้อมูลหรือระดมความคิดระหว่างเดินทางได้",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DbTU5cVZTcGRCa2s5Zlo5N0VMa1VzWW90dEk2R3ZZNjF4cWFGa0ZZOFFVb2pwZHVEZ3JTaW5MZFdUc2dKQ3JvNWdmbGx6ZzcwaVl2a1hyRzI1UmZ5Wmc?oc=5"
+  },
+  {
     "id": "hf_nvidia_NVIDIA-Nemotron-3_5-Transcribe-30B-A4B",
     "timestamp": "2026-10-07T22:50:21.000Z",
     "score": 8,
