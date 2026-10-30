@@ -1,5 +1,55 @@
 [
   {
+    "id": "hn_50306442",
+    "timestamp": "2026-10-30T16:40:22.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "โปรเจกต์ NESFormer รันเครื่องเล่นเกม Nintendo บนน้ำหนักโมเดล Qwen ขนาด 1GB",
+    "summary_th": "การทดลองบีบอัดและจำลองการทำงานของเครื่อง Nintendo ในโมเดลภาษา Qwen ขนาด 1GB | แสดงให้เห็นถึงศักยภาพการจำลองสถาปัตยกรรมซอฟต์แวร์ภายในพารามิเตอร์ของ LLM | นำไปศึกษาต่อยอดเรื่องความเข้าใจ representation ภายในของโมเดลและการสร้าง World Model สำหรับ AI Agent",
+    "url": "https://github.com/dbreunig/nesformer"
+  },
+  {
+    "id": "hn_50305693",
+    "timestamp": "2026-10-30T15:52:18.000Z",
+    "score": 6,
+    "vendor": "Tooling",
+    "category": "Research",
+    "title_th": "บทวิเคราะห์ผลกระทบของ AI ต่อบทบาทวิศวกร SRE: การลดทอนทักษะเชิงลึก",
+    "summary_th": "บทความวิเคราะห์ว่า AI ช่วยให้ทำงานง่ายขึ้นแต่ทำให้ทักษะแก้ปัญหาเฉพาะหน้าของ SRE ลดลง | กระตุ้นให้ตระหนักถึงความสำคัญของการฝึกฝนทักษะพื้นฐานแม้มี AI ช่วยเขียนโค้ด | ใช้เป็นแนวทางออกแบบกระบวนการทำงานและฝึกอบรมทีมวิศวกรไม่ให้พึ่งพา AI จนเกินไป",
+    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+  },
+  {
+    "id": "gn_30dab51812c7282f",
+    "timestamp": "2026-10-30T15:12:35.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI เปิดตัวฟีเจอร์ Private Intelligence ยกระดับความปลอดภัยข้อมูลธุรกิจ",
+    "summary_th": "เครื่องมือควบคุมความเป็นส่วนตัวของข้อมูลสำหรับองค์กร เมื่อใช้งานร่วมกับโมเดลทรงพลังของ OpenAI | ป้องกันข้อมูลรั่วไหลและให้ความมั่นใจเรื่องความเป็นส่วนตัวตามมาตรฐานองค์กรใหญ่ | นำไปปรับใช้กับการพัฒนาแอปพลิเคชันองค์กรที่ต้องจัดการข้อมูลลับทางธุรกิจและความปลอดภัยสูง",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EbTVfSVRTTVFwYWQ1VGRJOEVPUGhtdEIzUUYwSjAtY005OVVxTVgxcFV0Q2F6MFNaUWFzcDJ2X0lLV1hEVksyRl81bVRzcDZIMWNOVVVEUzZwTlk?oc=5"
+  },
+  {
+    "id": "gn_533ba3349624f5a4",
+    "timestamp": "2026-10-30T17:31:27.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic ประกาศปรับโครงสร้างและเปลี่ยนชื่อแพ็กเกจการใช้งาน Claude Max",
+    "summary_th": "การอัปเดตโครงสร้างแผนบริการและโควตาการใช้งานระดับสูงของ Claude | ชี้แจงรายละเอียดการจำกัดการใช้งานและการปรับชื่อแผนเพื่อความชัดเจนของผู้ใช้ | วางแผนโควตาการเรียกใช้งาน API และการพัฒนาโปรเจกต์ที่ต้องพึ่งพารุ่นพรีเมียมได้อย่างแม่นยำขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4yYWp1WHYzSDZ5bE54aDB2TFpXbUJJUWhjRDRZZXplT3psaGNHTTBZTjAxSTlPdktKZUVBRGRIanVJdGIyempIbWJpeURUcE16MVU5d3Z1cHpkNml2dlRr?oc=5"
+  },
+  {
+    "id": "gn_985b653c2f3f9423",
+    "timestamp": "2026-10-30T16:00:38.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "ตอนนี้สามารถใช้งานบัญชีสมัครสมาชิก Claude ใน OpenCode ได้แล้ว",
+    "summary_th": "การเชื่อมต่อบัญชีสมัครสมาชิก Claude เข้ากับแพลตฟอร์มพัฒนา OpenCode | ช่วยให้นักพัฒนาใช้งานความสามารถของ Claude ผ่านเครื่องมือเขียนโค้ดได้สะดวกยิ่งขึ้น | นำไปใช้เร่งความเร็วในการเขียนโค้ดและทำ Debugging ภายในสภาพแวดล้อม OpenCode",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5iX1lnR21lUDlZNnNRSV96WEE5ZEpVOFNnS0VMS2E4NksxMUhaQ2N5QXM0Q1BLLWVWd3Z6UFdjV1hYbDFRdFk4TUdwLVNLT3U5NUEzRTFFU1Z4S293ZlE?oc=5"
+  },
+  {
     "id": "hf_mistralai_Mistral-Large-4-1T-A52B",
     "timestamp": "2026-09-30T18:35:13.000Z",
     "score": 8,
