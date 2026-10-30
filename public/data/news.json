@@ -1,5 +1,35 @@
 [
   {
+    "id": "hf_mistralai_Mistral-Large-4-1T-A52B",
+    "timestamp": "2026-09-30T18:35:13.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Mistral เปิดตัว Mistral-Large-4 โมเดล Open Weights ขนาดใหญ่รองรับ Multimodal",
+    "summary_th": "คือโมเดลภาษาขนาดใหญ่รุ่นใหม่จาก Mistral ที่รองรับทั้งรูปภาพและข้อความ (image-text-to-text) | มีประสิทธิภาพสูงขึ้นและตอบโจทย์งานซับซ้อนได้ดีกว่าเดิม | นำไป deploy เป็น Self-hosted LLM สำหรับงานวิเคราะห์ภาพและข้อความระดับองค์กร",
+    "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B"
+  },
+  {
+    "id": "hn_50300683",
+    "timestamp": "2026-10-30T07:09:12.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "เตือนภัย: พบส่วนเสริม Claude Code ปลอม ฝัง Backdoor บน Cursor Marketplace",
+    "summary_th": "ตรวจพบ extension ของ Claude Code ที่ถูกดัดแปลงและแอบอ้างบน Cursor marketplace ส่งผลให้มีความเสี่ยงด้านความปลอดภัย | ช่วยให้ทีมพัฒนาตระหนักและระมัดระวังในการติดตั้ง third-party extensions มากขึ้น | นำไปตรวจสอบความปลอดภัยของ IDE extensions และจำกัดการใช้เฉพาะแหล่งที่เชื่อถือได้",
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/"
+  },
+  {
+    "id": "gn_7b23fffa8397488e",
+    "timestamp": "2026-10-29T21:49:21.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic ขยายขีดจำกัดขนาด Request บน Claude API จาก 32 MB เป็น 128 MB",
+    "summary_th": "การเพิ่มขนาด Request สูงสุดบน Claude API รองรับข้อมูลได้ถึง 128 MB | ช่วยแก้ปัญหาติดขัดกรณีส่งรูปภาพจำนวนมาก, ไฟล์ PDF ขนาดใหญ่ หรือทำ Computer-use session ยาวๆ | นำไปพัฒนา AI Agent ที่ต้องรับส่งไฟล์เอกสารหนาๆ หรือประมวลผลหน้าจอต่อเนื่องโดยไม่ต้องกังวลเรื่องขนาด Payload",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UZ2ZVcGtvODlSSkNmS2pxbXRrNVcxZWliUHNfYzZlVUFrNEhaVFRKclYyT1FIdGJMVmlnaTdDd1ZLY1phWUNSZ3NmeEtRUzhqUmFhaXBud0NtaDVFMndVbQ?oc=5"
+  },
+  {
     "id": "gn_7e2fe4703b69bb4e",
     "timestamp": "2026-10-30T01:45:06.000Z",
     "score": 7,
