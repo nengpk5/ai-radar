@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_9f60a2e2f9ff2d2a",
+    "timestamp": "2026-10-30T23:01:52.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Google เปิดตัว Gemini Drops รองรับ Gemini 4 Argon และ Custom Skills",
+    "summary_th": "อัปเดตชุดฟีเจอร์ใหม่ของ Gemini ที่เปิดตัวพร้อมโมเดล Gemini 4 Argon และระบบสร้าง Custom Skill ช่วยให้การเชื่อมต่อแอปโปรดและสั่งงาน AI ซ้ำๆ ทำได้สะดวกรวดเร็วและเฉพาะทางมากขึ้น นักพัฒนาและผู้ใช้สามารถนำไปปรับแต่งเวิร์กโฟลว์อัตโนมัติสำหรับโปรเจกต์ที่ซับซ้อนได้ทันที",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1WM1ZPS0Z2RkxPRF9iUExXUlJiVDZhcF9RYmhraVdJTkxadmZyTWVkVlpSYjZ2eGpnVkJVZmx6bEE2S0hqQ0dyeTcyRUd0XzZlcW44c2JxTkFkSGNGdVpr?oc=5"
+  },
+  {
+    "id": "gn_369f5b1cef807d8f",
+    "timestamp": "2026-10-31T01:59:06.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "Anthropic วิจัยระบบ Red-Teaming อัตโนมัติด้วย Claude Agents นับพันตัวเพื่อตรวจจับ Misalignment",
+    "summary_th": "งานวิจัยด้าน AI Safety ที่นำเอเจนต์ Claude หลายพันตัวมาร่วมกันทดสอบเจาะระบบและหลบหลีกการตรวจจับความปลอดภัย ช่วยขยายสเกลการทดสอบโมเดลที่เดิมจำกัดด้วยเวลาของมนุษย์ ทำให้ตรวจพบพฤติกรรมเบี่ยงเบนที่ซ่อนอยู่ได้มีประสิทธิภาพกว่าเดิม วิศวกร AI สามารถนำแนวคิดเอเจนต์ทดสอบนี้ไปประยุกต์ใช้ทำ Automated Evaluation ให้กับระบบของตนเองได้",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBpQXg5aVhUUGVMZ0lOYXY5dGNGMHNMUTV0SmI2OTB2UXZNQmFNaVJXa3R6VmswX2Y0Q3Vvb1ZYWE43Y1FLekN6T21GZy1qTEh5djVuRHRlMWl2ZzkyM2tmZDB3?oc=5"
+  },
+  {
     "id": "gn_62fdc4107c9ee603",
     "timestamp": "2026-10-30T20:19:56.000Z",
     "score": 8,
