@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_9cf60a11bd386766",
+    "timestamp": "2026-10-31T20:51:57.000Z",
+    "score": 8,
+    "vendor": "DeepSeek",
+    "category": "Dev Tool",
+    "title_th": "DeepSeek เปิดตัว dsh-superagent เฟรมเวิร์ก Multi-agent สำหรับจัดการ GitHub issues และ PR แบบคู่ขนาน",
+    "summary_th": "นี่คือเฟรมเวิร์ก AI Agent หลายตัวทำงานร่วมกันเพื่อจัดการ GitHub issues และ PR โดยอัตโนมัติ | ดีกว่าเดิมตรงที่ออกแบบมาให้ใช้มนุษย์คอยกำกับดูแลน้อยที่สุด แต่สร้างมูลค่าและทำงานได้รวดเร็วแบบคู่ขนาน | นำไปประยุกต์ใช้เป็นระบบ Automation ในกระบวนการ CI/CD หรือระบบตรวจแก้โค้ดอัตโนมัติในโปรเจกต์ขนาดใหญ่",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXNGtTcU5ZXzJqQmdWMXEtZlA2YWZWNlVLNzd6ZWh0VlR0ajdyR25HaTBydExxbDJ6V0tBT0hYRTZlVVdJRXcwNExqUjJWYzUzWm1tdktBVXFocTJr?oc=5"
+  },
+  {
     "id": "hn_50320599",
     "timestamp": "2026-10-31T21:50:13.000Z",
     "score": 5,
