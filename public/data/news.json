@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_153b5c9a4015601b",
+    "timestamp": "2026-11-01T14:51:16.000Z",
+    "score": 8,
+    "vendor": "DeepSeek",
+    "category": "Dev Tool",
+    "title_th": "DeepSeek เปิดตัวโปรโตไทป์ Super-agent แบบโอเพนซอร์ส กระจายงานขนานลดเวลาเสร็จสิ้นลงครึ่งหนึ่ง",
+    "summary_th": "สถาปัตยกรรมต้นแบบ Super-agent จาก DeepSeek ที่ใช้ Router รับคำสั่งและส่งต่อให้ Worker ทำงานคู่ขนานแบบแยกส่วนผ่าน GitHub events | ช่วยลดค่าความหน่วง P95 จาก 29.5 นาทีเหลือเพียง 15.7 นาทีในการทดสอบจริง | AI Engineer สามารถนำแพทเทิร์นนี้ไปปรับใช้สร้างระบบ Multi-agent อัตโนมัติสำหรับจัดการ Issue และโค้ดบน GitHub ในระดับโปรดักชัน",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhYndmWHlWSmtJOHFnamFRWnRfOFlucVdxczg0M0RsMTZNdlRSRlhjblBlZFRtWTRQdS1SazBfMnBTMjh5QTVOdG1UVlM1RnMzWm9rNXB3Vm1zbWhvdTNYUmxB?oc=5"
+  },
+  {
+    "id": "gn_1a27595d63f67397",
+    "timestamp": "2026-11-01T19:37:54.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic สั่งห้ามใช้ Claude Code ทำวิศวกรรมย้อนกลับเพื่อลอกเลียนแบบวิดีโอเกม",
+    "summary_th": "การอัปเดตนโยบายการใช้งานของ Anthropic ที่แบนการใช้ Claude Code ในการ Reverse-engineer หรือสร้างเกมที่มีอยู่แล้วขึ้นมาใหม่ | ป้องกันความเสี่ยงทางกฎหมายและข้อพิพาทด้านลิขสิทธิ์ทรัพย์สินทางปัญญาจากการใช้งานโมเดลเขียนโค้ด | แจ้งเตือนให้นักพัฒนาและผู้ใช้ปรับแนวทางการทำ Prompt และหลีกเลี่ยง Use Case ที่สุ่มเสี่ยงต่อการถูกระงับสิทธิ์การใช้งาน API หรือเครื่องมือ",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9lcmFsWV8wMFo4VUxkTkIzTlRpUlFsb1pNdVNldklzTERxdEFZejI3M2FVVkVxNGhZUnBLd0hCVktZeU4tUTBWclkybzdWc0Q5cUZNZTVKZVdZeUtCa3BRcHU5U04?oc=5"
+  },
+  {
     "id": "gn_f8a70689fdfbc344",
     "timestamp": "2026-11-01T15:31:18.000Z",
     "score": 8,
