@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_c892bb76f5234548",
+    "timestamp": "2026-11-01T20:09:49.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "ทริคใหม่ Claude Code ด้วยคำสั่ง ultrathink เพิ่มพลังประมวลผลระหว่างทำงาน",
+    "summary_th": "คือฟีเจอร์คำสั่งลับใน Claude Code ที่ช่วยเพิ่มระดับความพยายาม (effort) ของโมเดลขณะรันงานยากๆ | ดีกว่าเดิมยังไง ช่วยให้แก้โจทย์ที่ซับซ้อนขึ้นได้ทันทีโดยไม่ต้องเริ่ม Prompt ใหม่ | เอาไปใช้อะไรต่อได้ พิมพ์คำว่า ultrathink ลงในเทอร์มินัลเมื่อ Claude กำลังติดบั๊กหรือเจอโจทย์ยาก",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE41cThTTUxtS0lMS2JMSHI2RmFyUV9KVHBRTmFjaWFIY21EUGFUeG83TXVrQVEtdjh3cE1PenZEVmJrQUN6T1M2TVlYNDVmcEdJallXdDVuT2JlcVVyVExXeg?oc=5"
+  },
+  {
     "id": "hf_speridlabs_idol",
     "timestamp": "2026-10-28T15:55:17.000Z",
     "score": 6,
