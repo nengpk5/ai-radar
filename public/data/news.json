@@ -1,5 +1,15 @@
 [
   {
+    "id": "or_z-ai_glm-5_3-flashx-legal",
+    "timestamp": "2026-11-02T13:29:14.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Z.ai เปิดตัว GLM-5.3-FlashX-Legal โมเดล Multimodal เฉพาะทางด้านกฎหมาย",
+    "summary_th": "โมเดลปัญญาประดิษฐ์แบบ Multimodal (รองรับข้อความ รูปภาพ และวิดีโอ) ที่ผ่านการฝึกอบรมเพิ่มเติมและใช้เทคนิค Reinforcement Learning เฉพาะทางด้านกฎหมาย | ช่วยให้การวิเคราะห์และประมวลผลเอกสารทางกฎหมายมีความแม่นยำสูงกว่าโมเดลทั่วไป | นำไปประยุกต์ใช้สร้างระบบค้นหาเอกสารทางกฎหมายอัตโนมัติหรือผู้ช่วยทนายความอัจฉริยะ",
+    "url": "https://openrouter.ai/z-ai/glm-5.3-flashx-legal"
+  },
+  {
     "id": "gn_c892bb76f5234548",
     "timestamp": "2026-11-01T20:09:49.000Z",
     "score": 8,
