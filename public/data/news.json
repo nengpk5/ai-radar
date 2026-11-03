@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_04d541e5e028b6dd",
+    "timestamp": "2026-11-02T19:06:08.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic เปิดใช้งาน Message threads บน Messages API ในรูปแบบ Public Beta",
+    "summary_th": "ฟีเจอร์เก็บบันทึกบทสนทนาบนฝั่ง Server ของ Claude API | ช่วยลดการส่งข้อมูลซ้ำซ้อนโดยส่งแค่ข้อความใหม่กับ Message ID เดิม ประหยัด Token และแบนด์วิดท์ | นำไปพัฒนาแชทบอทหรือแอปพลิเคชันสนทนาได้อย่างมีประสิทธิภาพและประหยัดต้นทุนยิ่งขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE52MUdub21DXzlPOUhCQU5qeGp0cnR3a3NpeDlhZ29ybVJTVEtxN21oQ0pQOTV1SXp1RHZ5RkNjVkRocEVaR21YOE4zV1psZlpHd050WWpMMTBQbnhySjg5Yg?oc=5"
+  },
+  {
     "id": "hn_50346350",
     "timestamp": "2026-11-03T00:32:32.000Z",
     "score": 7,
