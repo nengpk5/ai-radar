@@ -1,5 +1,45 @@
 [
   {
+    "id": "or_stealth_crouton-alpha",
+    "timestamp": "2026-11-03T01:38:50.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Crouton Alpha โมเดลขนาดเล็กสำหรับงาน Coding และ Agentic โดยเฉพาะ",
+    "summary_th": "โมเดลปัญญาประดิษฐ์น้ำหนักเบาที่ออกแบบมาเพื่อรองรับงานเขียนโค้ด งานเอเจนต์ และมัลติโมดอลโดยเฉพาะ | ทำงานประมวลผลย่อยและการใช้เครื่องมือได้รวดเร็วและคุ้มค่ากว่าเดิม | นำไปประยุกต์ใช้สร้าง Autonomous Agents หรือระบบวิเคราะห์เอกสารในปริมาณมากๆ ได้อย่างมีประสิทธิภาพ",
+    "url": "https://openrouter.ai/stealth/crouton-alpha"
+  },
+  {
+    "id": "hn_50355251",
+    "timestamp": "2026-11-03T17:40:00.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "ทดลองรัน Qwen 3.8 27B บนแล็ปท็อปเพื่อตีความ Weight ของโมเดล AI",
+    "summary_th": "งานทดลองเชิงเทคนิคที่เจาะลึกการใช้โมเดล Open Source ขนาดกลางอย่าง Qwen บนเครื่องส่วนตัวเพื่ออ่านและตีความค่า Weight ภายในโมเดล | ช่วยให้เข้าใจกลไกภายในของโมเดลลึกซึ้งขึ้นโดยไม่ต้องพึ่งพา API คลาวด์ราคาแพง | นำไปใช้ศึกษาความโปร่งใสของโมเดล (Model Interpretability) และตรวจสอบพฤติกรรม AI เชิงลึกได้",
+    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
+  },
+  {
+    "id": "gn_d0b187f9a2d18ad4",
+    "timestamp": "2026-11-03T20:10:08.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "Anthropic เปิดตัว FlashProve งานวิจัยการันตีคำตอบ LLM ด้วยเทคนิค Cryptography",
+    "summary_th": "งานวิจัยใหม่จาก Anthropic ที่นำเทคนิคคริปโตกราฟิกมาใช้ยืนยันที่มาของคำตอบจากโมเดล LLM | ช่วยให้ตรวจสอบได้อย่างแม่นยำว่าคำตอบนั้นมาจากโมเดล AI ที่กำหนดจริงหรือไม่ ป้องกันการปลอมแปลง | นำไปใช้สร้างระบบตรวจสอบความน่าเชื่อถือและความปลอดภัยในแอปพลิเคชันระดับองค์กรได้",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZSk9YdFBHdlhoSHZTMDlNQm1lSlNTN01fSmtEcVlsRzYzUDc4QkxfNUdxRzk4U1l0d0JUSExscURhRFVpLXRuV0M5eW5GMklyT2ttb1ZRU1Y1dFhBakFhZHVB?oc=5"
+  },
+  {
+    "id": "gn_1bc75626d6732056",
+    "timestamp": "2026-11-03T18:09:42.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude รองรับระบบ Auto-connect ปลั๊กอินผ่าน MCP Servers ที่เชื่อถือได้",
+    "summary_th": "ฟีเจอร์ใหม่ที่อนุญาตให้เชื่อมต่อปลั๊กอินและ MCP Servers อัตโนมัติเมื่อเข้าสู่ระบบ Claude โดยไม่ต้องกดขออนุญาตซ้ำซ้อน | ช่วยลดขั้นตอนยุ่งยากและทำให้ผู้ใช้เริ่มใช้งานเครื่องมือเสริมได้ทันที | นำไปใช้พัฒนาปลั๊กอินหรือ MCP สำหรับ Claude ให้เชื่อมต่อกับผู้ใช้งานได้อย่างราบรื่นไรรอยต่อ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1xWG5Yc3JBbU53LVNUcVBidkNrNDA2eko3S25ZOU9VbW9HNGhFa3h3Zi04YXFlZUN4T3lLV053RTdSVkdaQUJiWG9TeXdnTUd4Z0pxUlpyRkllX3h1VmNsZA?oc=5"
+  },
+  {
     "id": "hf_LiquidAI_LFM3-Omni-2B",
     "timestamp": "2026-10-21T16:58:40.000Z",
     "score": 7,
