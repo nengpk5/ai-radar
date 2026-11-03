@@ -1,5 +1,45 @@
 [
   {
+    "id": "hf_LiquidAI_LFM3-Omni-2B",
+    "timestamp": "2026-10-21T16:58:40.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "LiquidAI เปิดตัว LFM3-Omni-2B โมเดล Any-to-Any ขนาด 2B",
+    "summary_th": "โมเดลปัญญาประดิษฐ์แบบ Any-to-Any รองรับหลายโมดัลในขนาดกะทัดรัดเพียง 2 พันล้านพารามิเตอร์ ทำงานได้เร็ซและประหยัดทรัพยากรมากขึ้น เหมาะสำหรับนำไปพัฒนาแอปพลิเคชัน Edge AI หรือระบบมัลติมีเดียแบบเรียลไทม์",
+    "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B"
+  },
+  {
+    "id": "hn_50351111",
+    "timestamp": "2026-11-03T12:21:17.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "บทวิเคราะห์ตีแผ่ความเข้าใจผิดเรื่อง Astra อ่านและเขียน Weights ของ Qwen",
+    "summary_th": "บทความวิเคราะห์เจาะลึกที่ออกมาแก้ความเข้าใจผิดเกี่ยวกับการปรับแต่งน้ำหนัก (Weights) ของโมเดล Qwen โดย Astra ช่วยให้เข้าใจกลไกภายในของโมเดลภาษาได้ถูกต้องชัดเจนยิ่งขึ้น นำไปประยุกต์ใช้เป็นแนวทางในการศึกษาการปรับจูนโมเดลขั้นสูง",
+    "url": "https://honnibal.dev/blog/astra-read-write-misleading"
+  },
+  {
+    "id": "hn_50353468",
+    "timestamp": "2026-11-03T15:48:35.000Z",
+    "score": 5,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "รวมบันทึกเชิงโต้ตอบเกี่ยวกับ RLHF, Attention, LoRA และ LLM Evals",
+    "summary_th": "เว็บรวมคอนเซปต์และโน้ตแบบอินเทอร์แอกทีฟสำหรับศึกษาหลักการสร้าง AI ช่วยให้เข้าใจกลไกเชิงลึกได้ง่ายผ่านภาพและตัวอย่าง นำไปใช้ทบทวนความรู้และปูพื้นฐานสำคัญก่อนลงมือพัฒนาหรือ fine-tune โมเดลภาษา",
+    "url": "https://concepts.laxmena.com/"
+  },
+  {
+    "id": "gn_24164c753cfa2f26",
+    "timestamp": "2026-11-03T05:14:12.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic ปล่อย FlashProve ไลบรารีโอเพนซอร์สเพื่อการอนุมานแบบ Provable Inference",
+    "summary_th": "ไลบรารีโอเพนซอร์สช่วยตรวจสอบความถูกต้องของการอนุมานโมเดลขนาดใหญ่อย่าง Llama 4 Maverick ได้ดียิ่งขึ้น เพิ่มความน่าเชื่อถือและความปลอดภัยให้กับผลลัพธ์ของโมเดล นำไปใช้ผสานกับระบบ AI Production ที่ต้องการความแม่นยำสูง",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12V2tVSkxqREkzTjZhamZCZ19BT0NCTlo4WTMtNlZKd3dxdkptTHM1dE1ZblZTSlF0RmVMNF9jNzQ0THZ2cEh3cVlWM09Za2lacjdGWl96ODNSZw?oc=5"
+  },
+  {
     "id": "gn_04d541e5e028b6dd",
     "timestamp": "2026-11-02T19:06:08.000Z",
     "score": 8,
