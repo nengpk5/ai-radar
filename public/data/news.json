@@ -1,5 +1,55 @@
 [
   {
+    "id": "or_ricursiveai_ripple-65b-preview",
+    "timestamp": "2026-11-04T19:03:10.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "OpenRouter เปิดตัวโมเดล Ripple-65B-Preview รองรับ Native Tool Calling",
+    "summary_th": "คือโมเดลขนาด 65B จาก ricursiveAI ที่ออกแบบมาพร้อมความสามารถในการเรียกใช้เครื่องมือ (Tool Calling) แบบ Native ในตัว | ดีกว่าเดิมด้วยประสิทธิภาพการทำงานในรูปแบบ BF16 ที่แม่นยำและตอบโจทย์งาน Agent มากขึ้น | นำไปประยุกต์ใช้พัฒนา AI Agent ที่ซับซ้อนและการเชื่อมต่อกับภายนอกได้มีประสิทธิภาพสูง",
+    "url": "https://openrouter.ai/ricursiveai/ripple-65b-preview"
+  },
+  {
+    "id": "hf_moonshotai_Kimi-K3_1-Pro",
+    "timestamp": "2026-11-02T04:13:51.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "HuggingFace เผยแพร่ Moonshot AI Kimi-K3.1-Pro โมเดล Multimodal มาแรง",
+    "summary_th": "คือโมเดลใหม่จาก Moonshot AI ที่รองรับไปป์ไลน์แบบ Image-Text-to-Text กำลังได้รับความนิยมสูงบน HuggingFace | ดีกว่าเดิมในการประมวลผลข้อมูลภาพและข้อความร่วมกันด้วยความแม่นยำสูง | นำไปใช้พัฒนาแอปพลิเคชันวิเคราะห์ภาพ สรุปเอกสาร และระบบสนทนาที่รองรับมัลติมีเดีย",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+  },
+  {
+    "id": "gn_49da6db44c8cafd0",
+    "timestamp": "2026-11-04T19:29:39.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude Code อัปเดตระบบ Background Subagents ประหยัดโควต้าการใช้งานยิ่งขึ้น",
+    "summary_th": "คือการปรับปรุงระบบอัปเดตสถานะของ Subagent เบื้องหลังใน Claude Code โดยใช้ Haiku 5.5 เขียนสถานะจากบันทึกสั้นๆ แทน | ดีกว่าเดิมมากเพราะช่วยลดการอ่านบริบทบทสนทนาทั้งหมดซ้ำๆ ทุก 30 วินาที ทำให้ประหยัดการใช้โทเค็นและโควต้าได้อย่างมหาศาล | นำไปใช้รัน Agent งานเบื้องหลังระยะยาวได้อย่างประหยัดต้นทุนและมีประสิทธิภาพ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0TFcwMUpFWUVBSFFuSDF5VUxrWGdSLTN4aFk1UFBtOU5VU09VNmpXdnFkRWJTVDZxUEJjY2JVbWV3Z1k2b0t5Ui1pY2t1TlBLa0hYRUszQkZ0cG5USFUtNQ?oc=5"
+  },
+  {
+    "id": "gn_fd019baba1dea03b",
+    "timestamp": "2026-11-04T15:15:43.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Tooling",
+    "title_th": "OpenAI เข้าซื้อกิจการ Pierre เสริมแกร่งเครื่องมือพัฒนาซอฟต์แวร์สำหรับทีม",
+    "summary_th": "คือดีลการเข้าซื้อกิจการสตาร์ตอัปเครื่องมือ Developer แบบ Open-Source อย่าง Pierre ของ OpenAI | ดีกว่าเดิมโดยช่วยเร่งวิสัยทัศน์ของแพลตฟอร์ม Codex ให้ทีมพัฒนาซอฟต์แวร์ทำงานร่วมกับ AI ได้ตั้งแต่ไอเดียแรกจนถึงขั้นตอนการ Deploy | นำไปใช้เป็นเครื่องมือหลักในการสร้างและบริหารจัดการโปรเจกต์โค้ดร่วมกับทีมผ่าน AI ได้อย่างไร้รอยต่อ",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5MOExrakJTUF9LYVJLMV85Sk9EVHJXdXlEZlZ0bTVMcjR1Wm1LZFVVejQ0UlZhaE0xNUhXNlh3OUFFTTIwSlVnODNyMmJFZHdiQXRNSFBja0s5UVNIbXUyY01FZkFyZw?oc=5"
+  },
+  {
+    "id": "gn_0f1688dd67846569",
+    "timestamp": "2026-11-04T17:06:16.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Voice Remixing สำหรับ Gemini 3.8 Flash TTS ใน Google AI Studio",
+    "summary_th": "คือฟีเจอร์ปรับแต่งเสียงพูด (Voice Remixing) สำหรับโมเดล Gemini 3.8 Flash TTS ที่รองรับเสียงพรีเซตกว่า 2,000 แบบ | ดีกว่าเดิมตรงที่สามารถใช้ Prompt สั่งปรับแต่งโทนเสียง ระดับเสียง ความเร็ว และสำเนียงได้อย่างละเอียดตามต้องการ | นำไปพัฒนาแอปพลิเคชันเสียงสังเคราะห์ ผู้ช่วยอัจฉริยะ หรือระบบ Voicebot ที่มีความเป็นธรรมชาติสูง",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9xajRidGNic0lBRGh6aXZNMXZ3Rm9hbDdFY3VVVS1EaUprOEV1WTNqS1RJQWs4S3prVnpzSGhGa1RubEhBUWE2M0FtbzRrRkxJUGRDMHowQkx2U00?oc=5"
+  },
+  {
     "id": "hn_50366863",
     "timestamp": "2026-11-04T15:21:21.000Z",
     "score": 8,
