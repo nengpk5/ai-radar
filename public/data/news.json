@@ -1,5 +1,15 @@
 [
   {
+    "id": "or_tencent_hy4",
+    "timestamp": "2026-11-04T04:20:31.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เทนเซ็นต์เปิดตัวโมเดล Hy4 อย่างเป็นทางการบน OpenRouter",
+    "summary_th": "โมเดลปัญญาประดิษฐ์รุ่นใหม่จาก Tencent ที่พัฒนาต่อยอดจากรุ่นพรีวิว | มีความสามารถด้าน Agentic และการทำงานระยะยาวในโลกจริงที่ดีขึ้นอย่างเห็นได้ชัด | นำไปประยุกต์ใช้สร้าง AI Agent ที่ซับซ้อนและงานที่ต้องอาศัยการวางแผนหลายขั้นตอนได้ดียิ่งขึ้น",
+    "url": "https://openrouter.ai/tencent/hy4"
+  },
+  {
     "id": "or_stealth_crouton-alpha",
     "timestamp": "2026-11-03T01:38:50.000Z",
     "score": 8,
