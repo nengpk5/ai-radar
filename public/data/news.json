@@ -1,5 +1,15 @@
 [
   {
+    "id": "hn_50366863",
+    "timestamp": "2026-11-04T15:21:21.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI เข้าซื้อกิจการ Pierre Computer เพื่อขยายตลาดเครื่องมือพัฒนาซอฟต์แวร์",
+    "summary_th": "OpenAI เข้าซื้อกิจการสตาร์ทอัพ Pierre Computer เพื่อนำเทคโนโลยีจัดเก็บโค้ดมาผสานเข้ากับ Codex | ช่วยเสริมความสามารถด้านโครงสร้างพื้นฐานการพัฒนาโค้ดแข่งกับ GitHub | นำไปใช้พัฒนาต่อยอดระบบ AI Coding Assistants และ Agentic Workflows ให้สมบูรณ์ยิ่งขึ้น",
+    "url": "https://twitter.com/pierrecomputer/status/2117999036175188183"
+  },
+  {
     "id": "or_tencent_hy4",
     "timestamp": "2026-11-04T04:20:31.000Z",
     "score": 6,
