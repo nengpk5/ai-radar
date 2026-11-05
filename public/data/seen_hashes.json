@@ -1,4 +1,6 @@
 [
+  "gn_a32236720314b58f",
+  "gn_cfd7c6d16496eff8",
   "hn_50338474",
   "hn_50366117",
   "hn_50373149",
@@ -496,7 +498,5 @@
   "hf_meta-models_Muse-Spark-Open-816B-A42B",
   "hf_black-forest-labs_flux-3-image-klein",
   "hf_LiquidAI_LFM2_5-24B-A2B",
-  "hf_Lightricks_LTX-2_5",
-  "hn_50145337",
-  "hn_50151928"
+  "hf_Lightricks_LTX-2_5"
 ]

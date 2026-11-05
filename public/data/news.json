@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_a32236720314b58f",
+    "timestamp": "2026-11-05T00:31:20.000Z",
+    "score": 7,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "GPT Image 2.6 ซันเบิร์สท์และแฟลร์เปิดตัวแล้ว วิ่งเร็วขึ้นเกือบสองเท่า",
+    "summary_th": "คืออะไร: โมเดลสร้างภาพเวอร์ชันใหม่จาก OpenAI ประกอบด้วยซันเบิร์สท์และแฟลร์\nดีกว่าเดิมยังไง: ทำงานเร็วขึ้นเกือบสองเท่าจากเวอร์ชัน 2.5 และติดอันดับต้นๆ ใน Text-to-Image Arena\nเอาไปใช้อะไรต่อได้: นำไปประยุกต์ใช้ในแอปด้านสร้างภาพ การ์ตูน และแอนิเมชันได้ทันที",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWTzBfUmlPYzlSaVZDY2xLZEJsZkZpNkdRV3lURDh3OXJQeXNMR0V3NExsVF8tSkNqam5GWXlvWXlEYmp2SklKci04aVVCR1diYlRoVWVUQjBLdw?oc=5"
+  },
+  {
+    "id": "gn_cfd7c6d16496eff8",
+    "timestamp": "2026-11-04T20:52:16.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "อัปเดตเครื่องมือนักพัฒนา OpenAI ประจำเดือนตุลาคม เปิดตัว Decisions API",
+    "summary_th": "คืออะไร: อัปเดตเครื่องมือสำหรับนักพัฒนา OpenAI ประกอบด้วย Decisions API และแคชพรอมต์ 12 ชั่วโมง\nดีกว่าเดิมยังไง: ช่วยให้แอปและเอเจนต์ตัดสินใจใกล้เรียลไทม์ และนำบริบทกลับมาใช้ซ้ำได้ง่ายขึ้น\nเอาไปใช้อะไรต่อได้: สร้างเอเจนต์ที่ตอบสนองไวและลดต้นทุนโทเค็นจากการแคชบริบทระยะยาว",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhclR0RDlqLUlNR0x5Y3lSUDZvT01wd2F0NEtKQ19FcFRURUc2ZWtIRHJlbWxUQkQ3X1NscFJvdlJyZ3kybmM0TGZSVzB6Rk5RWVR0WDc1Rlc3aEo4LVVvbw?oc=5"
+  },
+  {
     "id": "gn_aa206f821b89fecd",
     "timestamp": "2026-11-04T23:35:18.000Z",
     "score": 7,
