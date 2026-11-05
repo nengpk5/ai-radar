@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_aa206f821b89fecd",
+    "timestamp": "2026-11-04T23:35:18.000Z",
+    "score": 7,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "เปิดตัวโมเดลภาพใหม่ GPT-Image-2.6 Flare และ Sunburst สำหรับนักพัฒนา",
+    "summary_th": "คือโมเดลสร้างภาพตัวใหม่สองตัวจาก OpenAI สำหรับนักพัฒนา ได้แก่ Flare ที่สร้างภาพเร็วสุด 6 วินาที และ Sunburst ที่ให้คุณภาพสูงและสม่ำเสมอเมื่อแก้ไขภาพ | ดีกว่าเดิมตรงที่สร้างภาพเร็วขึ้น 50% รองรับการส่งออก SVG และแก้ไขเฟรมภาพได้ละเอียดขึ้น | เอาไปใช้สร้างคอนเทนต์ภาพในแอป ระบบตัดต่อภาพอัตโนมัติ หรือเพิ่มฟีเจอร์สร้างภาพให้ผู้ใช้งานได้ทันทีผ่าน API",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44bkRvd25vRUpvaFBNLVQ0Rk5mY1hEekN6UHlTNWJvRFd5eUZPQld3QVpDRDZxVGpNUGpVX2VzQVdkRnFONllDVnAyVUFvZDFlM1R5OGZCQ3lpeVk?oc=5"
+  },
+  {
     "id": "or_ricursiveai_ripple-65b-preview",
     "timestamp": "2026-11-04T19:03:10.000Z",
     "score": 8,
