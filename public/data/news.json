@@ -1,5 +1,55 @@
 [
   {
+    "id": "hf_Lightricks_LTX-2_5",
+    "timestamp": "2026-07-23T07:55:24.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Lightricks เปิดตัว LTX-2.5 โมเดลสร้างวิดีโอจากภาพยอดนิยมบน HuggingFace",
+    "summary_th": "คือโมเดล Image-to-Video ที่กำลังมาแรงบน HuggingFace มีผู้กดถูกใจกว่า 10,000 ครั้ง | ให้คุณภาพการสร้างวิดีโอจากภาพที่ดีและเป็นที่จับตามองในชุมชนโอเพนซอร์ส | เหมาะสำหรับนักพัฒนา AI ที่ต้องการทดลองหรือนำไปต่อยอดงานสร้างวิดีโอโดยอัตโนมัติ",
+    "url": "https://huggingface.co/Lightricks/LTX-2.5"
+  },
+  {
+    "id": "hn_50383963",
+    "timestamp": "2026-11-05T20:21:43.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Tencent เปิดตัว Hy4 โมเดล AI โอเพนซอร์สระดับแนวหน้า",
+    "summary_th": "คือโมเดล AI แบบโอเพนซอร์สตัวใหม่จาก Tencent ที่ถูกจัดอยู่ในกลุ่มโมเดลชั้นนำของโลก | มาพร้อมประสิทธิภาพสูงและเปิดให้นักพัฒนาใช้งานอย่างอิสระ | สามารถนำไปปรับแต่งหรือใช้เป็นพื้นฐานในการสร้างแอปพลิเคชัน AI ได้ทันที",
+    "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
+  },
+  {
+    "id": "gn_cf1fb27303995a35",
+    "timestamp": "2026-11-05T16:54:19.000Z",
+    "score": 6,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI เปิดตัว Private Safety Processing ตรวจสอบความปลอดภัย API โดยไม่เก็บข้อมูลผู้ใช้",
+    "summary_th": "คือฟีเจอร์ความปลอดภัยใหม่ที่ให้ OpenAI ตรวจสอบคำขอ API ด้านความปลอดภัยโดยไม่เก็บบันทึกคำถามหรือคำตอบของผู้ใช้ | ข้อมูลยังคงอยู่ในสภาพแวดล้อมของผู้ใช้และถูกตรวจสอบโดยระบบอัตโนมัติ ไม่ใช่บุคลากรของ OpenAI | ช่วยให้นักพัฒนาที่กังวลเรื่องความเป็นส่วนตัวสามารถใช้งาน API ได้อย่างมั่นใจมากขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mT3ZjcVdkQjJSRi1lcUQ1Y2RMWEJfeHN3MzlabkZjLVJrV09DYml3cU9hY1BOa1I5NWJncDNNOXhNa3RtYWRlanJJaV9EdUZnLTlNa3RrWmRWZnJ0OW5sag?oc=5"
+  },
+  {
+    "id": "gn_6bc1650b876783bc",
+    "timestamp": "2026-11-05T17:10:05.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Gemini Omni 1.2 Flash โมเดลวิดีโอใหม่จาก Google เร็วขึ้นและต้นทุนต่ำลง",
+    "summary_th": "คือโมเดลสร้างวิดีโอเวอร์ชันอัปเดตจาก Google DeepMind ให้ความสอดคล้องและการควบคุมสร้างสรรค์ที่ดีขึ้น | ราคาถูกลงประมาณ 30% สามารถร่างภาพที่ 360p หรือ 720p ในราคาเริ่มต้น 0.07 ดอลลาร์ต่อวินาที | เหมาะสำหรับนักพัฒนาที่ต้องการสร้างหรือแก้ไขวิดีโอด้วย AI แบบหลายรอบพร้อมต้นทุนที่คุ้มค่า",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1DaHBTX0JSTExKWXJ0Y0pWaVJQQ1FXc2FEb3Vyd0tKdFlTeTV5TnJWTjc5NnZhNTM1OFhpa0M1VGxQMFRWYU1FNFlQVG51OVNmREZ1b09hcHJFUDg?oc=5"
+  },
+  {
+    "id": "gn_79124b390d45d414",
+    "timestamp": "2026-11-05T17:21:00.000Z",
+    "score": 7,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI เปิดตัว GPT-6 Cyber โมเดลด้านความมั่นคงปลอดภัยไซเบอร์",
+    "summary_th": "คือโมเดลเฉพาะทางด้านความมั่นคงปลอดภัยที่ออกแบบมาเพื่อค้นหาและยืนยันช่องโหว่ภายในขอบเขตการทดสอบที่ได้รับอนุญาต | สามารถค้นพบช่องโหว่ร้ายแรงที่ยังไม่มีใครรู้จักใน Firefox ได้ถึง 81 รายการ | เหมาะสำหรับวิศวกร AI ที่ทำงานด้านระบบรักษาความปลอดภัยหรือการทดสอบการเจาะระบบอัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAySGFwS1pIbU95UGNjMHFySXgyR1VaQ2hNVURvcy1ib09PUGF3cUVVbUItMmNxNDhkZTRvMFF0bjR2cTVEOU8xdDlBTHJvTVJmMzVqaENGc2RicFlSZjNOWVpR?oc=5"
+  },
+  {
     "id": "or_google_gemini-omni-1_2-flash",
     "timestamp": "2026-11-05T17:16:01.000Z",
     "score": 8,

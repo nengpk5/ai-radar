@@ -1,4 +1,14 @@
 [
+  "hf_Lightricks_LTX-2_5",
+  "hn_50385272",
+  "hn_50383963",
+  "gn_83bd5070d91409e2",
+  "gn_a03141becfac6f93",
+  "gn_42c993f7b45543e0",
+  "gn_c297bdef2fcaad41",
+  "gn_cf1fb27303995a35",
+  "gn_6bc1650b876783bc",
+  "gn_79124b390d45d414",
   "or_google_gemini-omni-1_2-flash",
   "or_openrouter_auto",
   "or_openrouter_auto-code",
@@ -488,15 +498,5 @@
   "gn_28b26ecae2324f56",
   "gn_d3a494766af6f1ed",
   "gn_3cec8614c6c9d77c",
-  "gn_ec1b417feb116a47",
-  "gn_caa1e1f56e90b524",
-  "gn_6e0bb9eabcc01dab",
-  "gn_e8f522de230bcf66",
-  "or_minimax_minimax-m3_1-flash_free",
-  "or_deepseek_deepseek-v4_1-flash-1017",
-  "or_elorian_glimpse",
-  "or_xingchen-agi_xing4_0-29b-a4b_free",
-  "or_reflection_beam-1_0-501b-a23b",
-  "or_moondream_moondream3-preview",
-  "or_moondream_moondream3_1-9b-a2b"
+  "gn_ec1b417feb116a47"
 ]
