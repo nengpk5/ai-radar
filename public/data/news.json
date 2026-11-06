@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_e6b644b8302deaea",
+    "timestamp": "2026-11-06T21:16:17.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "Anthropic เผยแพร่ระบบความจำ Claude ที่จำลองการนอนฝันเพื่อจัดระเบียบข้อมูล",
+    "summary_th": "คือบทความวิศวกรรมจาก Anthropic เกี่ยวกับระบบหน่วยความจำที่ให้ Claude \"ฝัน\" เพื่อจัดระเบียบสิ่งที่เรียนรู้ แก้ไขข้อผิดพลาด และดึงข้อมูลได้ดีขึ้น | ดีกว่าเดิมยังไง ช่วยให้โมเดลมีความจำระยะยาวและการเรียนรู้จากประสบการณ์จริงที่มีประสิทธิภาพสูงขึ้น | นำไปประยุกต์ออกแบบระบบ Agent หรือ RAG ที่ต้องการหน่วยความจำขั้นสูงและการเรียนรู้จากประวัติการทำงาน",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ZSmNIWUJQYzVFYkQ5X3hUTE16T3pvUUNqZ09EcEVkLUQ2eGRydWFPZkNoRG9VcGRlTkdjc3FrQVFXWFk5bE5xblBRVGgyNXFZS01DLW1zajVERHJtb202Rk9R?oc=5"
+  },
+  {
+    "id": "gn_3f91fd3ea61c6289",
+    "timestamp": "2026-11-06T19:08:57.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Benchmark",
+    "title_th": "เปิดตัว BioBasicsBench วัดประสิทธิภาพ AI Agent ด้านการวิเคราะห์ห้องปฏิบัติการเปียก",
+    "summary_th": "คือ Benchmark ใหม่ที่พัฒนาขึ้นร่วมกับ Ligo สำหรับทดสอบความสามารถ AI Agent ในงานวิเคราะห์ข้อมูลการทดลองชีววิทยาและออกแบบเอนไซม์ | ดีกว่าเดิมยังไง มีชุดทดสอบจากงานทดลองจริงถึง 100 งาน ช่วยให้วัดผลความแม่นยำของ Agent ในงานวิทยาศาสตร์ได้ชัดเจนขึ้น | นำไปใช้ประเมินและพัฒนา AI Agent สำหรับงานวิจัยด้าน Biotech และห้องปฏิบัติการอัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4walprN05lOGczWlNMYTlPOUV1MjNrV2xSNjNIZHVjTHZkV0VNb3JvNVkwUE11cTRDQUd3bC1uRjNWd2JHZGtiMThjOGotR3JmTjR4YUFMZ29QNXM?oc=5"
+  },
+  {
     "id": "hf_ricursiveAI_Ripple-65B-Preview",
     "timestamp": "2026-11-04T02:41:21.000Z",
     "score": 6,
