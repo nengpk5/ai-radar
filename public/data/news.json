@@ -1,5 +1,45 @@
 [
   {
+    "id": "hf_ricursiveAI_Ripple-65B-Preview",
+    "timestamp": "2026-11-04T02:41:21.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Ripple-65B-Preview โมเดลโอเพนซอร์สขนาด 65B บน HuggingFace",
+    "summary_th": "โมเดลภาษาขนาดใหญ่รุ่นพรีวิว 65B ที่กำลังได้รับความนิยมสูงบน HuggingFace | มีขนาดพารามิเตอร์ใหญ่ช่วยให้ความสามารถในการเข้าใจบริบทดีขึ้น | นำไปทดลองรันแบบ Local หรือปรับแต่ง (Fine-tune) สำหรับงานเฉพาะทางได้",
+    "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
+  },
+  {
+    "id": "hn_50392118",
+    "timestamp": "2026-11-06T13:35:27.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini Omni 1.2 Flash สำหรับนักพัฒนา",
+    "summary_th": "โมเดลตระกูล Omni รุ่นใหม่เน้นความเร็วและการประมวลผลแบบ Multimodal | ทำงานได้รวดเร็วและมีประสิทธิภาพสูงขึ้นกว่ารุ่นก่อนหน้า เหมาะกับงาน Real-time | นำไปพัฒนาแอปพลิเคชันเสียงและแชทบอทที่ต้องการตอบสนองทันทีได้ดี",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+  },
+  {
+    "id": "hn_50393235",
+    "timestamp": "2026-11-06T15:07:47.000Z",
+    "score": 7,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Agentic Identity Broker เครื่องมือจัดการ OAuth Delegation สำหรับ AI Agents",
+    "summary_th": "ระบบจัดการสิทธิ์และยืนยันตัวตนสำหรับ AI Agents ผ่าน OAuth | ช่วยให้ตัวแทน AI สามารถขอสิทธิ์เข้าถึงบริการต่างๆ ได้อย่างปลอดภัยและมีการควบคุมที่ดี | นำไปใช้รักษาความปลอดภัยในสถาปัตยกรรมระบบ Multi-Agent ที่ต้องเข้าถึง API ภายนอก",
+    "url": "https://github.com/zalando-incubator/agentic-identity-broker"
+  },
+  {
+    "id": "hn_50389990",
+    "timestamp": "2026-11-06T09:13:30.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "รายงานเจาะลึกการใช้ Claude สำหรับงานวิจัยทางวิทยาศาสตร์จาก Anthropic",
+    "summary_th": "บทความและกรณีศึกษาการนำ Claude ไปประยุกต์ใช้ในงานวิจัยเชิงวิทยาศาสตร์ | ช่วยให้นักวิจัยวิเคราะห์ข้อมูลและสังเคราะห์องค์ความรู้ได้มีประสิทธิภาพขึ้น | นำมาเป็นแนวทางในการออกแบบ Prompt หรือ Workflow สำหรับงานวิจัยและวิเคราะห์ข้อมูลเชิงลึก",
+    "url": "https://www.anthropic.com/research/how-researchers-use-claude"
+  },
+  {
     "id": "bsky_bafyreigyhofl6tytiejqiofeiblninhtmqwijtae5p3ovewaqypygbwneu",
     "timestamp": "2026-11-06T04:30:06.957991+00:00",
     "score": 8,
