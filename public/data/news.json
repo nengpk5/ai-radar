@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50402212",
+    "timestamp": "2026-11-07T06:39:04.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "เจาะลึกองค์ประกอบสำคัญของหน่วยความจำสำหรับ AI Agent จาก Anthropic",
+    "summary_th": "บทความวิจัยจาก Anthropic ที่อธิบายโครงสร้างและองค์ประกอบของระบบความจำ (Memory) สำหรับ AI Agent | ช่วยให้เข้าใจวิธีออกแบบหน่วยความจำระยะสั้นและระยะยาว ทำให้ Agent จดจำบริบทได้ดีขึ้น | นำไปประยุกต์ใช้กับการสร้าง Multi-turn Agent ที่ซับซ้อนและต้องการความต่อเนื่องสูง",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory"
+  },
+  {
+    "id": "gn_59ce6c6b440d5b71",
+    "timestamp": "2026-11-06T19:58:33.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude Code รองรับการตั้งค่าสภาพแวดล้อมและบันทึก Session บนคลาวด์อัตโนมัติ",
+    "summary_th": "อัปเดตฟีเจอร์ใหม่ใน Claude Code ที่ช่วยตรวจจับ Dependencies, เครือข่าย และ API Keys แล้วบันทึกสภาพแวดล้อมบนคลาวด์ไว้ใช้ต่อได้ทันที | สะดวกและประหยัดเวลาในการตั้งค่าโปรเจกต์ใหม่บน Pro, Max และ Ultra | นำไปใช้พัฒนาซอฟต์แวร์ผ่าน Cloud Session ได้อย่างรวดเร็วโดยไม่ต้องตั้งค่าซ้ำซ้อน",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CWTRoNVBiTzN4aG1fUDVLRHpXQ0dqT0hmbWRuNF9Oc3N2M04tU3EzWERNeUk4SXp6d2kwV20yMktOeG1KMkdBX1FJWmlFQzk4Y2NDMkctOHczcUNFN1RCZA?oc=5"
+  },
+  {
     "id": "or_liquid_lfm-3-1_7b",
     "timestamp": "2026-11-06T23:57:57.000Z",
     "score": 7,
