@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_61419da2e911e1a9",
+    "timestamp": "2026-11-07T12:24:21.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Apple นำ Xcode เข้าสู่ Claude Code เป็นแพลกอินอย่างเป็นทางการ ติดตั้งในไดเรกทอรี่ปลั๊กอินของ Claude Code",
+    "summary_th": "แพลกอินของ Apple ที่รวม Xcode เข้ากับ Claude Code เพื่อให้สามารถพัฒนาแอป iOS ได้ภายในสภาพแวดล้อมเดียว | ดีกว่าเดิมเพราะรวมฟังก์ชัน Build, การเรนเดอร์ SwiftUI preview, และการขับเคลื่อน simulator/อุปกรณ์จริงเข้าด้วยกัน ลดขั้นตอนสลับเครื่องมือ | ใช้งานได้ทันทีสำหรับ AI Engineer ที่พัฒนาแอป iOS โดยใช้ Claude Code เป็นศูนย์กลางกระบวนการ",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qUDVYR2ZBY0VKTWVzMXRsci1hWFVQREN2aG14MmJKQWJNVGxsaXd2SzR4d09jajRwRHFNaTgxcXNBYkxTZ2xYVWprZV9sNXgxTjE5SS1LTW1GeVV0QVJRLXJxT0lodTg?oc=5"
+  },
+  {
     "id": "hn_50402212",
     "timestamp": "2026-11-07T06:39:04.000Z",
     "score": 8,
