@@ -1,5 +1,15 @@
 [
   {
+    "id": "or_liquid_lfm-3-1_7b",
+    "timestamp": "2026-11-06T23:57:57.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว LiquidAI LFM3-1.7B โมเดลจิ๋วขนาด 1.7B พารามิเตอร์ แต่รองรับ Context ยาวถึง 256K",
+    "summary_th": "คือโมเดลภาษาขนาดเล็ก 1.7B พารามิเตอร์ที่ถูกปรับแต่งมาเพื่องงาน Agent, การเรียกใช้งาน Tool และ Structured Outputs โดยเฉพาะ | ดีกว่าเดิมด้วยความสามารถในการคิดวิเคราะห์ก่อนตอบ (Reasoning) และรองรับ Context Window สูงถึง 256K ในขนาดที่กะทัดรัด | นำไปประยุกต์ใช้สร้างระบบ Agent ท้องถิ่น หรือระบบประมวลผลเอกสารขนาดยาวที่ประหยัดต้นทุนได้",
+    "url": "https://openrouter.ai/liquid/lfm-3-1.7b"
+  },
+  {
     "id": "gn_e6b644b8302deaea",
     "timestamp": "2026-11-06T21:16:17.000Z",
     "score": 8,
