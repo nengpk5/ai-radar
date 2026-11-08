@@ -1,5 +1,15 @@
 [
   {
+    "id": "hn_50407882",
+    "timestamp": "2026-11-07T20:45:32.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "ช่องโหว่ใน Claude Code เผยรหัสผ่านบน GitHub สาธารณะ",
+    "summary_th": "ฟีเจอร์ 'Don't Ask Again' ของ Claude Code ทำข้อมูลรั่วไหล | เตือนภัยความปลอดภัยสำหรับการใช้ AI coding agents | นำไปใช้ตรวจสอบและตั้งค่าความปลอดภัย ป้องกันการหลุดของ API keys และรหัสผ่าน",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
+  },
+  {
     "id": "gn_61419da2e911e1a9",
     "timestamp": "2026-11-07T12:24:21.000Z",
     "score": 7,
