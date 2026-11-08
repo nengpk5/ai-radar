@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50415628",
+    "timestamp": "2026-11-08T18:16:07.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Goldman Sachs สั่งถอด Claude Code ออกจากการใช้งานของวาณิชธนากรและเทรดเดอร์",
+    "summary_th": "ข่าวการจำกัดการใช้เครื่องมือ Claude Code ภายในองค์กรการเงินใหญ่ | สะท้อนข้อจำกัดด้านความปลอดภัยและการควบคุมข้อมูลองค์กร | AI Engineer ต้องคำนึงถึงนโยบายความปลอดภัยและการปฏิบัติตามกฎระเบียบเมื่อนำ AI มาใช้ในภาคการเงิน",
+    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers"
+  },
+  {
+    "id": "gn_2e8a17f18447ef21",
+    "timestamp": "2026-11-08T01:18:13.000Z",
+    "score": 5,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic ทยอยอัปเดตระบบ Reasoning Summarizer สำหรับผู้ใช้รายบัญชี",
+    "summary_th": "การปรับปรุงฟีเจอร์สรุปกระบวนการคิดของโมเดลให้มีคุณภาพดีขึ้น | แก้ไขปัญหาขั้นตอนการคิดที่เคยอ่านไม่รู้เรื่องโดยไม่ลดทอนประสิทธิภาพ | นำไปอ้างอิงและตรวจสอบพฤติกรรมการให้เหตุผลของโมเดลได้แม่นยำขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91VDhTMjFOVXpLSy1rbFktSGFxR1V2N1VOc3U0aFd6enYydVJDYXZFMVZnUlZoUzU1MEV0WkFTT20ydFVFSFQtS3UyS082QVJFTzdGOEl4VHA?oc=5"
+  },
+  {
     "id": "hn_50411961",
     "timestamp": "2026-11-08T10:22:04.000Z",
     "score": 7,
