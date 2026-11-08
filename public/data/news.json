@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50411961",
+    "timestamp": "2026-11-08T10:22:04.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "รันโมเดล DeepSeek ขนาด 284B บน RAM 64GB โดยไม่ใช้ GPU ด้วย Llama-modchip",
+    "summary_th": "เครื่องมือช่วยรันโมเดลขนาดใหญ่บนฮาร์ดแวร์จำกัด | ทำให้รันโมเดลหลักร้อยพันล้านพารามิเตอร์ได้โดยไม่ต้องใช้การ์ดจอราคาแพง | นำไปประยุกต์ใช้รัน Local LLM ขนาดใหญ่บนเครื่องคอมพิวเตอร์ทั่วไปสำหรับการทดลองและพัฒนา",
+    "url": "https://github.com/synchopate/llama-modchip"
+  },
+  {
+    "id": "hn_50411467",
+    "timestamp": "2026-11-08T08:40:23.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "ข้อเสนอรูปแบบ Open Agent Memory Format สำหรับจัดการหน่วยความจำของ AI Agent",
+    "summary_th": "มาตรฐานกลางในการจัดเก็บและจัดการหน่วยความจำของ AI Agent | ช่วยให้ระบบ Agent สามารถบันทึก ดึงข้อมูล และแชร์ context ข้ามระบบได้ดีขึ้น | นำไปใช้พัฒนาสถาปัตยกรรม Multi-agent ที่ต้องการระบบจัดการ Memory แบบเป็นมาตรฐานเดียวกัน",
+    "url": "https://www.lorekit.io/blog/open-agent-memory-format"
+  },
+  {
     "id": "hn_50410107",
     "timestamp": "2026-11-08T03:11:48.000Z",
     "score": 5,
