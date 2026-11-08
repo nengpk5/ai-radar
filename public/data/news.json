@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50410107",
+    "timestamp": "2026-11-08T03:11:48.000Z",
+    "score": 5,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "เจาะลึกมุมมองนักพัฒนาที่ย้ายจากการใช้งาน Claude ไปสู่ Pi",
+    "summary_th": "บทความแชร์ประสบการณ์การเปลี่ยนผ่านการใช้งานเครื่องมือ AI จาก Claude มาเป็น Pi | ช่วยให้เห็นข้อดีข้อเสียเปรียบเทียบในมุมมองการทำงานจริง | นำไปประเมินเลือกใช้โมเดลและเครื่องมือให้เหมาะกับงานพัฒนาได้ดีขึ้น",
+    "url": "https://caleb.software/posts/claude-to-pi.html"
+  },
+  {
+    "id": "gn_7e3570634302e73c",
+    "timestamp": "2026-11-07T18:17:43.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "การประยุกต์ใช้ Claude Code ช่วยออกแบบชิ้นงานเฟอร์นิเจอร์และคำนวณรายการวัสดุ",
+    "summary_th": "การใช้ Claude Code ช่วยออกแบบเฟอร์นิเจอร์ทีละชิ้นพร้อมทำรายการวัสดุ (BOM) เพื่อสั่งซื้อ | ช่วยลดขั้นตอนการทำงานและประหยัดต้นทุนกว่าซื้อแบรนด์สำเร็จรูป | นำไปประยุกต์ใช้สร้างระบบ Agent ช่วยออกแบบทางวิศวกรรมหรือสถาปัตยกรรมเบื้องต้นได้",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnLUhfYWF6aC1uaS1ESjhSRHJtQmNMQUFMemY0NWZyWVZmd0ktU0p2TU91Q2VfbEdKb25ibXVIYmh2OUxSRjlhZnFvZlNhcVMtNGpWVUFCRlh3Q0NwY0E?oc=5"
+  },
+  {
     "id": "hn_50407882",
     "timestamp": "2026-11-07T20:45:32.000Z",
     "score": 8,
