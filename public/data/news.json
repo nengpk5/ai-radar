@@ -1,5 +1,35 @@
 [
   {
+    "id": "hf_NousResearch_Arete-27B",
+    "timestamp": "2026-11-06T19:31:28.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "โมเดลโอเพนซอร์สใหม่ NousResearch/Arete-27B บน Hugging Face",
+    "summary_th": "โมเดลภาษาขนาด 27B ตัวใหม่จาก NousResearch ที่ได้รับความนิยมสูง | มีประสิทธิภาพที่ดีขึ้นในการสร้างข้อความและประมวลผลงานเฉพาะด้าน | นำไป fine-tune หรือปรับใช้รันเป็นโมเดลท้องถิ่นสำหรับงานประมวลผลภาษาธรรมชาติ",
+    "url": "https://huggingface.co/NousResearch/Arete-27B"
+  },
+  {
+    "id": "gn_180239031dfdebed",
+    "timestamp": "2026-11-08T18:10:03.000Z",
+    "score": 7,
+    "vendor": "DeepSeek",
+    "category": "Model Release",
+    "title_th": "DeepSeek เผยตัวเลขการใช้งานโครงสร้างพื้นฐาน AI Agent ที่เติบโตอย่างรวดเร็ว",
+    "summary_th": "รายงานความคืบหน้าและอัตราการใช้งานระบบ AI Agent ของ DeepSeek ที่ท้าทายผู้นำตลาด | แสดงให้เห็นถึงประสิทธิภาพของระบบที่รองรับการใช้งานจริงในสเกลใหญ่ด้วยต้นทุนที่ต่ำลง | นำมาศึกษาแนวทางการสร้างสถาปัตยกรรม Agent และปรับใช้เทคโนโลยีโอเพนซอร์สร่วมด้วย",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBUelkydzkzNERWVHd4Q1BTbFJtQ3F5N0JZUEhDbU5qVFdkMHIwNk5QX3lVc1MzS21GeDZNYVZYRGk3ZUo5OEJpR3VmN1FNS01vQU5IMktBWVlVU0JYdnc?oc=5"
+  },
+  {
+    "id": "gn_ea0df59a139519d7",
+    "timestamp": "2026-11-08T14:12:21.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google ซุ่มพัฒนา Gemini Agent รุ่นถัดไปสำหรับองค์กร",
+    "summary_th": "การพัฒนา Gemini Agent เจเนอเรชันใหม่สำหรับภาคธุรกิจที่กำลังทดสอบภายใน Google | มีความสามารถในการทำงานอัตโนมัติที่ซับซ้อนและเข้าใจบริบทองค์กรได้ดีขึ้น | เตรียมพร้อมนำไปบูรณาการระบบอัตโนมัติและเครื่องมือช่วยทำงานภายในองค์กรเมื่อเปิดให้บริการ",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5FRVJiWXBacklramhLTV8zYjcwd0kyam9BckdFTktKSVZyRVp4VGdEc2tRWUJZMWVHTGhYM1dtR2lkMkdfYkNiSzViU0pkN084em9sdDJXUWk5b0FoT0ZnQkpkaGxlZw?oc=5"
+  },
+  {
     "id": "hn_50415628",
     "timestamp": "2026-11-08T18:16:07.000Z",
     "score": 6,
