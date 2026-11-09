@@ -1,5 +1,25 @@
 [
   {
+    "id": "or_anthropic_claude-fable-5_2",
+    "timestamp": "2026-11-09T19:49:41.000Z",
+    "score": 9,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic เปิดตัว Claude Fable 5.2 และ Mythos 5.2 โมเดลใหม่เก่งกว่า Opus 5.5",
+    "summary_th": "คือโมเดลภาษารุ่นใหม่จาก Anthropic ที่มีความสามารถด้าน Coding, Reasoning และ Vision สูงกว่ารุ่นก่อนหน้าและทรงพลังกว่า Opus 5.5 | ดีกว่าเดิมคือทำงานเร็วขึ้น 30% ราคาถูกลง และได้คะแนนประเมินสูงสุดในตลาด | นำไปใช้พัฒนา AI Agents ซับซ้อน งานเขียนโค้ดระดับสูง และระบบวิเคราะห์ภาพที่มีความแม่นยำสูง",
+    "url": "https://openrouter.ai/anthropic/claude-fable-5.2"
+  },
+  {
+    "id": "or_meta_muse-ember",
+    "timestamp": "2026-11-09T18:07:28.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Meta เปิดตัว Muse Ember โมเดลขนาดเล็กเน้นงานเอเจนต์และการเรียกใช้งาน Tool",
+    "summary_th": "คือโมเดลขนาดกะทัดรัดและมีประสิทธิภาพสูงจาก Meta ออกแบบมาเพื่อเน้นการทำ Complex Reasoning และงานเอเจนต์โดยเฉพาะ | ดีกว่าเดิมคือประหยัดทรัพยากร เหมาะกับการทำ Tool calls และงานย่อยของ Coding agents ได้อย่างรวดเร็ว | นำไปใช้เป็นสมองกลควบคุมระบบ Agentic workflows และงาน Routing อัตโนมัติ",
+    "url": "https://openrouter.ai/meta/muse-ember"
+  },
+  {
     "id": "hn_50422628",
     "timestamp": "2026-11-09T08:17:49.000Z",
     "score": 6,
@@ -1978,25 +1998,5 @@
     "title_th": "LiquidAI LFM2.5 24B A2B โมเดลภาษาประหยัด",
     "summary_th": "โมเดล text-generation แบบ MoE ขนาด 24B total ที่มี 2B active ต่อ token\nactive เพียง 2B ทำให้เหมาะกับ latency-sensitive inference และงาน edge มากกว่าโมเดล dense ขนาดเท่ากัน\nใช้กับ local assistant, RAG, routing และ agent งานซ้ำที่ต้องตอบเร็ว",
     "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"
-  },
-  {
-    "id": "hn_50145507",
-    "timestamp": "2026-10-18T21:09:12.000Z",
-    "score": 5,
-    "vendor": "Tooling",
-    "category": "Dev Tool",
-    "title_th": "ใช้ LLM proxy เพื่อควบคุมและตรวจสอบ AI traffic",
-    "summary_th": "บทความเสนอให้รัน LLM proxy ของตัวเอง เพื่อบันทึก request/response เลือก route และควบคุมการใช้ API\nช่วยเห็นพฤติกรรมและต้นทุนแบบ end-to-end มากกว่าการพึ่ง log ของผู้ให้บริการที่อาจไม่ครบถ้วน\nใช้สร้าง observability, routing, policy enforcement และ audit trail สำหรับระบบ LLM",
-    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/"
-  },
-  {
-    "id": "hn_50148855",
-    "timestamp": "2026-10-19T05:55:31.000Z",
-    "score": 5,
-    "vendor": "Tooling",
-    "category": "Dev Tool",
-    "title_th": "tmux จัดการ Claude Code แบบหลาย session",
-    "summary_th": "คู่มือใช้ tmux จัดการ session ของ Claude Code ส่งคีย์ ควบคุม agent และทำงานหลาย session พร้อมกัน\nช่วยให้ session คงอยู่และควบคุมงาน agent ได้ยืดหยุ่นกว่าการรันทุกอย่างใน terminal เดียว\nใช้กับ remote coding agent, parallel tasks และการกลับมาใช้ session เดิม",
-    "url": "https://crystl.dev/guides/tmux-for-ai-agents/"
   }
 ]
