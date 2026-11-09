@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50422628",
+    "timestamp": "2026-11-09T08:17:49.000Z",
+    "score": 6,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "ChatGPT Desktop ส่งต่อ SSH agent ไปยังเครื่องระยะไกล",
+    "summary_th": "ฟีเจอร์ของ ChatGPT Desktop ที่ส่งต่อ SSH agent ไปยังเครื่องระยะไกลโดยอัตโนมัติ | ช่วยให้การเชื่อมต่อและสั่งการเซิร์ฟเวอร์ผ่าน AI สะดวกขึ้น แต่ต้องระวังเรื่องความปลอดภัยในการเข้าถึงสิทธิ์ | นำไปใช้จัดการ Dev Environment หรือรีโมทเซิร์ฟเวอร์ผ่าน AI Assistant",
+    "url": "https://news.ycombinator.com/item?id=50422628"
+  },
+  {
+    "id": "gn_ada8a63ddbb48331",
+    "timestamp": "2026-11-08T14:07:40.000Z",
+    "score": 6,
+    "vendor": "DeepSeek",
+    "category": "Dev Tool",
+    "title_th": "DeepSeek เผยความคืบหน้าคอมมูนิตี้ Plugin สำหรับ DeepSeek Harness",
+    "summary_th": "การขยายระบบนิเวศ Plugin บนแพลตฟอร์ม DeepSeek Harness ที่เปิดให้นักพัฒนาต่อยอดความสามารถได้มากขึ้น | ช่วยให้นักพัฒนาปรับแต่ง AI ให้เข้ากับเวิร์กโฟลว์เฉพาะตัวได้ดีขึ้น | นำไปพัฒนาปลั๊กอินเชื่อมต่อเครื่องมือภายในองค์กรเข้ากับ DeepSeek",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBXVzVjT195bGkwWHRNWG9nWV83bVlySFFkeXFMNzJ1c2RnM0tZa2txbjZxMjlCcThnX1NEUEY2SkNuTWhubkMzYlR3TDJYSDlMZFFiNDBzSHp3bGh4Ty1FclJWV3RQVEk?oc=5"
+  },
+  {
     "id": "hf_NousResearch_Arete-27B",
     "timestamp": "2026-11-06T19:31:28.000Z",
     "score": 6,
