@@ -1,5 +1,15 @@
 [
   {
+    "id": "or_nex-agi_nex-n2_6",
+    "timestamp": "2026-11-10T03:46:19.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Nex AGI เปิดตัว Nex-N2.6 โมเดล OpenRouter ขนาดใหญ่สำหรับงานเอเจนต์และการเขียนโค้ด",
+    "summary_th": "คือโมเดลเอเจนต์ขนาด 321B พารามิเตอร์ต่อยอดจาก GLM-5.3-Flash | เก่งขึ้นในด้านการใช้งานคอมพิวเตอร์ การเขียนโค้ด และงานระยะยาวที่ต้องใช้เครื่องมือ | นำไปประยุกต์สร้าง AI Agent ที่ซับซ้อนและทำงานอัตโนมัติบนคอมพิวเตอร์ได้มีประสิทธิภาพสูงขึ้น",
+    "url": "https://openrouter.ai/nex-agi/nex-n2.6"
+  },
+  {
     "id": "hn_50429068",
     "timestamp": "2026-11-09T18:01:10.000Z",
     "score": 9,
@@ -1988,15 +1998,5 @@
     "title_th": "Hybrid Reasoning Agents ให้ agent คิดใน latent space",
     "summary_th": "งานวิจัยเสนอ LLM agent ที่คิดใน latent space แล้วสื่อสารหรือลงมือผ่านข้อความ\nการย้ายส่วนการคิดออกจากการสร้าง token ต่อความคิดอาจลด overhead ของ reasoning ขณะคง action interface ที่ตรวจสอบได้\nใช้เป็นแนวทางออกแบบ reasoning agent ที่ต้องการลดต้นทุนและเพิ่มความเร็ว",
     "url": "https://arxiv.org/abs/2610.18861"
-  },
-  {
-    "id": "or_elorian_glimpse",
-    "timestamp": "2026-10-17T03:10:29.000Z",
-    "score": 5,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Elorian Glimpse โมเดลคิดเห็นภาพและวิดีโอ",
-    "summary_th": "โมเดลมัลติโมดัลที่คิดเหตุผลโดยตรงบนภาพและวิดีโอสำหรับสถานการณ์ในโลกจริง\nเหมาะกับงาน visual reasoning ที่ต้องเชื่อมสิ่งที่เห็นกับเหตุผลเชิงกายภาพ มากกว่าการทำ caption อย่างเดียว\nใช้ทดลองกับ robotics, video QA และระบบตรวจสังเกตการณ์จากกล้อง",
-    "url": "https://openrouter.ai/elorian/glimpse"
   }
 ]
