@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50429068",
+    "timestamp": "2026-11-09T18:01:10.000Z",
+    "score": 9,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Claude Fable 5.2 และ Mythos 5.2",
+    "summary_th": "โมเดล AI ล่าสุดจาก Anthropic ที่ทดสอบแล้วแรงกว่า Opus 5.5 เกือบทุกด้าน | ตอบคำถามชัดเจนขึ้น และสร้างผลลัพธ์เร็วขึ้นสูงสุด 30% เมื่อเทียบกับรุ่น 5.1 | เหมาะสำหรับนักพัฒนานำไปสร้างแอป AI งานเขียนโค้ด และวิเคราะห์ข้อมูลเชิงลึกได้ทันที",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+  },
+  {
+    "id": "or_thinkingmachines_inkling-2-small_free",
+    "timestamp": "2026-11-09T22:04:07.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Inkling 2 Small โมเดล MoE มัลติโมดัลจาก Thinking Machines",
+    "summary_th": "โมเดลการให้เหตุผลแบบผสมผู้เชี่ยวชาญ (MoE) มีพารามิเตอร์ที่ใช้งานจริง 17B จากทั้งหมด 594B | รองรับงานหลายรูปแบบและเน้นเหตุผลขั้นสูง | นักพัฒนาสามารถทดสอบใช้งานฟรีผ่าน OpenRouter สำหรับงาน AI ที่ต้องการประสิทธิภาพสูงแต่ใช้ทรัพยากรน้อย",
+    "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free"
+  },
+  {
+    "id": "gn_7e863b6744486a8b",
+    "timestamp": "2026-11-09T21:03:27.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "คู่มือเลือกโมเดล Claude สำหรับนักพัฒนา",
+    "summary_th": "คู่มือใหม่จาก Anthropic แนะนำให้เลือกใช้ Fable 5.2, Opus 5.5, Sonnet หรือ Haiku ตามภารกิจ | ช่วยปรับระดับความพยายามแทนการเปลี่ยนโมเดล และลดต้นทุนด้วยการใช้โมเดลย่อยสำหรับ subagents | นำไปปรับสถาปัตยกรรม Agent ให้ประหยัดและเหมาะสมกับงานมากขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9OZ01SWkh4RnRneXA2RU1GaV84RU5kY0RhYmlkSjRPd0t1cFlNWDRKcWoyUjB6NXF4RGh3UTMzNVlnZkpmaXd5X3pyWnJyLVdpYzhBMmFjQVl0R2hZS1ZiZA?oc=5"
+  },
+  {
     "id": "or_anthropic_claude-fable-5_2",
     "timestamp": "2026-11-09T19:49:41.000Z",
     "score": 9,
@@ -1968,35 +1998,5 @@
     "title_th": "Elorian Glimpse โมเดลคิดเห็นภาพและวิดีโอ",
     "summary_th": "โมเดลมัลติโมดัลที่คิดเหตุผลโดยตรงบนภาพและวิดีโอสำหรับสถานการณ์ในโลกจริง\nเหมาะกับงาน visual reasoning ที่ต้องเชื่อมสิ่งที่เห็นกับเหตุผลเชิงกายภาพ มากกว่าการทำ caption อย่างเดียว\nใช้ทดลองกับ robotics, video QA และระบบตรวจสังเกตการณ์จากกล้อง",
     "url": "https://openrouter.ai/elorian/glimpse"
-  },
-  {
-    "id": "hf_google_embeddinggemma-2",
-    "timestamp": "2026-09-14T14:53:42.000Z",
-    "score": 5,
-    "vendor": "Google",
-    "category": "Model Release",
-    "title_th": "Google เปิด EmbeddingGemma 2",
-    "summary_th": "โมเดล embedding ของ Google สำหรับแปลงข้อความเป็นเวกเตอร์สำหรับงานค้นหาและจัดกลุ่ม\nเป็นโมเดลเฉพาะทางสำหรับ retrieval จึงลดความซับซ้อนเมื่อเทียบกับการใช้โมเดล generative ทั่วไปสร้างเวกเตอร์\nใช้เป็น embedding backend ของ RAG, semantic search, deduplication และ clustering",
-    "url": "https://huggingface.co/google/embeddinggemma-2"
-  },
-  {
-    "id": "hf_openbmb_MiniCPM-V-4_7-35B-A3B",
-    "timestamp": "2026-10-07T07:07:30.000Z",
-    "score": 5,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "MiniCPM-V 4.7 โมเดลมองเห็น 35B A3B",
-    "summary_th": "โมเดล vision-language ขนาด 35B แบบ MoE ที่ใช้ 3B active ต่อ token และรองรับ image-text-to-text\nจำนวน active ที่น้อยช่วยให้ inference เบากว่าโมเดล 35B แบบ dense ขณะยังรองรับงาน multimodal\nใช้กับ OCR, visual QA, document understanding และ local multimodal agent",
-    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B"
-  },
-  {
-    "id": "hf_LiquidAI_LFM2_5-24B-A2B",
-    "timestamp": "2026-10-12T05:35:46.000Z",
-    "score": 5,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "LiquidAI LFM2.5 24B A2B โมเดลภาษาประหยัด",
-    "summary_th": "โมเดล text-generation แบบ MoE ขนาด 24B total ที่มี 2B active ต่อ token\nactive เพียง 2B ทำให้เหมาะกับ latency-sensitive inference และงาน edge มากกว่าโมเดล dense ขนาดเท่ากัน\nใช้กับ local assistant, RAG, routing และ agent งานซ้ำที่ต้องตอบเร็ว",
-    "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"
   }
 ]
