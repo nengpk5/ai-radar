@@ -1,5 +1,55 @@
 [
   {
+    "id": "or_google_gemini-4-carbon",
+    "timestamp": "2026-11-10T16:07:51.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Gemini 4 Carbon - โมเดลขั้นสูงของ Google",
+    "summary_th": "Gemini 4 Carbon - โมเดลขั้นสูงของ Google | เปลี่ยนจากเดิมด้วยการทำความเข้าใจลึกซึ้งและการทำงานเชิงอัตโนมัติ | ใช้ในงานเขียนโค้ด การทำงานเชิงอัตโนมัติ และการวิเคราะห์ข้อมูลที่ซับซ้อน",
+    "url": "https://openrouter.ai/google/gemini-4-carbon"
+  },
+  {
+    "id": "gn_8cfb6848425e0bdf",
+    "timestamp": "2026-11-10T16:05:52.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Gemini 4 Carbon Availability - การเปิดตัวโมเดลใหม่ที่ทรงพลัง",
+    "summary_th": "Gemini 4 Carbon Availability - การเปิดตัวโมเดลใหม่ที่ทรงพลัง | มีความสามารถในการทำงานระยะยาวและการคิดเชิงลึกได้ดีกว่าโมเดลก่อนหน้า | ใช้ในระบบที่ต้องการการวิเคราะห์เชิงลึกและงานที่ซับซ้อน",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TcUVxeE1ISnZoQ3dWQXowQkpISGVVd1Rjb1pHWENVeFJvSlc1VXJWMFdxSHNaUGtONVNjWmR6bjVvWXdFbUNOM19MUUpack1HTlc0MWp0Z2ZfZDQ?oc=5"
+  },
+  {
+    "id": "gn_94a9e777e313aa42",
+    "timestamp": "2026-11-10T16:04:43.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Gemini 4 Carbon Rollout - การเปิดตัวแบบขยายตัวของโมเดลหลัก",
+    "summary_th": "Gemini 4 Carbon Rollout - การเปิดตัวแบบขยายตัวของโมเดลหลัก | มีความสามารถในการทำงานระยะยาวในด้านซอฟต์แวร์ ความปลอดภัย และการค้นพบทางวิทยาศาสตร์ | ใช้ในแอปพลิเคชันที่ต้องการความแม่นยำสูงในงานที่ซับซ้อน",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHMlBacEZ6eDFoQUxWVExPbHR6b01fdWNyT1pvZk1fUkJiaExWUUNpUGJwd2l6UmlGYUdoUEFVZ3VpcTFQZmJocTgxalRRbEFYejg2Z0RxZ0FqZ01hc3NNTlFZbw?oc=5"
+  },
+  {
+    "id": "gn_45c896a91038d048",
+    "timestamp": "2026-11-10T15:00:42.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Gemini Robotics 2.5 - โครงสร้าง AIทางกายภาพใหม่",
+    "summary_th": "Gemini Robotics 2.5 - โครงสร้าง AIทางกายภาพใหม่ | สามารถเรียนรู้ทักษะประจำวันหลายสิบทักษะได้โดยอัตโนมัติ | ใช้ในระบบอัตโนมัติในโรงงาน การจัดการสินค้า และการทำงานที่ซับซ้อน",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBzdE5KQVZuRFhscFNHSGdzMFFjM3U5N3lCX3EzSzRGV0pGN3pFYXViWlU2R19uVHUwY3V0ODFkU3BtVnBZWEF2MElyMlk0VVQ2Sm54U3FWZl9qZjhJZnJaWURya1ZoUQ?oc=5"
+  },
+  {
+    "id": "gn_fb9e61f3bf471667",
+    "timestamp": "2026-11-10T15:20:48.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "ChatGPT Business Agent - เครื่องมือช่วยตอบคำถามสำหรับธุรกิจ",
+    "summary_th": "ChatGPT Business Agent - เครื่องมือช่วยตอบคำถามสำหรับธุรกิจ | เปลี่ยนจากฟีเจอร์เดิมให้มีความสามารถในการทำงานอัตโนมัติ | ใช้ในระบบบริการลูกค้าและการจัดการข้อมูลธุรกิจ",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zZFZwalR6dkhXR3B5dE9Fc3pweEMzVXpzYWI2RGpDTHVvTXpWNWFEOHRGSlBJQnA4NTJKX1pTNEJnUEVkMkNkcGZZWjVYNFVqZ1lJN2NxSGpnOEJ5YUE?oc=5"
+  },
+  {
     "id": "or_nex-agi_nex-n2_6",
     "timestamp": "2026-11-10T03:46:19.000Z",
     "score": 8,
@@ -1948,55 +1998,5 @@
     "title_th": "Reflection Beam 1.0 โมเดลเปิดสำหรับ coding agent ยาว",
     "summary_th": "โมเดล reasoning แบบ MoE เปิดน้ำหนัก มี 501B total และ 23B active ต่อ token\nความจุขนาดใหญ่ช่วยให้รองรับงาน coding และ long-horizon agent ที่ต้องวางแผนและทำงานต่อเนื่องหลายขั้นตอน\nเหมาะกับทีมที่ต้องการประเมิน coding agent สำหรับ repository ขนาดใหญ่ผ่าน endpoint หรือระบบกระจายโมเดล",
     "url": "https://openrouter.ai/reflection/beam-1.0-501b-a23b"
-  },
-  {
-    "id": "or_nvidia_nemotron-3_5-super-vl_free",
-    "timestamp": "2026-10-15T15:04:22.000Z",
-    "score": 7,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "NVIDIA เปิด Nemotron 3.5 Super VL แบบฟรีบน OpenRouter",
-    "summary_th": "โมเดลมัลติโมดัล MoE แบบเปิดน้ำหนัก มี 120B total และ 12B active รับข้อความ รูปภาพ เอกสาร GUI และวิดีโอ\n12B active ช่วยลด computation ต่อ token เมื่อเทียบกับโมเดลเต็ม 120B และรวมหลาย modal ไว้ในโมเดลเดียว\nใช้กับ document AI, GUI agent, visual RAG และระบบวิเคราะห์วิดีโอ",
-    "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free"
-  },
-  {
-    "id": "hn_50151059",
-    "timestamp": "2026-10-19T11:28:45.000Z",
-    "score": 7,
-    "vendor": "Google",
-    "category": "Dev Tool",
-    "title_th": "Google Research เปิด Harness2 สำหรับ recursive agents",
-    "summary_th": "เฟรมเวิร์ก Harness2 ให้ agent ทำงานแบบ recursive เพื่อวางแผน ลงมือ ตรวจผล และทำซ้ำ\nลูป recursive ช่วยให้งานหลายขั้นตอนดำเนินได้ลึกกว่าการเรียก agent ครั้งเดียวและเหมาะกับ coding หรือ research agent\nใช้เป็น harness สำหรับสร้าง agent ที่ทำงานอิสระและประเมินผลลัพธ์ในแต่ละรอบ",
-    "url": "https://github.com/google-research/harness2"
-  },
-  {
-    "id": "or_xingchen-agi_xing4_0-29b-a4b_free",
-    "timestamp": "2026-10-16T19:04:56.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Xing4.0 29B A4B โมเดล MoE ประหยัดแบบเปิดน้ำหนัก",
-    "summary_th": "โมเดลภาษาจาก TeleAI ต่อยอดซีรีส์ TeleChat มี 29B total และ 4B active ต่อ token\nactive เพียง 4B ช่วยให้ inference เบากว่า dense model ขนาด 29B ขณะรักษาความจุรวมของสถาปัตยกรรม MoE\nเหมาะกับ local หรือ on-prem RAG, tool-calling และงานภาษาทั่วไปที่ต้องคุมต้นทุน",
-    "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free"
-  },
-  {
-    "id": "or_moondream_moondream3_1-9b-a2b",
-    "timestamp": "2026-10-15T22:12:53.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Moondream 3.1 โมเดลมองเห็นขนาดเล็ก",
-    "summary_th": "โมเดล vision-language แบบ MoE มี 9B total และ 2B active รองรับ VQA, captioning, OCR และ visual reasoning\nรุ่น 3.1 ต่อยอดจาก Preview ด้วยโครงสร้างที่มี active parameters น้อย จึงเหมาะกับการประมวลผลภาพในเครื่องหรือ edge\nใช้กับ OCR pipeline, ค้นหาภาพ, visual QA และ agent ที่ต้องอ่านหน้าจอ",
-    "url": "https://openrouter.ai/moondream/moondream3.1-9b-a2b"
-  },
-  {
-    "id": "hn_50145337",
-    "timestamp": "2026-10-18T20:48:14.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Research",
-    "title_th": "Hybrid Reasoning Agents ให้ agent คิดใน latent space",
-    "summary_th": "งานวิจัยเสนอ LLM agent ที่คิดใน latent space แล้วสื่อสารหรือลงมือผ่านข้อความ\nการย้ายส่วนการคิดออกจากการสร้าง token ต่อความคิดอาจลด overhead ของ reasoning ขณะคง action interface ที่ตรวจสอบได้\nใช้เป็นแนวทางออกแบบ reasoning agent ที่ต้องการลดต้นทุนและเพิ่มความเร็ว",
-    "url": "https://arxiv.org/abs/2610.18861"
   }
 ]
