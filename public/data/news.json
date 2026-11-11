@@ -1,5 +1,45 @@
 [
   {
+    "id": "hn_50453637",
+    "timestamp": "2026-11-11T14:10:46.000Z",
+    "score": 6,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Atuin Threads: ซิงค์เซสชัน AI Agent ข้ามทุกเครื่องมือ",
+    "summary_th": "เครื่องมือช่วยซิงค์และจัดเก็บประวัติการทำงานของ AI Agent บนเครื่องคอมพิวเตอร์ทุกเครื่อง | ช่วยให้ย้ายสภาพแวดล้อมการพัฒนาได้ไร้รอยต่อโดยไม่สูญเสียบริบท | นำไปใช้ติดตามและบริหารจัดการเซสชันของ Agent หลายตัวพร้อมกันได้อย่างมีประสิทธิภาพ",
+    "url": "https://blog.atuin.sh/threads-agent-sessions/"
+  },
+  {
+    "id": "hn_50455811",
+    "timestamp": "2026-11-11T17:11:56.000Z",
+    "score": 7,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Pomerado: แปลงเว็บไซต์ใดก็ได้ให้เป็น Model Context Protocol (MCP)",
+    "summary_th": "เครื่องมือแปลงเว็บไซต์ทั่วไปให้อยู่ในรูป MCP สำหรับเชื่อมต่อกับ AI Agent | ช่วยให้ Agent เข้าถึงและโต้ตอบกับเว็บไซต์เป้าหมายได้โดยตรงโดยไม่ต้องเขียนโค้ดเพิ่ม | นำไปพัฒนา AI Agent ให้ดึงข้อมูลหรือทำงานอัตโนมัติบนเว็บต่างๆ ได้ทันที",
+    "url": "https://pomerado.ai/"
+  },
+  {
+    "id": "gn_c46086751ec9e2cf",
+    "timestamp": "2026-11-11T16:08:25.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini Robotics 2.5 โมเดล VLA สำหรับหุ่นยนต์",
+    "summary_th": "โมเดล Vision-Language-Action (VLA) ระดับทัพของ Google สำหรับหุ่นยนต์ | เพิ่มความสามารถในการเรียนรู้ทักษะใหม่ๆ และเร่งความเร็วในการประมวลผลให้สูงขึ้น | นำไปใช้พัฒนาหุ่นยนต์ให้เข้าใจภาพ เสียง และการกระทำเพื่อใช้งานจริงนอกห้องทดลอง",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9zaVQxV1l6UTdqTlhYV1VzbEZWdFp3X3VOb3pqZUoxaUpZdldzbkRsUEQzQmxTUi1HS2F3ZGE3aFdWb0NlTW5JeC0yM2VGaVdLeml1QkdiVUV3Nnc?oc=5"
+  },
+  {
+    "id": "gn_aafb64714912b69d",
+    "timestamp": "2026-11-11T18:16:26.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini Decision 1 และ Decisions API สำหรับคำถามแบบ Closed-set",
+    "summary_th": "โมเดลและ API ใหม่จาก Google ที่ออกแบบมาเพื่อการตัดสินใจและให้คำตอบแบบเลือกตอบ (closed-set) สูงสุด 1,000 ข้อ รองรับไฟล์หลายรูปแบบในราคาประหยัด | ทำงานเร็วกว่าการ generate ทีละ token และต้นทุนถูกมาก ($0.10 ต่อ 1M tokens) | นำไปใช้ทำระบบประเมินผล วิเคราะห์ข้อมูลมัลติมีเดียจำนวนมาก หรือระบบตัดสินใจอัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1QUTFmUGVkYjJJQmtqLWw0eDhnV1Bpc0JocG12OE1LNFpFcnBVQlNOUTR3cXNUZ05zdWI0dXZ1WlJqS29lTk1MOVp1c1dMSDhZWDZneTQ2eHBjV1RCdUV2SXFZYzZlQQ?oc=5"
+  },
+  {
     "id": "hn_50452455",
     "timestamp": "2026-11-11T12:05:22.000Z",
     "score": 6,
@@ -1957,45 +1997,5 @@
     "title_th": "OpenAI เปิดตัว OSS Scanner บริการสแกนช่องโหว่ซอฟต์แวร์ฟรีด้วยโมเดลพลังสูง",
     "summary_th": "OSS Scanner คือระบบตรวจสอบช่องโหว่อัตโนมัติสำหรับโปรเจกต์ Open Source สำคัญโดยใช้โมเดลที่ดีที่สุดของ OpenAI | ดีกว่าเดิมยังไงตรวจจับปัญหาได้ลึกซึ้งพร้อมทั้งสร้าง Proof-of-concept และ Patch แก้ไขโค้ดให้โดยอัตโนมัติ | เอาไปใช้อะไรต่อได้ใช้เป็นแนวทางในการทำ Automated Security Audit หรือตรวจสอบความปลอดภัยโค้ดในโปรเจกต์ของคุณ",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBLWmVZZWM0VzBzeHpqWE5WNHlwMEVwR3gxTnd4UnZSakszSk5reXNZcVhuY2Fyd3JTckk0NUN2R2NUZmhxNEpzR29LX1oyYWxWaGdkMUhyWGo4Q2Nnc20zSQ?oc=5"
-  },
-  {
-    "id": "gn_cd8b691db14fc034",
-    "timestamp": "2026-10-19T23:58:07.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "อัปเดตใหม่ Claude Projects รองรับสถาปัตยกรรมการทำงานแบบ Multi-Agent",
-    "summary_th": "Claude Projects รูปแบบใหม่ที่ออกแบบอินเทอร์เฟซมารองรับระบบ Multi-Agent อย่างเต็มตัว | ดีกว่าเดิมยังไงมีโมเดล Coordinator คอยคุมภาพรวมและสั่งการ Agent ย่อยให้ทำงานแยก Thread กันได้อย่างเป็นระบบ | เอาไปใช้อะไรต่อได้นำไปประยุกต์สร้างระบบ AI Agent หลายตัวร่วมมือกันแก้โจทย์ที่มีความซับซ้อนสูง",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4xYXlXVTJEalNVdmxuLVJaaUk0cEEtekNtRURtalNRcWg0ZUlXRFYzeGRscTJwQUNaU1M4S05LS3RfeTlURFlxb1pNcWItX1NVSzEtM01GcGZQSVdQV0E?oc=5"
-  },
-  {
-    "id": "hn_50163277",
-    "timestamp": "2026-10-20T09:08:54.000Z",
-    "score": 9,
-    "vendor": "DeepSeek",
-    "category": "Dev Tool",
-    "title_th": "DeepSeek เปิดตัวและโอเพนซอร์ส Inference Engine ของตัวเองอย่างเป็นทางการ",
-    "summary_th": "คือระบบรันโมเดล AI (Inference Engine) ของ DeepSeek ที่เปิดซอร์สโค้ดให้ใช้งานได้ฟรี | ช่วยให้การรันโมเดลมีความเร็วสูงและจัดการทรัพยากร GPU ได้คุ้มค่ายิ่งขึ้น | นำไปปรับใช้เพื่อสร้างโฮสต์รันโมเดลขนาดใหญ่ในโครงสร้างพื้นฐานขององค์กรเองได้",
-    "url": "https://github.com/deepseek-ai/DeepInfer"
-  },
-  {
-    "id": "gn_17c8366b9ab648c3",
-    "timestamp": "2026-10-19T15:58:46.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "MiniMax เปิดตัว M3.1-Flash ประสิทธิภาพสูงขึ้นแต่ราคาถูกลงกว่าครึ่ง",
-    "summary_th": "โมเดลภาษาขนาดเล็กจาก MiniMax ที่ทำคะแนนบน Artificial Analysis สูงขึ้น 13 คะแนน | ดีกว่ารุ่นก่อนหน้าด้วยต้นทุนต่อภารกิจที่ถูกลงกว่าครึ่งแถมความแม่นยำเทียบเท่ารุ่นใหญ่ | นำไปประยุกต์ใช้กับงานแชทบอทหรือระบบประมวลผลข้อความที่ต้องการความเร็วและประหยัดต้นทุน",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51SzRnUmowemhHYjZ3Q1ZrekV1TWxBQnJiTnZQSkNFd2c4OGtqVUExb1J4ODZ2VnY5OUpjVmxqMURxZ0tlNXhzZ1doNDhiMVJvUlNNZGNLUmtLVU1aZnR3V0ZlalVwZ0U?oc=5"
-  },
-  {
-    "id": "gn_c10f2b45096f60dd",
-    "timestamp": "2026-10-16T20:27:13.000Z",
-    "score": 8,
-    "vendor": "OpenAI",
-    "category": "Model Release",
-    "title_th": "อัปเดต GPT-6 Astra Pro เพิ่มฟีเจอร์รัน Agent แบบขนานและการตอบสนองที่เร็วขึ้น",
-    "summary_th": "โมเดลอัปเดตใหม่ใน ChatGPT ที่รองรับการทำงานแบบ Multi-agent พร้อมกันเพื่อแก้โจทย์ที่ซับซ้อน | ตอบสนองไวขึ้นและใช้งานเครื่องมือต่างๆ ได้มีประสิทธิภาพ พร้อมระบบติดตามความคืบหน้าแบบเรียลไทม์ | นำไปใช้สร้าง Workflow อัตโนมัติที่ซับซ้อนและต้องการการประมวลผลหลายขั้นตอนพร้อมกัน",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fVDlWV2tFZU5ORE93ZGx6SUNQVFRHUjB0WWlEOGlud1FmcldzUzJMUFhTVnZ6UFpWcWV5NGxsSi1pUGlOdzFLRmU5VnljQWNoUS1Xd3hRMWhuekU?oc=5"
   }
 ]
