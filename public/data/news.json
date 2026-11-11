@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50452455",
+    "timestamp": "2026-11-11T12:05:22.000Z",
+    "score": 6,
+    "vendor": "Google",
+    "category": "Research",
+    "title_th": "Google ใช้เอเจนต์ AI 48 ตัววิเคราะห์ LiDAR ค้นพบพีระมิดมายาใหม่",
+    "summary_th": "คือโครงการวิจัยที่ปล่อยเอเจนต์ AI จำนวน 48 ตัววิเคราะห์ข้อมูล LiDAR ของ NASA จนค้นพบพีระมิดมายาที่ยังไม่มีในแผนที่ภายใน 72 ชั่วโมง ดีกว่าการวิเคราะห์แบบเดิมตรงที่ระบบ multi-agent ทำงานพร้อมกันได้ครอบคลุมและเร็วกว่า วิศวกร AI สามารถนำรูปแบบการจัดการเอเจนต์นี้ไปประยุกต์ใช้กับงานสำรวจข้อมูลเชิงพื้นที่หรืองานวิจัยด้านโบราณคดีดิจิทัล",
+    "url": "https://pietromiotti.com/latest/maya-site/?maya"
+  },
+  {
+    "id": "gn_bf3d069ce8c6b7a2",
+    "timestamp": "2026-11-10T17:26:06.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude เปิดตัว Interactive Connectors เชื่อมต่อเครื่องมือภายในแชท",
+    "summary_th": "คือฟีเจอร์ใหม่ของ Claude ที่เปิดให้ใช้งานเวอร์ชันเต็มของเครื่องมืออย่าง Adobe, Atlassian และ Box ได้ภายในหน้าสนทนา ดีกว่าเดิมตรงที่ผู้ใช้สามารถแก้ไขงานเอง หรือขอให้ Claude ช่วยทำร่วมกันได้แบบเรียลไทม์ รองรับทั้งเว็บและเดสก์ท็อป วิศวกร AI สามารถนำไปสร้างเวิร์กโฟลว์ผู้ช่วยอัจฉริยะที่เชื่อมต่อกับเครื่องมือทำงานจริงได้โดยตรง",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9NWWlZSzVhWTRPbUxWLVVfVGRvT0xWLVJQa2VyNGdfdzlPQlRMMjBBdE9zSGQ2Q1pVbzQ4eUhoV2lZbS1qR3B4bFhyaF9PdHBTeDVuYm1SSzBJZzUzb0E?oc=5"
+  },
+  {
     "id": "gn_323da34d38bb6979",
     "timestamp": "2026-11-10T22:07:42.000Z",
     "score": 8,
@@ -1977,25 +1997,5 @@
     "title_th": "อัปเดต GPT-6 Astra Pro เพิ่มฟีเจอร์รัน Agent แบบขนานและการตอบสนองที่เร็วขึ้น",
     "summary_th": "โมเดลอัปเดตใหม่ใน ChatGPT ที่รองรับการทำงานแบบ Multi-agent พร้อมกันเพื่อแก้โจทย์ที่ซับซ้อน | ตอบสนองไวขึ้นและใช้งานเครื่องมือต่างๆ ได้มีประสิทธิภาพ พร้อมระบบติดตามความคืบหน้าแบบเรียลไทม์ | นำไปใช้สร้าง Workflow อัตโนมัติที่ซับซ้อนและต้องการการประมวลผลหลายขั้นตอนพร้อมกัน",
     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9fVDlWV2tFZU5ORE93ZGx6SUNQVFRHUjB0WWlEOGlud1FmcldzUzJMUFhTVnZ6UFpWcWV5NGxsSi1pUGlOdzFLRmU5VnljQWNoUS1Xd3hRMWhuekU?oc=5"
-  },
-  {
-    "id": "or_inception_mercury-3",
-    "timestamp": "2026-10-16T13:45:37.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Inception เปิดตัว Mercury 3 โมเดลภาษาแบบ Diffusion สำหรับงาน Agent",
-    "summary_th": "โมเดลภาษาขนาดใหญ่ที่ใช้เทคโนโลยี Diffusion เน้นงานเอเจนต์ (Agentic workflows) และแอปพลิเคชัน Real-time | มีจุดเด่นด้าน Latency ที่ต่ำกว่าโมเดลทั่วไปในระดับเดียวกัน | นำไปประยุกต์ใช้สร้างระบบ AI Agent หรือระบบตอบสนองแบบเรียลไทม์ที่ต้องการความเร็วสูง",
-    "url": "https://openrouter.ai/inception/mercury-3"
-  },
-  {
-    "id": "gn_02a03245a77bb31b",
-    "timestamp": "2026-10-19T16:25:46.000Z",
-    "score": 8,
-    "vendor": "DeepSeek",
-    "category": "Model Release",
-    "title_th": "DeepSeek ปล่อยอัปเดต V4.1 Flash 1017 ทำคะแนนบน Open Code Arena พุ่งขึ้นสู่อันดับ 1",
-    "summary_th": "โมเดลโอเพ่นเวทตัวอัปเดตล่าสุดจาก DeepSeek ที่ทำคะแนน Benchmark สูงขึ้นและขึ้นแท่นโมเดล Open-weights ด้าน WebDev อันดับ 1 | มีความสามารถสูงขึ้นในราคาประหยัดกว่าคู่แข่งหลายเท่า | นำไปใช้เป็น Backend สำหรับเครื่องมือเขียนโค้ดและพัฒนา Web Application ได้อย่างคุ้มค่า",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByUG11cDUwTWN4SUdtc1VqeGh5akxodW8teHQ1WkxfWXYxVEZNXzBKOWg2R1g1NWxxS0pfaVlmVUN3OFU4LVNfdG5wVEtGeVNWTEllaTFVZVhteDBhSDluclhjMWVVelk?oc=5"
   }
 ]
