@@ -1,4 +1,15 @@
 [
+  "or_baidu_ernie-5_5-flash-preview",
+  "or_baidu_ernie-light-dt-1_0-intl",
+  "hn_50446520",
+  "hn_50443587",
+  "bsky_bafyreidwufwljyaofppbby47xafgoq7eb6lu2azalb35xntfcwagwg4cm4",
+  "bsky_bafyreigt5copit4zyglehhjzi4uoxkboa2ktcwsg3hka7rwzq7yjszwz3i",
+  "bsky_bafyreie37fo6ez32z2gtmtupqvnydc566ssyertehmkedxr4coyfoga2uq",
+  "bsky_bafyreiaqsimry56y6g4lcu2rdt2p46iriua5g7c5gqtbyx3tc5lwbfzqvy",
+  "gn_8427c53343c2f901",
+  "gn_2e08c928d7f64d6c",
+  "gn_ff5a6c5daa9394d4",
   "or_google_gemini-4-carbon",
   "or_google_gemini-4-carbon_batch",
   "hf_MiniMaxAI_MiniMax-H3-Image",
@@ -487,16 +498,5 @@
   "gn_4af7f40a4698b09f",
   "gn_b045790a803be335",
   "hf_abenzerps_Qwen-Image-2_1-Uncensored-Quantized",
-  "hn_50207405",
-  "hn_50207620",
-  "bsky_bafyreig2rmm42owwrkybdlscmgmhawajtn53uxmknhuu4tzymh6hn5yeqm",
-  "bsky_bafyreigsnat2yzpgzok5ntmpjsovqm23tamfpzjfvu57f7owb7pdeikjvy",
-  "gn_237bfb3223576f3b",
-  "hf_XHToken_Spark-X2_6-4B",
-  "hn_50200997",
-  "gn_ebd78f4918fb24c8",
-  "gn_fa0277092e09c1f8",
-  "gn_09855f4d312ccda3",
-  "hf_Comfy-Org_MOSS-Image",
-  "bsky_bafyreig2cnb65jxagmzmgnijyfdsc6bfjiiplc3k43vhptqn27ac6nobbq"
+  "hn_50207405"
 ]

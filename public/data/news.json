@@ -1,5 +1,45 @@
 [
   {
+    "id": "or_baidu_ernie-5_5-flash-preview",
+    "timestamp": "2026-11-10T17:58:53.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Baidu เปิดตัว ERNIE-5.5-Flash-Preview โมเดลพื้นฐานขนาด 280B",
+    "summary_th": "โมเดลภาษาขนาดใหญ่รุ่นล่าสุดจาก Baidu ที่ถูกพัฒนาความสามารถด้านการเขียนโค้ด งานเอเจนต์ และการวิจัยเชิงลึกให้ดีขึ้นอย่างมาก | มีประสิทธิภาพสูงและตอบสนองได้รวดเร็วกว่ารุ่นก่อนหน้า รองรับงานซับซ้อนได้ดีขึ้น | นำไปใช้พัฒนา AI Agent หรือระบบช่วยเขียนโค้ดและค้นคว้าข้อมูลอัตโนมัติ",
+    "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview"
+  },
+  {
+    "id": "hn_50446520",
+    "timestamp": "2026-11-10T21:25:03.000Z",
+    "score": 7,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Apple เตรียมปล่อยแอปพลิเคชันบน Mac เพื่อช่วยรันโมเดล AI ในเครื่องได้ง่ายขึ้น",
+    "summary_th": "เครื่องมือใหม่จาก Apple ที่ช่วยให้การติดตั้งและรันโมเดลปัญญาประดิษฐ์แบบ Local บนเครื่อง Mac เป็นเรื่องง่ายสำหรับทุกคน | ช่วยลดความซับซ้อนในการตั้งค่าสภาพแวดล้อมฮาร์ดแวร์และซอฟต์แวร์แบบเดิมๆ | นำไปใช้ทดสอบ รันโมเดลขนาดเล็ก และพัฒนาแอปพลิเคชัน AI แบบ Local-first ได้สะดวกรวดเร็วขึ้น",
+    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
+  },
+  {
+    "id": "gn_8427c53343c2f901",
+    "timestamp": "2026-11-10T16:05:12.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini 4 Carbon ผ่าน API และสำหรับสมาชิก Ultra แล้ว",
+    "summary_th": "โมเดลปัญญาประดิษฐ์ระดับแนวหน้ารุ่นใหม่จาก Google ที่ยกระดับความสามารถด้านความปลอดภัยไซเบอร์ การทำงานกับข้อมูล และการเขียนโค้ด | พัฒนาต่อยอดจากรุ่น Argon แก้ไขจุดบกพร่องและเพิ่มประสิทธิภาพความแม่นยำให้สูงขึ้น | นำไปบูรณาการผ่าน Gemini API เพื่อสร้างแอปพลิเคชันอัจฉริยะและระบบอัตโนมัติขั้นสูง",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1rQ0hpRHNvZWV1UHJYdnNVMGM1WGp5V1NzZmtZaWJmZXBGaEpoXzNMZnZlXzlYSy1DeWw4bWNMLWowVzdSbC1UVlNBb0JodHh2MG9DRGt1S0oxUnNuLS03R2xlTnFqdw?oc=5"
+  },
+  {
+    "id": "gn_ff5a6c5daa9394d4",
+    "timestamp": "2026-11-10T18:51:56.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude เพิ่มการรองรับส่วนขยาย MCP Apps ให้รันแอปพลิเคชันเต็มรูปแบบภายในตัวได้",
+    "summary_th": "การอัปเดตฟีเจอร์ Model Context Protocol (MCP) ของ Anthropic ที่ให้ Claude รองรับเครื่องมือแอปและหน้าเว็บแบบฝังตัว | ช่วยให้ผู้ใช้สามารถรันแอปพลิเคชันเต็มรูปแบบได้โดยตรงภายในอินเทอร์เฟซของ Claude | นำไปพัฒนาปลั๊กอินหรือเครื่องมือเสริมที่ซับซ้อน เพื่อให้ AI โต้ตอบและทำงานร่วมกับแอปพลิเคชันภายนอกได้ราบรื่นขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1T1k4R1RnX3lzLWxMOXFVNzZlZmJuUVREb09KU044SWM0bzBEeXh1U3V5cFRGbE1aWXA3a1VtWEZjelpXdnMtX1FBNnNsMkRGaGdFX2I3RlAyRzVQVy1yRw?oc=5"
+  },
+  {
     "id": "or_google_gemini-4-carbon",
     "timestamp": "2026-11-10T16:07:51.000Z",
     "score": 8,
@@ -1958,45 +1998,5 @@
     "title_th": "ลือสะพัด Anthropic เตรียมคลอดโมเดลใหม่วิเคราะห์แก้ Bug เชิงลึกแบบองค์รวม",
     "summary_th": "รายงานข่าววงในระบุถึงโมเดลใหม่ของ Anthropic ที่ไม่เพียงแก้ Bug เฉพาะหน้า แต่สามารถวิเคราะห์หาต้นตอและปัญหาที่เชื่อมโยงกันได้ | ช่วยให้การ Debug โค้ดมีความฉลาดและครอบคลุมข้อผิดพลาดเชิงโครงสร้างมากขึ้น | เตรียมนำมาใช้เป็นผู้ช่วย AI ขั้นสูงในการ Refactor และตรวจสอบความปลอดภัยซอร์ฟแวร์",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Td0d3Y1V3bUUzN0NUOUVUZmVzY005NkVvTXdxMUtrOGc0WkdDcGozYi02UFNINXQ2ZmU1SzZWczVQZ0hGLUhBZW1BYnM1ZHRZQ3VTcVpXb19UYmUxYlJ2enFn?oc=5"
-  },
-  {
-    "id": "or_minimax_minimax-m3_1-flash_free",
-    "timestamp": "2026-10-19T03:12:49.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "MiniMax M3.1 Flash เพิ่มความสามารถ agent และ coding",
-    "summary_th": "โมเดลมัลติโมดัล MiniMax M3.1 Flash สำหรับงาน agentic, coding และ cybersecurity\nรุ่นนี้ปรับดีขึ้นชัดเจนจาก M3 และเปิดใช้ผ่าน OpenRouter แบบไม่มีค่าใช้จ่าย\nใช้เป็นโมเดลหลักหรือทางเลือกสำรองใน agent ที่เรียก tool และระบบวิเคราะห์โค้ด",
-    "url": "https://openrouter.ai/minimax/minimax-m3.1-flash:free"
-  },
-  {
-    "id": "or_deepseek_deepseek-v4_1-flash-1017",
-    "timestamp": "2026-10-17T08:27:04.000Z",
-    "score": 8,
-    "vendor": "DeepSeek",
-    "category": "Model Release",
-    "title_th": "DeepSeek V4.1 Flash 1017 อัปเดตโมเดล Flash",
-    "summary_th": "โมเดลภาษา sparse MoE ของ DeepSeek เวอร์ชัน snapshot วันที่ 17 ตุลาคม 2026 ใช้ชื่อ API deepseek-flash\nเป็นรุ่นล่าสุดของ V4.1 Flash และ pin เวอร์ชันได้ ทำให้ตรวจสอบและทำซ้ำผลลัพธ์ได้\nเหมาะกับงาน latency ต่ำ เช่น classification, extraction และ agent tool-calling",
-    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
-  },
-  {
-    "id": "or_meta_muse-spark-open",
-    "timestamp": "2026-10-15T17:57:49.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Meta เปิด Muse Spark สำหรับ coding agent",
-    "summary_th": "โมเดลเปิดน้ำหนักขนาด 816B แบบ MoE ที่มี 42B active ต่อ token ปรับฝึกสำหรับ agentic coding\nเน้น first-attempt accuracy, tool calling และความเข้าใจ codebase มากกว่าโมเดลเข้ารหัสทั่วไป\nใช้กับ coding agent ที่ต้องแก้ repository, เรียกเครื่องมือ และทำงานหลายขั้นตอน",
-    "url": "https://openrouter.ai/meta/muse-spark-open"
-  },
-  {
-    "id": "or_reflection_beam-1_0-501b-a23b",
-    "timestamp": "2026-10-16T14:21:39.000Z",
-    "score": 7,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Reflection Beam 1.0 โมเดลเปิดสำหรับ coding agent ยาว",
-    "summary_th": "โมเดล reasoning แบบ MoE เปิดน้ำหนัก มี 501B total และ 23B active ต่อ token\nความจุขนาดใหญ่ช่วยให้รองรับงาน coding และ long-horizon agent ที่ต้องวางแผนและทำงานต่อเนื่องหลายขั้นตอน\nเหมาะกับทีมที่ต้องการประเมิน coding agent สำหรับ repository ขนาดใหญ่ผ่าน endpoint หรือระบบกระจายโมเดล",
-    "url": "https://openrouter.ai/reflection/beam-1.0-501b-a23b"
   }
 ]
