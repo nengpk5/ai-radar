@@ -1,5 +1,15 @@
 [
   {
+    "id": "or_google_gemini-4-hydrogen",
+    "timestamp": "2026-11-12T18:01:00.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini 4 Hydrogen โมเดลความเร็วสูงสำหรับ Agentic Workflow",
+    "summary_th": "คือโมเดลตระกูล Gemini 4 รุ่นเน้นประสิทธิภาพและความเร็วสูง | ทำงานได้เร็วกว่ารุ่นเดิม 2.5 เท่า มีระบบ 4 thinking levels และทำคะแนนบน CursorBench สูงขึ้น รองรับการเรียกใช้เครื่องมือที่ดีกว่าเดิม | นำไปใช้พัฒนา AI Agents งานเขียนโค้ด และระบบ Multimodel routing ที่ต้องการความเร็วและต้นทุนต่ำ",
+    "url": "https://openrouter.ai/google/gemini-4-hydrogen"
+  },
+  {
     "id": "hf_Comfy-Org_MiniMax-H3-Image",
     "timestamp": "2026-11-08T20:37:23.000Z",
     "score": 6,
@@ -1987,15 +1997,5 @@
     "title_th": "Penmentor: เครื่องมือตรวจและให้คะแนนโจทย์เลขลายมือโดยใช้ Claude",
     "summary_th": "โปรเจกต์โอเพนซอร์สที่ใช้ Claude ช่วยตรวจและคอมเมนต์งานเขียนคณิตศาสตร์ลายมือเสมือนครูผู้สอน | ช่วยลดเวลาในการตรวจการบ้านและให้ฟีดแบ็กที่มีคุณภาพได้ดีขึ้น | นำไปประยุกต์สร้างแอปพลิเคชันการศึกษาหรือระบบตรวจข้อสอบอัตโนมัติได้",
     "url": "https://github.com/AbdullahAlhariri/penmentor"
-  },
-  {
-    "id": "hn_50170021",
-    "timestamp": "2026-10-20T17:48:29.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Research",
-    "title_th": "การใช้ Claude ออกแบบโปรตีนยับยั้งพิษแมงป่อง",
-    "summary_th": "งานวิจัยที่แสดงความสามารถของ Claude ในการออกแบบโปรตีนเพื่อต้านพิษสกัดจากระบบประสาทของแมงป่อง | มีความแม่นยำและช่วยเร่งกระบวนการค้นคว้ายาชีววัตถุได้ดีกว่าวิธีดั้งเดิม | นำไปต่อยอดในงานวิจัยด้านเทคโนโลยีชีวภาพและการแพทย์เชิงคำนวณ",
-    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
   }
 ]
