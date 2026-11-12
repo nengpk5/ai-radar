@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_85342fdeb0075142",
+    "timestamp": "2026-11-11T18:26:30.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini Decisions API และโมเดล Gemini Decision 1",
+    "summary_th": "API ใหม่ที่ขับเคลื่อนด้วยโมเดล Gemini Decision 1 ออกแบบมาเพื่อวิเคราะห์และตัดสินใจจากข้อมูล Multimodal (ข้อความ, ภาพ, เสียง, วิดีโอ, PDF) ได้สูงสุด 1,000 คำถามพร้อมกันโดยไม่ต้องเจนข้อความทีละโทเค็น | เร็วกว่าและเหมาะกับการทำ Decision-making เชิงธุรกิจ | นำไปสร้างระบบวิเคราะห์ ตรวจสอบเอกสาร หรือระบบคัดกรองข้อมูลขนาดใหญ่ได้อย่างรวดเร็ว",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DOTRNQk5rYThCTl8xeUNIOHAtdld1ODhEYkx5eUxLTV9wdXR0eGZJYUl5UVFkWUpZZW1lNkllLW9za3g2ZG90R1lxNGR1M3k5Qk1SckFteU9BOUE?oc=5"
+  },
+  {
     "id": "hn_50453637",
     "timestamp": "2026-11-11T14:10:46.000Z",
     "score": 6,
@@ -1987,15 +1997,5 @@
     "title_th": "DeepSeek เปิดตัว deepseek-recipe สำหรับจัดการ Tokenization ที่ตรงกับ API ทางการ",
     "summary_th": "deepseek-recipe คือคอมโพเนนต์เข้ารหัสและถอดรหัส Token สำหรับจำลองพฤติกรรม API ของ DeepSeek | ดีกว่าเดิมยังไงช่วยให้ระบบ deploy ภายในองค์กรมีพฤติกรรมและการประมวลผล Token ตรงกับ Official API ทุกประการ | เอาไปใช้อะไรต่อได้นำไปใช้ทำ API Gateway หรือจำลองสภาพแวดล้อมสำหรับการรันโมเดล DeepSeek ได้อย่างแม่นยำ",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jc0E5NTJNQ1lObE16NW9ZMnhrYnF1MlFoWVFrR1YtMGxmZEI5TG4zZXY3RkxfR0l4VVRhMUZHakpSNWdyOW8zbkxUU0ExSUV5WTdxZi1xbGh0RmlBbmJ0R1VB?oc=5"
-  },
-  {
-    "id": "gn_d127275456c4f1d2",
-    "timestamp": "2026-10-19T21:47:24.000Z",
-    "score": 8,
-    "vendor": "OpenAI",
-    "category": "Dev Tool",
-    "title_th": "OpenAI เปิดตัว OSS Scanner บริการสแกนช่องโหว่ซอฟต์แวร์ฟรีด้วยโมเดลพลังสูง",
-    "summary_th": "OSS Scanner คือระบบตรวจสอบช่องโหว่อัตโนมัติสำหรับโปรเจกต์ Open Source สำคัญโดยใช้โมเดลที่ดีที่สุดของ OpenAI | ดีกว่าเดิมยังไงตรวจจับปัญหาได้ลึกซึ้งพร้อมทั้งสร้าง Proof-of-concept และ Patch แก้ไขโค้ดให้โดยอัตโนมัติ | เอาไปใช้อะไรต่อได้ใช้เป็นแนวทางในการทำ Automated Security Audit หรือตรวจสอบความปลอดภัยโค้ดในโปรเจกต์ของคุณ",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBLWmVZZWM0VzBzeHpqWE5WNHlwMEVwR3gxTnd4UnZSakszSk5reXNZcVhuY2Fyd3JTckk0NUN2R2NUZmhxNEpzR29LX1oyYWxWaGdkMUhyWGo4Q2Nnc20zSQ?oc=5"
   }
 ]
