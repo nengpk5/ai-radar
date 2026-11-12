@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_a08fe6cdc4da40a5",
+    "timestamp": "2026-11-11T17:23:38.000Z",
+    "score": 9,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Claude Fable 5.2 (Max) จาก Anthropic ครองแชมป์ Agent Arena",
+    "summary_th": "โมเดลภาษาขนาดใหญ่รุ่นล่าสุดจาก Anthropic ที่ขึ้นอันดับ 1 ในเวที Agent Arena\nทำคะแนนนำหน้ารุ่นรองถึง +30.4% และแรงกว่าประมาณ 1.6 เท่าในภารกิจเอเจนต์จริงกว่า 4,700 เซสชัน พร้อมครองอันดับ 1 ด้านการเขียนโค้ด\nวิศวกร AI สามารถนำไปใช้เป็นโมเดลหลักสำหรับสร้างระบบ Agent และเครื่องมือช่วยเขียนโค้ดอัตโนมัติได้",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43TkZOcmdTYlZPNW9UUWRxdjFPQTc1WkItMGI2UjVEZ2hhcURTMG1TNHhyOTZVX3lTQl80MTktMDRzbHlHUnVsSzhOaU5McEFQMDNvdkhEdTZUdw?oc=5"
+  },
+  {
     "id": "gn_85342fdeb0075142",
     "timestamp": "2026-11-11T18:26:30.000Z",
     "score": 9,
@@ -1987,15 +1997,5 @@
     "title_th": "DeepSeek เปิดตัว DeepInfer เฟรมเวิร์กอนุมานโอเพนซอร์สระดับโปรดักชัน",
     "summary_th": "DeepInfer คือเฟรมเวิร์ก in-house inference สำหรับรันโมเดล DeepSeek-V4.1-Flash ด้วยความเร็วสูงและต้นทุนต่ำ | ดีกว่าเดิมยังไงรองรับ distributed inference, speculative decoding และ high-throughput kernels | เอาไปใช้อะไรต่อได้นำไป deploy โมเดล LLM ขนาดใหญ่ในระบบ Production ของตัวเองได้อย่างมีประสิทธิภาพ",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TMTA3dG9NcFBxZXlTLVgzZWRCWGdESGZmM2hXSzZJSnZTM0ZQbmlSVDZISldpTjRWdEYwaGtHdE1ZVkVBOE5BWGJVN1hSMGZCM0VBeHhUQUdGWDFmakNsUlF3?oc=5"
-  },
-  {
-    "id": "gn_99dc34f59ea56201",
-    "timestamp": "2026-10-20T09:30:20.000Z",
-    "score": 8,
-    "vendor": "DeepSeek",
-    "category": "Dev Tool",
-    "title_th": "DeepSeek เปิดตัว deepseek-recipe สำหรับจัดการ Tokenization ที่ตรงกับ API ทางการ",
-    "summary_th": "deepseek-recipe คือคอมโพเนนต์เข้ารหัสและถอดรหัส Token สำหรับจำลองพฤติกรรม API ของ DeepSeek | ดีกว่าเดิมยังไงช่วยให้ระบบ deploy ภายในองค์กรมีพฤติกรรมและการประมวลผล Token ตรงกับ Official API ทุกประการ | เอาไปใช้อะไรต่อได้นำไปใช้ทำ API Gateway หรือจำลองสภาพแวดล้อมสำหรับการรันโมเดล DeepSeek ได้อย่างแม่นยำ",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jc0E5NTJNQ1lObE16NW9ZMnhrYnF1MlFoWVFrR1YtMGxmZEI5TG4zZXY3RkxfR0l4VVRhMUZHakpSNWdyOW8zbkxUU0ExSUV5WTdxZi1xbGh0RmlBbmJ0R1VB?oc=5"
   }
 ]
