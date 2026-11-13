@@ -1,5 +1,45 @@
 [
   {
+    "id": "or_inclusionai_ling-3_2-flash_free",
+    "timestamp": "2026-11-13T17:45:58.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "โมเดลผสม Ling 3.2 Flash รองรับ Context 1M บน OpenRouter",
+    "summary_th": "คือโมเดล AI แบบ Hybrid reasoning จาก inclusionAI ที่รองรับทั้งข้อความและรูปภาพ พร้อม Context Window ขนาดใหญ่ถึง 1M และรับรูปภาพได้สูงสุด 200 รูปต่อ Request | ดีกว่าเดิมตรงที่ประมวลผลข้อมูลปริมาณมหาศาลได้ในครั้งเดียวและเปิดให้ใช้ฟรี | นำไปประยุกต์ใช้สร้างแอปพลิเคชันวิเคราะห์เอกสารยาวๆ หรือระบบ Multimodal RAG ได้",
+    "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free"
+  },
+  {
+    "id": "hf_Zyphra_ZONOS3-Mini",
+    "timestamp": "2026-11-09T05:03:57.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Zyphra ZONOS3-Mini โมเดล Text-to-Speech มาแรงบน HuggingFace",
+    "summary_th": "คือโมเดลแปลงข้อความ เป็นเสียงพูด (Text-to-Speech) ขนาดเล็กแต่มีประสิทธิภาพสูงที่กำลังได้รับความนิยมบน HuggingFace | ดีกว่าเดิมในแง่ของความเร็วและคุณภาพเสียงที่ธรรมชาติ เหมาะกับการรันบน Edge หรือ Server ขนาดเล็ก | นำไปใช้พัฒนาแอปพลิเคชัน Voice Assistant หรือระบบพากย์เสียงอัตโนมัติ",
+    "url": "https://huggingface.co/Zyphra/ZONOS3-Mini"
+  },
+  {
+    "id": "gn_f0450994d8134e88",
+    "timestamp": "2026-11-13T20:02:52.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "Anthropic ขยายสิทธิ์การเข้าถึง Claude Duet ให้ผู้ใช้งาน Pro และ Enterprise",
+    "summary_th": "คือการประกาศเปิดให้ผู้ใช้งานแพ็กเกจ Pro, Max และ Ultra ในสหรัฐอเมริกาที่อยู่ใน Waitlist สามารถเข้าใช้งาน Claude Duet ได้ทั้งหมด | ดีกว่าเดิมตรงที่ผู้ใช้กลุ่มพรีเมียมสามารถเข้าถึงฟีเจอร์การทำงานร่วมกันขั้นสูงได้ทันที | นำไปใช้เพิ่มประสิทธิภาพการทำงานและทดสอบฟีเจอร์ Integration ใหม่ๆ ของ Claude",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBKUTNPT1k0bS1iS2dyemZjUXg5WXdOX1FCWDBvMzNDakQ4RHQ3OXRyOVpqX2tYa1FIMldZQXp3LUtUUmRiRl9jZzVhVDM0NXd5ZUIyZ0NwUUIzcnN1MWliem13?oc=5"
+  },
+  {
+    "id": "gn_b77f6bba35536449",
+    "timestamp": "2026-11-13T17:27:13.000Z",
+    "score": 6,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Gemini เพิ่มฟีเจอร์ Personal Intelligence เชื่อมต่อ Google Wallet",
+    "summary_th": "คือฟีเจอร์เชื่อมโยงข้อมูลส่วนบุคคลใน Gemini เข้ากับแอปพลิเคชันต่างๆ ของ Google โดยล่าสุดได้เพิ่ม Google Wallet เข้ามาด้วย | ดีกว่าเดิมตรงที่ AI สามารถดึงข้อมูลการใช้จ่ายและกระเป๋าเงินมาช่วยตอบคำถามได้อย่างแม่นยำและเป็นส่วนตัวมากขึ้น | นำไปศึกษาแนวทางการสร้าง Context-aware AI Agent ที่เชื่อมต่อกับ API ของผู้ใช้ได้",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1NWmhVUVVkMTFNanlsbW5tbW44aDkyWTg4dmFoYTlwZWZRWmE5OVQzU3NWMV9vUnlyeXZaRFA4M0ZwM25DbDlrdTBqVTFDbTBscHktMUl6YTU4ZTg?oc=5"
+  },
+  {
     "id": "hn_50451943",
     "timestamp": "2026-11-11T10:55:46.000Z",
     "score": 6,
@@ -1957,45 +1997,5 @@
     "title_th": "LayerFS: ระบบไฟล์เฉพาะทางสำหรับ AI Coding Agents",
     "summary_th": "ระบบไฟล์ที่ออกแบบมาเพื่อให้ AI coding agents ทำงานกับโปรเจกต์โค้ดได้อย่างมีประสิทธิภาพและรวดเร็วขึ้น | ช่วยจัดการสถานะและไฟล์โค้ดระหว่างที่ AI กำลังเขียนและแก้ไขโค้ดได้ดีกว่าระบบไฟล์ทั่วไป | นำไปใช้ต่อยอดสร้างสภาพแวดล้อมการพัฒนาซอฟต์แวร์ด้วย Autonomous Agents ที่เสถียรยิ่งขึ้น",
     "url": "https://layerfs.ai/"
-  },
-  {
-    "id": "hn_50180836",
-    "timestamp": "2026-10-21T13:43:19.000Z",
-    "score": 8,
-    "vendor": "OpenAI",
-    "category": "Research",
-    "title_th": "PHP2Shell: การใช้ AI ค้นหาช่องโหว่ความปลอดภัยระดับวิกฤตใน PHP",
-    "summary_th": "งานวิจัยและเครื่องมือที่ใช้ AI ช่วยวิเคราะห์และค้นหาช่องโหว่ Remote Code Execution (RCE) ในภาษา PHP | ช่วยตรวจจับจุดอ่อนในโค้ดเบสขนาดใหญ่ได้อย่างรวดเร็วกว่าการตรวจสอบแบบดั้งเดิม | นำไปใช้เป็นแนวทางในการทำ Automated Security Auditing และเพิ่มความปลอดภัยให้ระบบซอฟต์แวร์",
-    "url": "https://www.wiz.io/blog/php2shell-php-rce"
-  },
-  {
-    "id": "gn_06468fac27c691e9",
-    "timestamp": "2026-10-21T12:02:29.000Z",
-    "score": 9,
-    "vendor": "OpenAI",
-    "category": "Model Release",
-    "title_th": "OpenAI จับมือ Google นำโมเดลล้ำสมัยสู่ Google Cloud Marketplace",
-    "summary_th": "ดีลประวัติศาสตร์ที่นำโมเดลเรือธงของ OpenAI เช่น GPT-6 Astra และ Codex มาให้บริการบนแพลตฟอร์ม Google Cloud | ทำให้ลูกค้าองค์กรสามารถเข้าถึงโมเดลทรงพลังผ่านโครงสร้างพื้นฐานของ Google ได้สะดวกขึ้น | นำไปประยุกต์ใช้พัฒนา Enterprise AI Solutions และเครื่องมือเขียนโค้ดภายในองค์กรขนาดใหญ่",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0ySnlPSnl2eU1SdUV6TlhPNFFnUG5Pdkt0X3lualBpOGtYS2dyYjlBVnQ0c2pTVjFzbGc2MjNYUVotNEMxak5WRy03aDJFLUJIR2NvMlluVUoxbWdLeHc?oc=5"
-  },
-  {
-    "id": "hn_50175779",
-    "timestamp": "2026-10-21T03:36:43.000Z",
-    "score": 7,
-    "vendor": "Anthropic",
-    "category": "Research",
-    "title_th": "การใช้ Claude เพื่อลด Attack Surface ของโค้ด",
-    "summary_th": "งานวิจัยจาก Anthropic เกี่ยวกับการใช้โมเดล Claude ช่วยวิเคราะห์และลดจุดอ่อนในโค้ด | ช่วยอุดช่องโหว่ด้านความปลอดภัยได้แม่นยำกว่าวิธีดั้งเดิม | นำไปประยุกต์ทำ automated security code review ใน CI/CD pipeline",
-    "url": "https://www.anthropic.com/research/attack-surface-reduction"
-  },
-  {
-    "id": "gn_737e2d4213fb64d5",
-    "timestamp": "2026-10-20T15:24:47.000Z",
-    "score": 6,
-    "vendor": "OpenAI",
-    "category": "Dev Tool",
-    "title_th": "ฟีเจอร์ Team Tasks ใน ChatGPT สำหรับ automat งานวิศวกรรมซ้ำๆ",
-    "summary_th": "ฟีเจอร์ใหม่ใน ChatGPT ที่ช่วยตั้งเวลาทำงานซ้ำๆ เช่น สรุปงานประจำสัปดาห์ร่วมกับทีม | ช่วยลดภาระงานจิปาถะและให้ทีมร่วมตรวจสอบแก้ไขได้ง่ายขึ้น | นำไปใช้ช่วยสรุปสถานะโปรเจกต์และรายงานความคืบหน้าอัตโนมัติ",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1LZzlQQUxyNHk4LWZRN05sOWNXV0hxQmt3RlR2cnNiY2lRTFNRc1pUUTlHMlVhdHREZXk5MzNsZ2ZlNnZ2aHpKenRRelltaHd5UmFsMWVhQ184T0FvTVR0Ug?oc=5"
   }
 ]
