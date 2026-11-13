@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50451943",
+    "timestamp": "2026-11-11T10:55:46.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "llmtee: เครื่องมือบันทึกและติดตามการเรียก LLM",
+    "summary_th": "เครื่องมือบันทึกการเรียกใช้งาน LLM แบบละเอียด ทั้งจำนวน Token, ต้นทุน, Latency และ Time to first token ดีกว่าเดิมตรงที่ช่วยให้วิเคราะห์และควบคุมค่าใช้จ่ายในการเรียก API ได้ง่ายขึ้น นำไปใช้ต่อยอดทำ Logging หรือ Monitor ระบบ Agent และแอปพลิเคชันที่ใช้ LLM ได้ทันที",
+    "url": "https://github.com/garritfra/llmtee"
+  },
+  {
+    "id": "gn_c597d29053e37e14",
+    "timestamp": "2026-11-13T15:43:26.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI เปิดตัว ChatGPT Wallet ระบบชำระเงินปลอดภัยสำหรับ AI Agents",
+    "summary_th": "ระบบกระเป๋าเงินดิจิทัลที่ช่วยให้ AI Agents สามารถทำธุรกรรมชำระเงินแทนผู้ใช้ได้ โดยไม่ต้องเข้าถึงข้อมูลบัตรเครดิตจริงและต้องยืนยันตัวตนทุกครั้ง ดีกว่าเดิมตรงที่เพิ่มความปลอดภัยขั้นสูงในการทำธุรกรรมอัตโนมัติ นำไปพัฒนาต่อยอดสร้าง Autonomous Agents ที่ซื้อสินค้าหรือบริการแทนมนุษย์ได้อย่างปลอดภัย",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBNelhjRXp0TWpQVFlIbG9vTGlXR2k2OEd3MXNRWnQxUG5fRndRbE1KeVZzYUw0eDhVN2VnUUJKeGdvTm5KNG8zNHlmT3pWemxlOWE4dmVGSkJIMTlPRlZMbFNScw?oc=5"
+  },
+  {
     "id": "gn_029368fdb1e1d96a",
     "timestamp": "2026-11-12T18:04:43.000Z",
     "score": 8,
@@ -1977,25 +1997,5 @@
     "title_th": "ฟีเจอร์ Team Tasks ใน ChatGPT สำหรับ automat งานวิศวกรรมซ้ำๆ",
     "summary_th": "ฟีเจอร์ใหม่ใน ChatGPT ที่ช่วยตั้งเวลาทำงานซ้ำๆ เช่น สรุปงานประจำสัปดาห์ร่วมกับทีม | ช่วยลดภาระงานจิปาถะและให้ทีมร่วมตรวจสอบแก้ไขได้ง่ายขึ้น | นำไปใช้ช่วยสรุปสถานะโปรเจกต์และรายงานความคืบหน้าอัตโนมัติ",
     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1LZzlQQUxyNHk4LWZRN05sOWNXV0hxQmt3RlR2cnNiY2lRTFNRc1pUUTlHMlVhdHREZXk5MzNsZ2ZlNnZ2aHpKenRRelltaHd5UmFsMWVhQ184T0FvTVR0Ug?oc=5"
-  },
-  {
-    "id": "gn_094403858e2794d5",
-    "timestamp": "2026-10-21T04:45:18.000Z",
-    "score": 9,
-    "vendor": "Google",
-    "category": "Model Release",
-    "title_th": "การเปิดตัว Gemini 4 Argon ที่ประมวลผลสูงถึง 25 ล้านล้านโทเค็นใน 3 วันแรก",
-    "summary_th": "โมเดลใหม่ล่าสุด Gemini 4 Argon จาก Google ที่ได้รับความนิยมสูงมากในตลาด | รองรับการประมวลผลปริมาณมหาศาลด้วยความเร็วและประสิทธิภาพที่ดีขึ้น | นำไปพัฒนาแอปพลิเคชัน AI ขนาดใหญ่ที่ต้องการความฉลาดขั้นสูงและ Throughput สูง",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1MSG1tb05QVE1vV2JLTWdEUkFid0ptZ0lJbVcxN3FvaDcxOHd6emR0cXp5THRQU0VWOXc0eWppcHJXN2lZMVNGMUhCWHR3S0NUU3dkOGlKTU9BWkJiRGxLQi1lbnN6dw?oc=5"
-  },
-  {
-    "id": "gn_664138c00ea6c24d",
-    "timestamp": "2026-10-20T15:46:19.000Z",
-    "score": 6,
-    "vendor": "DeepSeek",
-    "category": "Benchmark",
-    "title_th": "ผลทดสอบ Benchmark ซ้ำ DeepSeek V4.1 Flash เทียบประสิทธิภาพบน 9 Evaluation Harness",
-    "summary_th": "การทดลองรันเบนช์มาร์กโมเดล DeepSeek V4.1 Flash ซ้ำ 89 ครั้งข้าม 9 เครื่องมือทดสอบโค้ด | เผยให้เห็นว่าเฟรมเวิร์กอย่าง Pi harness และ Grok Build CLI ดึงประสิทธิภาพโมเดลได้สูงสุด (40.4) ชนะ Claude Code และ OpenCode | ช่วยให้นักพัฒนาเลือกใช้ Agent harness และ Evaluation scaffold ที่รีดศักยภาพโมเดลโค้ดดิ้งได้สูงสุดในการทำงานจริง",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SMlVlNnVubWxJVzlURnVISXg1bklfQm5vaW56Sy1TcUlYa3R5VTl4aDBxX21xYklpTDRGYmE1X3Z4MURUekpaTWlVNENjQVlmazVsc0NwZWVPZl8wOW9ScQ?oc=5"
   }
 ]
