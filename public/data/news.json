@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_029368fdb1e1d96a",
+    "timestamp": "2026-11-12T18:04:43.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google DeepMind เปิดตัว Gemini 4 Hydrogen ชูจุดเด่นเร็วสุดใน Top 10 บน Agent Arena",
+    "summary_th": "โมเดลตระกูล Gemini รุ่นย่อย Hydrogen จาก Google DeepMind ออกแบบมาเพื่อเน้นประสิทธิภาพและความคุ้มค่าในงานระดับ Agentic โดยเฉพาะ\nทำคะแนนติดอันดับ 5 บน Agent Arena พร้อมประสิทธิภาพสุทธิเพิ่มขึ้น 14.8% และทำงานเร็วที่สุดในกลุ่มท็อป 10 โดยเฉลี่ยเพียง 5.3 นาทีต่อทาสก์ (เร็วกว่าเดิมราว 3 เท่า)\nเหมาะสำหรับนักพัฒนาที่สร้างระบบ Autonomous Agents หรืองาน Automation อัตโนมัติที่ต้องการลดทั้ง Latency และค่าใช้จ่าย Token",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGU1pxREVubGxhQ1NoUTROelZWa2FMUzhlS3R1aTI1UVBKdi1zVE1ELUVqVjc4cXQ2dUFfbFFfREVfcFRvbFhxeVJ0U0d3RXhzWFBXd2JmS2t3UQ?oc=5"
+  },
+  {
     "id": "hn_50475713",
     "timestamp": "2026-11-12T23:06:17.000Z",
     "score": 6,
@@ -1987,15 +1997,5 @@
     "title_th": "ผลทดสอบ Benchmark ซ้ำ DeepSeek V4.1 Flash เทียบประสิทธิภาพบน 9 Evaluation Harness",
     "summary_th": "การทดลองรันเบนช์มาร์กโมเดล DeepSeek V4.1 Flash ซ้ำ 89 ครั้งข้าม 9 เครื่องมือทดสอบโค้ด | เผยให้เห็นว่าเฟรมเวิร์กอย่าง Pi harness และ Grok Build CLI ดึงประสิทธิภาพโมเดลได้สูงสุด (40.4) ชนะ Claude Code และ OpenCode | ช่วยให้นักพัฒนาเลือกใช้ Agent harness และ Evaluation scaffold ที่รีดศักยภาพโมเดลโค้ดดิ้งได้สูงสุดในการทำงานจริง",
     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SMlVlNnVubWxJVzlURnVISXg1bklfQm5vaW56Sy1TcUlYa3R5VTl4aDBxX21xYklpTDRGYmE1X3Z4MURUekpaTWlVNENjQVlmazVsc0NwZWVPZl8wOW9ScQ?oc=5"
-  },
-  {
-    "id": "hf_OpenMOSS-Team_MOSS-Image-Base",
-    "timestamp": "2026-10-11T06:49:17.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "เปิดตัว OpenMOSS-Team/MOSS-Image-Base โมเดล Text-to-Image บน Hugging Face",
-    "summary_th": "คือโมเดลแปลงข้อความ เป็นรูปภาพ (Text-to-Image) แบบโอเพนซอร์สจาก OpenMOSS-Team บน Hugging Face | ดีกว่าเดิมด้วยทางเลือกโมเดลฐานใหม่ที่นักพัฒนาสามารถนำไปปรับแต่งต่อได้ง่าย | นำไปใช้พัฒนาแอปพลิเคชันสร้างรูปภาพ หรือศึกษาโครงสร้างการทำงานของโมเดล diffusion",
-    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base"
   }
 ]
