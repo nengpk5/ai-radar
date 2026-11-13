@@ -1,4 +1,10 @@
 [
+  "hn_50475713",
+  "bsky_bafyreigoegocsskxwxsuyef2ne22jklhl762ut2csygbbj3zvlnhkmjpeq",
+  "gn_7e64eba070a45f5f",
+  "gn_c06acb927d39e8e3",
+  "gn_616ef5637b38ed39",
+  "gn_ae1ceea448f7217e",
   "or_google_gemini-4-hydrogen",
   "or_google_gemini-4-hydrogen_batch",
   "or_thinkingmachines_inkling-2-small",
@@ -492,11 +498,5 @@
   "hn_50239041",
   "bsky_bafyreiawt4ix3tljucpfptu6lnwgvdyce6zw6eht5oznl2eimazu4zcwza",
   "gn_5223b9690756e7c8",
-  "gn_11c78b83f9dc6980",
-  "gn_1ba4ec42a0c5f3db",
-  "hn_50236828",
-  "hn_50234699",
-  "gn_5b46b77c340a6daf",
-  "hf_Nanbeige_Nanbeige4_3-33B",
-  "hn_50236102"
+  "gn_11c78b83f9dc6980"
 ]
