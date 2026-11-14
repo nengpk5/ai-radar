@@ -1,4 +1,12 @@
 [
+  "hn_50493251",
+  "hn_50492141",
+  "hn_50492877",
+  "gn_908405fa7df52bd7",
+  "gn_f2d10a28964543d5",
+  "gn_6738f632a26405bf",
+  "gn_a892a4cf285c2727",
+  "gn_c600215bb2defcca",
   "or_inclusionai_ling-3_2-flash_free",
   "hf_Zyphra_ZONOS3-Mini",
   "hn_50489589",
@@ -490,13 +498,5 @@
   "gn_95948447e80f79c0",
   "or_openai_gpt-6_1-terra",
   "or_openai_gpt-6_1-terra_batch",
-  "hf_ISTA-DASLab_DeepSeek-V4_1-Flash-1017-GSQ-RCO-GGUF",
-  "hn_50248124",
-  "hn_50248075",
-  "hn_50246658",
-  "hn_50247453",
-  "gn_c65a991fe3fb4c89",
-  "gn_5b8fa64afd7df52b",
-  "gn_5ba386049723f5d2",
-  "gn_e56918c15dbcc4f5"
+  "hf_ISTA-DASLab_DeepSeek-V4_1-Flash-1017-GSQ-RCO-GGUF"
 ]

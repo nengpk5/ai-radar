@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50492141",
+    "timestamp": "2026-11-14T00:28:11.000Z",
+    "score": 9,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic อัปเดต Claude Code Projects ให้รันงานพร้อมกันแบบคู่ขนานได้",
+    "summary_th": "การอัปเดตฟีเจอร์ Projects ใน Claude Code ให้ AI ทำงานหลายเธรดพร้อมกันและมีระบบประสานงานที่รวดเร็วขึ้น | ช่วยให้จัดการงานพัฒนาซอฟต์แวร์ขนาดใหญ่ได้เร็วและมีประสิทธิภาพสูงกว่าเดิม | นำไปใช้ทำ Code Refactoring หรือพัฒนาฟีเจอร์หลายตัวพร้อมกันผ่าน CLI ได้ทันที",
+    "url": "https://claude.com/resources/articles/projects-redesigned"
+  },
+  {
+    "id": "hn_50492877",
+    "timestamp": "2026-11-14T02:05:37.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Llama.cpp ปล่อยเวอร์ชัน v1.0 พร้อมแอปพลิเคชันเนทีฟสำหรับ macOS",
+    "summary_th": "เฟรมเวิร์กยอดฮิตสำหรับการรันโมเดลภาษาขนาดใหญ่บนฮาร์ดแวร์ทั่วไปอัปเดตถึง v1.0 แล้ว | ใช้งานง่ายขึ้นด้วยแอป macOS แบบ Native โดยไม่ต้องตั้งค่าผ่าน Terminal ซับซ้อน | นำไปใช้รัน Local LLM บน Mac เพื่อพัฒนาแอป AI ส่วนตัวหรือทดสอบโมเดลแบบออฟไลน์",
+    "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+  },
+  {
     "id": "or_inclusionai_ling-3_2-flash_free",
     "timestamp": "2026-11-13T17:45:58.000Z",
     "score": 7,
@@ -1977,25 +1997,5 @@
     "title_th": "โครงสร้างพื้นฐาน Git สำหรับรองรับ Agent ขนาดใหญ่จาก GitHub",
     "summary_th": "สถาปัตยกรรมและเครื่องมือ Git ที่ออกแบบมาเพื่อรองรับการทำงานของ AI Agent จำนวนมากพร้อมๆ กัน | ช่วยจัดการความซับซ้อนและเพิ่มประสิทธิภาพในการเขียนโค้ดอัตโนมัติระดับสเกลใหญ่ได้ดีขึ้น | นำไปใช้ตั้งค่าระบบ CI/CD และจัดการ repository สำหรับให้ AI Agent เข้ามาทำงานร่วมกันในโปรเจกต์ใหญ่",
     "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
-  },
-  {
-    "id": "gn_4efa1c347c439780",
-    "timestamp": "2026-10-21T17:40:31.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Claude Security ตรวจสอบความปลอดภัยโค้ดแบบเรียลไทม์",
-    "summary_th": "ฟีเจอร์ใหม่ใน Claude Enterprise ที่ช่วยสแกนและตรวจสอบช่องโหว่ความปลอดภัยของโค้ดอย่างต่อเนื่องตามการเปลี่ยนแปลงของ repository | ช่วยให้ทีมพัฒนาทราบปัญหาด้านความปลอดภัยใกล้เคียงกับโค้ดปัจจุบันมากที่สุดโดยไม่ต้องกดสแกนเองทุกครั้ง | นำไปใช้เป็นระบบตรวจสอบความปลอดภัยอัตโนมัติในกระบวนการพัฒนาซอฟต์แวร์ระดับองค์กร",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA3dUFVOVZfdUJ5Zk1DVE8tQmJKZE5EazNwTTQ4aXlwN0I2Q2w5aGphU212RVRSdWgwd3hYTllPd1p4c0JoMWthSHBMTDZnVlRqTVJJQ0RhbWc4Q3VfVGc?oc=5"
-  },
-  {
-    "id": "hn_50179857",
-    "timestamp": "2026-10-21T12:34:46.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Dev Tool",
-    "title_th": "LayerFS: ระบบไฟล์เฉพาะทางสำหรับ AI Coding Agents",
-    "summary_th": "ระบบไฟล์ที่ออกแบบมาเพื่อให้ AI coding agents ทำงานกับโปรเจกต์โค้ดได้อย่างมีประสิทธิภาพและรวดเร็วขึ้น | ช่วยจัดการสถานะและไฟล์โค้ดระหว่างที่ AI กำลังเขียนและแก้ไขโค้ดได้ดีกว่าระบบไฟล์ทั่วไป | นำไปใช้ต่อยอดสร้างสภาพแวดล้อมการพัฒนาซอฟต์แวร์ด้วย Autonomous Agents ที่เสถียรยิ่งขึ้น",
-    "url": "https://layerfs.ai/"
   }
 ]
