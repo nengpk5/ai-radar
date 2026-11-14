@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50497589",
+    "timestamp": "2026-11-14T15:04:15.000Z",
+    "score": 6,
+    "vendor": "DeepSeek",
+    "category": "Research",
+    "title_th": "DeepSeek V3 เขียนด้วย Jax เพียวๆ ในโค้ดเพียง ~200 บรรทัด",
+    "summary_th": "โปรเจกต์โอเพนซอร์สจำลองสถาปัตยกรรม DeepSeek V3 ด้วย JAX ความยาวเพียง 200 บรรทัด | ช่วยให้เข้าใจกลไกภายในและการรันบนฮาร์ดแวร์ TPU ได้ง่ายขึ้นโดยไม่ต้องพึ่งพาโค้ดที่ซับซ้อน | นำไปศึกษาเพื่อต่อยอดการทำ Custom Training บน Google TPU หรือปรับแต่งโมเดลในระดับ Low-level ได้",
+    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax"
+  },
+  {
+    "id": "gn_8d8e47ca1bcb23db",
+    "timestamp": "2026-11-13T20:23:09.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google ประกาศอัปเดตใหญ่ประจำสัปดาห์: เปิดตัว TPU รุ่นที่ 8, Gemini 4 Carbon และ Gemini Decisions API",
+    "summary_th": "ชุดการเปิดตัวเทคโนโลยีใหม่จาก Google ทั้งฮาร์ดแวร์ TPU รุ่นใหม่, โมเดล Gemini 4 Carbon และ Decisions API ใน AI Studio | เพิ่มประสิทธิภาพการประมวลผลและการตัดสินใจของโมเดลให้แม่นยำและรวดเร็วยิ่งขึ้น | นำ API ใหม่ไปพัฒนา Agent ที่ซับซ้อนและใช้งานโมเดลรุ่นล่าสุดในการตัดสินใจอัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE11Z1Y3RFVvVDFkenZiaW1Gd0dnVFUwUjh5RlJLdmFJc19qWG93ZGZvNVdkRnlEQzVJWldyLUF6ajlBNDhKZFhkcHlYYUtYS2ZrM0xsanRHNE5Wa1JGY09IRmNVdw?oc=5"
+  },
+  {
     "id": "hn_50492141",
     "timestamp": "2026-11-14T00:28:11.000Z",
     "score": 9,
@@ -1977,25 +1997,5 @@
     "title_th": "OpenAI ประกาศนำโมเดลเรือธงและระบบ Codex ลงสู่ Google Cloud Model Garden แล้ว",
     "summary_th": "คือการจับมือกันระหว่าง OpenAI และ Google Cloud เพื่อนำโมเดลและ Codex agentic workflows มาให้บริการใน Model Garden | ดีกว่าเดิมตรงที่องค์กรที่ใช้โครงสร้างพื้นฐานบน Google Cloud สามารถเข้าถึงโมเดลและเครื่องมือระดับท็อปของ OpenAI ได้สะดวกยิ่งขึ้น | นำไปพัฒนา Enterprise Agent และแอปพลิเคชัน AI ระดับองค์กรบนแพลตฟอร์ม Google Cloud ได้ทันที",
     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52dUZBVUVhRzk1NVppYWVFSjdWQTJHMS1kdlJPSGM3eXNNLWJGenRJYS1YclFXTzlKTjVtM2owc2xRa3MzcjRvcE9tVzVmZU1PMTRJbXdhNnd1SEE?oc=5"
-  },
-  {
-    "id": "hn_50180079",
-    "timestamp": "2026-10-21T12:53:11.000Z",
-    "score": 8,
-    "vendor": "OpenAI",
-    "category": "Model Release",
-    "title_th": "โมเดล OpenAI เตรียมใช้งานได้บน Google Cloud แล้ว",
-    "summary_th": "การขยายบริการให้โมเดล AI ของ OpenAI สามารถเข้าถึงได้ผ่านแพลตฟอร์ม Google Cloud | ช่วยให้นักพัฒนาและองค์กรที่มีโครงสร้างพื้นฐานบน Google Cloud สามารถเรียกใช้งานโมเดลของ OpenAI ได้สะดวกรวดเร็วขึ้นโดยไม่ต้องเปลี่ยนคลาวด์ | นำไปประยุกต์ใช้สร้างแอปพลิเคชันหรือระบบ AI บนสถาปัตยกรรม Google Cloud ได้อย่างไร้รอยต่อ",
-    "url": "https://openai.com/index/openai-models-google-cloud/"
-  },
-  {
-    "id": "hn_50183344",
-    "timestamp": "2026-10-21T16:09:28.000Z",
-    "score": 7,
-    "vendor": "OpenSource",
-    "category": "Dev Tool",
-    "title_th": "โครงสร้างพื้นฐาน Git สำหรับรองรับ Agent ขนาดใหญ่จาก GitHub",
-    "summary_th": "สถาปัตยกรรมและเครื่องมือ Git ที่ออกแบบมาเพื่อรองรับการทำงานของ AI Agent จำนวนมากพร้อมๆ กัน | ช่วยจัดการความซับซ้อนและเพิ่มประสิทธิภาพในการเขียนโค้ดอัตโนมัติระดับสเกลใหญ่ได้ดีขึ้น | นำไปใช้ตั้งค่าระบบ CI/CD และจัดการ repository สำหรับให้ AI Agent เข้ามาทำงานร่วมกันในโปรเจกต์ใหญ่",
-    "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
   }
 ]
