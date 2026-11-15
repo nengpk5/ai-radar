@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_8238dbd8b7f38ad0",
+    "timestamp": "2026-11-15T02:15:14.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "ฟีเจอร์ Code Mode ใหม่ใน Claude Code ช่วยรันคำสั่งเครื่องมือหลายตัวพร้อมกันผ่าน JavaScript",
+    "summary_th": "ฟีเจอร์ทดลองใน Claude Code 2.1.325 ที่ให้ Claude เขียนโค้ด JavaScript เพื่อรัน Tool calls หลายตัวรวดเดียวแทนการเรียกทีละตัว | ช่วยลด Latency และเพิ่มประสิทธิภาพในการทำงานที่มีความซับซ้อนสูง | นำไปประยุกต์ใช้สร้างระบบ Agent ที่ต้องเรียกใช้ API หรือ Tool จำนวนมากพร้อมกันได้อย่างรวดเร็ว",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBnTUI3RGctUzJ5Y3dDMG0zbGVmVERvYmNBOGpwOXZzckFTMWkyeWk3dUpsQ1k0bXNZX1hVTW9WeW1aS2Y3bDJadXdHRnRQZGZTSUpTMlNWSWNfM09tQVNBS0pB?oc=5"
+  },
+  {
+    "id": "gn_605968ef9ede628f",
+    "timestamp": "2026-11-14T10:59:55.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "แนวทางการใช้งานตระกูลโมเดล Gemini 4 (Carbon, Argon, Hydrogen)",
+    "summary_th": "คำแนะนำการเลือกใช้โมเดล Gemini 4 โดย Carbon และ Argon เป็นระดับ Frontier เน้นความฉลาด ส่วน Hydrogen เน้นความเร็วและประหยัดสำหรับงานทั่วไป | ช่วยให้เลือกใช้โมเดลได้ตรงตามโจทย์ความคุ้มค่าและประสิทธิภาพ | นำไปปรับใช้สถาปัตยกรรมแบบ Multi-agent โดยใช้ Hydrogen เป็น Sub-agent เพื่อลดต้นทุนโทเค็น",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qb3RiTmhXTU5mTUFyTDNEOXJhMmdmcUo5eGt3cEVuU2RPX2hyVER6Y1c5OUJzUXp2SlNBb2h3WU5fMy15SmowV2NyZFVsMVdCM1NLYUZXdVZiRTJsTGxN?oc=5"
+  },
+  {
     "id": "hn_50503930",
     "timestamp": "2026-11-15T04:09:11.000Z",
     "score": 8,
@@ -1977,25 +1997,5 @@
     "title_th": "Omnara เฟรมเวิร์กโอเพนซอร์สทางเลือกสำหรับ Claude Managed Agents",
     "summary_th": "เครื่องมือโอเพนซอร์สสำหรับการรันและควบคุม AI Agent ที่ออกแบบมาเป็นทางเลือกทดแทนระบบ Managed Agent ของ Claude ให้ความยืดหยุ่นสูงขึ้นและควบคุมสภาพแวดล้อมรวมถึงข้อมูลส่วนตัวได้เองโดยไม่ต้องผูกขาดกับ vendor นักพัฒนาสามารถนำไปติดตั้งบน private cloud เพื่อสร้างระบบ autonomous workflows ภายในองค์กรได้ทันที",
     "url": "https://github.com/omnara-ai/omnara"
-  },
-  {
-    "id": "or_recursive_flint-v1_0_free",
-    "timestamp": "2026-10-19T15:01:13.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "เปิดตัว Recursive: Flint โมเดล Open-weight ผสม Mixture-of-Experts สำหรับงาน Coding",
-    "summary_th": "คือโมเดล Open-weight ขนาด 40B (ใช้งานจริง 2.5B) จาก Recursive ที่ออกแบบมาเพื่อ Coding agents โดยเฉพาะ | โดดเด่นเรื่องประสิทธิภาพความเร็วและความแม่นยำในการเขียนโค้ดจากการเทรนด้วยระบบ Eureka Machine | นำไปประยุกต์ใช้เป็นแบ็คเอนด์สำหรับ AI Coding Assistant หรือ Agent รันโค้ดได้ฟรีผ่าน OpenRouter",
-    "url": "https://openrouter.ai/recursive/flint-v1.0:free"
-  },
-  {
-    "id": "gn_ee404ee540134d9e",
-    "timestamp": "2026-10-21T19:09:35.000Z",
-    "score": 9,
-    "vendor": "Anthropic",
-    "category": "Model Release",
-    "title_th": "Anthropic เปิดตัว Claude Duet แอปพลิเคชัน Proactive Agent ทำงานแทนคุณอัตโนมัติ",
-    "summary_th": "คือแอปพลิเคชันใหม่จาก Anthropic ที่ให้ Claude ทำหน้าที่เป็น Proactive Agent คอยเข้ามาทักเมื่อมีงานต้องทำ ทำงานต่อเองได้เมื่อเราไม่อยู่ และขออนุญาตก่อนตัดสินใจ | ดีกว่าเดิมตรงที่เป็น Autonomous Agent เต็มตัว ไม่ต้องรอรับ Prompt อย่างเดียว | นำไปใช้เพิ่มประสิทธิภาพการทำงานอัตโนมัติ ลดงานจุกจิก และจัดการเวิร์กโฟลว์ซับซ้อน",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5RX1dEMm52QzJfZFFwbExHc1ptaGZrZ1dadXNiNExxQmtjSFR5emU5Y2JOUXc0emZwSUJqWm9BYXF0dVZPNkVQVUFEZ25BU3FKZFJrNWlGNl9RU3JtX3c?oc=5"
   }
 ]
