@@ -1,5 +1,15 @@
 [
   {
+    "id": "hn_50503930",
+    "timestamp": "2026-11-15T04:09:11.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "เปิดตัว Turbo-Browser-MCP เครื่องมือจัดการ DOM และฟอร์มสำหรับ Model Context Protocol (MCP)",
+    "summary_th": "เครื่องมือช่วยจัดการ Browser automation ผ่าน MCP ที่รองรับการทำ Batch forms, ตรวจจับ DOM deltas และระบบป้องกันการ submit ซ้ำ | ทำงานได้เร็วยและมีประสิทธิภาพกว่าการสั่งงานผ่าน Browser ทั่วไป | นำไปประยุกต์สร้าง AI Agent ที่ต้องการโต้ตอบกับหน้าเว็บ ซับซ้อนได้อย่างแม่นยำยิ่งขึ้น",
+    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp"
+  },
+  {
     "id": "hn_50497589",
     "timestamp": "2026-11-14T15:04:15.000Z",
     "score": 6,
@@ -1987,15 +1997,5 @@
     "title_th": "Anthropic เปิดตัว Claude Duet แอปพลิเคชัน Proactive Agent ทำงานแทนคุณอัตโนมัติ",
     "summary_th": "คือแอปพลิเคชันใหม่จาก Anthropic ที่ให้ Claude ทำหน้าที่เป็น Proactive Agent คอยเข้ามาทักเมื่อมีงานต้องทำ ทำงานต่อเองได้เมื่อเราไม่อยู่ และขออนุญาตก่อนตัดสินใจ | ดีกว่าเดิมตรงที่เป็น Autonomous Agent เต็มตัว ไม่ต้องรอรับ Prompt อย่างเดียว | นำไปใช้เพิ่มประสิทธิภาพการทำงานอัตโนมัติ ลดงานจุกจิก และจัดการเวิร์กโฟลว์ซับซ้อน",
     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5RX1dEMm52QzJfZFFwbExHc1ptaGZrZ1dadXNiNExxQmtjSFR5emU5Y2JOUXc0emZwSUJqWm9BYXF0dVZPNkVQVUFEZ25BU3FKZFJrNWlGNl9RU3JtX3c?oc=5"
-  },
-  {
-    "id": "gn_fd79d22b3d27f6af",
-    "timestamp": "2026-10-21T19:23:19.000Z",
-    "score": 9,
-    "vendor": "OpenAI",
-    "category": "Model Release",
-    "title_th": "OpenAI ประกาศนำโมเดลเรือธงและระบบ Codex ลงสู่ Google Cloud Model Garden แล้ว",
-    "summary_th": "คือการจับมือกันระหว่าง OpenAI และ Google Cloud เพื่อนำโมเดลและ Codex agentic workflows มาให้บริการใน Model Garden | ดีกว่าเดิมตรงที่องค์กรที่ใช้โครงสร้างพื้นฐานบน Google Cloud สามารถเข้าถึงโมเดลและเครื่องมือระดับท็อปของ OpenAI ได้สะดวกยิ่งขึ้น | นำไปพัฒนา Enterprise Agent และแอปพลิเคชัน AI ระดับองค์กรบนแพลตฟอร์ม Google Cloud ได้ทันที",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52dUZBVUVhRzk1NVppYWVFSjdWQTJHMS1kdlJPSGM3eXNNLWJGenRJYS1YclFXTzlKTjVtM2owc2xRa3MzcjRvcE9tVzVmZU1PMTRJbXdhNnd1SEE?oc=5"
   }
 ]
