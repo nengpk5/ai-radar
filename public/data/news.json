@@ -1,5 +1,45 @@
 [
   {
+    "id": "hn_50510799",
+    "timestamp": "2026-11-15T21:10:39.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "เมื่อ AI Agent จะเลือกใช้ระบบที่มีช่องโหว่ความปลอดภัยมากกว่า",
+    "summary_th": "บทความวิเคราะห์พฤติกรรม AI Agent ที่อาจเผลอเลือกใช้งานหรือเชื่อมต่อกับบริการที่มีช่องโหว่ได้ง่าย | ช่วยให้ตระหนักถึงความปลอดภัยและการทำ Hardening ระบบสำหรับ Agent | นำไปประยุกต์ใช้ในการตรวจสอบช่องโหว่ API และจำกัดสิทธิ์ของ Agent ให้รัดกุมขึ้น",
+    "url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/"
+  },
+  {
+    "id": "bsky_bafyreie5ue23eeupzvuphwv4p2e4lagwr2jtdpt7hxwh7tjfj6p2ulajtu",
+    "timestamp": "2026-11-15T22:00:11.217512+00:00",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "สรุป 3 เทรนด์หลักของ AI Engineer ในยุค Software Factories",
+    "summary_th": "ภาพรวมทิศทางวงการ AI Engineering จาก Swyx เน้นเรื่อง Software Factories, System 1 models และความทะเยอทะยานที่เพิ่มขึ้น | ช่วยให้เห็นทิศทางการพัฒนาแอปพลิเคชันและเครื่องมือแห่งอนาคต | นำไปใช้ปรับ Strategy ในการสร้างโปรเจกต์และเพิ่ม Automation ให้ระบบภายในองค์กร",
+    "url": "https://bsky.app/profile/altryne.bsky.social/post/3n2ez6kena32m"
+  },
+  {
+    "id": "gn_e9d6e5e1b58b65e2",
+    "timestamp": "2026-11-15T18:00:07.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Nous กำลังร่วมมือกับ Google เพื่อรองรับ Gemini Subscription บน Hermes",
+    "summary_th": "การเชื่อมต่อแพ็กเกจสมาชิก Gemini ที่มีอยู่เข้ากับ Hermes แทนการบังคับใช้เฉพาะ API Key | สะดวกและประหยัดค่าใช้จ่ายขึ้นสำหรับผู้ใช้งานแพ็กเกจรายเดือนอยู่แล้ว | นำไปใช้พัฒนา Workflow หรือ Agent ที่เชื่อมต่อผ่าน Hermes ได้อย่างไร้รอยต่อยิ่งขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwQlY2WDY2WFd1VnpJcGdtZjFpTjF5aXJjV19MZ3VLSjVQVnhLNEtsbDhscGxFOU9QMGd3YW14RzlWLUNLT21HMzE5eXlJSXpuT0JYOWJpaHVka3R4M253VEpsRWY?oc=5"
+  },
+  {
+    "id": "gn_28dd6ffdbb2be430",
+    "timestamp": "2026-11-15T12:19:34.000Z",
+    "score": 5,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "วิธีสลับบัญชีใช้งาน Claude Code หลายบัญชีบนเครื่องเดียวกัน",
+    "summary_th": "เทคนิคการตั้งค่า Workaround สำหรับรัน Claude Code สลับหลายบัญชีบนเครื่องคอมพิวเตอร์เครื่องเดียว | แก้ข้อจำกัดที่ตัวโปรแกรมไม่มีปุ่มสลับบัญชีมาให้ในตัว | นำไปใช้จัดการ Environment และสลับใช้งานบัญชีพัฒนาหลายโปรเจกต์ได้อย่างสะดวก",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1nOTJGLXZOcWFNbGZXVEI2eVBZZDB0bnIxMU1YTDdWR2h5YkVELVc1SW1fMVBPMWVHQndsT2JyYlhQMHVTU1Y2QVpaLXN3TVZ4S2tsUlVNaG9HV2M?oc=5"
+  },
+  {
     "id": "hf_unsloth_Qwen3_8-27B-GGUF",
     "timestamp": "2026-08-13T08:28:40.000Z",
     "score": 8,
@@ -1957,45 +1997,5 @@
     "title_th": "DeepSeek เปิดตัว Search API ใหม่ในราคาประหยัดที่สุดบนตลาด",
     "summary_th": "API ค้นหาข้อมูลจาก DeepSeek ที่ออกแบบมาสำหรับ AI Agent โดยเฉพาะ | จุดเด่นคือราคาถูกที่สุดเมื่อเทียบกับ API ค้นหาตัวอื่นในระดับเดียวกัน | นำไปใช้เป็นเครื่องมือ Search Grounding ให้กับ Agent เพื่อค้นหาข้อมูลแบบเรียลไทม์ในต้นทุนที่ต่ำลง",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53THRjbG9lSnl4RG9ZempxRVRBa3c4TWMzX3FtVF8tM2EwSTllendsdUdBY3RORWduQWpENmd5UGN2Tm9adGtocGFQWXZrNUxYWTdyQndadThjSE5meTlYT1haQUcteU0?oc=5"
-  },
-  {
-    "id": "hn_50176082",
-    "timestamp": "2026-10-21T04:27:51.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Research",
-    "title_th": "บทความวิเคราะห์เหตุผลว่าทำไมการใช้ LLM ประเมินความมั่นใจตัวเอง (Confidence Scoring) ถึงเป็นไอเดียที่ไม่ดี",
-    "summary_th": "บทความวิเคราะห์ข้อจำกัดของการให้ LLM ให้คะแนนความมั่นใจในคำตอบของตัวเอง | ช่วยให้เห็นจุดอ่อนในการนำความน่าจะเป็นที่ LLM ออกมาใช้ตรงๆ | นำไปปรับปรุงสถาปัตยกรรมการสร้างระบบประเมินความถูกต้องหรือใช้เทคนิคอื่นเช่น Evals แทน",
-    "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html"
-  },
-  {
-    "id": "hn_50190357",
-    "timestamp": "2026-10-22T02:17:58.000Z",
-    "score": 7,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Claude รองรับการใช้งานร่วมกับ Google Docs, Sheets และ Slides แล้ว",
-    "summary_th": "ฟีเจอร์การเชื่อมต่อ Claude เข้ากับชุดโปรแกรมออฟฟิศของ Google | ช่วยให้ทำงานกับเอกสาร สเปรดชีต และงานนำเสนอได้สะดวกรวดเร็วยิ่งขึ้นโดยไม่ต้องสลับแอป | นำไปใช้พัฒนา Workflow อัตโนมัติสำหรับงานเอกสารและการวิเคราะห์ข้อมูลองค์กร",
-    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
-  },
-  {
-    "id": "gn_5e2884c9c178566e",
-    "timestamp": "2026-10-21T19:47:25.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Model Release",
-    "title_th": "Anthropic เปิดตัว Claude Duet ผู้ช่วย AI แบบ Always-on และ Proactive ขับเคลื่อนด้วย Opus 5.5",
-    "summary_th": "AI ผู้ช่วยอัจฉริยะที่ทำงานแบบเชิงรุกตลอดเวลา (Always-on agent) ขับเคลื่อนด้วยโมเดล Opus 5.5 | ทำงานเบื้องหลังและโต้ตอบได้ proactive มากขึ้นเทียบเท่าคู่แข่งในตลาด | นำไปประยุกต์ใช้เป็นผู้ช่วยส่วนตัวในการทำงานและพัฒนา Agentic Workflows ที่ซับซ้อน",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5HOUgxekJFcXlMdVBfXzluZkk3S3l0ZFI2em10RVBJa1FJak5uRW5NYVc3czdmQlNKVjJXMFpNSlllSmdqb0M5T1ByUXVKVUxkSzgxNDgydHdkSTdmcUZWdHZR?oc=5"
-  },
-  {
-    "id": "gn_ffec97da23689791",
-    "timestamp": "2026-10-21T21:03:10.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Anthropic ประกาศอัปเดต Claude API เวอร์ชันใหม่ 2026-10-21 ในรอบหลายปี",
-    "summary_th": "การออก API เวอร์ชันทางการใหม่ครั้งแรกของ Claude API นับตั้งแต่ปี 2023 ช่วยให้นักพัฒนามีรอบการอัปเกรดที่ชัดเจนและเตรียมรับมือ breaking changes ก่อนโมเดลใหม่จะถูกบังคับใช้ AI Engineer สามารถนำไปใช้วางแผน migration และปรับปรุง codebase ให้รองรับฟีเจอร์โมเดลในอนาคตได้อย่างมั่นคง",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RRnF3SHVvNWwwSUZKU3Bwb0ZqU204RVhLa0JNTFo2Z1p5NEo3c2JJRmlGNkk1V1BXMks3RllOQVBwX0pNVVhfeTBXUnBLdF9DM1hJQjVra0ozQXkwM0lYMw?oc=5"
   }
 ]
