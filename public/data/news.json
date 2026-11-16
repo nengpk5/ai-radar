@@ -1,5 +1,25 @@
 [
   {
+    "id": "or_tencent_hy4-flash",
+    "timestamp": "2026-11-16T14:18:26.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Tencent เปิดตัว Hy4 Flash โมเดลประหยัดต้นทุน",
+    "summary_th": "คือโมเดลตัวย่อของ Hy4 จาก Tencent ที่ใช้พารามิเตอร์ประมาณหนึ่งในสี่เพื่อลดหน่วงและต้นทุน | เหมาะกับงานช่วยเขียนโค้ดและเอเจนต์ที่ต้องการความเร็วสูง | นำไปผสานรวมกับระบบ Agent หรือตัวช่วยเขียนโค้ดเพื่อลดค่าใช้จ่ายในการเรียก API",
+    "url": "https://openrouter.ai/tencent/hy4-flash"
+  },
+  {
+    "id": "gn_bf5715e326f19fd1",
+    "timestamp": "2026-11-16T03:27:00.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini 4 Carbon และ Hydrogen เร็วขึ้น 2.5 เท่า",
+    "summary_th": "คือชุดโมเดล Gemini 4 ใหม่จาก Google ที่ Carbon พร้อมใช้ใน API และ AI Studio แล้ว | Hydrogen เร็วกว่ารุ่นก่อนประมาณ 2.5 เท่า รองรับบริบท 1M โทเค็น ราคาคงที่และถูกลง | เหมาะสำหรับวิศวกร AI สร้างแอปที่ต้องบริบทยาวและตอบสนองรวดเร็วในสภาพแวดล้อมจริง",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1mUk5vQTJ6Yi1uSE1ham9maThSYUtjSFpjMVl0T01MNkdGdFRPSDE3Mk5rLXluQXpMOVJTNERkWVhqSDhVRW9LWmxLc2R0UWlUdEJUdXBySGRucXBuTGdfQUNhVnRBUQ?oc=5"
+  },
+  {
     "id": "or_qwen_qwen4-max",
     "timestamp": "2026-11-16T02:18:46.000Z",
     "score": 9,
@@ -1977,25 +1997,5 @@
     "title_th": "Anthropic เปิดตัว Claude Duet (Research Preview) สำหรับผู้ใช้ Pro และ Max",
     "summary_th": "คือพรีวิวฟีเจอร์ใหม่จาก Anthropic ที่เน้นงานประสานงานและการจัดการความเร่งด่วน | ดีกว่าเดิมในการช่วยจัดการ Workflow ที่ซับซ้อน แม้จะยังต้องปรับปรุงเรื่องการประเมินความสำคัญ | นำไปทดลองใช้งานจริงผ่านระบบ Waitlist เพื่อเพิ่มประสิทธิภาพงานพัฒนา",
     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ZaW15LTdvOWpPTjItSkdpblJfREdiX1ZHVzhaSDJhSTNUQ0hlVHJnNlM1OWhMZ01fNmhldF9IOW1PVnZlN0RRU2hHNTVlZERyc1dNSVpfT09nblJiNUE?oc=5"
-  },
-  {
-    "id": "gn_775ffbcb7a5ea165",
-    "timestamp": "2026-10-22T18:17:10.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Anthropic โอนย้ายมาตรฐาน Agent Skills ให้แก่มูลนิธิ Agentic AI",
-    "summary_th": "คือการส่งมอบมาตรฐาน Agent Skills ที่พัฒนาจาก Claude Code ให้กับ Agentic AI Foundation | ดีกว่าเดิมตรงที่จะกลายเป็นมาตรฐานกลางระดับอุตสาหกรรมร่วมกับ MCP | นำไปใช้พัฒนา AI Agent ที่รองรับมาตรฐานกลางเพื่อความเข้ากันได้ที่กว้างขึ้น",
-    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zR2licGFVVncxU2NpSkdMeUNtc2RjNmhCNGhFMW5SdWxsLWJqNDZIRFd6WHN0bVdUclFxY29lSUhkTzI2eHY2OFVzM2NWS2lOdEZmUXJUWTFHd3ZS?oc=5"
-  },
-  {
-    "id": "hn_50191507",
-    "timestamp": "2026-10-22T05:23:11.000Z",
-    "score": 8,
-    "vendor": "OpenAI",
-    "category": "Dev Tool",
-    "title_th": "OpenAI เปิดตัวเครื่องมือ CLI อย่างเป็นทางการ",
-    "summary_th": "เครื่องมือ Command Line Interface จาก OpenAI สำหรับจัดการงานพัฒนาและเรียกใช้โมเดล | ใช้งานผ่าน Terminal ได้สะดวกรวดเร็วยิ่งขึ้นโดยไม่ต้องสลับไปหน้าเว็บ | นำไป integrate เข้ากับ CI/CD pipeline หรือ script อัตโนมัติในการเรียกใช้งาน AI ได้ง่ายขึ้น",
-    "url": "https://github.com/openai/openai-cli"
   }
 ]
