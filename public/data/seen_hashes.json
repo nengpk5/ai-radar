@@ -1,4 +1,12 @@
 [
+  "hf_facebook_sam3",
+  "hn_50533270",
+  "hn_50529612",
+  "bsky_bafyreidorqpxwkjsgo6ty6sz7lsywhpg2whbuzxqrxl3z6bhemdxn6wabi",
+  "bsky_bafyreighvwnfeerab6etbiddlom6zzxsctyp5sgrpvjxpys2u3j7fufioy",
+  "bsky_bafyreiag6zxvhp5j3sycojwfjblqqn6fquy33jrej6zrmnsu672diquomy",
+  "gn_76cb2628bcaa5aee",
+  "gn_306afc09e352d0d5",
   "hn_50526967",
   "hn_50526584",
   "gn_e97f9b451d5c7c15",
@@ -490,13 +498,5 @@
   "hn_50281826",
   "gn_50db8f3eca98ba3c",
   "gn_a76f3ffe95ff9ce9",
-  "hf_tencent_Hy-SimulMT-30B-A3B-FP8",
-  "bsky_bafyreiehcwryczmfymm2ei266q3h2opga2hdiimvks6ghlqlqtvtji2x3q",
-  "bsky_bafyreie4gtne56ftjif4kt2ueitx7jfbkax66xhyea2ba23tkgnxq67os4",
-  "gn_3f7bd3761ee67309",
-  "gn_dc11a103b53d90c6",
-  "or_particle-ai_particle-1",
-  "hf_LiquidAI_LFM3-1_7B",
-  "hn_50276792",
-  "hn_50275626"
+  "hf_tencent_Hy-SimulMT-30B-A3B-FP8"
 ]
