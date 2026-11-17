@@ -1,5 +1,65 @@
 [
   {
+    "id": "gn_e97f9b451d5c7c15",
+    "timestamp": "2026-11-16T23:03:33.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI อัปเกรด ChatGPT for Healthcare เพิ่ม Computer-Use Agent และปลั๊กอินการแพทย์",
+    "summary_th": "ระบบ Agent ทางการแพทย์ที่รองรับความสามารถควบคุมหน้าจอ (Computer-Use) พร้อมปลั๊กอินเฉพาะทางกว่า 20 รายการ | เพิ่มความแม่นยำในการให้คำตอบทางคลินิกและสามารถโต้ตอบกับซอฟต์แวร์เวชระเบียนได้โดยตรง | นำไปประยุกต์ใช้สร้าง Automated Clinical Workflow และเชื่อมต่อข้อมูลสุขภาพเข้ากับระบบโรงพยาบาล",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03QlZlM1lqRVhlQmRVZ1R6SWlIYTZZVkJhNHc0SmxmYjdDazhuTnpzTkJHa1o4SmNpQzNUWHFwaHpqdEFlYmJ6Q0o1RVFieE9jTl9TWG5pQ3RuN2M?oc=5"
+  },
+  {
+    "id": "gn_58ccfd1889d5eaf1",
+    "timestamp": "2026-11-16T22:00:08.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Gemini Notebook เพิ่มฟีเจอร์เปลี่ยนแหล่งข้อมูลเป็นเว็บแอปโต้ตอบได้ทันที",
+    "summary_th": "ฟีเจอร์สร้างหน้าเว็บอินเทอร์แอคทีฟ เช่น Dashboard หรือ Visual Explainer ผ่านการพิมพ์สั่ง 'make me a site' ใน Gemini Notebook | ช่วยสร้าง UI สรุปข้อมูลและแชร์ให้ผู้อื่นใช้งานได้ทันทีโดยไม่ต้องเขียนโค้ด Frontend แยกเอง | นำไปใช้ทำต้นแบบ Data Visualization และสร้างแดชบอร์ดรายงานผลจากชุดเอกสารทางเทคนิคได้อย่างรวดเร็ว",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1KQjNQWUhwZWltdEpRS3A4T09kVkd1REp0UTFWNnVfVjh4MGRlYVdadldZVWl0c0J2ZXBlWVV1RXZVWWF5alBlSW95Mm9TdGxITnI4aHNUWVNUbjA?oc=5"
+  },
+  {
+    "id": "gn_e919cb132ff8ba1a",
+    "timestamp": "2026-11-16T22:31:41.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "Anthropic เผยแนวคิด Verification Loop ยกระดับคุณภาพโค้ดของ Claude",
+    "summary_th": "แนวคิดการออกแบบกระบวนการเขียนโค้ดของ Claude Code โดยผสานการตรวจสอบผลลัพธ์ผ่าน Test, Benchmark และ E2E Runs อัตโนมัติ | ช่วยลดปัญหาโค้ดผิดพลาด (Hallucination) และยกระดับความถูกต้องของโค้ดด้วยต้นทุนการรันที่ต่ำลง | นำไปประยุกต์ใช้สร้าง Coding Agentic Loop ภายในระบบ CI/CD หรือพัฒนา Agent พัฒนาซอฟต์แวร์อัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yMnZhOGtkSWI3aUZMalctUEZkNE5tTGtpcVpuaWpfblN3cHh6c0VtaGc1dlBNbUFVTnk1UF9hY3ZXVmxSVExhcGNxUUZXdlZ5MGlRdENIX0JFSlJycFpRXw?oc=5"
+  },
+  {
+    "id": "hn_50526584",
+    "timestamp": "2026-11-17T02:19:50.000Z",
+    "score": 6,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Tokendoctor เครื่องมือตรวจสอบและวิเคราะห์การใช้ Token ส่วนเกินบน Claude Code",
+    "summary_th": "ยูทิลิตี้โอเพนซอร์สสำหรับตรวจสอบปริมาณ Context และวิเคราะห์ค่าใช้จ่าย Token ที่ถูกใช้งานเกินจำเป็นใน Claude Code | ช่วยชี้เป้าไฟล์และคำค้นที่ทำให้สูญเสีย Token โดยไม่จำเป็น ทำให้คุมงบประมาณ API ได้แม่นยำขึ้น | นำไปใช้ปรับแต่งไฟล์ Ignore List และกำหนด Context Budget ในการเขียนโค้ดเพื่อลดต้นทุนรายวัน",
+    "url": "https://github.com/localixai/tokendoctor"
+  },
+  {
+    "id": "hn_50526967",
+    "timestamp": "2026-11-17T03:18:53.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Pulsar โปรโตคอลสื่อสารข้ามระบบระหว่าง AI Agents",
+    "summary_th": "เฟรมเวิร์กและ Message Bus สำหรับส่งข้อความสื่อสารระหว่าง AI Agent ที่รันอยู่บน Harness หรือ Framework ที่แตกต่างกัน | ทลายข้อจำกัดในการเชื่อมต่อ Agent ข้ามระบบ ช่วยให้ Agent ต่างค่ายสามารถแลกเปลี่ยนข้อมูลและประสานงานกันได้ราบรื่น | นำไปใช้สร้างสถาปัตยกรรม Multi-Agent System ขนาดใหญ่ที่ต้องผสมผสาน Agent หลากหลายโมเดลเข้าด้วยกัน",
+    "url": "https://github.com/yocontra/pulsar"
+  },
+  {
+    "id": "gn_677f0bb9fc7e9a31",
+    "timestamp": "2026-11-16T21:18:08.000Z",
+    "score": 5,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude Code รองรับการทดสอบอุปกรณ์จอพับบน iOS Simulator",
+    "summary_th": "ฟีเจอร์พรีวิวบน Claude Code Desktop ที่เชื่อมต่อกับ iPhone Duo ใน iOS Simulator ได้โดยตรง | Agent สามารถจำลองการพับและกางหน้าจอเพื่อตรวจสอบและแก้ไขเลย์เอาต์ UI ในแต่ละสถานะได้แบบอัตโนมัติ | ใช้อัตโนมัติการตรวจสอบและแก้บัก Adaptive UI สำหรับแอปพลิเคชันที่รองรับอุปกรณ์หน้าจอพับ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRdEU0N2pFa3FPN09rWDIyM0tVNUdOalFlSW1BazhfdlpkRElnMGNxdEsxbHRISEJPLU9VQWMtZFMzdjctWW9HV0xQXzFDSHZ4V18wVWdtLXlyV0laZ3ktLQ?oc=5"
+  },
+  {
     "id": "hn_50519153",
     "timestamp": "2026-11-16T16:07:20.000Z",
     "score": 8,
@@ -1937,65 +1997,5 @@
     "title_th": "NVIDIA เปิดตัว OpenShell รันไทม์ปลอดภัยสำหรับ AI Agent แบบกลุ่ม",
     "summary_th": "OpenShell คือรันไทม์ (Runtime) แบบปลอดภัยและเป็นส่วนตัวสำหรับการรัน AI Agent หลายตัวพร้อมกัน | ดีกว่าเดิมตรงที่มีระบบป้องกันและจัดการความปลอดภัยที่ดีเยี่ยม เหมาะกับการทำงานอัตโนมัติสเกลใหญ่ | นำไปใช้พัฒนาและdeploy ฟลีทของ autonomous agents ได้อย่างมั่นใจไร้กังวลเรื่องความปลอดภัย",
     "url": "https://github.com/NVIDIA/OpenShell"
-  },
-  {
-    "id": "gn_6da1405e221e2874",
-    "timestamp": "2026-10-22T20:04:24.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Model Release",
-    "title_th": "Claude เตรียมเปิดโหมด Auto เป็นค่าเริ่มต้นบนแพลตฟอร์มหลัก",
-    "summary_th": "ฟีเจอร์รันเซสชันของ Claude ในโหมดอัตโนมัติ (Auto mode) โดยมีระบบตรวจสอบความปลอดภัยคอยบล็อก actions ที่มีความเสี่ยง | ดีกว่าเดิมที่ไม่ต้องคอยกดอนุมัติทีละขั้นตอน ช่วยให้ทำงานต่อเนื่องได้รวดเร็วขึ้น | นำไปปรับใช้กับการทำงานพัฒนาซอฟต์แวร์และงานอัตโนมัติที่ต้องการความคล่องตัวสูง",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9JTDZGT01jWnJtaG5SV2xRQnJTQ0poTUduazFLaVFKaFNRZUhKTzFRV0lxT0hoWGplTzVYN0d0SXAtUktxOUlzOUYwY2pXY04xMmx1TGY3VjkyVHMwcUE?oc=5"
-  },
-  {
-    "id": "gn_282ba43b926e6b28",
-    "timestamp": "2026-10-22T21:21:00.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Model Release",
-    "title_th": "Claude บน Google Cloud เปิดให้บริการแบบ GA อย่างเป็นทางการ",
-    "summary_th": "โมเดล Claude ที่บริหารจัดการโดย Anthropic เปิดให้ใช้งานบน Google Cloud พร้อมฟีเจอร์เต็มรูปแบบ | ดีกว่าเดิมด้วยการเชื่อมต่อระบบ IAM, การเรียกเก็บเงิน และสิทธิประโยชน์ของ Google Cloud | นำไปรวมเข้ากับโครงสร้างพื้นฐานบน Cloud เดิมขององค์กรได้อย่างราบรื่นและปลอดภัย",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE93SG91bjBGb1dXYko1TEk0a1kydWhUQXItMmJTc3M1UFA4UkRvUTdNcEhhalRvUDI5aUhfRXBNUWg4eHlobFhKR2V3QWdxVWs0QXN0SE4tVk82ZWRDVWc?oc=5"
-  },
-  {
-    "id": "gn_8277dec065d1f623",
-    "timestamp": "2026-10-22T19:07:58.000Z",
-    "score": 8,
-    "vendor": "OpenAI",
-    "category": "Model Release",
-    "title_th": "เปิดตัว Decisions API สำหรับการตัดสินใจแบบเกือบเรียลไทม์",
-    "summary_th": "Decisions API คือเครื่องมือสำหรับจำแนกข้อความ/รูปภาพ และประเมินอินพุตเพื่อเลือกขั้นตอนถัดไปโดยไม่ต้องสร้างข้อความยาวๆ | ดีกว่าเดิมเพราะทำงานได้เร็วขึ้นและประหยัดต้นทุนกว่าการเรียกใช้โมเดลเต็มรูปแบบ | นำไปใช้สร้าง Workflow อัตโนมัติและการตัดสินใจของ Agent ได้อย่างมีประสิทธิภาพ",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9pUXl5ZWRqTWxTRmJqWktnV1VnT2Z5dmpzRk5HTTVOS0RJZEZnZl96V25haEdMMzF6WnVzVlRsSjE5TVR1VnlBUUpTNGRLZnlub1RoUlhfYXFLRmtFdmtqeg?oc=5"
-  },
-  {
-    "id": "gn_5e67d4d776f2bd19",
-    "timestamp": "2026-10-22T15:12:41.000Z",
-    "score": 7,
-    "vendor": "Google",
-    "category": "Dev Tool",
-    "title_th": "Google เปิดตัว Gemini API CLI ในสถานะ Preview",
-    "summary_th": "เครื่องมือ Command Line Interface สำหรับเรียกใช้งาน Gemini API เพื่อจัดการมัลติมีเดียและ Agent | ดีกว่าเดิมที่ช่วยลดความยุ่งยากในการเขียนสคริปต์ชั่วคราวและการจำ Model String | นำไปใช้ทดสอบความสามารถด้านภาพ เสียง วิดีโอ และจัดการ Agent ได้อย่างรวดเร็วจาก Terminal",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE82cUlDcnhhc0Y3VFNqX2hkSFdySzZGTlhjV0RpZEZ6N3JXT2RIUzdOb3EtUjdCdXFzd1dfQVVQeVhaOXJfN0pFZkk3emlrNW5oemRYM2tVTE94WmpudTVHa21WVQ?oc=5"
-  },
-  {
-    "id": "or_minimax_minimax-m3_1-flash",
-    "timestamp": "2026-10-19T03:12:49.000Z",
-    "score": 7,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "เปิดตัว MiniMax M3.1 Flash โมเดล Multimodal รองรับงาน Agent และ Coding",
-    "summary_th": "คือโมเดล Multimodal จาก MiniMax รุ่นอัปเกรด | ดีกว่าเดิมในด้านงาน Agent ที่ซับซ้อน การเขียนโค้ด และ Cybersecurity ผ่านเกณฑ์ประเมินที่ดีขึ้น | นำไปประยุกต์ใช้สร้างระบบ AI Agent และผู้ช่วยเขียนโปรแกรมประสิทธิภาพสูง",
-    "url": "https://openrouter.ai/minimax/minimax-m3.1-flash"
-  },
-  {
-    "id": "hn_50198936",
-    "timestamp": "2026-10-22T18:02:38.000Z",
-    "score": 6,
-    "vendor": "Tooling",
-    "category": "Dev Tool",
-    "title_th": "เปิดตัว agent-usage-guard ป้องกันการเปลืองโควต้าการใช้งาน Claude Code",
-    "summary_th": "คือเครื่องมือเสริมสำหรับผู้ใช้งาน Claude Code ช่วยจัดการและจำกัดโควต้าการใช้งาน | ดีกว่าเดิมตรงที่ช่วยป้องกันการส่ง Request ฟุ่มเฟือยโดยไม่จำเป็น ประหยัดค่าใช้จ่าย | นำไปติดตั้งร่วมกับ CLI ของนักพัฒนาเพื่อควบคุมงบประมาณการใช้งาน AI",
-    "url": "https://github.com/rbartoli/agent-usage-guard"
   }
 ]
