@@ -1,5 +1,15 @@
 [
   {
+    "id": "hn_50519153",
+    "timestamp": "2026-11-16T16:07:20.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Research",
+    "title_th": "OpenAI เริ่มโครงการฝังผู้เชี่ยวชาญภายนอกตรวจสอบระบบโมเดล (Embedded Assessments)",
+    "summary_th": "คือการให้ผู้เชี่ยวชาญด้านความปลอดภัย AI ภายนอกเข้าถึงระบบภายในของ OpenAI | ดีกว่าเดิมยังไง ช่วยเพิ่มความโปร่งใสและตรวจสอบความปลอดภัยของโมเดลได้ดีขึ้นจากผู้เชี่ยวชาญอิสระ | เอาไปใช้อะไรต่อได้ ใช้เป็นแนวทางอ้างอิงในการออกแบบระบบตรวจสอบความปลอดภัย (AI Alignment) สำหรับองค์กรของคุณ",
+    "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/"
+  },
+  {
     "id": "or_tencent_hy4-flash",
     "timestamp": "2026-11-16T14:18:26.000Z",
     "score": 6,
@@ -1987,15 +1997,5 @@
     "title_th": "เปิดตัว agent-usage-guard ป้องกันการเปลืองโควต้าการใช้งาน Claude Code",
     "summary_th": "คือเครื่องมือเสริมสำหรับผู้ใช้งาน Claude Code ช่วยจัดการและจำกัดโควต้าการใช้งาน | ดีกว่าเดิมตรงที่ช่วยป้องกันการส่ง Request ฟุ่มเฟือยโดยไม่จำเป็น ประหยัดค่าใช้จ่าย | นำไปติดตั้งร่วมกับ CLI ของนักพัฒนาเพื่อควบคุมงบประมาณการใช้งาน AI",
     "url": "https://github.com/rbartoli/agent-usage-guard"
-  },
-  {
-    "id": "gn_024f57c91eb29354",
-    "timestamp": "2026-10-21T19:09:37.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Model Release",
-    "title_th": "Anthropic เปิดตัว Claude Duet (Research Preview) สำหรับผู้ใช้ Pro และ Max",
-    "summary_th": "คือพรีวิวฟีเจอร์ใหม่จาก Anthropic ที่เน้นงานประสานงานและการจัดการความเร่งด่วน | ดีกว่าเดิมในการช่วยจัดการ Workflow ที่ซับซ้อน แม้จะยังต้องปรับปรุงเรื่องการประเมินความสำคัญ | นำไปทดลองใช้งานจริงผ่านระบบ Waitlist เพื่อเพิ่มประสิทธิภาพงานพัฒนา",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ZaW15LTdvOWpPTjItSkdpblJfREdiX1ZHVzhaSDJhSTNUQ0hlVHJnNlM1OWhMZ01fNmhldF9IOW1PVnZlN0RRU2hHNTVlZERyc1dNSVpfT09nblJiNUE?oc=5"
   }
 ]
