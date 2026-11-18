@@ -1,5 +1,15 @@
 [
   {
+    "id": "or_google_gemini-4-neon",
+    "timestamp": "2026-11-18T13:02:57.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Gemini 4 Neon โมเดลใหม่เน้นงานเขียนโค้ดและเอเจนต์",
+    "summary_th": "คือโมเดลตระกูล Gemini 4 รุ่นความเร็วสูงและราคากลางจาก Google ที่ออกแบบมาเพื่องานด้านซอฟต์แวร์และการทำงานแบบเอเจนต์โดยเฉพาะ | ดีกว่าเดิมด้วยความเร็วระดับท็อปและการทำ End-to-end task สำเร็จรวดเร็วในงานเขียนโค้ด งานวิจัย และงานไอที | นำไปใช้ต่อยอดสร้างระบบ AI Coding Assistant, Terminal Agent หรือระบบอัตโนมัติที่ซับซ้อนผ่าน Gemini API",
+    "url": "https://openrouter.ai/google/gemini-4-neon"
+  },
+  {
     "id": "bsky_bafyreigsrcohz4ds74jfznr6i2imyvm6g3apa2etrxq7pvz47pnowtjfzq",
     "timestamp": "2026-11-17T22:43:06.480Z",
     "score": 9,
@@ -1987,15 +1997,5 @@
     "title_th": "Claude เพิ่มฟีเจอร์ MCP Tasks และ Elicitations รองรับงานรันเบื้องหลัง",
     "summary_th": "อัปเดตความสามารถของ Model Context Protocol (MCP) ให้ Claude สั่งงานปลั๊กอินแบบรันระยะยาวได้ | ช่วยให้โมเดลทำงานซับซ้อน เช่น Deep Research แล้วค่อยส่งผลลัพธ์กลับมาทีหลังได้โดยไม่ต้องรอคิว | นำไปพัฒนา AI Agents ขั้นสูงที่สามารถจัดการงานเบื้องหลัง (Background jobs) ได้อย่างมีประสิทธิภาพ",
     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkVWFMQ0lhaWlobUhwdjdZcGFRU2hva1ZhQWNnbXlGWTBwNE1uSDVDOXFoQVlTUWpoLUJHcVp2V09ndnlkNXRlREUyNlhCR2VtLWRUaWtXd1dtMVJSUmFjVA?oc=5"
-  },
-  {
-    "id": "hn_50214416",
-    "timestamp": "2026-10-23T19:50:56.000Z",
-    "score": 6,
-    "vendor": "OpenAI",
-    "category": "Research",
-    "title_th": "OpenAI ยกระดับความปลอดภัยสภาพแวดล้อมการเทรดโมเดล ตัดการเชื่อมต่ออินเทอร์เน็ตสด",
-    "summary_th": "มาตรการความปลอดภัยใหม่ของ OpenAI ในการตัดอินเทอร์เน็ตสดระหว่างเทรดโมเดล แล้วเปลี่ยนใช้ระบบจำลอง (Offline world) แทน | ป้องกันความเสี่ยงและเพิ่มความปลอดภัยระดับโครงสร้างพื้นฐานสำหรับ Frontier Models | ใช้เป็นกรณีศึกษาในการออกแบบสถาปัตยกรรมความปลอดภัยสำหรับการเทรด AI ในองค์กร",
-    "url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
   }
 ]
