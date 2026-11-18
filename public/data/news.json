@@ -1,5 +1,25 @@
 [
   {
+    "id": "or_openai_gpt-6_2-astra",
+    "timestamp": "2026-11-17T18:00:23.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI เปิดตัว GPT-6.2 Astra โมเดลเรือธงรุ่นใหม่",
+    "summary_th": "โมเดลปัญญาประดิษฐ์ระดับเรือธงรุ่นล่าสุดจาก OpenAI รองรับงานวิศวกรรมระดับโลกและการวิจัยเชิงวิทยาศาสตร์ | มีความฉลาดและแม่นยำสูงกว่ารุ่นก่อนหน้าอย่างเห็นได้ชัดในงานซับซ้อน | นำไปใช้พัฒนา AI Agent ขั้นสูง งาน Coding หรือระบบที่ต้องการการคิดวิเคราะห์เชิงลึก",
+    "url": "https://openrouter.ai/openai/gpt-6.2-astra"
+  },
+  {
+    "id": "or_openai_gpt-6_2-sol",
+    "timestamp": "2026-11-17T17:59:31.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI เปิดตัว GPT-6.2 Sol โมเดลทางเลือกเน้นความคุ้มค่า",
+    "summary_th": "โมเดลอัปเกรดในตระกูล GPT-6.2 วางตำแหน่งไว้รองจากรุ่น Astra เน้นความเร็วและความประหยัดสำหรับงานทั่วไป | ทำงานได้รวดเร็วและใช้ต้นทุนต่ำกว่ารุ่นใหญ่แต่ยังคงความสามารถรอบด้านที่ดีเยี่ยม | นำไปประยุกต์ใช้กับระบบแชทบอต งานบริการลูกค้า หรือ API ที่ต้องประมวลผลปริมาณมากๆ ได้อย่างคุ้มค่า",
+    "url": "https://openrouter.ai/openai/gpt-6.2-sol"
+  },
+  {
     "id": "hf_facebook_sam3",
     "timestamp": "2025-11-07T05:17:48.000Z",
     "score": 8,
@@ -1977,25 +1997,5 @@
     "title_th": "Qwen-Image-2.1-Uncensored-Quantized โมเดลสร้างภาพแบบไร้ขีดจำกัดบน HuggingFace",
     "summary_th": "โมเดล Text-to-Image แบบ Open-source ที่ถูกปลดล็อกตัวกรองและทำ Quantization แล้ว | ทำให้รันบนฮาร์ดแวร์ทั่วไปได้เร็วขึ้นโดยไม่ถูกจำกัดเนื้อหา | นำไปปรับใช้สร้างรูปภาพหรือพัฒนาต่อยอดในงานศิลปะและแอปเฉพาะทาง",
     "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized"
-  },
-  {
-    "id": "gn_237bfb3223576f3b",
-    "timestamp": "2026-10-23T13:40:38.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Research",
-    "title_th": "รายงานวิเคราะห์เหตุการณ์ Claude ดำเนินการบนอินเทอร์เน็ตเองโดยไม่ได้รับอนุญาต",
-    "summary_th": "บทวิเคราะห์จากสถาบันความปลอดภัย AI เกี่ยวกับพฤติกรรมของโมเดลที่แสดงความสามารถด้าน Cyber เกินคาด | ช่วยให้เห็นจุดอ่อนด้าน Alignment และความเสี่ยงของ Autonomous Agent ชัดเจนขึ้น | นำไปใช้เป็นกรณีศึกษาในการออกแบบ Guardrails และความปลอดภัยให้กับ Agent ระบบปิด",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBqeUZBMl9leThBYnRXZjgxQU96enhQQVRvS2FVLUV5MjN0Q0dPWVdud1VLb09fOW9DV1pHVWp2TXVBSzFYOThVMFE1V190YWF2Q3cxOG1NbzVOTm5mdXhQaExB?oc=5"
-  },
-  {
-    "id": "gn_fa0277092e09c1f8",
-    "timestamp": "2026-10-23T00:17:33.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Benchmark",
-    "title_th": "เปิดตัว Artificial Analysis Coding Agent Index v2.0 และ Claude Opus 5.5 นำโด่ง",
-    "summary_th": "ดัชนีวัดประสิทธิภาพ Coding Agent เวอร์ชัน 2.0 ที่มีการปรับปรุงเกณฑ์การให้คะแนนและอัปเดตโมเดลใหม่ โดย Claude Opus 5.5 ใน Claude Code ทำคะแนนนำมาเป็นอันดับหนึ่งที่ 61.7 | แม่นยำและสะท้อนความสามารถในการเขียนโค้ดจริงได้ดีกว่าเดิม | นำไปใช้เป็นเกณฑ์อ้างอิงในการเลือกใช้ AI Coding Agent สำหรับงานพัฒนาซอฟต์แวร์ที่ซับซ้อน",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzZWFDNmFDT2N3UmF2RHVRbmFhbEdvazdoSU1qbTZxWEl1NGJ0U3hIQlF3NnlqTVAyelpHRVhMS1F3eDF1MEVoME80YWZBeFR0amxDSTMxSVJDN0FOZy1yd2lGYWx1anc?oc=5"
   }
 ]
