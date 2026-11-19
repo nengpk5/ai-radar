@@ -1,5 +1,35 @@
 [
   {
+    "id": "gn_d33dd8f942dbaaf6",
+    "timestamp": "2026-11-18T21:35:30.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini 4 Neon โมเดลใหม่เน้นความฉลาดระดับแนวหน้าและความเร็วสูง",
+    "summary_th": "เปิดตัวโมเดล Gemini 4 Neon ที่ผสมผสานความฉลาดระดับฟรอนเทียร์เข้ากับการประมวลผลงานซับซ้อนได้อย่างรวดเร็ว\nดีกว่าเดิมในด้านความเร็วและความสมดุลในการทำงานเฉพาะทาง เช่น วิศวกรรมซอฟต์แวร์และงานวิจัย\nนำไปใช้เรียกผ่าน API หรือ Google AI Studio เพื่อเร่งความเร็วในการทำงานอัตโนมัติที่ซับซ้อน",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tYkJXWXZ1R0xSaDByZjRLNWthOUlKc3VzdVhyQmJTWUwxemlQYlZlQW9wT1dhSl9sZ2xEVjlmOGQ0dnM2eklLczM3Sk82bTNVQVdCUUlYdDJ3VjV6ZGc?oc=5"
+  },
+  {
+    "id": "gn_3f301e8bfcff8173",
+    "timestamp": "2026-11-18T22:54:47.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI เพิ่ม Responses API Background Mode สำหรับ GPT-6.2 ประหยัดต้นทุนโทเค็นสูงสุด 40%",
+    "summary_th": "ฟีเจอร์ใหม่ใน Responses API สำหรับงานที่ไม่จำเป็นต้องตอบทันที โดยเลือกประมวลผลแบบเบื้องหลังในเวลา 2 หรือ 8 ชั่วโมง\nช่วยประหยัดค่าใช้จ่ายต่อโทเค็นได้ถึง 40% เมื่อเทียบกับโหมด Standard\nเหมาะสำหรับงานแบตช์ งานวิเคราะห์ หรือเวิร์กโฟลว์หลายขั้นตอนที่ไม่รีบร้อน",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE50U1FfZWFEc3FwT3lUXzlTSTg3YWUwdVdIUDdNRnlGQlNGWjZmZ1JNdDdXTlo2T2ZWeGxXNmNUeVdRcjdoT2VaSW1RVThEdHhsb2JmU2tUY3Jqb2gtWF9ObA?oc=5"
+  },
+  {
+    "id": "hn_50553843",
+    "timestamp": "2026-11-18T23:30:09.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic เคาะราคาขายหุ้น IPO ที่ 83 ดอลลาร์ต่อหุ้น พร้อมระดมทุนครั้งใหญ่",
+    "summary_th": "ข่าวการเสนอขายหุ้น IPO ของ Anthropic ที่ราคา 83 ดอลลาร์ต่อหุ้น สูงกว่าช่วงที่คาดการณ์ไว้เดิม\nสะท้อนถึงมูลค่าตลาดและความเชื่อมั่นในทิศทางธุรกิจ AI ของบริษัท\nส่งผลต่อทิศทางอุตสาหกรรมและการลงทุนในโครงสร้างพื้นฐาน AI สำหรับนักพัฒนา",
+    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+  },
+  {
     "id": "or_google_gemini-4-neon",
     "timestamp": "2026-11-18T13:02:57.000Z",
     "score": 9,
@@ -1967,35 +1997,5 @@
     "title_th": "ตรวจพบช่องโหว่ RCE ร้ายแรงในไลบรารี Brotli จากการทดสอบ Red-Teaming",
     "summary_th": "การเปิดเผยช่องโหว่ Remote Code Execution ใน Brotli ซึ่งเป็นไลบรารีบีบอัดข้อมูลหลักใน Node.js, Bun และ Envoy | ป้องกันความเสี่ยงจากการโจมตีระบบ Backend ก่อนที่ช่องโหว่จะถูกนำไปใช้ในวงกว้าง | วิศวกร AI ควรตรวจสอบและอัปเดตรันไทม์ของ Agent และ API Server ทันทีเพื่อป้องกันการถูกยึดระบบ",
     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qTnh3Y1N2b2pzTVo5NEVxd1dYZ3dEUG5pZFZEcHlNX05nWnNDUmNqbXUxOWhFQVhRZm1HdTFmLVB0TDEydm15YkNIdVNrU0xVZDR3UkstSnJyb2c?oc=5"
-  },
-  {
-    "id": "hn_50214373",
-    "timestamp": "2026-10-23T19:46:38.000Z",
-    "score": 5,
-    "vendor": "Tooling",
-    "category": "Dev Tool",
-    "title_th": "Corgi: เทอร์มินัล Multiplexer สำหรับมอนิเตอร์และรัน AI Agent",
-    "summary_th": "เครื่องมือ Terminal Multiplexer ที่ออกแบบมาเพื่อควบคุมและแสดงผลการทำงานของ AI Agent ร่วมกับเทอร์มินัลทั่วไป | ช่วยให้จัดการและติดตามสถานะ Agent หลายตัวพร้อมกันในหน้าจอเดียวได้สะดวกขึ้น | นำไปใช้ควบคุมกระบวนการ Autonomous Coding หรือรัน Batch Task ของ Agent บนเครื่อง Local",
-    "url": "https://corgi.computer/"
-  },
-  {
-    "id": "bsky_bafyreibhpq2lwnxslqaxue45xyfxk4h3cbjmou745j43wasoz2ybaxkmqa",
-    "timestamp": "2026-10-23T19:45:54.167Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Kimi K3.1: โมเดล Open Weights ตัวแรกที่ท้าชนระดับ Frontier ได้อย่างสูสี",
-    "summary_th": "โมเดล Open Weights รุ่นใหม่ล่าสุดที่ทำผลงานได้ใกล้เคียงกับโมเดลปิดระดับแนวหน้าของโลก | มีประสิทธิภาพสูงและเปิดให้ใช้งานแบบเปิด ช่วยลดต้นทุนการรันโมเดลเอง | นำไป fine-tune หรือปรับใช้ในระบบ Agent ที่ต้องการความฉลาดเทียบเท่าโมเดลเรือธงได้",
-    "url": "https://bsky.app/profile/simonwillison.net/post/3mykwxawoa22u"
-  },
-  {
-    "id": "gn_8e6436f77ec6c854",
-    "timestamp": "2026-10-23T18:24:08.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Claude เพิ่มฟีเจอร์ MCP Tasks และ Elicitations รองรับงานรันเบื้องหลัง",
-    "summary_th": "อัปเดตความสามารถของ Model Context Protocol (MCP) ให้ Claude สั่งงานปลั๊กอินแบบรันระยะยาวได้ | ช่วยให้โมเดลทำงานซับซ้อน เช่น Deep Research แล้วค่อยส่งผลลัพธ์กลับมาทีหลังได้โดยไม่ต้องรอคิว | นำไปพัฒนา AI Agents ขั้นสูงที่สามารถจัดการงานเบื้องหลัง (Background jobs) ได้อย่างมีประสิทธิภาพ",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkVWFMQ0lhaWlobUhwdjdZcGFRU2hva1ZhQWNnbXlGWTBwNE1uSDVDOXFoQVlTUWpoLUJHcVp2V09ndnlkNXRlREUyNlhCR2VtLWRUaWtXd1dtMVJSUmFjVA?oc=5"
   }
 ]
