@@ -1,5 +1,15 @@
 [
   {
+    "id": "hn_50563148",
+    "timestamp": "2026-11-19T17:30:44.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "Claude แก้ไขโจทย์ปัญหาฟิสิกส์หลุมดำที่ยังไม่เคยมีใครแก้ได้สำเร็จ",
+    "summary_th": "ความสามารถระดับสูงของ Claude ในการช่วยแก้ปัญหาโจทย์ฟิสิกส์หลุมดำระดับยากที่ยังไม่มีคำตอบ | มีความแม่นยำและเข้าใจเชิงทฤษฎีลึกซึ้งขึ้นกว่ารุ่นก่อนหน้าอย่างก้าวกระโดด | นำไปประยุกต์ใช้ในการวิจัยเชิงวิทยาศาสตร์และการแก้โจทย์คำนวณซับซ้อนขั้นสูง",
+    "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+  },
+  {
     "id": "gn_48d6adc2ac9362dd",
     "timestamp": "2026-11-19T09:43:07.000Z",
     "score": 8,
@@ -1987,15 +1997,5 @@
     "title_th": "Anthropic ปิดให้บริการฟีเจอร์ Reverse Engineer Anything บน Claude",
     "summary_th": "การถอดความสามารถในการวิเคราะห์และแกะรอยโค้ดซอฟต์แวร์ระดับลึกของ Claude ออก | ส่งผลให้ความสามารถในการทำ Reverse Engineering ลดลงเพื่อความปลอดภัย | ต้องปรับเปลี่ยนไปใช้เครื่องมือเฉพาะทางอื่นแทนสำหรับการวิเคราะห์โค้ดดิบ",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBoV0F1Z1pDOUlrc0MyUXdMMm5VQ3AwbktGZGUwS0czTE15RTRsWnJoNUg4REdlZ094Ukx3bmVJVW50dXREa2ExemV3X3RmZkZpR0U4YWFnVmRHOEt0akZGWHFR?oc=5"
-  },
-  {
-    "id": "gn_fb5d79defbd947e0",
-    "timestamp": "2026-10-23T17:41:48.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Kimi K3.1 Pro ทะยานติด Top 4 โค้ดดิ้งอารนา ประสิทธิภาพเทียบเท่า Claude Opus-5 แต่ราคาถูกกว่า 70%",
-    "summary_th": "โมเดลภาษาตัวใหม่จาก Moonshot AI ที่โดดเด่นด้านการเขียนโค้ดและการพัฒนาเว็บ | ทำคะแนนใน Code Arena สูงเทียบเท่ารุ่นใหญ่แต่ต้นทุนถูกลงถึง 70% | นำมาใช้ลดต้นทุนงานพัฒนาระบบและเขียนโค้ดอัตโนมัติได้อย่างมีประสิทธิภาพ",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PMWM1ejV1LVBJU3FtNTdYcjB5OXBOZzF5WjR1Mm1CUWdRelJwdDVYX21MUHVMaGd3UkQxd2QtUklxcGNoLXc1bDZEbFM0MGtlMG1mT0t1anJNQQ?oc=5"
   }
 ]
