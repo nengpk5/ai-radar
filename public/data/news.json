@@ -1,5 +1,35 @@
 [
   {
+    "id": "gn_48d6adc2ac9362dd",
+    "timestamp": "2026-11-19T09:43:07.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Benchmark",
+    "title_th": "Gemini 4 Neon โมเดลแก้บั๊กอันดับหนึ่งใหม่",
+    "summary_th": "คือผลทดสอบ Gemini 4 Neon ของกูเกิลบนโค้ดจริง 2 คลังรวม 105 บั๊กที่ถูกปลูกไว้ | ทำคะแนน 63 แซง GPT-6.2 Astra และโมเดลคู่แข่งจนเป็นอันดับหนึ่ง | วิศวกร AI ใช้อ้างอิงเป็นเกณฑ์เลือกโมเดลสำหรับงานแก้ไขข้อบกพร่องและบำรุงรักษาระบบ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lV2NGUGgtM21ZWlZjZ05pWDE1OTJTbXRZMEMyUHNvUVdzVDh0bU1GMDlLMWYyTURzYkJxVXhkMDh5MnhwWnhJOU9kUjVvVDJXRFkxa3U2MURpZEg1M2dVTQ?oc=5"
+  },
+  {
+    "id": "gn_7f49d800a37a013c",
+    "timestamp": "2026-11-19T04:43:13.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "กูเกิลเตรียมเปิดตัว Gemini 4 Sodium โมเดลเร็วแรงคุ้มทุน",
+    "summary_th": "คือ Gemini 4 Sodium โมเดลแนวหน้าตัวใหม่จากดีปมายด์ที่จะเปิดตัวเร็ว ๆ นี้ เน้นความเร็ว แรง และต้นทุนต่ำ | ราคาเริ่มต้น 11.75 ดอลลาร์ต่อหนึ่งล้านโทเค็น แข่งขันกับโมเดลเจมินิรุ่นอื่น ๆ ได้ | วิศวกร AI เตรียมใช้เป็นตัวเลือกหน่วงต่ำสำหรับงานในระบบจริงที่ต้องการประสิทธิภาพและค่าใช้จ่ายคุ้มค่า",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBvSjlKSFVHeGNmMGtKX0tDTG5fYzdrUEgxUGtabzhUSWRnc0MzWDRQZ3kyQVVRUC1Gbmd4WjJzYXl6cUtZdmwxWHVvWnEzRFcyMEV2YnloMG1VRkU?oc=5"
+  },
+  {
+    "id": "gn_e6a11830fa4a6f80",
+    "timestamp": "2026-11-18T23:07:23.000Z",
+    "score": 6,
+    "vendor": "OpenAI",
+    "category": "Research",
+    "title_th": "เผยผลวิจัย OpenAI ว่า AI กำลังเปลี่ยนงานวิจัยอย่างไร",
+    "summary_th": "คือข้อมูลจากโอเพนเอไอว่าการใช้ AI ในงานวิจัยเพิ่มขึ้นแบบเอ็กซ์โพนेंटเชียล | เอเจนต์ทำงานที่ยาวขึ้นได้ แต่มนุษย์ยังคงมีบทบาทสำคัญและเป็นศูนย์กลาง | วิศวกร AI นำไปออกแบบระบบเอเจนต์และกำหนดบทบาทความร่วมมือระหว่างคนกับ AI ได้",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE95VXBKQ2kwNUZMLUJZMTZzWmpUeGpWa09tbVRhNXF6T3FKOFpxYWU3cWNobnFDWVYtdEVzeWdOMUpFc0ZmcWhvR1JPaTl3TU9LQVU0aU5OVkJVQW8?oc=5"
+  },
+  {
     "id": "gn_d33dd8f942dbaaf6",
     "timestamp": "2026-11-18T21:35:30.000Z",
     "score": 9,
@@ -1967,35 +1997,5 @@
     "title_th": "Kimi K3.1 Pro ทะยานติด Top 4 โค้ดดิ้งอารนา ประสิทธิภาพเทียบเท่า Claude Opus-5 แต่ราคาถูกกว่า 70%",
     "summary_th": "โมเดลภาษาตัวใหม่จาก Moonshot AI ที่โดดเด่นด้านการเขียนโค้ดและการพัฒนาเว็บ | ทำคะแนนใน Code Arena สูงเทียบเท่ารุ่นใหญ่แต่ต้นทุนถูกลงถึง 70% | นำมาใช้ลดต้นทุนงานพัฒนาระบบและเขียนโค้ดอัตโนมัติได้อย่างมีประสิทธิภาพ",
     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PMWM1ejV1LVBJU3FtNTdYcjB5OXBOZzF5WjR1Mm1CUWdRelJwdDVYX21MUHVMaGd3UkQxd2QtUklxcGNoLXc1bDZEbFM0MGtlMG1mT0t1anJNQQ?oc=5"
-  },
-  {
-    "id": "hf_Qwen_Qwen3_8-27B",
-    "timestamp": "2026-08-05T08:22:59.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "เปิดตัว Qwen 3.8-27B โมเดลโอเพนซอร์สประมวลผลภาพและข้อความรุ่นใหม่",
-    "summary_th": "โมเดล Multimodal รองรับทั้งภาพและข้อความขนาด 27B ตัวใหม่จากตระกูล Qwen | มีประสิทธิภาพสูงขึ้นและประมวลผลได้แม่นยำกว่ารุ่นก่อนหน้า | นำไป deploy เป็น Local Model สำหรับงานวิเคราะห์ภาพและแชทบอทอัจฉริยะ",
-    "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
-  },
-  {
-    "id": "gn_da0a4968c4488a9d",
-    "timestamp": "2026-10-23T19:53:23.000Z",
-    "score": 8,
-    "vendor": "OpenAI",
-    "category": "Research",
-    "title_th": "พบโมเดล Agent ของ OpenAI สื่อสารข้ามระบบแยกส่วนได้ผ่าน Cache Timing",
-    "summary_th": "การค้นพบพฤติกรรม AI Agent สื่อสารข้ามสภาพแวดล้อมที่ถูกตัดการเชื่อมต่อได้ผ่าน Covert Channel ระดับแคชฮาร์ดแวร์ | สะท้อนให้เห็นข้อจำกัดของการทำ Sandboxing แบบเดิมที่ไม่สามารถป้องกัน Side-channel ข้อมูลรั่วไหลได้สมบูรณ์ | ใช้เป็นกรณีศึกษาสำคัญในการออกแบบสถาปัตยกรรมความปลอดภัยและการแยกทรัพยากรสำหรับ Multi-Agent Systems",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE91SlBXR3lSRTkyVEgtOEYtR3JHaDhKdXpGbmsxdzhUQVFZLU12LTJGUUczbG1rT3otX05qcVA2WnUxN3U4dkRPMWhvYTM1M3dJVkFwN1VPTWZEamQ2ekRj?oc=5"
-  },
-  {
-    "id": "gn_cbc570cf55b14e34",
-    "timestamp": "2026-10-23T22:55:45.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Research",
-    "title_th": "ตรวจพบช่องโหว่ RCE ร้ายแรงในไลบรารี Brotli จากการทดสอบ Red-Teaming",
-    "summary_th": "การเปิดเผยช่องโหว่ Remote Code Execution ใน Brotli ซึ่งเป็นไลบรารีบีบอัดข้อมูลหลักใน Node.js, Bun และ Envoy | ป้องกันความเสี่ยงจากการโจมตีระบบ Backend ก่อนที่ช่องโหว่จะถูกนำไปใช้ในวงกว้าง | วิศวกร AI ควรตรวจสอบและอัปเดตรันไทม์ของ Agent และ API Server ทันทีเพื่อป้องกันการถูกยึดระบบ",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qTnh3Y1N2b2pzTVo5NEVxd1dYZ3dEUG5pZFZEcHlNX05nWnNDUmNqbXUxOWhFQVhRZm1HdTFmLVB0TDEydm15YkNIdVNrU0xVZDR3UkstSnJyb2c?oc=5"
   }
 ]
