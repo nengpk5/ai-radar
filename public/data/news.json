@@ -1,5 +1,35 @@
 [
   {
+    "id": "hn_50572503",
+    "timestamp": "2026-11-20T10:01:41.000Z",
+    "score": 8,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "Frostbite: สถาปัตยกรรม CPU ใหม่ที่ออกแบบและตรวจสอบโดย AI",
+    "summary_th": "คือสถาปัตยกรรม CPU ตัวใหม่ที่ถูกค้นพบ ออกแบบ และตรวจสอบการทำงานโดย AI ทั้งหมด | ดีกว่าเดิมยังไงเพราะช่วยลดขั้นตอนและเพิ่มประสิทธิภาพในการออกแบบฮาร์ดแวร์ที่มนุษย์อาจมองข้าม | เอาไปศึกษาเพื่อต่อยอดในการทำ Chip Design Automation หรือสร้าง Hardware accelerators ด้วย AI",
+    "url": "https://architectlabs.com/blog/frostbite"
+  },
+  {
+    "id": "gn_13de302702e0bde3",
+    "timestamp": "2026-11-20T16:17:36.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัว Gemini Omni 1.2 Flash รองรับการสร้าง GIF อัตโนมัติ",
+    "summary_th": "คือโมเดลวิดีโอรุ่นใหม่ล่าสุดจาก Google ที่มีความสามารถในการสร้าง GIF และเอฟเฟกต์ภาพเคลื่อนไหว | ดีกว่าเดิมยังไงด้วยความสามารถของโมเดลที่ทำให้การเคลื่อนไหวราบรื่นและรักษาคุณภาพความคมชัดในทุกเฟรม | เอาไปประยุกต์ใช้สร้างฟีเจอร์สร้างสื่อมีเดียและมีมในแอปพลิเคชัน",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5EM0ljUmRsMldVN254VEdFM0FyclgyTDNBdVdGM1k4RzQ4RzJIamx3ZXpYZlNPRjFNenRvS3lQbHJzdVJwVm1VWEM4RXowNTM0d2hVbG9XQ1lwN3NTcTJJ?oc=5"
+  },
+  {
+    "id": "gn_de8d296eb3add169",
+    "timestamp": "2026-11-20T14:16:41.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "นักวิจัย Anthropic อ้างใช้ AI ช่วยแก้โจทย์ปัญหา Riemann Hypothesis สำเร็จ",
+    "summary_th": "คือความพยายามครั้งสำคัญในการใช้นักวิจัยและ AI ของ Anthropic แก้ไขปัญหาคณิตศาสตร์ระดับโลกอย่าง Riemann Hypothesis | ดีกว่าเดิมยังไงเพราะแสดงให้เห็นถึงขีดความสามารถในการใช้ LLM ช่วยแก้โจทย์ตรรกะและคณิตศาสตร์ที่ซับซ้อนเกินกว่ามนุษย์ทำคนเดียว | เอาไปศึกษาแนวทางการใช้ AI ช่วยพิสูจน์ทฤษฎีทางวิทยาศาสตร์และคณิตศาสตร์ขั้นสูง",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HYWo5QVZKTWpTZVNNV0pLLWFpMHBPbXJ4aWJvX3BVbnhFRlBjUlRUMHBLYWNZUXlIdjAzNUFCV19YT05OeFg2eEw2N1pDRk1mT004akFpT3dEdw?oc=5"
+  },
+  {
     "id": "gn_8d6d2941cfb389ca",
     "timestamp": "2026-11-19T23:56:07.000Z",
     "score": 9,
@@ -1967,35 +1997,5 @@
     "title_th": "Proc-CLI: เครื่องมือจัดการพอร์ตและกระบวนการทำงานที่ออกแบบมาสำหรับ AI Agent โดยเฉพาะ",
     "summary_th": "คือคอมมานด์ไลน์อินเทอร์เฟซ (CLI) ที่ปรับโครงสร้างคำสั่งและการแสดงผลให้ AI Agent อ่านและสั่งการจัดการ Process กับ Port ได้ง่าย | ดีกว่าเดิมยังไงช่วยลดข้อผิดพลาดในการรันคำสั่งจัดการระบบของ AI Agent ที่มักประสบปัญหาเรื่อง Output ยาวเกินไปหรือไม่เข้าใจโครงสร้าง | นำไปติดตั้งเพิ่มความสามารถให้ Coding Agent ในการตรวจสอบและเคลียร์พอร์ตระหว่างรันเดสก์ท็อปแอปพลิเคชัน",
     "url": "https://proc-cli.com/"
-  },
-  {
-    "id": "hn_50236102",
-    "timestamp": "2026-10-25T21:11:31.000Z",
-    "score": 8,
-    "vendor": "OpenAI",
-    "category": "Research",
-    "title_th": "วิเคราะห์เจาะลึกเบื้องหลัง OpenAI และ Anthropic ลดราคา LLM ลงถึง 80%",
-    "summary_th": "บทความวิเคราะห์เหตุผลและเบื้องหลังการแข่งขันลดราคา API ของโมเดลภาษาขนาดใหญ่ลงอย่างฮวบฮาบ | ช่วยให้วางแผนต้นทุนระบบ AI ได้แม่นยำขึ้นและเข้าใจทิศทางตลาด | นำไปใช้ประกอบการตัดสินใจเลือกใช้โมเดลและคำนวณ Unit Economics ของแอปพลิเคชัน AI",
-    "url": "https://minimaxir.com/2026/10/cheap-llms/"
-  },
-  {
-    "id": "gn_33082195e040e14e",
-    "timestamp": "2026-10-24T19:01:00.000Z",
-    "score": 6,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Anthropic เพิ่มระบบตรวจสอบความปลอดภัย บล็อกการใช้งานเครื่องมือ REA สำหรับ Reverse Engineering",
-    "summary_th": "เครื่องมือ REA (Reverse Engineer Anything) บน MCP ถูกจำกัดการใช้งานจากระบบความปลอดภัยของ Claude | ป้องกันการนำไปใช้ทำวิศวกรรมย้อนกลับเชิงลึกที่อาจละเมิดนโยบาย | นักพัฒนาต้องระมัดระวังเงื่อนไขความปลอดภัยเมื่อสร้าง AI Agent หรือใช้ MCP ร่วมกับโค้ดเชิงลึก",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9lbHRBS0t5N0Q0czZSWlNJXzY2T2NqYnI5STR6bnY2bUFRMzRGMUdnYXBVZ1FZUVZsM3NaRlI0T3c4eDVLQlVMc3JaXzFYOUVHejNGVk5DaHREdTRmdFNLQk1OOA?oc=5"
-  },
-  {
-    "id": "bsky_bafyreifwykqsbeygdny5ngtgui7pi5cc4qs4tw3msvpkez6wvv24rbpkki",
-    "timestamp": "2026-10-25T16:00:15.762Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Research",
-    "title_th": "งานวิจัย Recursive เผยการทำ Quantize เลเยอร์ LM head เหลือ 4-bit สำเร็จด้วย Eureka Machine",
-    "summary_th": "เทคนิคการบีบอัดโมเดลโดยยอมทำ Quantize เลเยอร์ LM head เหลือ 4-bit ตามคำแนะนำของ AI scientist | ช่วยให้โมเดล Flint ทำงานบน Mac ได้เร็วขึ้นอย่างเหลือเชื่อ ทั้งที่ปกติไม่ควรทำ | นำไปประยุกต์ใช้เป็นแนวทางปรับแต่งโมเดลขนาดใหญ่ให้รันบนฮาร์ดแวร์จำกัดได้มีประสิทธิภาพยิ่งขึ้น",
-    "url": "https://bsky.app/profile/altryne.bsky.social/post/3myplbmo5ts2n"
   }
 ]
