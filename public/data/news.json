@@ -1,5 +1,55 @@
 [
   {
+    "id": "or_mistralai_pixtral-large-2502",
+    "timestamp": "2026-11-20T00:51:05.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "Pixtral Large 2502: โมเดล Multimodal รุ่นใหม่จาก Mistral AI",
+    "summary_th": "โมเดลประมวลผลมัลติโมดัลขนาดใหญ่เวอร์ชันล่าสุดจาก Mistral AI ที่รองรับทั้งข้อความและรูปภาพ เอกสาร กราฟ ได้ดีขึ้น | ประมวลผลเอกสารและภาพซับซ้อนแม่นยำขึ้น เหมาะกับการทำ Document AI และ RAG ที่ต้องอ่านรูปภาพหรือแผนภูมิ",
+    "url": "https://openrouter.ai/mistralai/pixtral-large-2502"
+  },
+  {
+    "id": "gn_e94840b28369eb6c",
+    "timestamp": "2026-11-19T20:00:32.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI เปิดตัว GPT-Live-1.1 ผ่าน API พร้อมเสียงที่เป็นธรรมชาติและโหมด Standby ประหยัดต้นทุน",
+    "summary_th": "โมเดลสนทนาสดรุ่นใหม่ผ่าน API ที่รองรับการออกเสียงสำเนียงธรรมชาติสม่ำเสมอทุกภาษา และมีโหมด Standby ลดค่าใช้จ่ายยามว่าง | พูดคุยเป็นธรรมชาติขึ้น ค่าไอเดิลถูกลง ทำงานเสถียรขึ้น | นำไปพัฒนาแอปพลิเคชัน Real-time Voice Bot หรือ AI Assistant",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE03UmkyM0Rra1ktUGpneU5uYmFoSDlpdXRlbkc2NXU5QVRYeFhiQkd1VlNUZlhmU1JCY3RJMjZCQ0JUdXgxeTRyeHNiemFUT2swaU5TNTRzVEhNcm5FYTFqYw?oc=5"
+  },
+  {
+    "id": "gn_470ba4234b5116ff",
+    "timestamp": "2026-11-19T20:26:15.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Google เปิดฟีเจอร์ Computer Use บนแอป Gemini สำหรับ Mac ให้ AI ช่วยทำงานหน้าจอแทน",
+    "summary_th": "เครื่องมือ Computer Use ที่ให้ Gemini ควบคุมการคลิก เลื่อน และพิมพ์ในหน้าต่างเบื้องหลังบน Mac ได้ | ทำงานข้ามแอปและเว็บได้โดยผู้ใช้ยังควบคุมเคอร์เซอร์ตัวเองอยู่ | นำไปสร้าง Workflow อัตโนมัติสำหรับงานซ้ำๆ บนเดสก์ท็อป",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE43dWNnY2k5cG9sc3ptaVR0YjlQeERVQ0ZMYTQyV0plQmVxWHdMNjI5Q291U29velhaVU9CdDU3aXItdkZSUWxPSmNQT0VUdEx6REJrbFRTbUFvNmhRWVFF?oc=5"
+  },
+  {
+    "id": "gn_297e677012518395",
+    "timestamp": "2026-11-19T17:42:03.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI เปิดตัว Performance Factory ระบบ Agent ช่วยตรวจจับและแก้ไขโค้ดที่ทำให้ระบบช้า",
+    "summary_th": "ระบบประสานงาน AI Agent สำหรับตรวจสอบปัญหา Performance Regression และเสนอทางแก้ให้วิศวกรตรวจสอบ | ช่วยรักษาความเร็วและประสิทธิภาพของระบบอัตโนมัติ | นำไปประยุกต์ใช้ใน CI/CD Pipeline เพื่อทำ Code Optimization อัตโนมัติ",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXM0tReHdUblp5em1ja0FkWEVrcHBlLVVOanJ4LXFsYkdVdzVicEVNQkxES1BSU1hzdHFZb3cwbThiTk1ab2UyZ2dUS0pKSGctQkxnd1NHbWU4N21RX19IOQ?oc=5"
+  },
+  {
+    "id": "gn_6af135c5eb96b395",
+    "timestamp": "2026-11-19T23:04:52.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Benchmark",
+    "title_th": "Gemini 4 Neon ทำคะแนนสูสี Opus 5.5 บน Benchmark ด้านโค้ด แต่ต้นทุนถูกกว่า 3 เท่า",
+    "summary_th": "ผลทดสอบโมเดล Gemini 4 Neon บน FrontierCode 2.0 ซึ่งวัดความพร้อมในการคอมมิตโค้ดและ PR | ทำคะแนนใกล้เคียงคู่แข่งระดับท็อปในต้นทุนที่ถูกกว่ามาก | ใช้เป็นเกณฑ์เลือกโมเดล AI สำหรับงาน Coding Agent และ Code Review ที่คุ้มค่า",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFByeDZXZXhwenEtSTY4dTM3MEtkUmhQSEwycEtNUTBidzkwX2wzSVBObkFMUXZsNmpUdE1NdFo2WUpTRnNvOEh0dFUwZk5PRW15TlJwVWtmM3FRdjFrNk1J?oc=5"
+  },
+  {
     "id": "hn_50563148",
     "timestamp": "2026-11-19T17:30:44.000Z",
     "score": 8,
@@ -1947,55 +1997,5 @@
     "title_th": "Cerebras ประกาศความสำเร็จในการรันโมเดล AI ขนาด Trillion-parameter บนฮาร์ดแวร์เฉพาะทาง",
     "summary_th": "ระบบประมวลผลความเร็วสูงจาก Cerebras ที่ออกแบบมาเพื่อรันโมเดลขนาดใหญ่ระดับ Trillion-parameter | มีความเร็วในการประมวลผลสูงกว่าฮาร์ดแวร์ทั่วไปอย่างมาก ลดเวลาในการรันโมเดลขนาดใหญ่ | นำไปประยุกต์ใช้ในการรันโมเดลฟรอนเทียร์ระดับองค์กรและการประมวลผล Agent ที่ซับซ้อนได้อย่างรวดเร็ว",
     "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
-  },
-  {
-    "id": "gn_a4bf35a242de364a",
-    "timestamp": "2026-10-24T17:59:51.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "vLLM ทำความเร็วเทียบเท่า DeepInfer สำหรับโมเดล DeepSeek-V4.1-Flash",
-    "summary_th": "เฟรมเวิร์ก vLLM สามารถรันประมวลผลโมเดล DeepSeek-V4.1-Flash ได้เร็วเทียบเท่า DeepInfer ซึ่งเป็นเอนจินเฉพาะของ DeepSeek | ทำความเร็วได้เท่ากันโดยใช้ทรัพยากรน้อยกว่า (DEP32 เทียบกับ EP64DP64) | นำไปใช้เป็นทางเลือกหลักในการ Deploy และ Serving โมเดลขนาดใหญ่บนโครงสร้างพื้นฐานของตนเองให้ประหยัดต้นทุนขึ้น",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9VaVBaMERRRUthM2NWWHFlSGNWYTdjZ0xURE42WGNTWlJUTnlRVEd4SS04LVptRHVXQm1SVjhDNUt0Z19GTWNGRHFWTHdkbG9wX0lacnJZVVNiUkNDRUp4TDBOMA?oc=5"
-  },
-  {
-    "id": "bsky_bafyreibbzpmcqvswj5zi3houxrbxqmykixbe2cylb34dcobfccbkc334l4",
-    "timestamp": "2026-10-24T20:15:02.140547+00:00",
-    "score": 8,
-    "vendor": "DeepSeek",
-    "category": "Dev Tool",
-    "title_th": "DeepSeek โอเพนซอร์สเอนจิน Inference สำหรับ V4.1 Flash ภายใต้สิทธิ์ Apache 2.0",
-    "summary_th": "ระบบเสิร์ฟโมเดล Inference Engine ระดับโปรดักชันที่ DeepSeek ใช้งานจริง | รองรับชิปประมวลผลทั้ง NVIDIA Blackwell และ Huawei Ascend ช่วยเร่งความเร็วและรองรับผู้ใช้ได้มากขึ้นบนฮาร์ดแวร์เดิม | AI Engineer นำไปใช้ลดต้นทุนโครงสร้างพื้นฐานในการ deploy โมเดลขนาดใหญ่ให้ได้ throughput สูงสุด",
-    "url": "https://bsky.app/profile/altryne.bsky.social/post/3mynj2bgdx72t"
-  },
-  {
-    "id": "hf_MiniMaxAI_MiniMax-M3_1-Flash",
-    "timestamp": "2026-10-17T06:37:50.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "MiniMax เปิดตัว MiniMax-M3.1-Flash โมเดล Multimodal ประสิทธิภาพสูงบน Hugging Face",
-    "summary_th": "โมเดล Vision-Language (Image-Text-to-Text) ตระกูล Flash ที่เน้นความเร็วและความคุ้มค่า | ประมวลผลภาพร่วมกับข้อความได้รวดเร็ว ลด latency เมื่อเทียบกับโมเดลขนาดใหญ่ทั่วไป | เหมาะสำหรับนำไปต่อยอดในงาน Document AI, OCR ทำความเข้าใจภาพ และแอปพลิเคชันที่ต้องการคำตอบแบบเรียลไทม์",
-    "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash"
-  },
-  {
-    "id": "bsky_bafyreiflclsmqiqh3yuyfqfs7zrjski4hsuetz6gne5aq63zowtm7dyx4i",
-    "timestamp": "2026-10-24T16:00:19.803245+00:00",
-    "score": 7,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Flint โมเดลภาษาท้องถิ่นสำหรับเขียนโค้ด รองรับ MLX เต็มรูปแบบ",
-    "summary_th": "โมเดล Open Source สำหรับช่วยเขียนโค้ดที่รันบนเครื่องได้โดยตรง | ทำงานร่วมกับ MLX ตั้งแต่วันแรกและติดอันดับท็อป 3 สำหรับการใช้งานจริง | นำไปใช้เป็น AI คู่หูช่วยเขียนโค้ดแบบออฟไลน์และมีความเป็นส่วนตัวสูง",
-    "url": "https://bsky.app/profile/altryne.bsky.social/post/3myn2st37uh2l"
-  },
-  {
-    "id": "gn_12994da87e54b915",
-    "timestamp": "2026-10-23T21:55:50.000Z",
-    "score": 6,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Anthropic ปิดให้บริการฟีเจอร์ Reverse Engineer Anything บน Claude",
-    "summary_th": "การถอดความสามารถในการวิเคราะห์และแกะรอยโค้ดซอฟต์แวร์ระดับลึกของ Claude ออก | ส่งผลให้ความสามารถในการทำ Reverse Engineering ลดลงเพื่อความปลอดภัย | ต้องปรับเปลี่ยนไปใช้เครื่องมือเฉพาะทางอื่นแทนสำหรับการวิเคราะห์โค้ดดิบ",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBoV0F1Z1pDOUlrc0MyUXdMMm5VQ3AwbktGZGUwS0czTE15RTRsWnJoNUg4REdlZ094Ukx3bmVJVW50dXREa2ExemV3X3RmZkZpR0U4YWFnVmRHOEt0akZGWHFR?oc=5"
   }
 ]
