@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_8d6d2941cfb389ca",
+    "timestamp": "2026-11-19T23:56:07.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI อัปเดต Responses API สำหรับฟีเจอร์การใช้เหตุผลบนโมเดลใหม่",
+    "summary_th": "ระบบ Responses API ที่เชื่อมโยงเหตุผลกับประวัติการสนทนา | ช่วยลดการใช้ Token และเพิ่มอัตรา Cache Hit ให้สูงขึ้น | นำไปพัฒนา AI Agent ที่ซับซ้อนและประหยัดต้นทุนค่า API มากขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fMFBfVjkzOUtiXzZHOUJzZVZvTXhkS2JrUHQ0RFpNcUhwN0M3M250VldJb0FYUGhfaFVMbmdYZ1dCX1pWVlQ1N19CRjRBZjVTbzBZQ19kWm1yTnkzNTVjVw?oc=5"
+  },
+  {
     "id": "or_mistralai_pixtral-large-2502",
     "timestamp": "2026-11-20T00:51:05.000Z",
     "score": 7,
@@ -1987,15 +1997,5 @@
     "title_th": "งานวิจัย Recursive เผยการทำ Quantize เลเยอร์ LM head เหลือ 4-bit สำเร็จด้วย Eureka Machine",
     "summary_th": "เทคนิคการบีบอัดโมเดลโดยยอมทำ Quantize เลเยอร์ LM head เหลือ 4-bit ตามคำแนะนำของ AI scientist | ช่วยให้โมเดล Flint ทำงานบน Mac ได้เร็วขึ้นอย่างเหลือเชื่อ ทั้งที่ปกติไม่ควรทำ | นำไปประยุกต์ใช้เป็นแนวทางปรับแต่งโมเดลขนาดใหญ่ให้รันบนฮาร์ดแวร์จำกัดได้มีประสิทธิภาพยิ่งขึ้น",
     "url": "https://bsky.app/profile/altryne.bsky.social/post/3myplbmo5ts2n"
-  },
-  {
-    "id": "hn_50227356",
-    "timestamp": "2026-10-25T01:33:49.000Z",
-    "score": 8,
-    "vendor": "Tooling",
-    "category": "Model Release",
-    "title_th": "Cerebras ประกาศความสำเร็จในการรันโมเดล AI ขนาด Trillion-parameter บนฮาร์ดแวร์เฉพาะทาง",
-    "summary_th": "ระบบประมวลผลความเร็วสูงจาก Cerebras ที่ออกแบบมาเพื่อรันโมเดลขนาดใหญ่ระดับ Trillion-parameter | มีความเร็วในการประมวลผลสูงกว่าฮาร์ดแวร์ทั่วไปอย่างมาก ลดเวลาในการรันโมเดลขนาดใหญ่ | นำไปประยุกต์ใช้ในการรันโมเดลฟรอนเทียร์ระดับองค์กรและการประมวลผล Agent ที่ซับซ้อนได้อย่างรวดเร็ว",
-    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
   }
 ]
