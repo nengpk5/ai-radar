@@ -1,5 +1,25 @@
 [
   {
+    "id": "bsky_bafyreiepm76cn4ees2opagt6i3y4s4py3kdj4ylbmq3x6kh3g3tooddcgq",
+    "timestamp": "2026-11-21T19:28:23.958Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "ตารางเปรียบเทียบตระกูลโมเดล Gemini 4 (Carbon, Neon, Hydrogen)",
+    "summary_th": "ตารางเปรียบเทียบความสามารถของ Gemini 4 ทุกรุ่นย่อยและระดับการคิดวิเคราะห์ | ช่วยให้เห็นภาพชัดเจนว่าแต่ละรุ่นตอบโจทย์งานประเภทไหนและคุ้มค่าต้นทุนอย่างไร | นำไปเลือกใช้โมเดลให้เหมาะกับงานจริงและปรับระดับ Reasoning Effort ได้แม่นยำขึ้น",
+    "url": "https://bsky.app/profile/simonwillison.net/post/3n2ttinqjkc27"
+  },
+  {
+    "id": "bsky_bafyreicte4u64lwtyhdcetwg7setlygesapw3nprsvagjaa4haaifc3bra",
+    "timestamp": "2026-11-21T19:06:19.565Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "เจาะลึกความต่างระหว่างโหมด High และ Xhigh บน Gemini 4 Hydrogen",
+    "summary_th": "การเปรียบเทียบผลลัพธ์และต้นทุนของ Gemini 4 Hydrogen ระหว่างโหมดคิดสูง (high) กับโหมดคิดสูงมาก (xhigh) | เผยให้เห็นการกระโดดของปริมาณ Token และคุณภาพงานที่ต่างกันอย่างชัดเจน | ใช้เป็นแนวทางบริหารต้นทุน API และเลือกปรับค่า Thinking Effort ตามความซับซ้อนของโจทย์",
+    "url": "https://bsky.app/profile/simonwillison.net/post/3n2tsb6pguk27"
+  },
+  {
     "id": "or_thinkingmachines_inkling-2-mini",
     "timestamp": "2026-11-21T02:19:45.000Z",
     "score": 7,
@@ -1977,25 +1997,5 @@
     "title_th": "Anthropic ยื่นเอกสาร S-1 สำหรับการเปิดตลาดหลักทรัพย์",
     "summary_th": "คืออะไร: การยื่นเอกสาร S-1 ของ Anthropic สำหรับการเปิดตลาดหลักทรัพย์\nดีกว่าเดิม: เป็นข่าวสำคัญเกี่ยวกับการ IPO ของบริษัท\nเอาไปใช้: ติดตามข่าวสารทางการเงินและยุทธศาสตร์บริษัท",
     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
-  },
-  {
-    "id": "gn_e413cb043f1fd1ba",
-    "timestamp": "2026-10-25T19:00:00.000Z",
-    "score": 8,
-    "vendor": "Google",
-    "category": "Dev Tool",
-    "title_th": "Gemini รันงานด้วยโมเดลที่เหมาะสมที่สุดด้วยระบบ Auto Mode",
-    "summary_th": "คืออะไร: ระบบ Auto ใน Gemini เลือกโมเดลที่เหมาะสมที่สุดสำหรับงานแต่ละรายการ\ndีกว่าเดิม: ลดต้นทุนและเพิ่มคุณภาพโดยการเลือกโมเดลที่เหมาะสมที่สุด\nเอาไปใช้: ใช้ระบบอัตโนมัติในการคัดเลือกโมเดลสำหรับงาน AI",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5KcE9mQ2lIQ25HRHU5Rm5wQ0ZNQjhkbWFiZkpFbmNhekV6X2RiRm10TFZZLTdNOWJFeGFlMS1wUjNJRU1NdjRyUFAxUHM4cjBZNmFSZ2V1R2hiUEU1R05ZNVFn?oc=5"
-  },
-  {
-    "id": "gn_f1fbaa36b10395c7",
-    "timestamp": "2026-10-26T03:27:36.000Z",
-    "score": 8,
-    "vendor": "Google",
-    "category": "Model Release",
-    "title_th": "Gemini 4 Argon ปรับปรุงให้ดีขึ้นโดยใช้ Antigravity Harness",
-    "summary_th": "คืออะไร: การปรับปรุง Gemini 4 Argon โดยใช้ Antigravity Harness เพื่อเพิ่มประสิทธิภาพ\ndีกว่าเดิม: ปรับปรุงความแม่นยำและประสิทธิภาพในการทำงาน\nเอาไปใช้: ใช้โมเดลใหม่สำหรับงานที่ต้องการประสิทธิภาพสูง",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jaTdZaTB5SV93bW1POUwxSEVudGJtMUhYTG9JSUY3UlFvdGhFYjN2SVdEcmg4UTRWMVlGVXBnMnJoRVlRbWZnUDBZRUFONGdMTU9oY3dnbzh6MldHajVGaw?oc=5"
   }
 ]
