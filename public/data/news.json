@@ -1,5 +1,45 @@
 [
   {
+    "id": "or_thinkingmachines_inkling-2-mini",
+    "timestamp": "2026-11-21T02:19:45.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว Inkling 2 Mini โมเดล Multimodal Looped Transformer แบบ Open-Weight",
+    "summary_th": "โมเดล Multimodal ขนาดเล็กความสามารถสูงจาก Thinking Machines ใช้โครงสร้าง Looped Transformer ช่วยเพิ่มประสิทธิภาพการประมวลผลต่อพารามิเตอร์ | ทำงานเร็วและประหยัดทรัพยากรมากขึ้น เหมาะสำหรับงานประมวลผลภาพและข้อความบนอุปกรณ์ขนาดเล็ก | นำไปปรับใช้ทำ Vision-Language Applications หรือ Fine-tune ต่อสำหรับ Edge AI",
+    "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini"
+  },
+  {
+    "id": "or_radixark_daisyrose-27b",
+    "timestamp": "2026-11-21T00:49:48.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว DaisyRose 27B โมเดล Open-Weight สำหรับงาน Agent โดยเฉพาะ",
+    "summary_th": "โมเดล Open-weight ขนาด 27B ที่ฝึกด้วย Reinforcement Learning ล้วนสำหรับงาน Agent ระยะยาวโดยไม่ผ่านการ SFT | มีความสามารถด้านการวางแผนและทำตามคำสั่งในระยะยาวได้ดีขึ้นเทียบเท่าโมเดลขนาดใหญ่ | นำไปใช้พัฒนา Autonomous AI Agents ที่ต้องรันงานซับซ้อนหลายขั้นตอน",
+    "url": "https://openrouter.ai/radixark/daisyrose-27b"
+  },
+  {
+    "id": "gn_f0c3dbb600f2e00e",
+    "timestamp": "2026-11-20T19:09:39.000Z",
+    "score": 6,
+    "vendor": "Google",
+    "category": "Benchmark",
+    "title_th": "เปิดตัว MedChemBench เกณฑ์มาตรฐานวัดการใช้เหตุผลด้านเคมีและยาสำหรับ AI",
+    "summary_th": "ชุดทดสอบใหม่สำหรับประเมินความสามารถของโมเดล AI ในการคิดวิเคราะห์และค้นคว้ายาเชิงลึก | ช่วยให้วัดศักยภาพของ Frontier Models ในงานวิทยาศาสตร์การแพทย์ได้อย่างแม่นยำขึ้น | ใช้เป็น Benchmark สำหรับทดสอบและเปรียบเทียบโมเดลที่จะนำไปประยุกต์ใช้ในอุตสาหกรรม Biotech และ Healthcare",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9SaHY3RkFNNFo1MFVHbFZMYW1HMmg5c3dEck5ZY083eVZ5UkFzamw1T1VtVUFCdWp3cEJfY1VCTmkxY3NldjZ2MUZXLTVBZG42WGI0T3hMVTROSmM?oc=5"
+  },
+  {
+    "id": "gn_a53691419c3cceac",
+    "timestamp": "2026-11-20T17:13:21.000Z",
+    "score": 8,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Google เปิดให้ Developer ใช้ความสามารถ Voice Editing ผ่าน Gemini API แล้ว",
+    "summary_th": "ฟีเจอร์แก้ไขข้อความด้วยเสียงจาก Gemini 3.5 Transcribe ที่เคยอยู่บน Gboard ถูกปล่อยให้เรียกใช้ผ่าน API | ช่วยให้การสั่งแก้ แปล หรือเรียบเรียงข้อความผ่านเสียงทำได้อย่างลื่นไหลและแม่นยำขึ้น | นำไปสร้างแอปพลิเคชันประเภท Voice Assistant, เครื่องมือเขียนหนังสือ หรือระบบ Dictation อัจฉริยะ",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1vSHpOaFJST2w4OVJuQS1mRmNzVGN0Q01PbkJsLWw2OW9zU05uRHB0d05zcUlQSm9SR0EzLWcybFk5akJhTV9wSXdLYjlhc0NtTGVYWVVSem5uZW8?oc=5"
+  },
+  {
     "id": "hn_50572503",
     "timestamp": "2026-11-20T10:01:41.000Z",
     "score": 8,
@@ -1957,45 +1997,5 @@
     "title_th": "Gemini 4 Argon ปรับปรุงให้ดีขึ้นโดยใช้ Antigravity Harness",
     "summary_th": "คืออะไร: การปรับปรุง Gemini 4 Argon โดยใช้ Antigravity Harness เพื่อเพิ่มประสิทธิภาพ\ndีกว่าเดิม: ปรับปรุงความแม่นยำและประสิทธิภาพในการทำงาน\nเอาไปใช้: ใช้โมเดลใหม่สำหรับงานที่ต้องการประสิทธิภาพสูง",
     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jaTdZaTB5SV93bW1POUwxSEVudGJtMUhYTG9JSUY3UlFvdGhFYjN2SVdEcmg4UTRWMVlGVXBnMnJoRVlRbWZnUDBZRUFONGdMTU9oY3dnbzh6MldHajVGaw?oc=5"
-  },
-  {
-    "id": "hn_50238739",
-    "timestamp": "2026-10-26T03:29:05.000Z",
-    "score": 7,
-    "vendor": "OpenSource",
-    "category": "Dev Tool",
-    "title_th": "PaperPilot: เอ็นจิ้น PDF ภาษา Rust แบบ Zero-Cloud รองรับ WASM และ MCP",
-    "summary_th": "คือเครื่องมือประมวลผล PDF ที่เขียนด้วยภาษา Rust ทำงานแบบ Local 100% ไม่พึ่งพาคลาวด์ พร้อมรองรับ WebAssembly และ Model Context Protocol (MCP) | ดีกว่าเดิมยังไงเพราะปลอดภัยสูง ทำงานรวดเร็ว และเชื่อมต่อกับ LLM ได้อย่างไร้รอยต่อโดยไม่ต้องส่งข้อมูลออกภายนอก | นำไปใช้สร้างแอปพลิเคชันจัดการเอกสารหรือเชื่อมต่อเป็น MCP Server สำหรับ AI Agent ได้ทันที",
-    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot"
-  },
-  {
-    "id": "hn_50238620",
-    "timestamp": "2026-10-26T03:12:05.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "เจาะลึกเบื้องหลัง Microsoft Decision-1 และการเปิดตัวโมเดล Qwen ขนาด 9B",
-    "summary_th": "คือบทความวิเคราะห์เบื้องหลังการตัดสินใจของ Microsoft ที่เกี่ยวข้องกับการใช้งานและเปิดตัวโมเดลภาษาขนาดเล็กอย่าง Qwen ขนาด 9 พารามิเตอร์ | ดีกว่าเดิมยังไงทำให้เห็นกลยุทธ์การรันโมเดลภาษาประสิทธิภาพสูงบนโครงสร้างพื้นฐานที่ประหยัดต้นทุนมากขึ้น | นำไปปรับใช้เป็นแนวทางในการเลือกใช้และปรับแต่ง Open Weights Models สำหรับงานองค์กร",
-    "url": "https://shattered.io/microsoft-decision-1-qwen3-5-9b-model-2026/"
-  },
-  {
-    "id": "hn_50227041",
-    "timestamp": "2026-10-25T00:43:47.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Dev Tool",
-    "title_th": "ADRs for AI: บันทึกการตัดสินใจสำหรับการทำงานร่วมกันระหว่างมนุษย์กับ AI ผ่าน Git",
-    "summary_th": "คือระบบบันทึกสถาปัตยกรรมการตัดสินใจ (Architecture Decision Records) ที่ออกแบบมาสำหรับการทำงานร่วมกับ AI และจัดเก็บบน Git | ดีกว่าเดิมยังไงช่วยให้ทีมติดตามบริบท เหตุผล และข้อกำหนดในการสั่งการ AI (Prompting & Agent Decisions) ได้อย่างเป็นระบบและตรวจสอบย้อนหลังได้ | นำไปใช้ควบคุมคุณภาพและเก็บบันทึกกระบวนการพัฒนาซอฟต์แวร์ที่ขับเคลื่อนด้วย AI ในโปรเจกต์ขนาดใหญ่",
-    "url": "https://adrs.systems"
-  },
-  {
-    "id": "hn_50239041",
-    "timestamp": "2026-10-26T04:14:35.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Dev Tool",
-    "title_th": "Proc-CLI: เครื่องมือจัดการพอร์ตและกระบวนการทำงานที่ออกแบบมาสำหรับ AI Agent โดยเฉพาะ",
-    "summary_th": "คือคอมมานด์ไลน์อินเทอร์เฟซ (CLI) ที่ปรับโครงสร้างคำสั่งและการแสดงผลให้ AI Agent อ่านและสั่งการจัดการ Process กับ Port ได้ง่าย | ดีกว่าเดิมยังไงช่วยลดข้อผิดพลาดในการรันคำสั่งจัดการระบบของ AI Agent ที่มักประสบปัญหาเรื่อง Output ยาวเกินไปหรือไม่เข้าใจโครงสร้าง | นำไปติดตั้งเพิ่มความสามารถให้ Coding Agent ในการตรวจสอบและเคลียร์พอร์ตระหว่างรันเดสก์ท็อปแอปพลิเคชัน",
-    "url": "https://proc-cli.com/"
   }
 ]
