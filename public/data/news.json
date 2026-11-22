@@ -1,5 +1,45 @@
 [
   {
+    "id": "hf_apple_DepthPro2",
+    "timestamp": "2026-11-03T16:55:03.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "โมเดลประมาณความลึก DepthPro2 จาก Apple",
+    "summary_th": "คืออะไร: โมเดลประมาณความลึก (depth-estimation) จาก Apple ที่กำลังมาแรงบน HuggingFace ดีกว่าเดิมยังไง: ให้ความแม่นยำสูงในการหาความลึกของภาพ เหมาะสำหรับงานมุมมองคอมพิวเตอร์ เอาไปใช้อะไรต่อได้: นำไปประยุกต์ใช้ในงาน AR/VR, หุ่นยนต์ หรือการสร้างภาพสามมิติได้ทันที",
+    "url": "https://huggingface.co/apple/DepthPro2"
+  },
+  {
+    "id": "hn_50597959",
+    "timestamp": "2026-11-22T09:57:01.000Z",
+    "score": 6,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Muru เซิร์ฟเวอร์ Rust ช่วยเขียนโค้ดด้วย AI สำหรับแอป Python",
+    "summary_th": "คืออะไร: เซิร์ฟเวอร์ Rust ที่ช่วยเขียนโค้ดด้วย AI สำหรับแอปพลิเคชัน Python ผลงานของผู้สร้าง mod_WSGI ดีกว่าเดิมยังไง: ผสมผสานประสิทธิภาพของ Rust เข้ากับการช่วยเขียนโค้ดของ AI ทำให้บริการ Python เร็วและชาญฉลาดยิ่งขึ้น เอาไปใช้อะไรต่อได้: วิศวกร AI สามารถนำไปวางเป็นชั้นเสริมหลังบ้านเพื่อเร่งการพัฒนาและปรับแต่งเซิร์ฟเวอร์ได้",
+    "url": "https://simonwillison.net/2026/Nov/21/muru/"
+  },
+  {
+    "id": "gn_ed2f60277467ca2b",
+    "timestamp": "2026-11-21T09:18:53.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Dev Tool",
+    "title_th": "Gemini ปรับปรุงระบบแคช เพิ่มปริมาณโควตาที่ใช้ได้ 22%",
+    "summary_th": "คืออะไร: Google ปรับปรุงระบบแคชของ Gemini ทำให้ใช้งานภายใต้โควตาเดิมได้มากขึ้น 22% ดีกว่าเดิมยังไง: ลดต้นทุนการเรียก API และเพิ่มปริมาณงานที่ทำได้ต่อโควตาที่มีอยู่ เอาไปใช้อะไรต่อได้: วิศวกร AI สามารถสร้างแอปที่ใช้ Gemini ได้หนักขึ้นโดยไม่ต้องเพิ่มงบประมาณโควตา",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RVnlhSmo1Q0NrN3BtTWdIdkpVWEhHOTV2cEd1R1JkMDFlbXZWdEk2QmNJcElNV05CcXZTUmZISV9yX3JPX2drOFFNam95S19qcnltdXJPNjV6N0ZHeW5xWg?oc=5"
+  },
+  {
+    "id": "gn_081ee24d986818c8",
+    "timestamp": "2026-11-21T19:06:22.000Z",
+    "score": 7,
+    "vendor": "Google",
+    "category": "Research",
+    "title_th": "Gemini 4 โหมดคิดสูงสุด xhigh ใช้ต้นทุนสูงกว่ามาก",
+    "summary_th": "คืออะไร: การเปรียบเทียบโหมดการคิด \"high\" กับ \"xhigh\" ของ Gemini 4 Hydrogen ว่าใช้โทเค็นและค่าใช้จ่ายแตกต่างกันมาก ดีกว่าเดิมยังไง: ช่วยให้นักพัฒนาเห็นข้อแลกเปลี่ยนระหว่างความละเอียดของการคิดกับต้นทุนอย่างชัดเจน เอาไปใช้อะไรต่อได้: เลือกระดับความพยายามในการคิดให้เหมาะสมกับงาน เพื่อควบคุมค่าใช้จ่ายและเวลาตอบสนองของแอป AI",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zRW5seTBuTkhfOHhSUlVQeUljNlc4Qk5WWlg1NGoyRmhGNnd2Sml5eWRTVWxzZjBHM25PQTFxbGs2QldNQjVlNmNobGdlX1FQNHk5WU9WUWlDNWM?oc=5"
+  },
+  {
     "id": "gn_68be18a94f7b75d0",
     "timestamp": "2026-11-21T19:52:31.000Z",
     "score": 8,
@@ -1957,45 +1997,5 @@
     "title_th": "ChatGPT เพิ่มปลั๊กอินเชื่อมต่อ iCloud Mail และ Calendar อย่างเป็นทางการ",
     "summary_th": "การบูรณาการบริการอีเมลและปฏิทินของ Apple เข้ากับ ChatGPT บนทุกแพลตฟอร์ม | ช่วยให้ผู้ใช้จัดการตารางนัดหมายและอีเมลผ่านแชทได้สะดวกรวดเร็วขึ้น | ศึกษาการออกแบบ Plugin และ API Integration เพื่อสร้างผู้ช่วยส่วนตัวที่เชื่อมต่อกับแอปภายนอก",
     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9IU3JTeHF3bHlKOUNFVmxNWUxWaGtOU0hGWlo3S2JPaVJmMmFQME80WUh0MVNEYjhDMlJ5Z182bmIwaVZkdFByTi0wcGlwdU5ubDZVUE9QTmdpVUl3?oc=5"
-  },
-  {
-    "id": "gn_85735dfc73e69f72",
-    "timestamp": "2026-10-26T22:02:01.000Z",
-    "score": 8,
-    "vendor": "DeepSeek",
-    "category": "Model Release",
-    "title_th": "DeepSeek V4.1 Flash เปิดให้ใช้งานบน Cursor แล้ว",
-    "summary_th": "โมเดล AI รุ่นใหม่ DeepSeek V4.1 Flash ที่ผสานใน Cursor Editor | ประสิทธิภาพสูงและคุ้มค่าต้นทุนที่สุดบน CursorBench ในราคาประหยัด | นำไปใช้ตั้งค่าเป็นโมเดลหลักสำหรับการเขียนโค้ดและช่วยพัฒนาโปรแกรมใน Cursor เพื่อลดต้นทุน",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoZWlaQlpaaXp4bVBCcm5HS0pIYk94c2N3T0xLQjM4VUo2TkhQOHk3cVBRdlFYWG1mR0QzYjJHNTVxY195VWV1bzFycFQ4WkxVNzR4ZlFGNkYya0RsNzBJ?oc=5"
-  },
-  {
-    "id": "gn_3a8d593a3b255871",
-    "timestamp": "2026-10-26T18:06:27.000Z",
-    "score": 9,
-    "vendor": "OpenAI",
-    "category": "Model Release",
-    "title_th": "OpenAI เปิดตัว GPT-6.1 Terra โมเดลใหม่ฉลาดขึ้นและราคาถูกลง 50%",
-    "summary_th": "โมเดล AI รุ่นใหม่จาก OpenAI ที่พัฒนาขีดความสามารถด้านการคิดวิเคราะห์เหนือกว่ารุ่นก่อนหน้า | จุดเด่นคือราคา API ถูกลง 50% ทำให้ต้นทุนการรันระบบถูกลงมาก | นำไปใช้พัฒนา AI Agent หรือระบบแชทซับซ้อนในราคาที่ประหยัดขึ้น",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE05VUNEcjdnLXpIM1hjTzBocGc2ZVd5WE9ZSDZnd0FWeC1MaENoampLNXdaYnNzMTRnbWpDQ1c5N2ptYW5RdkNEM29lekNQS0hIMkdYaHV6bDBVd2c?oc=5"
-  },
-  {
-    "id": "hn_50246238",
-    "timestamp": "2026-10-26T16:12:29.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Dev Tool",
-    "title_th": "Hob: เครื่องมือรัน AI แบบ On-device ทางเลือกใหม่แทน Claude Cowork และ ChatGPT",
-    "summary_th": "Hob เป็นโปรแกรมโอเพนซอร์สสำหรับรัน AI บนอุปกรณ์ส่วนตัว (On-device) | ทำงานได้โดยไม่ต้องพึ่งพาคลาวด์ภายนอก ช่วยรักษาความเป็นส่วนตัวของข้อมูลได้ดีขึ้น | นำไปปรับใช้สร้างผู้ช่วยส่วนตัวหรือรัน LLM บนฮาร์ดแวร์ภายในองค์กร",
-    "url": "https://github.com/FrigadeHQ/hob"
-  },
-  {
-    "id": "gn_5388ba9d56d67fa0",
-    "timestamp": "2026-10-26T18:06:28.000Z",
-    "score": 9,
-    "vendor": "OpenAI",
-    "category": "Model Release",
-    "title_th": "OpenAI เปิดตัว GPT-6.1 Terra โมเดลใหม่สำหรับ Agent ทำงานเร็วและถูกกว่าเดิม",
-    "summary_th": "โมเดล AI ใหม่จาก OpenAI ที่ออกแบบมาเพื่อการทำงานแบบ Agent โดยเฉพาะ ทำคะแนนสอบการใช้ซอฟต์แวร์ได้สูงกว่ารุ่นก่อนหน้า | เร็วกว่าเดิม 3 เท่าและมีราคาต่อโทเค็นถูกลงถึง 10 เท่า | เหมาะสำหรับนำไปพัฒนา Autonomous Agent และระบบอัตโนมัติปริมาณมากผ่าน API",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVNWVBVkU1QlJfWlQtdkUyT3Rmb3RQY1BVLUNuZVZPMXBjQm45d1RPZHkwa3ltRzEyV293eGpha295WnlrQUVzMEJXZExTOXBQM1VmYVlMQWh2VEU?oc=5"
   }
 ]
