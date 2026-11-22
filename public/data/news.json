@@ -1,5 +1,15 @@
 [
   {
+    "id": "gn_68be18a94f7b75d0",
+    "timestamp": "2026-11-21T19:52:31.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic เปิดตัวฟีเจอร์ทดลอง Code Mode ใน Claude Code",
+    "summary_th": "ฟีเจอร์ใหม่ใน Claude Code ที่ช่วยให้โมเดลประมวลผลคำสั่งหลายขั้นตอนผ่านการเขียนโค้ดได้รวดเร็วและใช้ Context คุ้มค่าขึ้น | ดีกว่าเดิมตรงที่จัดการการเรียกใช้ Tool หลายขั้นตอนซับซ้อนได้มีประสิทธิภาพสูงและลด Latency | นำไปประยุกต์ใช้สร้าง AI Agent ที่ซับซ้อนหรือระบบ Automation ขั้นสูงได้ดียิ่งขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tZE56THpyQlo1cDlnX3NONGI5THkxbndvRE14R21lcUJvemlWVHV0NHdNNnM2cHlvSW5Zb1FhR0xtRmxOVmVsejdQZkxoLVlJQ2ttYkRZRjBTTEhTQV80VQ?oc=5"
+  },
+  {
     "id": "hn_50593481",
     "timestamp": "2026-11-21T20:47:41.000Z",
     "score": 6,
@@ -1987,15 +1997,5 @@
     "title_th": "OpenAI เปิดตัว GPT-6.1 Terra โมเดลใหม่สำหรับ Agent ทำงานเร็วและถูกกว่าเดิม",
     "summary_th": "โมเดล AI ใหม่จาก OpenAI ที่ออกแบบมาเพื่อการทำงานแบบ Agent โดยเฉพาะ ทำคะแนนสอบการใช้ซอฟต์แวร์ได้สูงกว่ารุ่นก่อนหน้า | เร็วกว่าเดิม 3 เท่าและมีราคาต่อโทเค็นถูกลงถึง 10 เท่า | เหมาะสำหรับนำไปพัฒนา Autonomous Agent และระบบอัตโนมัติปริมาณมากผ่าน API",
     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVNWVBVkU1QlJfWlQtdkUyT3Rmb3RQY1BVLUNuZVZPMXBjQm45d1RPZHkwa3ltRzEyV293eGpha295WnlrQUVzMEJXZExTOXBQM1VmYVlMQWh2VEU?oc=5"
-  },
-  {
-    "id": "or_openai_gpt-6_1-terra",
-    "timestamp": "2026-10-26T18:13:29.000Z",
-    "score": 9,
-    "vendor": "OpenAI",
-    "category": "Model Release",
-    "title_th": "OpenAI เปิดตัว GPT-6.1 Terra รุ่นกลาง เน้นประหยัดและรวดเร็ว",
-    "summary_th": "โมเดลระดับกลางตระกูลใหม่จาก OpenAI ที่เก่งเรื่องการประมวลผลหน้าจอและการเขียนโค้ด | ดีกว่าเดิมด้วยต้นทุนที่ถูกลงกว่าครึ่ง ($1/$5 ต่อล้าน token) แต่ฉลาดขึ้น | นำไปพัฒนา AI Agents และระบบอัตโนมัติที่ทำงานผ่านหน้าจอคอมพิวเตอร์ได้อย่างคุ้มค่าต้นทุน",
-    "url": "https://openrouter.ai/openai/gpt-6.1-terra"
   }
 ]
