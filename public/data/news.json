@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50603845",
+    "timestamp": "2026-11-22T21:01:16.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "คู่มือเริ่มต้นใช้งาน Local AI สำหรับนักพัฒนาด้วย Inkling, Qwen และ Unsloth",
+    "summary_th": "คู่มือการรันและปรับแต่งโมเดล AI บนเครื่องตัวเอง | ช่วยให้การใช้งานโมเดลโอเพนซอร์สเช่น Qwen และการปรับแต่งด้วย Unsloth ง่ายขึ้นสำหรับมือใหม่ | นำไปใช้สร้างระบบ AI ภายในองค์กรหรือแอปพลิเคชันที่ไม่ต้องการส่งข้อมูลออกภายนอก",
+    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth"
+  },
+  {
+    "id": "hn_50604314",
+    "timestamp": "2026-11-22T21:53:45.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Research",
+    "title_th": "Agent Swarm ทดลองแก้ปัญหาทางคณิตศาสตร์ P vs. NP",
+    "summary_th": "โปรเจกต์ทดลองใช้ระบบ Agent หลายตัวทำงานร่วมกัน (Swarm) เพื่อแก้ปัญหาทางวิทยาการคอมพิวเตอร์ที่ยากที่สุดข้อหนึ่ง | แสดงให้เห็นถึงศักยภาพของการใช้ AI หลายตัวช่วยกันคิดและวิเคราะห์ปัญหาซับซ้อน | นำไปประยุกต์ใช้เป็นแนวทางออกแบบระบบ Multi-Agent สำหรับงานวิจัยหรือการแก้ปัญหาโจทย์ยากๆ",
+    "url": "https://pequalnp.com/"
+  },
+  {
     "id": "gn_cd9fc514a9704e50",
     "timestamp": "2026-11-22T17:25:50.000Z",
     "score": 8,
@@ -1977,25 +1997,5 @@
     "title_th": "Anthropic เข้าซื้อกิจการ Mithril Medicine ลุยงานวิจัยพัฒนายาด้วย AI เต็มตัว",
     "summary_th": "Anthropic ขยายขอบเขตเข้าสู่การค้นคว้าวิจัยตัวยา (Drug Discovery) ผ่านการเข้าซื้อสตาร์ทอัพด้านเทคโนโลยีชีวภาพ | ช่วยยกระดับความสามารถในการประยุกต์ใช้ AI ร่วมกับการทดลองจริงทางวิทยาศาสตร์ได้อย่างรวดเร็ว | นำไปประยุกต์ใช้เป็นเคสศึกษาในการสร้าง Agent สำหรับงานวิจัยเชิงลึกและการทดลองในห้องแล็บ",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SYjZTeURTSGo2UWhIMFBJT0l4dl9MdV8yXzNIYkRiNldVVXMzUEpxSHBZbkp5UUVoeHpBVng3YVB5MFpJTnN2RzI4VU9qcnZwTUd5ckNTXy13cW5Qbm1ybjZn?oc=5"
-  },
-  {
-    "id": "hn_50264853",
-    "timestamp": "2026-10-27T19:55:06.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Dev Tool",
-    "title_th": "Survival LLM: ผู้ช่วย AI และคลังข้อมูลฉุกเฉินที่รันบนคอมพิวเตอร์ของคุณเอง",
-    "summary_th": "คือชุดเครื่องมือและโมเดล LLM สำหรับใช้งานออฟไลน์ในภาวะฉุกเฉิน | ทำงานได้โดยไม่ต้องพึ่งพาอินเทอร์เน็ตและมีความเป็นส่วนตัวสูง | นำไปประยุกต์ใช้สร้างระบบ AI แบบ Local ที่ต้องการความปลอดภัยขั้นสุดได้",
-    "url": "https://www.brangus.io/survival-llm"
-  },
-  {
-    "id": "hn_50265609",
-    "timestamp": "2026-10-27T20:50:42.000Z",
-    "score": 7,
-    "vendor": "Anthropic",
-    "category": "Research",
-    "title_th": "ความคืบหน้าในการเร่งพัฒนายาสมัยใหม่ด้วย Claude",
-    "summary_th": "ผลงานวิจัยความร่วมมือระหว่าง Anthropic และองค์กรพัฒนาตัวยาโดยใช้ Claude | ช่วยวิเคราะห์ข้อมูลชีวสารสนเทศและเร่งกระบวนการค้นคว้ายาได้ดีขึ้น | นำไปศึกษาเป็นแนวทางสร้าง Domain-Specific Agent สำหรับงานวิจัยทางวิทยาศาสตร์",
-    "url": "https://www.anthropic.com/research/early-progress-drug-development"
   }
 ]
