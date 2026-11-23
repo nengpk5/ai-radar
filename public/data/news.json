@@ -1,5 +1,55 @@
 [
   {
+    "id": "gn_bb3269d34876fe1d",
+    "timestamp": "2026-11-23T20:13:04.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude Ship เปิด beta ให้คลังเมน ตรวจ PR แก้บั๊ก และอนุมัติได้",
+    "summary_th": "คืออะไร: Claude Ship (beta) ของ Anthropic ช่วยตรวจ PR, แก้ไฟล์, และอนุมัติตามนโยบายทีม\nดีกว่าเดิมยังไง: ย้ายงานรีวิวโค้ดเข้าไปอยู่ในลูป delivery ของ AI ได้มากขึ้น ไม่ใช่แค่แชท\nเอาไปใช้อะไรต่อ: ลองต่อกับ CI/PR workflow เพื่อเร่ง review-fix-merge และตั้งกฎการอนุมัติให้ปลอดภัย",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iR2JDQTg2YlVNQ3d2blU2R2RfSHBST1F0VmpDZU5oUEh1SHV5RmtQUGtCa185ZkpqVkw5akdoaUFjUTZJYU8xMVcyTWpha2JvREo5LVRuMDVSVnpGQzFGMg?oc=5",
+    "deep_dive_th": {
+      "highlights": "Claude Ship (beta) ย้ายบทบาทจากแชทผู้ช่วยเป็น agent ใน delivery loop โดยตรวจ PR แก้ไฟล์และอนุมัติตามนโยบายทีมได้ในที่เดียว จุดเปลี่ยนสำคัญคือการผูก code review เข้ากับ CI/PR workflow แทนการรอคำสั่งแบบแชต และมี approval policy เป็นกลไกควบคุมการอนุมัติอัตโนมัติ",
+      "pros_cons": "ข้อดีคือเร่ง review-fix-merge ลดงานซ้ำ และกำหนดกฎอนุมัติให้สอดคล้องกับนโยบายทีมได้ แต่ข้อควรระวังคือเป็น beta จึงต้องทดสอบใน repo ความเสี่ยงต่ำ จำกัด permission ตรวจสอบ diff ก่อนรวม และใช้ branch protection หรือ human-in-the-loop เพื่อกันการอนุมัติและการแก้ไฟที่ผิดพลาด",
+      "actionable": "เริ่มจากใช้ต่อกับ GitHub หรือ GitLab PR workflow ในเส้นทาง CI ที่มี test และ lint อัตโนมัติ ตั้งกฎอนุมัติเฉพาะ label หรือ path ที่ปลอดภัย พร้อม audit log และวัดผล review time กับ change failure rate ก่อนใช้จริง และใช้ use case เช่นตรวจ PR เล็ก แก้ lint หรือ dependency ที่มีขอบเขตชัด หรือเตรียม summary สำหรับ reviewer"
+    }
+  },
+  {
+    "id": "gn_dfeb6b3b770ae37a",
+    "timestamp": "2026-11-23T20:56:12.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude เปิด Plugin รวม Connectors และ Skills พร้อมใช้ทั้ง Free ถึง Ultra",
+    "summary_th": "คืออะไร: Anthropic รวม connectors กับ skills เป็น plugin เดียว มีคลังให้เลือกกว่า 10,000 รายการ\nดีกว่าเดิมยังไง: ต่อเครื่องมือและสอนทักษะให้ Claude ได้ในแอปเดียว ลดการสลับระหว่างระบบ\nเอาไปใช้อะไรต่อ: สร้าง plugin สำหรับงาน internal เช่น เชื่อม repo, ticket, API หรือ workflow ของทีม",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5IdXNpRFM0ODVTMnVTUFNNUjg4alRWek5nMzRyVmM2RTU0b3FkMi1RZVY3UzhPUTZSbGRyc3BReWtRN01SOE0zbDd6MERjQWpIZ3hrUGlYeEVPR0ctaXc?oc=5",
+    "deep_dive_th": {
+      "highlights": "Anthropic รวม connectors กับ skills เป็น plugin เดียวที่ติดตั้งและใช้ร่วมกันได้ พร้อมคลังเลือกใช้กว่า 10,000 รายการและเปิดให้ใช้ทั้ง Free ถึง Ultra จุดเปลี่ยนสำคัญคือการยกระดับจาก “เชื่อมต่อทีละตัว” ไปเป็นการห่อ capability, ข้อมูล และ workflow เป็นชุดเดียวที่จัดการ version และสิทธิ์ได้ง่ายขึ้น",
+      "pros_cons": "ข้อดีคือลดการสลับระบบ ติดตั้งครั้งเดียวได้ทั้งการเรียกเครื่องมือและการสอนทักษะ ทำให้เร็วขึ้นสำหรับทีมที่ต้องต่อ repo, ticket, API หรือ workflow ภายในองค์กร แต่ก่อนขึ้น Production ต้องระวังเรื่อง supply chain ของ plugin, การมอบสิทธิ์แบบ least-privilege, การป้องกัน prompt injection ผ่านเอกสาร/ผลลัพธ์จากภายนอก, versioning และ observability เพราะพฤติกรรมเปลี่ยนตามชุด plugin ที่โหลด",
+      "actionable": "เริ่มจากสร้าง internal plugin เล็ก ๆ ที่เชื่อม repo, ticket และ API ของทีม 1 บริการ พร้อมกำหนด scope การเข้าถึงขั้นต่ำและบันทึก trace ทุก tool call จากนั้นทดสอบด้วย canary บน task จริง เช่น สรุป issue, ดึง log หรือเตรียม PR draft แล้ววัด accuracy, latency, ความปลอดภัย และต้นทุนก่อนอนุญาตให้นำไปใช้กับทีมกว้าง"
+    }
+  },
+  {
+    "id": "gn_2313a622cfc20a50",
+    "timestamp": "2026-11-23T18:15:52.000Z",
+    "score": 6,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "ZDR กับ Enterprise Frontier Safeguards เปิด public beta",
+    "summary_th": "คืออะไร: Zero Data Retention ร่วมกับ Enterprise Frontier Safeguards เปิด beta สำหรับองค์กรที่มีสิทธิ์ เพื่อลดการ misuse โดยไม่ต้องจัดเก็บข้อมูล\nดีกว่าเดิมยังไง: ตรวจการใช้งานผิดปกติข้ามหลาย request ได้มากขึ้นแต่ยังคงโหมดไม่ retain ข้อมูล\nเอาไปใช้อะไรต่อ: ใช้เป็นองค์ประกอบ safety/governance สำหรับ API หรือ agent ในองค์กรที่มีข้อบังคับข้อมูล",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBhR2FjNXA5T241eXFRMGJsNVhoMC1PcHlLRlo0a1RSUHpNV2ZLZEtJS3VnZTlJWWZwYzUtNV8tUUNTS0FhZXlKSjdCbldlcHpiMC1rWVdaRTRJMVV4cXc?oc=5"
+  },
+  {
+    "id": "hn_50615520",
+    "timestamp": "2026-11-23T17:19:25.000Z",
+    "score": 6,
+    "vendor": "Tooling",
+    "category": "Research",
+    "title_th": "LLM ควรมองเห็นคอมพิวเตอร์อย่างไร",
+    "summary_th": "คืออะไร: บทความและการถกกันเกี่ยวกับการออกแบบให้ LLM เห็นสภาพแวดล้อมคอมพิวเตอร์เพื่อทำงาน computer-use\nดีกว่าเดิมยังไง: ให้มุมมองว่าควรแทนหน้าจอ/ไฟล์/เหตุการณ์อย่างไรให้ต้นแบบทำงานได้จริง ไม่ใช่แค่ prompt หรือ text-only\nเอาไปใช้อะไรต่อ: ใช้คิดออกแบบ agent computer-use, tool schema, การจับ state และเมตริตวัดความปลอดภัย",
+    "url": "https://www.greptile.com/blog/trex-computer-use"
+  },
+  {
     "id": "hn_50603845",
     "timestamp": "2026-11-22T21:01:16.000Z",
     "score": 6,
@@ -1972,45 +2022,5 @@
     "title_th": "เปิดตัว Flint โมเดล Open Source ขนาด 40B สำหรับรันโค้ดบน Mac โดยเฉพาะ",
     "summary_th": "โมเดล Open Source แบบผสม (40B total, 2.5B active) ภายใต้ไลเซนส์ Apache 2 | ออกแบบมาให้รันบนเครื่อง Mac ในเครื่องตัวเองได้ปลอดภัยโดยไม่ต้องส่งข้อมูลออกภายนอก | นำไปใช้สร้าง Coding Agent ส่วนตัวที่ทำงานแบบ Local-first เพื่อความปลอดภัยของซอร์สโค้ด",
     "url": "https://bsky.app/profile/altryne.bsky.social/post/3mywtgx42qc2s"
-  },
-  {
-    "id": "bsky_bafyreic7ouyjcseul3vy7gv4evxfhin4v35sxhkwyo3vgqxzwrcb2y2noy",
-    "timestamp": "2026-10-28T14:05:13.419Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Model Release",
-    "title_th": "ก้าวกระโดดครั้งใหม่ของ AI Coding ด้วย Claude Opus 5.5",
-    "summary_th": "ความสามารถของ AI Coding และ Model ขยับขึ้นไปอีกขั้น โดย Claude Opus 5.5 สามารถสร้างวิดีโอเกมที่เล่นได้จริงแล้ว | มีความเข้าใจเชิงลึกและสร้างโค้ดที่ซับซ้อนได้ดีขึ้นอย่างเห็นได้ชัด | นำไปใช้พัฒนาซอฟต์แวร์ เกม หรืออัปเกรด workflow ของ Coding Agent ให้ทรงพลังยิ่งขึ้น",
-    "url": "https://bsky.app/profile/simonwillison.net/post/3mywwaogdac23"
-  },
-  {
-    "id": "gn_ed6a95eec7777f03",
-    "timestamp": "2026-10-28T06:15:43.000Z",
-    "score": 6,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "คู่มือเริ่มต้นใช้งาน Claude Code Mods สำหรับนักพัฒนา",
-    "summary_th": "คำแนะนำและแนวทางการเขียน Mod ด้วย JavaScript หรือTypeScript เพื่อปรับแต่งการทำงานของ Claude Code | ช่วยให้ขยายความสามารถและปรับแต่งเครื่องมือให้เข้ากับ Developer Workflow ได้ง่ายขึ้น | นำไปประยุกต์เขียน Custom Extension เพื่อช่วยทำ Automate งานเฉพาะทางในโปรเจกต์",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5YX2tkamhfd2NBRXlQY0EyZ01QYU5wdnRNeEhEnBuaGIxMnNhYmpPYmNSVmduWUJWSnZDX3FGTWhNMTNaTk9yQ3J1QVlROVBQQzFXUG5sTHhCSG1sMDNTVA?oc=5"
-  },
-  {
-    "id": "gn_5a79b470937eda5e",
-    "timestamp": "2026-10-27T21:14:58.000Z",
-    "score": 6,
-    "vendor": "Anthropic",
-    "category": "Research",
-    "title_th": "งานวิจัยใหม่จาก Anthropic: ผลกระทบของ AI Agent ต่อการตัดสินใจของผู้เชี่ยวชาญ",
-    "summary_th": "งานวิจัยทดลองผลลัพธ์การทำงานร่วมกับนักวิเคราะห์ข้อมูลมืออาชีพ 50 คน | ช่วยให้เข้าใจพฤติกรรมการตัดสินใจเมื่อมอบหมายงานให้ Agent | นำไปประยุกต์ออกแบบ UX/UI และระบบ Human-in-the-loop สำหรับ AI Agents",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85NTBMR0hjaWs0WmJsV1lZeTB6QVJZQUE1cXRNcVU0N3J4UTVwSkdlNURtQTA4MGFnODhjZEM4MjYyQkFFMEZVeDdwTVRhS09zeHRLZS1fZTU2OUc5S0V3SA?oc=5"
-  },
-  {
-    "id": "gn_4dfdc2e13b4f48bf",
-    "timestamp": "2026-10-27T21:11:56.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Research",
-    "title_th": "Anthropic เข้าซื้อกิจการ Mithril Medicine ลุยงานวิจัยพัฒนายาด้วย AI เต็มตัว",
-    "summary_th": "Anthropic ขยายขอบเขตเข้าสู่การค้นคว้าวิจัยตัวยา (Drug Discovery) ผ่านการเข้าซื้อสตาร์ทอัพด้านเทคโนโลยีชีวภาพ | ช่วยยกระดับความสามารถในการประยุกต์ใช้ AI ร่วมกับการทดลองจริงทางวิทยาศาสตร์ได้อย่างรวดเร็ว | นำไปประยุกต์ใช้เป็นเคสศึกษาในการสร้าง Agent สำหรับงานวิจัยเชิงลึกและการทดลองในห้องแล็บ",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SYjZTeURTSGo2UWhIMFBJT0l4dl9MdV8yXzNIYkRiNldVVXMzUEpxSHBZbkp5UUVoeHpBVng3YVB5MFpJTnN2RzI4VU9qcnZwTUd5ckNTXy13cW5Qbm1ybjZn?oc=5"
   }
 ]
