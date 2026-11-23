@@ -1,0 +1,67 @@
+name: AI Radar Daily & Weekly Digest
+
+on:
+  schedule:
+    # Daily Morning Briefing at 07:30 ICT (00:30 UTC)
+    - cron: '30 0 * * *'
+    # Weekly Radar Report every Sunday at 21:00 ICT (14:00 UTC)
+    - cron: '0 14 * * 0'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Digest mode to generate'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - daily
+          - weekly
+          - both
+
+permissions:
+  contents: write
+
+jobs:
+  generate-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Determine Mode & Run Digest Generator
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            MODE="${{ github.event.inputs.mode }}"
+          elif [ "${{ github.event.schedule }}" = "0 14 * * 0" ]; then
+            MODE="weekly"
+          else
+            MODE="daily"
+          fi
+          echo "Running digest generator in mode: $MODE"
+          node scripts/generate-digest.mjs "$MODE"
+
+      - name: Commit & Push Digest JSON
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/data/daily_brief.json public/data/weekly_report.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No digest changes to commit."
+          else
+            git commit -m "chore: auto-update AI digest [skip netlify]"
+            git push
+          fi

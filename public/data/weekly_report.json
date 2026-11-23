@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-11-23T12:42:33.600Z",
+  "period_th": "17 พ.ย. – 23 พ.ย. พ.ศ. 2569",
+  "items_analyzed": 48,
+  "executive_summary_th": "สัปดาห์นี้เป็นรอบของโมเดลแนวหน้าที่ขยับเร็วทั้งจาก Google และ OpenAI โดย Gemini 4 Neon/Hydrogen และ GPT-6.2 Astra/Sol ต่างเน้นความเร็ว ต้นทุน และงานประมวลผลหลายขั้นตอนอย่างชัดเจน ฝั่งเครื่องมือพัฒนาก็เดินหน้าด้วย Code Mode ของ Claude Code, Performance Factory และ API เสียงจาก Gemini ที่ช่วยให้ทีมสร้าง agent และระบบอัตโนมัติได้แน่นขึ้น จุดสำคัญสำหรับ AI Engineers คือการเลือกโมเดลและกำหนด thinking effort ให้สมดุลกับต้นทุน พร้อมออกแบบ verification loop และ observability รอบวงจรการทำงานของ agent",
+  "top_models": [
+    {
+      "name": "Gemini 4 Neon",
+      "vendor": "Google",
+      "takeaway_th": "โมเดลเร็วเน้นงานเขียนโค้ดและ agent ที่ทำคะแนนใกล้ระดับแนวหน้าในต้นทุนต่ำกว่า จึงเหมาะกับการนำไปสร้าง coding assistant, terminal agent และระบบอัตโนมัติที่ต้องประมวลผลปริมาณสูง",
+      "url": "https://openrouter.ai/google/gemini-4-neon"
+    },
+    {
+      "name": "GPT-6.2 Astra",
+      "vendor": "OpenAI",
+      "takeaway_th": "โมเดลเรือธงสำหรับงานซับซ้อนด้านอวิศกรรมและวิทยาศาสตร์ เหมาะกับ AI agent ที่ต้องการความลึกในการคิดและความสามารถในงานข้ามขั้นตอน",
+      "url": "https://openrouter.ai/openai/gpt-6.2-astra"
+    },
+    {
+      "name": "Gemini 4 Hydrogen",
+      "vendor": "Google",
+      "takeaway_th": "เน้นความเร็วสูงและ agentic workflows แต่เมื่อใช้โหมดคิด xhigh จะมีต้นทุนโทเค็นเพิ่มขึ้นมาก จึงควรตั้งค่า reasoning effort ตามความซับซ้อนของงาน",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aLURmdl9qbllkS3d4UGNpM0hEN0NYYlE0c0s2cjVnTDJSZHd2NXJSMEpEVWpYXzhPUzc5b215N0NDY0JpYXRscDRZNnVZSU1KNjJmUHQwNEQtY00?oc=5"
+    },
+    {
+      "name": "GPT-6.2 Sol",
+      "vendor": "OpenAI",
+      "takeaway_th": "รุ่นรองที่เน้นความคุ้มค่าและเร็วกว่า เหมาะกับงานแชทบอต บริการลูกค้า หรือระบบที่ต้องประมวลผลปริมาณสูงโดยยังรักษาความสามารถรอบด้าน",
+      "url": "https://openrouter.ai/openai/gpt-6.2-sol"
+    }
+  ],
+  "top_tools": [
+    {
+      "name": "Code Mode ใน Claude Code",
+      "takeaway_th": "ช่วยให้โมเดลประมวลผลคำสั่งหลายขั้นตอนผ่านการเขียนโค้ด ลด latency และทำให้ context ใช้ได้คุ้มขึ้น เหมาะกับงาน agent automation ระดับซับซ้อน",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tZE56THpyQlo1cDlnX3NONGI5THkxbndvRE14R21lcUJvemlWVHV0NHdNNnM2cHlvSW5Zb1FhR0xtRmxOVmVsejdQZkxoLVlJQ2ttYkRZRjBTTEhTQV80VQ?oc=5"
+    },
+    {
+      "name": "OpenAI Performance Factory",
+      "takeaway_th": "ใช้ AI agent ช่วยตรวจจับและแก้ไข performance regression เหมาะกับการเสริม CI/CD และรักษาความเร็วของระบบที่พัฒนาโดย agent",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXM0tReHdUblp5em1ja0FkWEVrcHBlLVVOanJ4LXFsYkdVdzVicEVNQkxES1BSU1hzdHFZb3cwbThiTk1ab2UyZ2dUS0pKSGctQkxnd1NHbWU4N21RX19IOQ?oc=5"
+    },
+    {
+      "name": "Gemini API Voice Editing",
+      "takeaway_th": "เปิดให้เรียกความสามารถแก้ไข แปล และเรียบเรียงข้อความด้วยเสียงผ่าน API ช่วยสร้าง voice assistant, dictation และเครื่องมือเขียนได้รวดเร็วขึ้น",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1vSHpOaFJST2w4OVJuQS1mRmNzVGN0Q01PbkJsLWw2OW9zU05uRHB0d05zcUlQSm9SR0EzLWcybFk5akJhTV9wSXdLYjlhc0NtTGVYWVVSem5uZW8?oc=5"
+    },
+    {
+      "name": "Pandex MCP สำหรับกฎหมายสหภาพยุโรป",
+      "takeaway_th": "เชื่อม AI agents เข้ากับข้อมูลและบริการกฎหมายยุโรปผ่าน MCP ช่วยพัฒนา legal tech และระบบที่ต้องปฏิบัติตามกฎหมายได้แม่นยำขึ้น",
+      "url": "https://www.pandex.io"
+    }
+  ],
+  "vendor_highlights": [
+    {
+      "vendor": "OpenAI",
+      "summary_th": "OpenAI ปล่อย GPT-6.2 Astra และ Sol พร้อมฟีเจอร์ API ที่ช่วยลดต้นทุนโทเค็นสำหรับงานรีโมตหรือหลายขั้นตอน ขณะเดียวกันก็ขยายด้านความปลอดภัยและการใช้งานงานเฉพาะทาง เช่น Healthcare"
+    },
+    {
+      "vendor": "Google",
+      "summary_th": "Google เป็นศูนย์กลางของสัปดาห์ด้วยตระกูล Gemini 4 หลายรุ่นที่เน้นความเร็ว ต้นทุน และงาน agentic พร้อมปรับปรุง API เช่น cache, Voice Editing และ Computer Use เพื่อเร่งการพัฒนาแอปจริง"
+    },
+    {
+      "vendor": "Anthropic",
+      "summary_th": "Anthropic เน้นแนวทาง agentic coding ผ่าน Code Mode และ Verification Loop ขณะที่ผลงานวิจัยเกี่ยวกับ AI ช่วยแก้โจทย์คณิตศาสตร์และฟิสิกส์ระดับสูงก็ถูกจับตาในฐานะสัญญาณของความสามารถด้านการให้เหตุผล"
+    },
+    {
+      "vendor": "OpenSource",
+      "summary_th": "ฝั่ง open-source มีโมเดลและโปรเจกต์เด่นหลายตัว เช่น Inkling 2 Mini สำหรับงาน multimodal บน edge, DaisyRose 27B สำหรับ agent และงานวิจัยอย่าง Frostbite ที่ใช้ AI ออกแบบสถาปัตยกรรม CPU"
+    },
+    {
+      "vendor": "Tooling",
+      "summary_th": "เครื่องมือสัปดาห์นี้เน้นการคุมต้นทุน ตรวจสอบ context และเชื่อมต่อ agent ข้ามระบบ เช่น Muru, Pandex MCP และ Tokendoctor ซึ่งมีประโยชน์ต่อการสร้าง agent orchestration ที่โปร่งใสและควบคุมได้"
+    }
+  ],
+  "model_used": "baidu/ernie-5.5-flash-preview:free"
+}

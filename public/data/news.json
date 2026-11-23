@@ -27,7 +27,12 @@
     "category": "Research",
     "title_th": "OpenAI เปิดเผยข้อมูล Pretraining Loss Curves และความคืบหน้าโมเดลภายใน",
     "summary_th": "รายงานความคืบหน้าการฝึกโมเดลปี 2026 ที่เร่งตัวขึ้นด้วยพลังคำนวณและการที่ AI ช่วยพัฒนาตัวเอง | แสดงให้เห็นแนวโน้มขีดความสามารถโมเดลรุ่นใหม่ที่ล้ำหน้ากว่าเดิม | นำไปใช้คาดการณ์ทิศทางเทคโนโลยี LLM และเตรียมรับมือกับโมเดลยุคถัดไปในการพัฒนาแอปพลิเคชัน",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SMU56VGhtNVZpT2tDMWJEUXlyZlNYQmVTYVJWQl9PSkMwY2k2aVJ0UGpsM1JrTUZCb25yY3dKSHp0TGxDNF9BNXZIQldQeFdSR3lUV3BCeU1yODJXQVhlNWtB?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SMU56VGhtNVZpT2tDMWJEUXlyZlNYQmVTYVJWQl9PSkMwY2k2aVJ0UGpsM1JrTUZCb25yY3dKSHp0TGxDNF9BNXZIQldQeFdSR3lUV3BCeU1yODJXQVhlNWtB?oc=5",
+    "deep_dive_th": {
+      "highlights": "รายงานเน้นเส้น Pretraining Loss Curves ซึ่งเป็นตัวชี้วัดพื้นฐานของการอัปscale capability และเปิดเผยว่าแรงกดดันด้านคำนวณในปี 2026 เร่งการเพิ่มขึ้นของ model progress ผ่านการขยาย compute และวงจรที่ AI ช่วยพัฒนาเองมากขึ้น อย่างไรก็ตามเป็นข้อมูลเชิง research ไม่ได้เปิดเผยสถาปัตยกรรมหรือสเปกเชิงลึกโดยตรง จึงควรอ่านเป็น signal ด้านแนวโน้ม ไม่ใช่รายละเอียดโมเดลภายใน",
+      "pros_cons": "ข้อดีคือช่วยให้ทีมคาดการณ์ทิศทาง capability และวาง roadmap ได้ดีขึ้น รวมถึงใช้เป็นเกณฑ์อ้างอิงเวลาเปรียบเทียบ model รุ่นถัดไป แต่ข้อจำกัดสำคัญคือ loss curve ไม่การันตีคุณภาพงาน task-specific, ความปลอดภัย, latency หรือต้นทุน inference จึงไม่ควรนำไปสรุปความเหมาะสมกับ production โดยไม่ผ่าน evaluation จริงบน use case ของคุณ",
+      "actionable": "ให้เริ่มจากสร้าง eval harness ภายในองค์กรที่วัดคุณภาพ, safety, latency และต้นทุนต่อ request จากนั้นทดลองใช้โมเดลรุ่นใหม่ในงาน pilot เช่น coding assistant, document QA หรือ agent workflow โดยตั้งชุดเปรียบเทียบกับ baseline ที่มีอยู่ แนะนำใช้ loss curve เป็นข้อมูลประกอบการวางแผน capacity และ model selection ไม่ใช่ตัวตัดสินคุณภาพการใช้งานจริง"
+    }
   },
   {
     "id": "hf_apple_DepthPro2",
@@ -77,7 +82,12 @@
     "category": "Dev Tool",
     "title_th": "Anthropic เปิดตัวฟีเจอร์ทดลอง Code Mode ใน Claude Code",
     "summary_th": "ฟีเจอร์ใหม่ใน Claude Code ที่ช่วยให้โมเดลประมวลผลคำสั่งหลายขั้นตอนผ่านการเขียนโค้ดได้รวดเร็วและใช้ Context คุ้มค่าขึ้น | ดีกว่าเดิมตรงที่จัดการการเรียกใช้ Tool หลายขั้นตอนซับซ้อนได้มีประสิทธิภาพสูงและลด Latency | นำไปประยุกต์ใช้สร้าง AI Agent ที่ซับซ้อนหรือระบบ Automation ขั้นสูงได้ดียิ่งขึ้น",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tZE56THpyQlo1cDlnX3NONGI5THkxbndvRE14R21lcUJvemlWVHV0NHdNNnM2cHlvSW5Zb1FhR0xtRmxOVmVsejdQZkxoLVlJQ2ttYkRZRjBTTEhTQV80VQ?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tZE56THpyQlo1cDlnX3NONGI5THkxbndvRE14R21lcUJvemlWVHV0NHdNNnM2cHlvSW5Zb1FhR0xtRmxOVmVsejdQZkxoLVlJQ2ttYkRZRjBTTEhTQV80VQ?oc=5",
+    "deep_dive_th": {
+      "highlights": "จุดที่เปลี่ยนไปจากโหมด function-calling แบบลูปตอบต่อตอบ คือการที่โมเดลเขียนโค้ด TypeScript/JS เรียกใช้ tool ทั้งชุดในบล็อกเดียว ผ่าน runtime แบบ REPL ที่รันใน sandbox และคงตัวแปร/สถานะไว้ระหว่างรอบ จึงลดจำนวน round-trip และลดการกิน context จาก intermediate results อย่างชัดเจน เพราะข้อมูลกลางถูกเก็บในตัวแปรโค้ดแทนที่จะถูกส่งกลับเข้าบทสนทนาทุกครั้ง การเปลี่ยนนี้ยังเปิดประตูให้ใช้ flow control อย่าง if/for/try และ data filtering ในฝั่งโค้ดได้ ซึ่งเป็น control pattern ที่โมเดลเดิมทำได้ยากกว่าและแพงกว่าเมื่อต้องสลับ tool หลายขั้นตอน",
+      "pros_cons": "ข้อดีหลักคือประสิทธิภาพด้าน token และ latency ที่ดีขึ้นมากเมื่อต้องประกอบคำสั่งหลายขั้นตอน เพราะลดการวนกลับของบริบทและทำให้ตรรกะเงื่อนไข/การกรองข้อมูลทำในโค้ดได้อย่างอิสระ อีกทั้งยังลดปัญหา schema mismatch ที่มักเกิดกับ tool-calling แบบเดิม แต่ข้อจำกัดคือต้องแลกมาด้วยความซับซ้อนด้านแพลตฟอร์ม ทั้งการมี runtime และ sandbox ที่ปลอดภัย การจัดการ timeout ทรัพยากร และความสามารถในการ debug/trace ที่แย่ลงเพราะข้อผิดพลาดไปอยู่ในกรอบโค้ดมากกว่ากรอบ structured tool call อีกทั้งงานที่เป็น tool เดี่ยว ๆ หรือ single call สั้น ๆ อาจไม่คุ้มค่ากับ overhead ของการ compile และยังเป็นเดโมทดลอง (experimental) ที่ API อาจยังเปลี่ยนได้",
+      "actionable": "ลองใช้เป็นกลไกหลังบ้านของ AI Agent ที่ต้องประกอบหลาย API เช่น pipeline ดึงข้อมูลจากอินทิเมนต์หลายแหล่งแล้วรวมรายงาน, การทำ data enrichment หรือ ETL แบบมี logic เงื่อนไข และงาน refactoring/ตรวจ code หลายขั้นตอนที่ต้องรันคำสั่งซ้ำ ๆ ทดลองเทียบกับ function-calling loop เดิมบนชุดงาน benchmark จริงของคุณ วัดทั้ง token ที่ใช้ latency และอัตราความสำเร็จของ task ก่อนตัดสินใจ และให้อัปเดตเป็น dual mode คือใช้ Code Mode เมื่อมี dependency หลายขั้น ยังใช้ function calling แบบเดิมเมื่อเป็น call เดี่ยว พร้อมครอบ runtime ด้วย container sandbox, timeout และ logging ที่จับทั้ง input/output ของโค้ดที่โมเดลเขียน"
+    }
   },
   {
     "id": "hn_50593481",
@@ -97,7 +107,12 @@
     "category": "Model Release",
     "title_th": "Google เปิดตัว Gemini 4 Hydrogen เน้นความเร็วสูงและเวิร์กโฟลว์แบบ Agentic",
     "summary_th": "โมเดลใหม่จาก Google ที่ออกแบบมาเน้นความเร็วและการทำงานประจำวันรวมถึง Agentic Workflows | ทำงานได้รวดเร็วและมีประสิทธิภาพมากขึ้น เหมาะกับงานที่ต้องการความเร็วสูง | นำไปบูรณาการในแอปพลิเคชันและระบบอัตโนมัติที่ต้องการ Response Time รวดเร็ว",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aLURmdl9qbllkS3d4UGNpM0hEN0NYYlE0c0s2cjVnTDJSZHd2NXJSMEpEVWpYXzhPUzc5b215N0NDY0JpYXRscDRZNnVZSU1KNjJmUHQwNEQtY00?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aLURmdl9qbllkS3d4UGNpM0hEN0NYYlE0c0s2cjVnTDJSZHd2NXJSMEpEVWpYXzhPUzc5b215N0NDY0JpYXRscDRZNnVZSU1KNjJmUHQwNEQtY00?oc=5",
+    "deep_dive_th": {
+      "highlights": "จุดเด่นที่ประกาศคือการปรับความเร็วและประสิทธิภาพให้เหมาะกับงานใช้งานประจำวัน รวมถึง Agentic Workflows ที่ต้องการการวางแผนและเรียกใช้เครื่องมือต่อเนื่อง จึงควรมองการเปลี่ยนแปลงในมิติ latency/throughput และ orchestration มากกว่าตัวเลขสเปกที่เพิ่งเปิดเผย จุดนี้ทำให้ต่างจากโมเดลรุ่นก่อนที่เน้นความสามารถล้วนในบางเคส แต่ข้อมูลเชิงลึกยังต้องรอตรวจสอบ benchmark และเอกสารทางเทคนิคอย่างเป็นทางการ",
+      "pros_cons": "ข้อดีหลักคือตอบสนองเร็วและดูเหมาะกับระบบอัตโนมัติ/agent ที่ต้องการ throughput สูงหรือผู้ใช้รอ feedback น้อย ข้อจำกัดคือยังไม่มีรายละเอียดสเปก ราคา ข้อจำกัดอัตราการเรียก และผลทดสอบ reliability ของ tool calling ให้ยืนยันเพียงพอ ก่อนขึ้นสายการผลิตควรประเมิน accuracy, safety, cost per task และ fallback behavior ในงานจริง",
+      "actionable": "แนะนำเริ่มจาก use case ที่วัดผลได้ชัด เช่น agent ติดต่อฐานความรู้/ระบบภายใน, chatbot สนทนาเชิงปฏิบัติการ หรือ automation ที่ต้องการ response time ต่ำ แล้วทำ A/B เทียบกับโมเดลเดิมด้วย latency p95, success rate ของ tool call, ต้นทุนต่อเคส และอัตราการดึงข้อมูลผิด ควรวาง routing/fallback, guardrail, การ log prompt/response และทดสอบ canary ก่อน rollout เพื่อลดความเสี่ยงเมื่อ behavioral ของโมเดลล่าสุดยังไม่ผ่านการพิสูจน์ในสภาพ production ของคุณ"
+    }
   },
   {
     "id": "bsky_bafyreiepm76cn4ees2opagt6i3y4s4py3kdj4ylbmq3x6kh3g3tooddcgq",

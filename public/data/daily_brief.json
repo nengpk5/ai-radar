@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-11-23T12:41:43.629Z",
+  "date_th": "23 พ.ย. 2569",
+  "headline_th": "Gemini 4 ปูทางโมเดลยุคใหม่ ขณะ OpenAI และ Anthropic เดินหน้าเครื่องมือ Agentic AI สำหรับวิศวกร",
+  "trend_th": "วันนี้โฟกัสที่การเปรียบเทียบประสิทธิภาพโมเดลตระกูล Gemini 4 พร้อมความคืบหน้าการฝึก Pretraining ของ OpenAI และฟีเจอร์ Code Mode ของ Anthropic ที่เน้นสร้าง AI Agent ซับซ้อนได้ง่ายขึ้น แนวโน้มคือการเลือกใช้โมเดลอย่างเหมาะสมกับงานและเร่งพัฒนาระบบอัตโนมัติแบบ Agentic",
+  "top_stories": [
+    {
+      "title_th": "เปรียบเทียบตระกูล Gemini 4 ทุกรุ่นย่อย",
+      "why_it_matters": "ช่วยให้วิศวกร AI เลือกโมเดล Carbon, Neon หรือ Hydrogen ให้เหมาะกับงานและต้นทุน พร้อมปรับระดับ Reasoning Effort ได้แม่นยำขึ้นก่อน Deploy จริง",
+      "vendor": "Google",
+      "url": "https://bsky.app/profile/simonwillison.net/post/3n2ttinqjkc27"
+    },
+    {
+      "title_th": "OpenAI เผย Pretraining Loss Curves และความคืบหน้าโมเดล 2026",
+      "why_it_matters": "เปิดเผยทิศทางขีดความสามารถ LLM รุ่นถัดไปจากพลังคำนวณและ AI ช่วยพัฒนาตัวเอง วิศวกรสามารถใช้คาดการณ์เทคโนโลยีและเตรียมระบบให้รองรับโมเดลยุคใหม่ได้",
+      "vendor": "OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SMU56VGhtNVZpT2tDMWJEUXlyZlNYQmVTYVJWQl9PSkMwY2k2aVJ0UGpsM1JrTUZCb25yY3dKSHp0TGxDNF9BNXZIQldQeFdSR3lUV3BCeU1yODJXQVhlNWtB?oc=5"
+    },
+    {
+      "title_th": "Anthropic เปิดตัว Code Mode ใน Claude Code",
+      "why_it_matters": "ช่วยให้โมเดลประมวลผลคำสั่งหลายขั้นตอนผ่านโค้ดได้เร็วขึ้น ใช้ Context คุ้มค่า และลด Latency เหมาะสำหรับสร้าง AI Agent หรือระบบ Automation ขั้นสูงได้ดียิ่งขึ้น",
+      "vendor": "Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tZE56THpyQlo1cDlnX3NONGI5THkxbndvRE14R21lcUJvemlWVHV0NHdNNnM2cHlvSW5Zb1FhR0xtRmxOVmVsejdQZkxoLVlJQ2ttYkRZRjBTTEhTQV80VQ?oc=5"
+    }
+  ],
+  "model_used": "nvidia/nemotron-3.5-super-vl:free"
+}

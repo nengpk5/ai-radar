@@ -191,7 +191,18 @@ function renderFeed() {
           ${escapeHtml(item.summary_th || '')}
         </p>
 
-        <div class="pt-1 flex items-center justify-between text-xs">
+        ${item.deep_dive_th ? `
+        <div id="deepdive-${escapeHtml(item.id)}" class="hidden p-3 rounded-lg bg-emerald-950/25 border border-emerald-500/30 space-y-2 text-xs text-gray-200 leading-relaxed">
+          <div class="font-semibold text-emerald-300 text-[11px] uppercase tracking-wider flex items-center gap-1.5">
+            <span>🔬 Technical Deep-Dive</span>
+          </div>
+          <div><span class="text-cyan-300 font-semibold">⚙️ จุดเด่นทางเทคนิค:</span> ${escapeHtml(item.deep_dive_th.highlights)}</div>
+          <div><span class="text-amber-300 font-semibold">⚖️ ข้อดี / ข้อควรระวัง:</span> ${escapeHtml(item.deep_dive_th.pros_cons)}</div>
+          <div><span class="text-emerald-300 font-semibold">🚀 แนวทางเอาไปใช้จริง:</span> ${escapeHtml(item.deep_dive_th.actionable)}</div>
+        </div>
+        ` : ''}
+
+        <div class="pt-1 flex items-center justify-between gap-2 text-xs">
           <a 
             href="${escapeHtml(item.url)}" 
             target="_blank" 
@@ -203,12 +214,31 @@ function renderFeed() {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
+          ${item.deep_dive_th ? `
+          <button
+            type="button"
+            data-deepdive-target="deepdive-${escapeHtml(item.id)}"
+            class="deepdive-toggle-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-500/20 font-medium transition-all"
+          >
+            <span>🔍 อ่านวิเคราะห์เจาะลึก</span>
+          </button>
+          ` : ''}
         </div>
       </article>
     `;
   }).join('');
 
   newsFeedEl.innerHTML = cardsHtml;
+
+  // Bind Deep-Dive toggles
+  newsFeedEl.querySelectorAll('.deepdive-toggle-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = document.getElementById(btn.dataset.deepdiveTarget);
+      if (!target) return;
+      const isHidden = target.classList.toggle('hidden');
+      btn.innerHTML = isHidden ? '<span>🔍 อ่านวิเคราะห์เจาะลึก</span>' : '<span>ซ่อนวิเคราะห์เจาะลึก ▴</span>';
+    });
+  });
 }
 
 function escapeHtml(str) {
@@ -318,7 +348,140 @@ function setupListeners() {
   // Manual refresh
   refreshBtnEl.addEventListener('click', () => {
     fetchLatestNews(true);
+    fetchDigests();
   });
+
+  // Daily Briefing toggle
+  const toggleDailyBtn = document.getElementById('toggleDailyBriefBtn');
+  const dailyBody = document.getElementById('dailyBriefBody');
+  if (toggleDailyBtn && dailyBody) {
+    toggleDailyBtn.addEventListener('click', () => {
+      const isHidden = dailyBody.classList.toggle('hidden');
+      toggleDailyBtn.textContent = isHidden ? 'ดู 3 เรื่องเด่น ▾' : 'ซ่อน ▴';
+    });
+  }
+
+  // Weekly Report Modal controls
+  const weeklyBtn = document.getElementById('weeklyReportBtn');
+  const weeklyModal = document.getElementById('weeklyModal');
+  const closeWeeklyBtn = document.getElementById('closeWeeklyModalBtn');
+  if (weeklyBtn && weeklyModal) {
+    weeklyBtn.addEventListener('click', () => weeklyModal.classList.remove('hidden'));
+    closeWeeklyBtn?.addEventListener('click', () => weeklyModal.classList.add('hidden'));
+    weeklyModal.addEventListener('click', (e) => {
+      if (e.target === weeklyModal) weeklyModal.classList.add('hidden');
+    });
+  }
+}
+
+// 5.5 Daily Briefing & Weekly Report Helpers
+async function fetchJsonWithFallback(filename) {
+  const ghUrl = `https://raw.githubusercontent.com/nengpk5/ai-radar/main/public/data/${filename}?t=${Date.now()}`;
+  const localUrl = `./data/${filename}?t=${Date.now()}`;
+  try {
+    const res = await fetch(ghUrl);
+    if (res.ok) return await res.json();
+  } catch { /* fallback below */ }
+  const localRes = await fetch(localUrl);
+  if (!localRes.ok) throw new Error(`HTTP ${localRes.status}`);
+  return await localRes.json();
+}
+
+function renderDailyBrief(brief) {
+  if (!brief || !brief.headline_th) return;
+  const card = document.getElementById('dailyBriefCard');
+  const dateEl = document.getElementById('dailyBriefDate');
+  const headlineEl = document.getElementById('dailyBriefHeadline');
+  const trendEl = document.getElementById('dailyBriefTrend');
+  const bodyEl = document.getElementById('dailyBriefBody');
+  if (!card || !bodyEl) return;
+
+  dateEl.textContent = brief.date_th || '';
+  headlineEl.textContent = brief.headline_th;
+  trendEl.textContent = brief.trend_th || '';
+
+  const stories = Array.isArray(brief.top_stories) ? brief.top_stories : [];
+  bodyEl.innerHTML = stories.map((s, idx) => `
+    <div class="p-2.5 rounded-lg bg-black/30 border border-radarBorder/60 space-y-1">
+      <div class="flex items-center justify-between gap-2">
+        <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-emerald-300 hover:underline">
+          ${idx + 1}. ${escapeHtml(s.title_th)}
+        </a>
+        <span class="text-[10px] px-1.5 py-0.5 rounded bg-radarBorder text-gray-300 shrink-0">${escapeHtml(s.vendor || 'AI')}</span>
+      </div>
+      <p class="text-xs text-gray-300 leading-relaxed">${escapeHtml(s.why_it_matters || '')}</p>
+    </div>
+  `).join('');
+
+  card.classList.remove('hidden');
+}
+
+function renderWeeklyReport(report) {
+  if (!report || !report.executive_summary_th) return;
+  const btn = document.getElementById('weeklyReportBtn');
+  const periodEl = document.getElementById('weeklyPeriod');
+  const contentEl = document.getElementById('weeklyModalContent');
+  if (!btn || !contentEl) return;
+
+  periodEl.textContent = report.period_th || 'สรุปภาพรวมรายสัปดาห์';
+
+  const modelsHtml = (report.top_models || []).map((m) => `
+    <div class="p-3 rounded-xl bg-black/30 border border-radarBorder space-y-1">
+      <div class="flex items-center justify-between gap-2">
+        <a href="${escapeHtml(m.url)}" target="_blank" rel="noopener noreferrer" class="font-bold text-emerald-300 hover:underline text-xs md:text-sm">${escapeHtml(m.name)}</a>
+        <span class="text-[10px] px-2 py-0.5 rounded-full bg-purple-950/60 text-purple-300 border border-purple-800/50">${escapeHtml(m.vendor || '')}</span>
+      </div>
+      <p class="text-xs text-gray-300 leading-relaxed">${escapeHtml(m.takeaway_th || '')}</p>
+    </div>
+  `).join('');
+
+  const toolsHtml = (report.top_tools || []).map((t) => `
+    <div class="p-3 rounded-xl bg-black/30 border border-radarBorder space-y-1">
+      <a href="${escapeHtml(t.url)}" target="_blank" rel="noopener noreferrer" class="font-bold text-cyan-300 hover:underline text-xs md:text-sm">${escapeHtml(t.name)}</a>
+      <p class="text-xs text-gray-300 leading-relaxed">${escapeHtml(t.takeaway_th || '')}</p>
+    </div>
+  `).join('');
+
+  const vendorsHtml = (report.vendor_highlights || []).map((v) => `
+    <div class="p-2.5 rounded-lg bg-black/25 border border-radarBorder/70">
+      <div class="text-xs font-bold text-white mb-0.5">${escapeHtml(v.vendor)}</div>
+      <p class="text-xs text-gray-300 leading-relaxed">${escapeHtml(v.summary_th)}</p>
+    </div>
+  `).join('');
+
+  contentEl.innerHTML = `
+    <div class="p-3.5 rounded-xl bg-cyan-950/30 border border-cyan-500/30 text-xs md:text-sm text-gray-200 leading-relaxed">
+      ${escapeHtml(report.executive_summary_th)}
+    </div>
+    ${modelsHtml ? `<div class="space-y-2"><h3 class="text-xs font-bold uppercase tracking-wider text-purple-300">🤖 โมเดลเด่นประจำสัปดาห์</h3>${modelsHtml}</div>` : ''}
+    ${toolsHtml ? `<div class="space-y-2"><h3 class="text-xs font-bold uppercase tracking-wider text-cyan-300">🛠️ เครื่องมือ & Dev Tool น่าลอง</h3>${toolsHtml}</div>` : ''}
+    ${vendorsHtml ? `<div class="space-y-2"><h3 class="text-xs font-bold uppercase tracking-wider text-emerald-300">🏢 ความเคลื่อนไหวแยกตามค่าย</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-2">${vendorsHtml}</div></div>` : ''}
+  `;
+
+  btn.classList.remove('hidden');
+}
+
+async function fetchDigests() {
+  try {
+    const cachedDaily = localStorage.getItem('ai_radar_daily_brief');
+    if (cachedDaily) renderDailyBrief(JSON.parse(cachedDaily));
+    const cachedWeekly = localStorage.getItem('ai_radar_weekly_report');
+    if (cachedWeekly) renderWeeklyReport(JSON.parse(cachedWeekly));
+  } catch { /* ignore cache errors */ }
+
+  fetchJsonWithFallback('daily_brief.json')
+    .then((data) => {
+      localStorage.setItem('ai_radar_daily_brief', JSON.stringify(data));
+      renderDailyBrief(data);
+    })
+    .catch(() => {});
+
+  fetchJsonWithFallback('weekly_report.json')
+    .then((data) => {
+      localStorage.setItem('ai_radar_weekly_report', JSON.stringify(data));
+      renderWeeklyReport(data);
+    })
+    .catch(() => {});
 }
 
 // 6. Register Service Worker
@@ -347,6 +510,7 @@ async function init() {
 
   // Background network update
   fetchLatestNews(false);
+  fetchDigests();
 }
 
 document.addEventListener('DOMContentLoaded', init);

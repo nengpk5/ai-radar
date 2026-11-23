@@ -72,6 +72,13 @@
       </div>
 
       <div class="flex items-center gap-2">
+        <!-- Weekly Report Button -->
+        <button id="weeklyReportBtn" class="hidden px-2.5 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 text-xs font-medium transition-all active:scale-95 flex items-center gap-1.5">
+          <span>📊</span>
+          <span class="hidden sm:inline">สรุปรายสัปดาห์</span>
+          <span class="sm:hidden">สัปดาห์นี้</span>
+        </button>
+
         <!-- Manual Refresh Button -->
         <button id="refreshBtn" aria-label="รีเฟรชข้อมูล" class="p-2 rounded-lg bg-radarCard border border-radarBorder text-gray-300 hover:text-white hover:border-emerald-500/50 transition-all active:scale-95">
           <svg id="refreshIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,6 +91,24 @@
 
   <!-- Main Container -->
   <main class="max-w-4xl mx-auto w-full px-4 pt-4 flex-1">
+
+    <!-- Daily Morning Briefing Card -->
+    <section id="dailyBriefCard" class="hidden mb-4 rounded-xl bg-gradient-to-br from-emerald-950/40 via-radarCard to-cyan-950/30 border border-emerald-500/30 p-4 shadow-lg">
+      <div class="flex items-start justify-between gap-3">
+        <div class="space-y-1">
+          <div class="flex items-center gap-2 text-[11px] font-semibold text-emerald-400">
+            <span>☀️ DAILY MORNING BRIEFING</span>
+            <span id="dailyBriefDate" class="px-1.5 py-0.5 rounded bg-emerald-500/15 border border-emerald-500/30 text-emerald-300"></span>
+          </div>
+          <h2 id="dailyBriefHeadline" class="text-sm md:text-base font-bold text-white leading-snug"></h2>
+          <p id="dailyBriefTrend" class="text-xs text-gray-300 leading-relaxed"></p>
+        </div>
+        <button id="toggleDailyBriefBtn" class="shrink-0 px-2.5 py-1 rounded-lg bg-black/30 border border-radarBorder text-[11px] text-emerald-300 hover:border-emerald-500/50 transition-all">
+          ดู 3 เรื่องเด่น ▾
+        </button>
+      </div>
+      <div id="dailyBriefBody" class="hidden mt-3 pt-3 border-t border-emerald-500/20 space-y-2.5"></div>
+    </section>
 
     <!-- Search & Breaking Filter Bar -->
     <div class="space-y-3 mb-4">
@@ -169,6 +194,24 @@
     </div>
 
   </main>
+
+  <!-- Weekly Radar Report Modal -->
+  <div id="weeklyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="w-full max-w-2xl max-h-[85vh] overflow-y-auto custom-scrollbar rounded-2xl bg-radarCard border border-cyan-500/30 shadow-2xl">
+      <div class="sticky top-0 z-10 flex items-center justify-between px-5 py-4 bg-radarCard/95 backdrop-blur border-b border-radarBorder">
+        <div>
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-cyan-400">📊 Weekly Radar Report</span>
+          <h2 id="weeklyPeriod" class="text-base font-bold text-white">สรุปภาพรวมรายสัปดาห์</h2>
+        </div>
+        <button id="closeWeeklyModalBtn" aria-label="ปิดหน้าต่าง" class="p-1.5 rounded-lg bg-black/30 border border-radarBorder text-gray-400 hover:text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div id="weeklyModalContent" class="p-5 space-y-5 text-sm"></div>
+    </div>
+  </div>
 
   <script src="./app.js"></script>
 </body>

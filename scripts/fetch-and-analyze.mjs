@@ -337,6 +337,93 @@ ${JSON.stringify(candidates, null, 2)}
   throw new Error('All AI providers (Gemini & OpenRouter) failed or are unconfigured.');
 }
 
+// 3.3.5 Auto Deep-Dive via OpenRouter for Breaking 8+ News
+async function generateDeepDive(event, env) {
+  const prompt = `You are a Principal AI Engineer writing a concise technical deep-dive in Thai for a breaking AI news item.
+Output ONLY a valid JSON object with these 3 exact string fields:
+{
+  "highlights": "เจาะลึกจุดเด่นทางเทคนิค สเปก หรือสถาปัตยกรรมที่เปลี่ยนไปจากรุ่นก่อนหน้า (2-3 ประโยคกระชับ)",
+  "pros_cons": "ข้อดีหลัก และข้อจำกัดหรือสิ่งที่ควรระวังก่อนนำไปใช้จริงบน Production (2-3 ประโยค)",
+  "actionable": "แนวทางทดลองใช้งานจริง / Use case หรือไอเดียต่อยอดสำหรับนักพัฒนาและ AI Engineer (2-3 ประโยค)"
+}
+
+News Item:
+Title: ${event.title_th}
+Vendor: ${event.vendor} | Category: ${event.category} | Score: ${event.score}/10
+Summary: ${event.summary_th}
+URL: ${event.url}
+`;
+
+  if (env.OPENROUTER_API_KEY) {
+    const orModels = [
+      'baidu/ernie-5.5-flash-preview:free',
+      'nvidia/nemotron-3.5-super-vl:free',
+      'openrouter/free'
+    ];
+    for (const model of orModels) {
+      try {
+        console.log(`Generating Deep-Dive for "${event.title_th}" via OpenRouter (${model})...`);
+        const data = await fetchJsonWithTimeout('https://openrouter.ai/api/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${env.OPENROUTER_API_KEY}`,
+            'HTTP-Referer': 'https://github.com',
+            'X-Title': 'AI Radar Deep-Dive'
+          },
+          body: JSON.stringify({
+            model,
+            messages: [
+              { role: 'system', content: 'You are a JSON-only API. Respond strictly with valid JSON matching the requested schema.' },
+              { role: 'user', content: prompt }
+            ],
+            response_format: { type: 'json_object' }
+          })
+        }, 45000);
+
+        const content = data.choices?.[0]?.message?.content;
+        if (content) {
+          const clean = content.replace(/^```json\s*/, '').replace(/\s*```$/, '').trim();
+          const parsed = JSON.parse(clean);
+          if (parsed.highlights && parsed.pros_cons && parsed.actionable) {
+            console.log(`Deep-Dive generated via OpenRouter (${model}).`);
+            return parsed;
+          }
+        }
+      } catch (err) {
+        console.warn(`Deep-Dive OpenRouter (${model}) failed: ${err.message}`);
+      }
+    }
+  }
+
+  // Fallback to Gemini Lite if OpenRouter is completely unavailable
+  if (env.GEMINI_API_KEY) {
+    try {
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${env.GEMINI_API_KEY}`;
+      const data = await fetchJsonWithTimeout(geminiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { responseMimeType: 'application/json', temperature: 0.2 }
+        })
+      }, 30000);
+      const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (rawText) {
+        const parsed = JSON.parse(rawText);
+        if (parsed.highlights && parsed.pros_cons && parsed.actionable) {
+          console.log('Deep-Dive generated via Gemini fallback.');
+          return parsed;
+        }
+      }
+    } catch (err) {
+      console.warn(`Deep-Dive Gemini fallback failed: ${err.message}`);
+    }
+  }
+
+  return null;
+}
+
 // 3.4 Telegram Alert
 async function sendTelegramAlert(event, env) {
   if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
@@ -444,6 +531,18 @@ async function main() {
   const existingIds = new Set(existingNews.map(n => n.id));
 
   const validNewEvents = scoredEvents.filter(ev => !existingUrls.has(ev.url) && !existingIds.has(ev.id));
+
+  // Auto Deep-Dive via OpenRouter for Breaking 8+ events (max 3 per run to stay well within free limits)
+  let deepDiveCount = 0;
+  for (const ev of validNewEvents) {
+    if ((ev.score || 0) >= 8 && deepDiveCount < 3) {
+      const deepDive = await generateDeepDive(ev, process.env);
+      if (deepDive) {
+        ev.deep_dive_th = deepDive;
+        deepDiveCount++;
+      }
+    }
+  }
 
   // Merge & limit news to latest 200 items
   const updatedNews = [...validNewEvents, ...existingNews].slice(0, 200);
