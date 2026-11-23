@@ -252,14 +252,13 @@ Items to analyze:
 ${JSON.stringify(candidates, null, 2)}
 `;
 
-  // Primary: Gemini
+  // Primary: Gemini (Active Free-Tier models)
   if (env.GEMINI_API_KEY) {
     const geminiModels = [
-      'gemini-2.5-flash',
-      'gemini-2.0-flash',
-      'gemini-flash-latest',
+      'gemini-3.5-flash-lite',
+      'gemini-flash-lite-latest',
       'gemini-3.8-flash',
-      'gemini-3.5-flash-lite'
+      'gemini-3.1-flash-lite'
     ];
     for (const modelName of geminiModels) {
       try {
@@ -288,17 +287,14 @@ ${JSON.stringify(candidates, null, 2)}
     }
   }
 
-  // Fallback: OpenRouter
+  // Fallback: OpenRouter (100% Free-Tier models)
   if (env.OPENROUTER_API_KEY) {
     try {
       console.log('Attempting AI analysis via Fallback (OpenRouter API)...');
       const orModels = [
-        'nousresearch/hermes-3-llama-3.1-405b:free',
-        'google/gemini-2.0-flash-exp:free',
-        'minimax/minimax-m3.1-flash:free',
-        'nvidia/nemotron-3.5-lightning:free',
+        'baidu/ernie-5.5-flash-preview:free',
         'nvidia/nemotron-3.5-super-vl:free',
-        'liquid/lfm-2.5-2.6b:free'
+        'openrouter/free'
       ];
 
       for (const model of orModels) {
