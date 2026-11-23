@@ -3,22 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>AI & Tech News Radar | เรดาร์ข่าว AI สรุปไวเพื่อวิศวกร</title>
+  <title>AI RADAR // Tactical AI & Tech Intelligence</title>
   <meta name="description" content="เรดาร์ข่าวสาร AI & Deep Tech อัปเดตทุก 15 นาที คัดกรองและสรุปภาษาไทยแบบตรงประเด็นด้วย AI">
   <link rel="manifest" href="./manifest.json">
-  <meta name="theme-color" content="#090d16">
+  <meta name="theme-color" content="#050811">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Futuristic + Crisp Thai Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['"Noto Sans Thai"', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', '"Noto Sans Thai"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          },
           colors: {
-            radarDark: '#090d16',
-            radarCard: '#111827',
-            radarBorder: '#1f293d',
+            radarBg: '#050811',
+            radarCard: '#0c1222',
+            radarBorder: '#1a2540',
             radarAccent: '#10b981',
             radarCyan: '#06b6d4'
           }
@@ -26,141 +37,356 @@
       }
     }
   </script>
+
   <style>
-    body {
-      background-color: #090d16;
-      color: #f3f4f6;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    :root {
+      --bg-deep: #050811;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-deep);
+      color: #f1f5f9;
+      font-family: 'Noto Sans Thai', system-ui, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Animated Cyber Grid Background */
+    .cyber-grid {
+      background-image:
+        linear-gradient(to right, rgba(16, 185, 129, 0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(6, 182, 212, 0.045) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 35%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 35%, transparent 100%);
+    }
+
+    /* Ambient Floating Glow Orbs */
+    @keyframes orbFloat1 {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.32; }
+      50% { transform: translate(40px, 25px) scale(1.12); opacity: 0.48; }
+    }
+    @keyframes orbFloat2 {
+      0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.25; }
+      50% { transform: translate(-35px, 35px) scale(1.15); opacity: 0.42; }
+    }
+    .orb-1 { animation: orbFloat1 12s ease-in-out infinite; }
+    .orb-2 { animation: orbFloat2 15s ease-in-out infinite; }
+
+    /* Radar Sweep Animation */
+    @keyframes radarSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .radar-sweep {
+      background: conic-gradient(from 0deg, rgba(16, 185, 129, 0.45) 0deg, rgba(6, 182, 212, 0.12) 45deg, transparent 70deg);
+      animation: radarSpin 3.2s linear infinite;
+    }
+
+    /* Holographic Border Shimmer for Daily Briefing */
+    @keyframes holoShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .holo-border {
+      position: relative;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(12, 18, 34, 0.92), rgba(6, 182, 212, 0.14));
+      background-size: 220% 220%;
+      animation: holoShift 8s ease infinite;
+    }
+    .holo-border::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(120deg, rgba(16, 185, 129, 0.65), rgba(6, 182, 212, 0.5), rgba(139, 92, 246, 0.55), rgba(16, 185, 129, 0.65));
+      background-size: 250% 250%;
+      animation: holoShift 6s ease infinite;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    /* Staggered Card Entrance */
+    @keyframes cardEnter {
+      0% {
+        opacity: 0;
+        transform: translateY(18px) scale(0.985);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    .news-card {
+      position: relative;
+      opacity: 0;
+      animation: cardEnter 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.25s ease, box-shadow 0.28s ease;
+      overflow: hidden;
+    }
+    .news-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px -12px rgba(16, 185, 129, 0.22), 0 0 0 1px rgba(16, 185, 129, 0.28);
+    }
+
+    /* Interactive Cursor Spotlight on Cards */
+    .news-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(16, 185, 129, 0.11), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .news-card:hover::after {
+      opacity: 1;
+    }
+
+    /* Breaking News Shimmer Line */
+    @keyframes scanLine {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(200%); }
+    }
+    .breaking-scan::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 1.5px;
+      background: linear-gradient(90deg, transparent, #f59e0b, #fb7185, transparent);
+      animation: scanLine 3.5s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    /* Smooth Accordion Transition */
+    .accordion-grid {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transition: grid-template-rows 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease, margin 0.3s ease;
+    }
+    .accordion-grid.open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
+    .accordion-inner {
+      overflow: hidden;
+    }
+
+    /* Modal Entrance Animation */
+    @keyframes modalIn {
+      from { opacity: 0; transform: scale(0.94) translateY(12px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .modal-panel {
+      animation: modalIn 0.28s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    /* Glassmorphism Nav */
+    .glass-hud {
+      background: rgba(5, 8, 17, 0.78);
+      backdrop-filter: blur(16px) saturate(160%);
+      -webkit-backdrop-filter: blur(16px) saturate(160%);
+    }
+
+    /* Custom Scrollbar */
     .custom-scrollbar::-webkit-scrollbar {
       height: 4px;
-      width: 4px;
+      width: 5px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.4);
     }
     .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: #1f293d;
+      background: rgba(16, 185, 129, 0.35);
       border-radius: 9999px;
     }
-    .glass-nav {
-      background: rgba(9, 13, 22, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(16, 185, 129, 0.65);
+    }
+
+    /* Scroll Progress Top Neon Bar */
+    #scrollProgress {
+      background: linear-gradient(90deg, #10b981, #06b6d4, #8b5cf6);
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.8);
+      transition: width 0.1s linear;
     }
   </style>
 </head>
-<body class="min-h-screen pb-16 flex flex-col selection:bg-emerald-500/30 selection:text-emerald-300">
+<body class="min-h-screen pb-20 flex flex-col selection:bg-emerald-500/30 selection:text-emerald-200 relative">
 
-  <!-- Sticky Top Header -->
-  <header class="sticky top-0 z-40 glass-nav border-b border-radarBorder px-4 py-3">
-    <div class="max-w-4xl mx-auto flex items-center justify-between gap-3">
-      <div class="flex items-center gap-2.5">
-        <div class="relative flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
-          <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
-          <span class="absolute -top-1 -right-1 flex h-2.5 w-2.5">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-          </span>
+  <!-- Top Scroll Progress Neon Bar -->
+  <div id="scrollProgress" class="fixed top-0 left-0 h-[2px] z-50 w-0"></div>
+
+  <!-- Live Ambient Futuristic Background -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute inset-0 cyber-grid"></div>
+    <div class="orb-1 absolute -top-24 -left-24 w-96 h-96 rounded-full bg-emerald-500/20 blur-[120px]"></div>
+    <div class="orb-2 absolute top-1/4 -right-28 w-[420px] h-[420px] rounded-full bg-cyan-500/15 blur-[130px]"></div>
+    <div class="absolute bottom-0 left-1/3 w-80 h-80 rounded-full bg-violet-600/10 blur-[130px]"></div>
+  </div>
+
+  <!-- Sticky Futuristic HUD Header -->
+  <header class="sticky top-0 z-40 glass-hud border-b border-emerald-500/15">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <!-- Animated Radar Dish Icon -->
+        <div class="relative flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-950/60 border border-emerald-500/40 shadow-[0_0_20px_rgba(16,185,129,0.22)] overflow-hidden shrink-0">
+          <div class="radar-sweep absolute inset-0 rounded-full"></div>
+          <div class="absolute inset-1.5 rounded-full border border-emerald-400/30"></div>
+          <div class="absolute inset-3 rounded-full border border-emerald-400/20"></div>
+          <span class="relative z-10 h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></span>
         </div>
         <div>
-          <h1 class="text-base font-bold tracking-tight text-white flex items-center gap-1.5">
-            AI RADAR
-            <span class="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Live</span>
+          <h1 class="font-display text-base md:text-lg font-bold tracking-wider text-white flex items-center gap-2">
+            <span class="bg-gradient-to-r from-white via-emerald-200 to-cyan-300 bg-clip-text text-transparent">AI RADAR</span>
+            <span class="font-mono text-[10px] font-semibold uppercase tracking-widest px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/40 flex items-center gap-1.5">
+              <span class="relative flex h-1.5 w-1.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-400"></span>
+              </span>
+              LIVE
+            </span>
           </h1>
-          <p class="text-[11px] text-gray-400" id="syncStatus">พร้อมใช้งานแบบ Offline-First</p>
+          <p class="font-mono text-[10px] md:text-[11px] text-gray-400 flex items-center gap-1.5" id="syncStatus">
+            <span>INITIALIZING TELEMETRY...</span>
+          </p>
         </div>
       </div>
 
       <div class="flex items-center gap-2">
-        <!-- Weekly Report Button -->
-        <button id="weeklyReportBtn" class="hidden px-2.5 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 text-xs font-medium transition-all active:scale-95 flex items-center gap-1.5">
-          <span>📊</span>
+        <!-- Weekly Report Cyber Button -->
+        <button id="weeklyReportBtn" class="hidden group px-3 py-1.5 rounded-xl bg-gradient-to-r from-cyan-500/15 to-violet-500/15 border border-cyan-400/35 text-cyan-200 hover:border-cyan-300 hover:shadow-[0_0_18px_rgba(6,182,212,0.3)] text-xs font-semibold transition-all duration-200 active:scale-95 flex items-center gap-1.5">
+          <span class="group-hover:scale-110 transition-transform">📊</span>
           <span class="hidden sm:inline">สรุปรายสัปดาห์</span>
           <span class="sm:hidden">สัปดาห์นี้</span>
         </button>
 
         <!-- Manual Refresh Button -->
-        <button id="refreshBtn" aria-label="รีเฟรชข้อมูล" class="p-2 rounded-lg bg-radarCard border border-radarBorder text-gray-300 hover:text-white hover:border-emerald-500/50 transition-all active:scale-95">
+        <button id="refreshBtn" aria-label="รีเฟรชข้อมูล" class="p-2.5 rounded-xl bg-radarCard/80 border border-radarBorder text-gray-300 hover:text-emerald-300 hover:border-emerald-500/50 hover:shadow-[0_0_15px_rgba(16,185,129,0.2)] transition-all duration-200 active:scale-90">
           <svg id="refreshIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
           </svg>
         </button>
       </div>
     </div>
+
+    <!-- Live HUD Telemetry Bar -->
+    <div class="border-t border-white/5 bg-black/30">
+      <div class="max-w-4xl mx-auto px-4 py-1.5 flex items-center justify-between gap-4 text-[10px] md:text-[11px] font-mono text-gray-400 overflow-x-auto custom-scrollbar">
+        <div class="flex items-center gap-4 shrink-0">
+          <span class="flex items-center gap-1.5">
+            <span class="text-emerald-400">◉</span> SIGNALS: <strong id="hudTotalCount" class="text-white">--</strong>
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="text-amber-400">⚡</span> BREAKING 8+: <strong id="hudBreakingCount" class="text-amber-300">--</strong>
+          </span>
+          <span class="hidden sm:flex items-center gap-1.5">
+            <span class="text-cyan-400">◈</span> SOURCES: <strong class="text-cyan-300">5 FEEDS</strong>
+          </span>
+        </div>
+        <span id="lastUpdatedDisplay" class="text-gray-500 shrink-0">SYNCING...</span>
+      </div>
+    </div>
   </header>
 
   <!-- Main Container -->
-  <main class="max-w-4xl mx-auto w-full px-4 pt-4 flex-1">
+  <main class="max-w-4xl mx-auto w-full px-4 pt-5 flex-1">
 
-    <!-- Daily Morning Briefing Card -->
-    <section id="dailyBriefCard" class="hidden mb-4 rounded-xl bg-gradient-to-br from-emerald-950/40 via-radarCard to-cyan-950/30 border border-emerald-500/30 p-4 shadow-lg">
-      <div class="flex items-start justify-between gap-3">
-        <div class="space-y-1">
-          <div class="flex items-center gap-2 text-[11px] font-semibold text-emerald-400">
-            <span>☀️ DAILY MORNING BRIEFING</span>
-            <span id="dailyBriefDate" class="px-1.5 py-0.5 rounded bg-emerald-500/15 border border-emerald-500/30 text-emerald-300"></span>
+    <!-- Holographic Daily Morning Briefing Card -->
+    <section id="dailyBriefCard" class="hidden mb-5 rounded-2xl holo-border p-4 md:p-5 shadow-[0_12px_40px_-15px_rgba(16,185,129,0.25)] transition-all">
+      <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+        <div class="space-y-1.5">
+          <div class="flex flex-wrap items-center gap-2 font-mono text-[10px] font-semibold tracking-wider text-emerald-400">
+            <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/35">
+              <span>☀️</span> DAILY MORNING BRIEFING
+            </span>
+            <span id="dailyBriefDate" class="text-cyan-300"></span>
           </div>
-          <h2 id="dailyBriefHeadline" class="text-sm md:text-base font-bold text-white leading-snug"></h2>
-          <p id="dailyBriefTrend" class="text-xs text-gray-300 leading-relaxed"></p>
+          <h2 id="dailyBriefHeadline" class="text-base md:text-lg font-bold text-white leading-snug"></h2>
+          <p id="dailyBriefTrend" class="text-xs md:text-sm text-gray-300/90 leading-relaxed"></p>
         </div>
-        <button id="toggleDailyBriefBtn" class="shrink-0 px-2.5 py-1 rounded-lg bg-black/30 border border-radarBorder text-[11px] text-emerald-300 hover:border-emerald-500/50 transition-all">
-          ดู 3 เรื่องเด่น ▾
-        </button>
-      </div>
-      <div id="dailyBriefBody" class="hidden mt-3 pt-3 border-t border-emerald-500/20 space-y-2.5"></div>
-    </section>
-
-    <!-- Search & Breaking Filter Bar -->
-    <div class="space-y-3 mb-4">
-      <div class="relative">
-        <input 
-          type="text" 
-          id="searchInput" 
-          placeholder="ค้นหาโมเดล, บริษัท, หัวข้อ หรือคีย์เวิร์ด..." 
-          class="w-full bg-radarCard border border-radarBorder rounded-xl pl-10 pr-10 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
-        />
-        <svg class="w-4 h-4 text-gray-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-        <button id="clearSearchBtn" class="hidden absolute right-3 top-3 text-gray-400 hover:text-white">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        <button id="toggleDailyBriefBtn" class="self-start shrink-0 px-3 py-1.5 rounded-xl bg-emerald-500/15 border border-emerald-400/40 text-xs font-semibold text-emerald-200 hover:bg-emerald-500/25 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all active:scale-95 flex items-center gap-1.5">
+          <span id="toggleDailyLabel">ดู 3 เรื่องเด่น</span>
+          <svg id="toggleDailyChevron" class="w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
       </div>
+      <!-- Smooth Animated Accordion Wrapper -->
+      <div id="dailyBriefAccordion" class="accordion-grid">
+        <div class="accordion-inner">
+          <div id="dailyBriefBody" class="mt-4 pt-3.5 border-t border-emerald-500/20 space-y-2.5"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Command Filter Deck -->
+    <div class="space-y-3 mb-5">
+      <div class="relative group">
+        <div class="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-emerald-500/30 via-cyan-500/30 to-violet-500/30 opacity-0 group-focus-within:opacity-100 blur transition-opacity duration-300 pointer-events-none"></div>
+        <div class="relative">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="ค้นหาโมเดล, บริษัท, แหล่งข่าว (Bluesky, HN) หรือคีย์เวิร์ด..." 
+            class="w-full bg-radarCard/90 border border-radarBorder rounded-xl pl-11 pr-10 py-3 text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-emerald-400/60 transition-all"
+          />
+          <svg class="w-4 h-4 text-emerald-400/70 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <button id="clearSearchBtn" class="hidden absolute right-3 top-3 p-0.5 rounded-md text-gray-400 hover:text-white hover:bg-white/10 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <!-- Quick Toggles (Breaking News & Vendor Filters) -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-1 custom-scrollbar text-xs">
-        <button data-score-filter="all" class="score-pill px-3 py-1.5 rounded-full font-medium transition-all bg-emerald-500 text-gray-950 font-semibold shadow-sm shadow-emerald-500/20 whitespace-nowrap">
+      <div class="flex items-center gap-2 overflow-x-auto pb-1.5 custom-scrollbar text-xs">
+        <button data-score-filter="all" class="score-pill px-3.5 py-1.5 rounded-full font-semibold transition-all duration-200 bg-gradient-to-r from-emerald-400 to-cyan-400 text-gray-950 shadow-[0_0_16px_rgba(16,185,129,0.35)] whitespace-nowrap active:scale-95">
           ทั้งหมด
         </button>
-        <button data-score-filter="8" class="score-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-amber-500/50 hover:text-amber-300 whitespace-nowrap flex items-center gap-1.5">
-          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-          ⚡ Breaking Only (8+)
+        <button data-score-filter="8" class="score-pill px-3.5 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-amber-400/50 hover:text-amber-300 whitespace-nowrap flex items-center gap-1.5 active:scale-95">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
+          </span>
+          Breaking 8+
         </button>
 
         <div class="h-4 w-px bg-radarBorder mx-1 shrink-0"></div>
 
         <!-- Vendor Filter Pills -->
-        <button data-vendor="all" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarBorder text-white whitespace-nowrap">
-          ทุก Vendor
+        <button data-vendor="all" class="vendor-pill px-3 py-1.5 rounded-full font-semibold transition-all duration-200 bg-emerald-500/20 text-emerald-300 border border-emerald-500/50 whitespace-nowrap active:scale-95">
+          ทุกค่าย
         </button>
-        <button data-vendor="OpenAI" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+        <button data-vendor="OpenAI" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-emerald-400/40 hover:text-white whitespace-nowrap active:scale-95">
           OpenAI
         </button>
-        <button data-vendor="Anthropic" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+        <button data-vendor="Anthropic" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-emerald-400/40 hover:text-white whitespace-nowrap active:scale-95">
           Claude / Anthropic
         </button>
-        <button data-vendor="DeepSeek" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+        <button data-vendor="DeepSeek" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-emerald-400/40 hover:text-white whitespace-nowrap active:scale-95">
           DeepSeek
         </button>
-        <button data-vendor="Google" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+        <button data-vendor="Google" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-emerald-400/40 hover:text-white whitespace-nowrap active:scale-95">
           Google
         </button>
-        <button data-vendor="OpenSource" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+        <button data-vendor="OpenSource" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-emerald-400/40 hover:text-white whitespace-nowrap active:scale-95">
           OpenSource
         </button>
-        <button data-vendor="Tooling" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap">
+        <button data-vendor="Tooling" class="vendor-pill px-3 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-emerald-400/40 hover:text-white whitespace-nowrap active:scale-95">
           Tooling & Agent
         </button>
       </div>
@@ -168,42 +394,51 @@
 
     <!-- Feed Meta / Stats -->
     <div class="flex items-center justify-between text-xs text-gray-400 mb-3 px-1">
-      <span id="itemsCountDisplay">กำลังโหลดข่าว...</span>
-      <span id="lastUpdatedDisplay" class="text-[11px] text-gray-500"></span>
+      <span id="itemsCountDisplay" class="font-mono text-[11px] text-emerald-300/80">SCANNING FEED...</span>
+      <span class="font-mono text-[10px] text-gray-500 hidden sm:inline">CLICK CARD FOR DEEP INTEL</span>
     </div>
 
     <!-- News List Container -->
-    <div id="newsFeed" class="space-y-3.5">
-      <!-- Loading Skeleton Placeholder -->
-      <div class="animate-pulse space-y-3">
-        <div class="h-28 bg-radarCard/60 rounded-xl border border-radarBorder/50"></div>
-        <div class="h-28 bg-radarCard/60 rounded-xl border border-radarBorder/50"></div>
-        <div class="h-28 bg-radarCard/60 rounded-xl border border-radarBorder/50"></div>
+    <div id="newsFeed" class="space-y-4">
+      <!-- Sleek Shimmer Skeletons -->
+      <div class="animate-pulse space-y-4">
+        <div class="h-36 bg-radarCard/70 rounded-2xl border border-radarBorder/60"></div>
+        <div class="h-36 bg-radarCard/70 rounded-2xl border border-radarBorder/60"></div>
+        <div class="h-36 bg-radarCard/70 rounded-2xl border border-radarBorder/60"></div>
       </div>
     </div>
 
     <!-- Empty State -->
-    <div id="emptyState" class="hidden text-center py-16 px-4">
-      <div class="w-12 h-12 rounded-full bg-radarCard border border-radarBorder flex items-center justify-center mx-auto mb-3 text-gray-500">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <div id="emptyState" class="hidden text-center py-20 px-4">
+      <div class="w-14 h-14 rounded-2xl bg-radarCard border border-radarBorder flex items-center justify-center mx-auto mb-3 text-emerald-400/60 shadow-lg">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
       </div>
-      <p class="text-sm font-medium text-gray-300">ไม่พบข่าวที่ตรงกับเงื่อนไข</p>
-      <p class="text-xs text-gray-500 mt-1">ลองเปลี่ยนคำค้นหา หรือเลือกตัวกรองเป็น "ทั้งหมด"</p>
+      <p class="text-sm font-semibold text-gray-200">ไม่พบสัญญาณข่าวที่ตรงกับเงื่อนไข</p>
+      <p class="text-xs text-gray-500 mt-1">ลองเปลี่ยนคำค้นหา หรือกดเลือกตัวกรองเป็น "ทั้งหมด"</p>
     </div>
 
   </main>
 
-  <!-- Weekly Radar Report Modal -->
-  <div id="weeklyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
-    <div class="w-full max-w-2xl max-h-[85vh] overflow-y-auto custom-scrollbar rounded-2xl bg-radarCard border border-cyan-500/30 shadow-2xl">
-      <div class="sticky top-0 z-10 flex items-center justify-between px-5 py-4 bg-radarCard/95 backdrop-blur border-b border-radarBorder">
+  <!-- Floating Scroll-to-Top Cyber Button -->
+  <button id="scrollTopBtn" aria-label="กลับขึ้นด้านบน" class="fixed bottom-5 right-5 z-40 p-3 rounded-2xl bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 shadow-[0_0_24px_rgba(16,185,129,0.3)] hover:bg-emerald-500/30 hover:scale-110 active:scale-95 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- Futuristic Weekly Radar Report Modal -->
+  <div id="weeklyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="modal-panel w-full max-w-2xl max-h-[86vh] overflow-y-auto custom-scrollbar rounded-2xl bg-radarCard/95 border border-cyan-400/35 shadow-[0_0_60px_-15px_rgba(6,182,212,0.4)]">
+      <div class="sticky top-0 z-10 flex items-center justify-between px-5 py-4 bg-radarCard/95 backdrop-blur-md border-b border-radarBorder">
         <div>
-          <span class="text-[11px] font-semibold uppercase tracking-wider text-cyan-400">📊 Weekly Radar Report</span>
-          <h2 id="weeklyPeriod" class="text-base font-bold text-white">สรุปภาพรวมรายสัปดาห์</h2>
+          <span class="font-mono text-[10px] font-semibold uppercase tracking-widest text-cyan-400 flex items-center gap-1.5">
+            <span>📊</span> WEEKLY INTELLIGENCE REPORT
+          </span>
+          <h2 id="weeklyPeriod" class="text-base md:text-lg font-bold text-white mt-0.5">สรุปภาพรวมรายสัปดาห์</h2>
         </div>
-        <button id="closeWeeklyModalBtn" aria-label="ปิดหน้าต่าง" class="p-1.5 rounded-lg bg-black/30 border border-radarBorder text-gray-400 hover:text-white">
+        <button id="closeWeeklyModalBtn" aria-label="ปิดหน้าต่าง" class="p-2 rounded-xl bg-black/40 border border-radarBorder text-gray-400 hover:text-white hover:border-cyan-400/50 transition-all active:scale-90">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>

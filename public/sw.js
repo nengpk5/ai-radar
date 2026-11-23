@@ -1,5 +1,5 @@
 // Service Worker for AI Radar Offline-First PWA
-const CACHE_NAME = 'ai-radar-cache-v1';
+const CACHE_NAME = 'ai-radar-cache-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

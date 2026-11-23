@@ -1,4 +1,4 @@
-// public/app.js - AI & Tech News Radar Offline-First Engine
+// public/app.js - AI & Tech News Radar Futuristic Offline-First Engine
 
 const DB_NAME = 'AIRadarDB';
 const DB_VERSION = 1;
@@ -16,10 +16,14 @@ const emptyStateEl = document.getElementById('emptyState');
 const syncStatusEl = document.getElementById('syncStatus');
 const itemsCountDisplayEl = document.getElementById('itemsCountDisplay');
 const lastUpdatedDisplayEl = document.getElementById('lastUpdatedDisplay');
+const hudTotalCountEl = document.getElementById('hudTotalCount');
+const hudBreakingCountEl = document.getElementById('hudBreakingCount');
 const searchInputEl = document.getElementById('searchInput');
 const clearSearchBtnEl = document.getElementById('clearSearchBtn');
 const refreshBtnEl = document.getElementById('refreshBtn');
 const refreshIconEl = document.getElementById('refreshIcon');
+const scrollProgressEl = document.getElementById('scrollProgress');
+const scrollTopBtnEl = document.getElementById('scrollTopBtn');
 
 // 1. IndexedDB Helper Functions
 function openDB() {
@@ -43,7 +47,12 @@ async function getCachedNewsFromDB() {
       const tx = db.transaction(STORE_NAME, 'readonly');
       const store = tx.objectStore(STORE_NAME);
       const req = store.getAll();
-      req.onsuccess = () => resolve(req.result || []);
+      req.onsuccess = () => {
+        const rows = req.result || [];
+        // Keep newest first when loading from IndexedDB
+        rows.sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0));
+        resolve(rows);
+      };
       req.onerror = () => resolve([]);
     });
   } catch (err) {
@@ -57,7 +66,6 @@ async function saveNewsToDB(items) {
     const db = await openDB();
     const tx = db.transaction(STORE_NAME, 'readwrite');
     const store = tx.objectStore(STORE_NAME);
-    // Clear and batch re-insert
     store.clear();
     for (const item of items) {
       store.put(item);
@@ -85,34 +93,61 @@ function formatTimeAgo(isoString) {
   return date.toLocaleDateString('th-TH', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 }
 
-// Helper to resolve Source badge
+// Helper: Resolve Source Badge
 function getSourceBadge(item) {
   const id = item.id || '';
   const url = item.url || '';
   if (id.startsWith('bsky_') || url.includes('bsky.app')) {
-    return `<span class="px-2 py-0.5 rounded-full font-medium bg-sky-500/20 text-sky-300 border border-sky-500/30 flex items-center gap-1">🌐 Bluesky</span>`;
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-sky-500/15 text-sky-300 border border-sky-400/30 inline-flex items-center gap-1">🌐 Bluesky</span>`;
   }
   if (id.startsWith('hn_') || url.includes('ycombinator.com')) {
-    return `<span class="px-2 py-0.5 rounded-full font-medium bg-orange-500/20 text-orange-300 border border-orange-500/30 flex items-center gap-1">🔥 Hacker News</span>`;
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-orange-500/15 text-orange-300 border border-orange-400/30 inline-flex items-center gap-1">🔥 Hacker News</span>`;
   }
   if (id.startsWith('hf_') || url.includes('huggingface.co')) {
-    return `<span class="px-2 py-0.5 rounded-full font-medium bg-amber-500/20 text-amber-300 border border-amber-500/30 flex items-center gap-1">🤗 Hugging Face</span>`;
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-amber-500/15 text-amber-300 border border-amber-400/30 inline-flex items-center gap-1">🤗 Hugging Face</span>`;
   }
   if (id.startsWith('or_') || url.includes('openrouter.ai')) {
-    return `<span class="px-2 py-0.5 rounded-full font-medium bg-purple-500/20 text-purple-300 border border-purple-500/30 flex items-center gap-1">🤖 OpenRouter</span>`;
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-violet-500/15 text-violet-300 border border-violet-400/30 inline-flex items-center gap-1">🤖 OpenRouter</span>`;
   }
   if (id.startsWith('gn_') || url.includes('news.google.com') || url.includes('x.com')) {
-    return `<span class="px-2 py-0.5 rounded-full font-medium bg-blue-500/20 text-blue-300 border border-blue-500/30 flex items-center gap-1">📰 X / Web</span>`;
+    return `<span class="px-2 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300 border border-blue-400/30 inline-flex items-center gap-1">📰 X / Web</span>`;
   }
-  return `<span class="px-2 py-0.5 rounded-full font-medium bg-gray-800 text-gray-300 border border-gray-700">📡 Web</span>`;
+  return `<span class="px-2 py-0.5 rounded-full font-medium bg-gray-800/80 text-gray-300 border border-gray-700">📡 Web</span>`;
 }
 
-// 3. Render News Feed
+// Helper: Mini Signal Strength Bars (5 segments for score 5..10)
+function renderSignalMeter(score) {
+  const s = Math.max(1, Math.min(10, Number(score) || 5));
+  const activeBars = Math.ceil(s / 2);
+  let barColor = 'bg-cyan-400';
+  if (s >= 9) barColor = 'bg-rose-400 shadow-[0_0_6px_#fb7185]';
+  else if (s >= 8) barColor = 'bg-amber-400 shadow-[0_0_6px_#fbbf24]';
+  else if (s >= 7) barColor = 'bg-emerald-400 shadow-[0_0_6px_#34d399]';
+
+  let html = '<span class="inline-flex items-end gap-[2px] h-3 ml-1" title="Signal Impact">';
+  for (let i = 1; i <= 5; i++) {
+    const h = 4 + i * 1.6;
+    const cls = i <= activeBars ? barColor : 'bg-gray-700/70';
+    html += `<span class="w-[2.5px] rounded-full ${cls}" style="height:${h}px"></span>`;
+  }
+  html += '</span>';
+  return html;
+}
+
+function updateHudStats() {
+  if (hudTotalCountEl) hudTotalCountEl.textContent = allNews.length;
+  if (hudBreakingCountEl) {
+    hudBreakingCountEl.textContent = allNews.filter((n) => (n.score || 0) >= 8).length;
+  }
+}
+
+// 3. Render News Feed with Staggered Entrance & Spotlight
 function renderFeed() {
+  updateHudStats();
+
   const filtered = allNews.filter((item) => {
     const matchVendor = activeVendor === 'all' || (item.vendor && item.vendor.toLowerCase() === activeVendor.toLowerCase());
     const matchScore = (item.score || 0) >= activeMinScore;
-    
     if (!matchVendor || !matchScore) return false;
 
     if (!searchQuery) return true;
@@ -125,7 +160,7 @@ function renderFeed() {
     return title.includes(q) || summary.includes(q) || vendor.includes(q) || cat.includes(q) || id.includes(q);
   });
 
-  itemsCountDisplayEl.textContent = `พบ ${filtered.length} รายการ (จากทั้งหมด ${allNews.length})`;
+  itemsCountDisplayEl.textContent = `SHOWING ${filtered.length} / ${allNews.length} SIGNALS`;
 
   if (filtered.length === 0) {
     newsFeedEl.innerHTML = '';
@@ -135,70 +170,88 @@ function renderFeed() {
 
   emptyStateEl.classList.add('hidden');
 
-  const cardsHtml = filtered.map((item) => {
+  const cardsHtml = filtered.map((item, idx) => {
+    const score = item.score || 5;
+    const isBreaking = score >= 8;
+
     // Score Badge colors
-    let scoreBadgeStyle = 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30';
+    let scoreBadgeStyle = 'bg-cyan-500/15 text-cyan-300 border-cyan-400/35';
     let scoreIcon = '⚡';
-    if (item.score >= 9) {
-      scoreBadgeStyle = 'bg-rose-500/20 text-rose-300 border-rose-500/40 shadow-sm shadow-rose-500/20';
+    let cardAccentBorder = 'border-radarBorder hover:border-emerald-400/45';
+
+    if (score >= 9) {
+      scoreBadgeStyle = 'bg-rose-500/20 text-rose-200 border-rose-400/50 shadow-[0_0_12px_rgba(244,63,94,0.25)]';
       scoreIcon = '🔥';
-    } else if (item.score >= 8) {
-      scoreBadgeStyle = 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-sm shadow-amber-500/20';
+      cardAccentBorder = 'border-rose-500/35 hover:border-rose-400/60 breaking-scan';
+    } else if (score >= 8) {
+      scoreBadgeStyle = 'bg-amber-500/20 text-amber-200 border-amber-400/50 shadow-[0_0_12px_rgba(245,158,11,0.2)]';
       scoreIcon = '⭐';
-    } else if (item.score >= 7) {
-      scoreBadgeStyle = 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40';
+      cardAccentBorder = 'border-amber-500/30 hover:border-amber-400/55 breaking-scan';
+    } else if (score >= 7) {
+      scoreBadgeStyle = 'bg-emerald-500/15 text-emerald-300 border-emerald-400/40';
       scoreIcon = '✨';
     }
 
     // Category styling
-    let catBadgeColor = 'bg-gray-800 text-gray-300 border-gray-700';
-    if (item.category === 'Model Release') catBadgeColor = 'bg-purple-950/60 text-purple-300 border-purple-800/50';
-    if (item.category === 'Dev Tool') catBadgeColor = 'bg-blue-950/60 text-blue-300 border-blue-800/50';
-    if (item.category === 'Benchmark') catBadgeColor = 'bg-emerald-950/60 text-emerald-300 border-emerald-800/50';
-    if (item.category === 'Research') catBadgeColor = 'bg-amber-950/60 text-amber-300 border-amber-800/50';
+    let catBadgeColor = 'bg-gray-800/80 text-gray-300 border-gray-700/70';
+    if (item.category === 'Model Release') catBadgeColor = 'bg-purple-950/60 text-purple-300 border-purple-500/35';
+    if (item.category === 'Dev Tool') catBadgeColor = 'bg-blue-950/60 text-blue-300 border-blue-500/35';
+    if (item.category === 'Benchmark') catBadgeColor = 'bg-emerald-950/60 text-emerald-300 border-emerald-500/35';
+    if (item.category === 'Research') catBadgeColor = 'bg-amber-950/60 text-amber-300 border-amber-500/35';
 
     const sourceBadge = getSourceBadge(item);
+    const delayMs = Math.min(idx * 45, 450);
 
     return `
-      <article class="p-4 rounded-xl bg-radarCard border border-radarBorder hover:border-emerald-500/40 transition-all shadow-lg hover:shadow-emerald-950/20 space-y-2.5">
+      <article 
+        class="news-card rounded-2xl bg-radarCard/85 backdrop-blur-md border ${cardAccentBorder} p-4 md:p-5 shadow-xl space-y-3"
+        style="animation-delay: ${delayMs}ms"
+      >
+        ${isBreaking ? `<div class="absolute left-0 top-4 bottom-4 w-[3px] rounded-r-full ${score >= 9 ? 'bg-gradient-to-b from-rose-400 to-amber-400 shadow-[0_0_10px_#fb7185]' : 'bg-gradient-to-b from-amber-400 to-emerald-400 shadow-[0_0_10px_#fbbf24]'}"></div>` : ''}
+
         <div class="flex items-start justify-between gap-2">
           <div class="flex flex-wrap items-center gap-1.5 text-[11px]">
-            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold border ${scoreBadgeStyle}">
-              ${scoreIcon} ${item.score || 5}/10
+            <span class="font-mono inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-bold border ${scoreBadgeStyle}">
+              ${scoreIcon} ${score}/10 ${renderSignalMeter(score)}
             </span>
             ${sourceBadge}
-            <span class="px-2 py-0.5 rounded-full font-medium bg-radarBorder/80 text-gray-200 border border-gray-700/60">
+            <span class="px-2 py-0.5 rounded-full font-medium bg-white/5 text-gray-200 border border-white/10">
               ${escapeHtml(item.vendor || 'AI')}
             </span>
             <span class="px-2 py-0.5 rounded-full font-medium border ${catBadgeColor}">
               ${escapeHtml(item.category || 'Update')}
             </span>
           </div>
-          <span class="text-[11px] text-gray-400 whitespace-nowrap shrink-0">
+          <span class="font-mono text-[10px] md:text-[11px] text-gray-400 whitespace-nowrap shrink-0 pt-0.5">
             ${formatTimeAgo(item.timestamp)}
           </span>
         </div>
 
         <div>
-          <h2 class="text-sm md:text-base font-bold text-white leading-snug hover:text-emerald-300 transition-colors">
-            <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-baseline gap-1.5">
+          <h2 class="text-sm md:text-[17px] font-bold text-white leading-snug tracking-tight">
+            <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 transition-colors inline-flex items-baseline gap-1.5">
               <span>${escapeHtml(item.title_th || 'อัปเดตข่าว AI ใหม่')}</span>
             </a>
           </h2>
         </div>
 
-        <p class="text-xs md:text-sm text-gray-300 leading-relaxed bg-black/20 p-2.5 rounded-lg border border-radarBorder/40">
+        <p class="text-xs md:text-sm text-gray-300/95 leading-relaxed bg-black/30 p-3 rounded-xl border border-white/5">
           ${escapeHtml(item.summary_th || '')}
         </p>
 
         ${item.deep_dive_th ? `
-        <div id="deepdive-${escapeHtml(item.id)}" class="hidden p-3 rounded-lg bg-emerald-950/25 border border-emerald-500/30 space-y-2 text-xs text-gray-200 leading-relaxed">
-          <div class="font-semibold text-emerald-300 text-[11px] uppercase tracking-wider flex items-center gap-1.5">
-            <span>🔬 Technical Deep-Dive</span>
+        <div id="deepdive-${escapeHtml(item.id)}" class="accordion-grid">
+          <div class="accordion-inner">
+            <div class="p-3.5 rounded-xl bg-gradient-to-br from-emerald-950/40 via-black/40 to-cyan-950/30 border border-emerald-400/30 space-y-2.5 text-xs text-gray-200 leading-relaxed">
+              <div class="font-mono font-semibold text-emerald-300 text-[10px] uppercase tracking-widest flex items-center gap-1.5">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                TECHNICAL DEEP-DIVE // AI ENGINEER BRIEF
+              </div>
+              <div class="p-2 rounded-lg bg-black/25 border border-white/5"><span class="text-cyan-300 font-semibold">⚙️ จุดเด่นทางเทคนิค:</span> ${escapeHtml(item.deep_dive_th.highlights)}</div>
+              <div class="p-2 rounded-lg bg-black/25 border border-white/5"><span class="text-amber-300 font-semibold">⚖️ ข้อดี / ข้อควรระวัง:</span> ${escapeHtml(item.deep_dive_th.pros_cons)}</div>
+              <div class="p-2 rounded-lg bg-black/25 border border-white/5"><span class="text-emerald-300 font-semibold">🚀 แนวทางเอาไปใช้จริง:</span> ${escapeHtml(item.deep_dive_th.actionable)}</div>
+            </div>
           </div>
-          <div><span class="text-cyan-300 font-semibold">⚙️ จุดเด่นทางเทคนิค:</span> ${escapeHtml(item.deep_dive_th.highlights)}</div>
-          <div><span class="text-amber-300 font-semibold">⚖️ ข้อดี / ข้อควรระวัง:</span> ${escapeHtml(item.deep_dive_th.pros_cons)}</div>
-          <div><span class="text-emerald-300 font-semibold">🚀 แนวทางเอาไปใช้จริง:</span> ${escapeHtml(item.deep_dive_th.actionable)}</div>
         </div>
         ` : ''}
 
@@ -207,10 +260,10 @@ function renderFeed() {
             href="${escapeHtml(item.url)}" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
+            class="group inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
           >
             <span>อ่านต้นฉบับ</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
@@ -218,7 +271,7 @@ function renderFeed() {
           <button
             type="button"
             data-deepdive-target="deepdive-${escapeHtml(item.id)}"
-            class="deepdive-toggle-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-500/20 font-medium transition-all"
+            class="deepdive-toggle-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-500/15 border border-emerald-400/35 text-emerald-200 hover:bg-emerald-500/25 hover:shadow-[0_0_14px_rgba(16,185,129,0.28)] font-semibold transition-all active:scale-95"
           >
             <span>🔍 อ่านวิเคราะห์เจาะลึก</span>
           </button>
@@ -230,13 +283,22 @@ function renderFeed() {
 
   newsFeedEl.innerHTML = cardsHtml;
 
-  // Bind Deep-Dive toggles
+  // Bind Smooth Deep-Dive Accordions
   newsFeedEl.querySelectorAll('.deepdive-toggle-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const target = document.getElementById(btn.dataset.deepdiveTarget);
       if (!target) return;
-      const isHidden = target.classList.toggle('hidden');
-      btn.innerHTML = isHidden ? '<span>🔍 อ่านวิเคราะห์เจาะลึก</span>' : '<span>ซ่อนวิเคราะห์เจาะลึก ▴</span>';
+      const isOpen = target.classList.toggle('open');
+      btn.innerHTML = isOpen ? '<span>ซ่อนวิเคราะห์เจาะลึก ▴</span>' : '<span>🔍 อ่านวิเคราะห์เจาะลึก</span>';
+    });
+  });
+
+  // Bind Interactive Cursor Spotlight on Desktop Cards
+  newsFeedEl.querySelectorAll('.news-card').forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+      card.style.setProperty('--my', `${e.clientY - rect.top}px`);
     });
   });
 }
@@ -255,7 +317,7 @@ function escapeHtml(str) {
 async function fetchLatestNews(isManual = false) {
   if (isManual) {
     refreshIconEl.classList.add('animate-spin');
-    syncStatusEl.textContent = 'กำลังดึงข้อมูลล่าสุด...';
+    syncStatusEl.textContent = 'SYNCING LIVE FEEDS...';
   }
 
   const githubRawUrl = `https://raw.githubusercontent.com/nengpk5/ai-radar/main/public/data/news.json?t=${Date.now()}`;
@@ -279,19 +341,19 @@ async function fetchLatestNews(isManual = false) {
       await saveNewsToDB(allNews);
       renderFeed();
 
-      syncStatusEl.textContent = 'ข้อมูลสดล่าสุด (Online)';
+      syncStatusEl.textContent = 'ONLINE // REAL-TIME FEED ACTIVE';
       if (allNews[0] && allNews[0].timestamp) {
-        lastUpdatedDisplayEl.textContent = `อัปเดต: ${new Date(allNews[0].timestamp).toLocaleTimeString('th-TH')}`;
+        lastUpdatedDisplayEl.textContent = `UPDATED ${new Date(allNews[0].timestamp).toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit' })}`;
       }
     } else {
       if (allNews.length === 0) {
-        itemsCountDisplayEl.textContent = 'ยังไม่มีข้อมูลข่าว (กำลังรอรอบวิเคราะห์)';
+        itemsCountDisplayEl.textContent = 'NO SIGNALS YET';
       }
-      syncStatusEl.textContent = 'เชื่อมต่อแล้ว';
+      syncStatusEl.textContent = 'CONNECTED';
     }
   } catch (err) {
     console.warn('Network fetch error, running offline:', err);
-    syncStatusEl.textContent = 'โหมดออฟไลน์ (จากแคชในเครื่อง)';
+    syncStatusEl.textContent = 'OFFLINE // SERVING LOCAL CACHE';
   } finally {
     if (isManual) {
       setTimeout(() => {
@@ -307,9 +369,9 @@ function setupListeners() {
   document.querySelectorAll('.vendor-pill').forEach((btn) => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.vendor-pill').forEach((b) => {
-        b.className = 'vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 hover:border-emerald-500/40 whitespace-nowrap';
+        b.className = 'vendor-pill px-3 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-emerald-400/40 hover:text-white whitespace-nowrap active:scale-95';
       });
-      btn.className = 'vendor-pill px-3 py-1.5 rounded-full font-medium transition-all bg-emerald-500/20 text-emerald-300 border border-emerald-500/50 whitespace-nowrap font-semibold';
+      btn.className = 'vendor-pill px-3 py-1.5 rounded-full font-semibold transition-all duration-200 bg-emerald-500/20 text-emerald-300 border border-emerald-400/60 shadow-[0_0_12px_rgba(16,185,129,0.2)] whitespace-nowrap active:scale-95';
       activeVendor = btn.dataset.vendor;
       renderFeed();
     });
@@ -319,9 +381,9 @@ function setupListeners() {
   document.querySelectorAll('.score-pill').forEach((btn) => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.score-pill').forEach((b) => {
-        b.className = 'score-pill px-3 py-1.5 rounded-full font-medium transition-all bg-radarCard border border-radarBorder text-gray-300 whitespace-nowrap';
+        b.className = 'score-pill px-3.5 py-1.5 rounded-full font-medium transition-all duration-200 bg-radarCard/80 border border-radarBorder text-gray-300 hover:border-amber-400/50 hover:text-amber-300 whitespace-nowrap flex items-center gap-1.5 active:scale-95';
       });
-      btn.className = 'score-pill px-3 py-1.5 rounded-full font-medium transition-all bg-emerald-500 text-gray-950 font-semibold shadow-sm shadow-emerald-500/20 whitespace-nowrap';
+      btn.className = 'score-pill px-3.5 py-1.5 rounded-full font-semibold transition-all duration-200 bg-gradient-to-r from-emerald-400 to-cyan-400 text-gray-950 shadow-[0_0_16px_rgba(16,185,129,0.35)] whitespace-nowrap flex items-center gap-1.5 active:scale-95';
       activeMinScore = btn.dataset.scoreFilter === '8' ? 8 : 5;
       renderFeed();
     });
@@ -330,11 +392,7 @@ function setupListeners() {
   // Search input
   searchInputEl.addEventListener('input', (e) => {
     searchQuery = e.target.value.trim();
-    if (searchQuery) {
-      clearSearchBtnEl.classList.remove('hidden');
-    } else {
-      clearSearchBtnEl.classList.add('hidden');
-    }
+    clearSearchBtnEl.classList.toggle('hidden', !searchQuery);
     renderFeed();
   });
 
@@ -351,17 +409,20 @@ function setupListeners() {
     fetchDigests();
   });
 
-  // Daily Briefing toggle
+  // Daily Briefing Smooth Accordion
   const toggleDailyBtn = document.getElementById('toggleDailyBriefBtn');
-  const dailyBody = document.getElementById('dailyBriefBody');
-  if (toggleDailyBtn && dailyBody) {
+  const dailyAccordion = document.getElementById('dailyBriefAccordion');
+  const toggleDailyLabel = document.getElementById('toggleDailyLabel');
+  const toggleDailyChevron = document.getElementById('toggleDailyChevron');
+  if (toggleDailyBtn && dailyAccordion) {
     toggleDailyBtn.addEventListener('click', () => {
-      const isHidden = dailyBody.classList.toggle('hidden');
-      toggleDailyBtn.textContent = isHidden ? 'ดู 3 เรื่องเด่น ▾' : 'ซ่อน ▴';
+      const isOpen = dailyAccordion.classList.toggle('open');
+      if (toggleDailyLabel) toggleDailyLabel.textContent = isOpen ? 'ซ่อนรายละเอียด' : 'ดู 3 เรื่องเด่น';
+      if (toggleDailyChevron) toggleDailyChevron.classList.toggle('rotate-180', isOpen);
     });
   }
 
-  // Weekly Report Modal controls
+  // Weekly Report Modal controls + Escape key
   const weeklyBtn = document.getElementById('weeklyReportBtn');
   const weeklyModal = document.getElementById('weeklyModal');
   const closeWeeklyBtn = document.getElementById('closeWeeklyModalBtn');
@@ -371,7 +432,29 @@ function setupListeners() {
     weeklyModal.addEventListener('click', (e) => {
       if (e.target === weeklyModal) weeklyModal.classList.add('hidden');
     });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') weeklyModal.classList.add('hidden');
+    });
   }
+
+  // Scroll Progress Bar + Back to Top Button
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
+    if (scrollProgressEl) scrollProgressEl.style.width = `${pct}%`;
+
+    if (scrollTopBtnEl) {
+      const show = scrollTop > 320;
+      scrollTopBtnEl.classList.toggle('opacity-0', !show);
+      scrollTopBtnEl.classList.toggle('translate-y-4', !show);
+      scrollTopBtnEl.classList.toggle('pointer-events-none', !show);
+    }
+  }, { passive: true });
+
+  scrollTopBtnEl?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 }
 
 // 5.5 Daily Briefing & Weekly Report Helpers
@@ -402,14 +485,14 @@ function renderDailyBrief(brief) {
 
   const stories = Array.isArray(brief.top_stories) ? brief.top_stories : [];
   bodyEl.innerHTML = stories.map((s, idx) => `
-    <div class="p-2.5 rounded-lg bg-black/30 border border-radarBorder/60 space-y-1">
+    <div class="p-3 rounded-xl bg-black/35 border border-white/10 hover:border-emerald-400/40 transition-colors space-y-1">
       <div class="flex items-center justify-between gap-2">
-        <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-emerald-300 hover:underline">
+        <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer" class="text-xs md:text-sm font-bold text-emerald-300 hover:underline">
           ${idx + 1}. ${escapeHtml(s.title_th)}
         </a>
-        <span class="text-[10px] px-1.5 py-0.5 rounded bg-radarBorder text-gray-300 shrink-0">${escapeHtml(s.vendor || 'AI')}</span>
+        <span class="font-mono text-[10px] px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-gray-300 shrink-0">${escapeHtml(s.vendor || 'AI')}</span>
       </div>
-      <p class="text-xs text-gray-300 leading-relaxed">${escapeHtml(s.why_it_matters || '')}</p>
+      <p class="text-xs text-gray-300/90 leading-relaxed">${escapeHtml(s.why_it_matters || '')}</p>
     </div>
   `).join('');
 
@@ -426,36 +509,36 @@ function renderWeeklyReport(report) {
   periodEl.textContent = report.period_th || 'สรุปภาพรวมรายสัปดาห์';
 
   const modelsHtml = (report.top_models || []).map((m) => `
-    <div class="p-3 rounded-xl bg-black/30 border border-radarBorder space-y-1">
+    <div class="p-3.5 rounded-xl bg-black/35 border border-white/10 hover:border-purple-400/40 transition-colors space-y-1.5">
       <div class="flex items-center justify-between gap-2">
         <a href="${escapeHtml(m.url)}" target="_blank" rel="noopener noreferrer" class="font-bold text-emerald-300 hover:underline text-xs md:text-sm">${escapeHtml(m.name)}</a>
-        <span class="text-[10px] px-2 py-0.5 rounded-full bg-purple-950/60 text-purple-300 border border-purple-800/50">${escapeHtml(m.vendor || '')}</span>
+        <span class="font-mono text-[10px] px-2 py-0.5 rounded-full bg-purple-500/15 text-purple-300 border border-purple-400/35">${escapeHtml(m.vendor || '')}</span>
       </div>
       <p class="text-xs text-gray-300 leading-relaxed">${escapeHtml(m.takeaway_th || '')}</p>
     </div>
   `).join('');
 
   const toolsHtml = (report.top_tools || []).map((t) => `
-    <div class="p-3 rounded-xl bg-black/30 border border-radarBorder space-y-1">
+    <div class="p-3.5 rounded-xl bg-black/35 border border-white/10 hover:border-cyan-400/40 transition-colors space-y-1">
       <a href="${escapeHtml(t.url)}" target="_blank" rel="noopener noreferrer" class="font-bold text-cyan-300 hover:underline text-xs md:text-sm">${escapeHtml(t.name)}</a>
       <p class="text-xs text-gray-300 leading-relaxed">${escapeHtml(t.takeaway_th || '')}</p>
     </div>
   `).join('');
 
   const vendorsHtml = (report.vendor_highlights || []).map((v) => `
-    <div class="p-2.5 rounded-lg bg-black/25 border border-radarBorder/70">
-      <div class="text-xs font-bold text-white mb-0.5">${escapeHtml(v.vendor)}</div>
-      <p class="text-xs text-gray-300 leading-relaxed">${escapeHtml(v.summary_th)}</p>
+    <div class="p-3 rounded-xl bg-black/30 border border-white/10 hover:border-emerald-400/35 transition-colors">
+      <div class="font-display text-xs font-bold text-white mb-1">${escapeHtml(v.vendor)}</div>
+      <p class="text-xs text-gray-300/90 leading-relaxed">${escapeHtml(v.summary_th)}</p>
     </div>
   `).join('');
 
   contentEl.innerHTML = `
-    <div class="p-3.5 rounded-xl bg-cyan-950/30 border border-cyan-500/30 text-xs md:text-sm text-gray-200 leading-relaxed">
+    <div class="p-4 rounded-xl bg-gradient-to-r from-cyan-950/50 to-emerald-950/40 border border-cyan-400/30 text-xs md:text-sm text-gray-100 leading-relaxed">
       ${escapeHtml(report.executive_summary_th)}
     </div>
-    ${modelsHtml ? `<div class="space-y-2"><h3 class="text-xs font-bold uppercase tracking-wider text-purple-300">🤖 โมเดลเด่นประจำสัปดาห์</h3>${modelsHtml}</div>` : ''}
-    ${toolsHtml ? `<div class="space-y-2"><h3 class="text-xs font-bold uppercase tracking-wider text-cyan-300">🛠️ เครื่องมือ & Dev Tool น่าลอง</h3>${toolsHtml}</div>` : ''}
-    ${vendorsHtml ? `<div class="space-y-2"><h3 class="text-xs font-bold uppercase tracking-wider text-emerald-300">🏢 ความเคลื่อนไหวแยกตามค่าย</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-2">${vendorsHtml}</div></div>` : ''}
+    ${modelsHtml ? `<div class="space-y-2.5"><h3 class="font-mono text-[11px] font-bold uppercase tracking-widest text-purple-300">🤖 โมเดลเด่นประจำสัปดาห์</h3>${modelsHtml}</div>` : ''}
+    ${toolsHtml ? `<div class="space-y-2.5"><h3 class="font-mono text-[11px] font-bold uppercase tracking-widest text-cyan-300">🛠️ เครื่องมือ & Dev Tool น่าลอง</h3>${toolsHtml}</div>` : ''}
+    ${vendorsHtml ? `<div class="space-y-2.5"><h3 class="font-mono text-[11px] font-bold uppercase tracking-widest text-emerald-300">🏢 ความเคลื่อนไหวแยกตามค่าย</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">${vendorsHtml}</div></div>` : ''}
   `;
 
   btn.classList.remove('hidden');
@@ -504,7 +587,7 @@ async function init() {
   const cached = await getCachedNewsFromDB();
   if (cached && cached.length > 0) {
     allNews = cached;
-    syncStatusEl.textContent = 'โหลดจากหน่วยความจำแคช';
+    syncStatusEl.textContent = 'CACHE LOADED // SYNCING...';
     renderFeed();
   }
 
