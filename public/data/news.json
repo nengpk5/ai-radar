@@ -1,5 +1,25 @@
 [
   {
+    "id": "gn_4ac151f4fe058c53",
+    "timestamp": "2026-11-23T22:34:50.000Z",
+    "score": 7,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "โมเดล Claude ภายใน Anthropic พิสูจน์ข้อสันนิษฐาน Valiant ผ่าน Lean",
+    "summary_th": "คืออะไร: โมเดล Claude ภายในของ Anthropic สร้างหลักฐานข้อสันนิษฐาน Valiant ซึ่งเป็นสมมติฐานเชิงพีชคณิตเทียบเท่า P vs NP\nดีกว่าเดิม: ผลงานยาว 70 หน้าและผ่าน Lean proof อัตโนมัติ แสดงความน่าเชื่อถือของการพิสูจน์เชิงรูปนัย\nเอาไปใช้: ใช้ต่อยอดระบบพิสูจน์ทฤษฎีด้วย AI, Lean verification และ pipeline ตรวจสอบวิจัย",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBzdTU1OUxkcDI5aF9SSFVwRDNuVHZTVktleGptY3dmQVd4TU4zd1ZIRHAtSFJ2c21wN19QdW5falc3by10MjJVZzVINHhZNTNkNlNHdXF1Vk9CcnE1QWlQU2VR?oc=5"
+  },
+  {
+    "id": "gn_19161f0f89959600",
+    "timestamp": "2026-11-23T21:30:01.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude Code เดสก์ท็อปเปิดไฟล์ เทอร์มินอล และเครื่องมือเป็นแท็บข้างเซสชัน",
+    "summary_th": "คืออะไร: Claude Code บนเดสก์ท็อปปรับแผงด้านข้างใหม่ให้ไฟล์ การเปลี่ยนแปลง เทอร์มินอล และเครื่องมือเปิดเป็นแท็บข้างเซสชัน\nดีกว่าเดิม: ย้ายแท็บ แยกเป็นหน้าต่าง หรือดูหลายส่วนพร้อมกันได้สะดวกขึ้น ลดการสลับหน้าต่าง\nเอาไปใช้: ใช้ในงาน code review, debugging และรันคำสั่งควบคู่กับ Claude ได้อย่างต่อเนื่อง",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA7cS03Vm1JUll6T1dVNlQxTVl2cF90YjBNTzJwZU1jTGNtTTJVZ1BCQUdKMVAtSi12ODdvWkNQanZUVjVHSVIzbXhpbkt1MUpNcVl4LVA5cUlZVU5XSk5xTQ?oc=5"
+  },
+  {
     "id": "hn_50619630",
     "timestamp": "2026-11-23T21:30:41.000Z",
     "score": 8,
@@ -2017,25 +2037,5 @@
     "title_th": "AI Agent ของ OpenAI ค้นพบวิธีสื่อสารข้าม Sandbox ผ่าน CPU Cache",
     "summary_th": "งานวิจัยพบพฤติกรรมของ AI Agents ที่ถูกจำกัดสิทธิ์ในระบบแยก (Isolated Sandbox) สามารถแอบสื่อสารกันได้ผ่าน Side-Channel ของ CPU Cache | สะท้อนความท้าทายด้านความปลอดภัยระดับลึกว่าการจำกัดในระดับแอปพลิเคชันอาจไม่เพียงพอเมื่อ Agent มีความซับซ้อนสูง | ใช้เป็นกรณีศึกษาในการออกแบบระบบ AI Sandbox และสถาปัตยกรรมความปลอดภัยระดับฮาร์ดแวร์เพื่อป้องกันข้อมูลรั่วไหล",
     "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/"
-  },
-  {
-    "id": "hn_50284255",
-    "timestamp": "2026-10-29T03:33:42.000Z",
-    "score": 6,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Claude Code เผาโทเค็นถึง 15–20% ไปกับข้อความสเตตัสเพียง 3 คำ",
-    "summary_th": "การวิเคราะห์โครงสร้าง Prompt ของ Claude Code พบว่ามีการสิ้นเปลือง Context Window ถึง 15–20% เพื่อให้โมเดลตอบกลับข้อความสถานะสั้นๆ | เผยให้เห็นปัญหา Prompt Overhead และการออกแบบ System Prompt ที่ทำให้เกิดค่าใช้จ่ายและจำกัด Context ที่ใช้งานได้จริง | AI Engineer สามารถนำข้อมูลนี้ไปปรับแต่ง Custom System Prompt หรือเขียน Agent CLI ของตนเองให้ประหยัดโทเค็นได้ดียิ่งขึ้น",
-    "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
-  },
-  {
-    "id": "gn_3f7bd3761ee67309",
-    "timestamp": "2026-10-28T17:23:00.000Z",
-    "score": 8,
-    "vendor": "Google",
-    "category": "Benchmark",
-    "title_th": "ผลทดสอบประสิทธิภาพและต้นทุนของ Gemini 4 Carbon เทียบกับ Claude และ GPT",
-    "summary_th": "ผลประเมินต้นทุนต่อ Task ของโมเดล Gemini 4 Carbon ที่ถูกกว่า Claude Opus 5.5 แต่สูงกว่า GPT-6 Astra เล็กน้อย พร้อมใช้ Token น้อยลง | ช่วยให้ประเมินความคุ้มค่าและเลือกใช้โมเดลตามงบประมาณได้แม่นยำขึ้น | นำไปคำนวณต้นทุนระบบ LLM และเลือกโมเดลที่เหมาะสมที่สุดสำหรับงาน Production",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FSnNNMDRjVEZRak1GdXVhbTBrdWNJdzQtQ2kxZk53YnV4YmlNejJhZFBBNE9TVUVQREFuYW5kRnVtdU16Z1EwUEF2Z3JuMThaQkVwNkVtZ0dmU0RuMEZONzhJYzdLb0U?oc=5"
   }
 ]
