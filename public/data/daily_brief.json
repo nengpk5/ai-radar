@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-23T12:41:43.629Z",
-  "date_th": "23 พ.ย. 2569",
-  "headline_th": "Gemini 4 ปูทางโมเดลยุคใหม่ ขณะ OpenAI และ Anthropic เดินหน้าเครื่องมือ Agentic AI สำหรับวิศวกร",
-  "trend_th": "วันนี้โฟกัสที่การเปรียบเทียบประสิทธิภาพโมเดลตระกูล Gemini 4 พร้อมความคืบหน้าการฝึก Pretraining ของ OpenAI และฟีเจอร์ Code Mode ของ Anthropic ที่เน้นสร้าง AI Agent ซับซ้อนได้ง่ายขึ้น แนวโน้มคือการเลือกใช้โมเดลอย่างเหมาะสมกับงานและเร่งพัฒนาระบบอัตโนมัติแบบ Agentic",
+  "generated_at": "2026-11-24T10:12:23.105Z",
+  "date_th": "24 พ.ย. 2569",
+  "headline_th": "AI เร่งเข้าสู่สนาม DevSecOps: โมเดลรุ่นใหม่ รีวิว PR อัตโนมัติ และ eBPF ป้องกันช่องโหว่",
+  "trend_th": "เทรนด์หลักคือ AI ถูกดันเข้าไปอยู่ในลูปทำงานจริง ทั้งการเขียนโค้ด รีวิว/อนุมัติ PR และ auto-remediation ด้านความปลอดภัย วิศวกรควรออกแบบ guardrail, policy approval และ telemetry ตั้งแต่ขั้นตอน integrate เข้ากับ CI/CD",
   "top_stories": [
     {
-      "title_th": "เปรียบเทียบตระกูล Gemini 4 ทุกรุ่นย่อย",
-      "why_it_matters": "ช่วยให้วิศวกร AI เลือกโมเดล Carbon, Neon หรือ Hydrogen ให้เหมาะกับงานและต้นทุน พร้อมปรับระดับ Reasoning Effort ได้แม่นยำขึ้นก่อน Deploy จริง",
+      "title_th": "Google เปิดตัว Gemini 4 Neon โฟกษงานเขียนโค้ดและวิเคราะห์เชิงลึก",
+      "why_it_matters": "โมเดลรุ่นใหม่ที่พัฒนาเพื่องาน coding และการวิเคราะห์องค์กรโดยตรงมีโอกาสส่งผลต่อการเลือก backend ของ AI coding assistant และระบบวิเคราะห์ข้อมูล วิศวกรควรทดสอบเทียบคุณภาพ ค่าใช้จ่าย และ integration ในงานจริงก่อนตัดสินใจเปลี่ยนผ่าน",
       "vendor": "Google",
-      "url": "https://bsky.app/profile/simonwillison.net/post/3n2ttinqjkc27"
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tMGpOVVpWR1NfUURuQzUzanpyN3ZLNTJGZDllYmlsWmVGbDZobVR2NUdRRm1mSmdiV2htNnV5X3plRjktaEN3TmZoNl9WM3NYSlN5eVZta3hZUUk?oc=5"
     },
     {
-      "title_th": "OpenAI เผย Pretraining Loss Curves และความคืบหน้าโมเดล 2026",
-      "why_it_matters": "เปิดเผยทิศทางขีดความสามารถ LLM รุ่นถัดไปจากพลังคำนวณและ AI ช่วยพัฒนาตัวเอง วิศวกรสามารถใช้คาดการณ์เทคโนโลยีและเตรียมระบบให้รองรับโมเดลยุคใหม่ได้",
-      "vendor": "OpenAI",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SMU56VGhtNVZpT2tDMWJEUXlyZlNYQmVTYVJWQl9PSkMwY2k2aVJ0UGpsM1JrTUZCb25yY3dKSHp0TGxDNF9BNXZIQldQeFdSR3lUV3BCeU1yODJXQVhlNWtB?oc=5"
-    },
-    {
-      "title_th": "Anthropic เปิดตัว Code Mode ใน Claude Code",
-      "why_it_matters": "ช่วยให้โมเดลประมวลผลคำสั่งหลายขั้นตอนผ่านโค้ดได้เร็วขึ้น ใช้ Context คุ้มค่า และลด Latency เหมาะสำหรับสร้าง AI Agent หรือระบบ Automation ขั้นสูงได้ดียิ่งขึ้น",
+      "title_th": "Anthropic เปิดตัว Claude Ship ให้จัดการ Pull Request แบบครบวงจร",
+      "why_it_matters": "Claude Ship ทำให้ AI สามารถรีวิว แก้ไข และช่วยอนุมัติ PR ตามกฎของทีม ซึ่งเปลี่ยน AI จากแชทช่วยงานให้กลายเป็นส่วนหนึ่งของลูป delivery ทีมควรกำหนดนโยบายสิทธิ์ การอนุมัติ และการตรวจสอบย้อนกลับก่อนต่อกับ CI/CD เพื่อควบคุมความเสี่ยง",
       "vendor": "Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tZE56THpyQlo1cDlnX3NONGI5THkxbndvRE14R21lcUJvemlWVHV0NHdNNnM2cHlvSW5Zb1FhR0xtRmxOVmVsejdQZkxoLVlJQ2ttYkRZRjBTTEhTQV80VQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5GNlUzNi1Vd0xSUFpXWEhOeTJyNVFrOWFCMUhIS2w4RjJjbl9nWC1RS1lNWGtVZ3pwMEdKbVdvME5MT0lZRUxhazkzVnh3RWtmZVN1dmdpREZha2U3bURVMg?oc=5"
+    },
+    {
+      "title_th": "OpenAI และ Cisco เปิดตัว Shirudo ใช้ eBPF ป้องกันช่องโหว่แบบเรียลไทม์",
+      "why_it_matters": "การให้ AI สร้างกฎ eBPF เพื่อป้องกันช่องโหว่ได้ทันทีช่วยเปิดแนวทาง auto-remediation และ runtime security แบบใหม่ วิศวกรควรพิจารณานำไปต่อยอดในระบบที่มี guardrail การตรวจสอบการกระทำ และ incident response ที่ชัดเจน",
+      "vendor": "OpenAI",
+      "url": "https://openai.com/index/introducing-shirudo/"
     }
   ],
-  "model_used": "nvidia/nemotron-3.5-super-vl:free"
+  "model_used": "baidu/ernie-5.5-flash-preview:free"
 }
