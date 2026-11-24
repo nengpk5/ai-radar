@@ -1,5 +1,60 @@
 [
   {
+    "id": "hn_50619630",
+    "timestamp": "2026-11-23T21:30:41.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI และ Cisco เปิดตัว Shirudo รันไทม์ eBPF ป้องกันช่องโหว่ Linux",
+    "summary_th": "รันไทม์โอเพนซอร์สที่เปิดให้ AI เอเจนต์สามารถเขียนกฎ eBPF แบบไดนามิกเพื่อป้องกันระบบจากช่องโหว่บน Linux ได้ทันทีโดยไม่ต้องรีบูต ช่วยซื้อเวลาให้ทีมเดฟทดสอบและแพตช์ระบบอย่างปลอดภัย | นำไปประยุกต์ใช้สร้างระบบ Auto-Remediation และความปลอดภัยคลาวด์",
+    "url": "https://openai.com/index/introducing-shirudo/",
+    "deep_dive_th": {
+      "highlights": "Shirudo เปลี่ยนการป้องกันช่องโหว่ Linux จากการแพตช์แบบสแตติกที่ต้องรีบูต ไปสู่ eBPF runtime ที่ทำให้ AI เอเจนต์สามารถเขียนและอัปเดตกฎป้องกันในเคอร์เนลแบบไดนามิกได้ทันที โดยใช้ Cisco เป็นพันธมิตรเชิงสถาปัตยกรรมเครือข่ายและคลาวด์ ถือเป็นการผสาน AI agent เข้ากับชั้น runtime security อย่างเป็นระบบมากกว่าการแนบคำสั่งแพตช์แบบมืออาชีพ",
+      "pros_cons": "ข้อดีคือช่วยซื้อเวลาให้ทีม DevOps/Cloud แพตช์ระบบโดยไม่กระทบชื่อ service ลดหน้าต่างโจมตีระหว่างรอ hotfix และใช้ eBPF ตรวจสอบ/บล็อกพฤติกรรมที่ผิดปกติได้ในระดับเคอร์เนลด้วย overhead ต่ำ แต่ควรระวังว่า AI ที่สร้างกฎ eBPF อัตโนมัติต้องผ่านการ audit, test และ least-privilege อย่างเข้มงวด เพื่อกฎที่ผิดพลาดหรือกว้างเกินไปอาจกระทบ availability หรือสร้างความเสี่ยงด้านความปลอดภัยได้หากควบคุมสคริปต์และ privilege ไม่ดี",
+      "actionable": "เริ่มนำไปใช้เป็น Auto-Remediation layer ในสภาพแวดล้อม non-prod หรือจุด canary ก่อน โดยเชื่อมสัญญาณ CVE/ความผิดปกติจาก SIEM หรือ runtime detector เข้ากับ AI agent เพื่อสร้างกฎ eBPF ชั่วคราวและบล็อกพฤติกรรมที่เกี่ยวข้อง จากนั้นวัดผลแล้วอัปเดตกฎอย่างเป็นระบบผ่าน CI/CD และ audit trail เพื่อต่อยอดเป็น runtime guardrail สำหรับคลาวด์และ workload สำคัญบนระบบ Linux"
+    }
+  },
+  {
+    "id": "gn_1845c8122a661ed4",
+    "timestamp": "2026-11-23T20:44:12.000Z",
+    "score": 9,
+    "vendor": "Google",
+    "category": "Model Release",
+    "title_th": "Google เปิดตัวโมเดลตระกูลใหม่ Gemini 4 Neon เน้นงานเขียนโค้ดและวิเคราะห์เชิงลึก",
+    "summary_th": "โมเดลใหม่ในตระกูล Gemini ที่ออกแบบมาเพื่อการเขียนโค้ดซับซ้อน การให้เหตุผลเชิงวิเคราะห์ และเวิร์กโฟลว์ระดับองค์กรโดยเฉพาะ | ประสิทธิภาพสูงและแม่นยำกว่ารุ่นก่อนหน้าในงานฝั่ง Developer | นำไปใช้พัฒนา AI Assistant สำหรับงาน Coding และ Data Analysis ระดับองค์กร",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tMGpOVVpWR1NfUURuQzUzanpyN3ZLNTJGZDllYmlsWmVGbDZobVR2NUdRRm1mSmdiV2htNnV5X3plRjktaEN3TmZoNl9WM3NYSlN5eVZta3hZUUk?oc=5",
+    "deep_dive_th": {
+      "highlights": "Gemini 4 Neon จุดเน้นคือการเขียนโค้ดที่ซับซ้อน การให้เหตุผลเชิงวิเคราะห์ และเวิร์กโฟลว์ระดับองค์กร ซึ่งชี้ว่าทิศทางการปรับปรุงหลักอยู่ที่การเข้าใจบริบทของโค้ด การ debug และ data analysis มากกว่าภาษาธรรมชาติทั่วไป แนวโน้มนี้หมายความว่าโมเดลอาจถูกออกแบบมาให้ทำงานร่วมกับเครื่องมือและโครงสร้างข้อมูลระบบมากขึ้น จุดเปลี่ยนสำคัญจึงอยู่ที่ความเชื่อถือได้ในงานวิศวกรรมซอฟต์แวร์และการวิเคราะห์ข้อมูล ไม่ใช่เพียงคะแนน benchmark เพียงอย่างเดียว",
+      "pros_cons": "ข้อดีคือเหมาะกับงาน AI Assistant สำหรับทีม Developer และทีม Data โดยเฉพาะงานที่ต้องการอ่านโค้ดขนาดใหญ่ ให้เหตุผลตามขั้นตอน และอธิบายผลลัพธ์ได้เชิงวิเคราะห์ สิ่งที่ควรระวังคือประสิทธิภาพและความแม่นยำต้องเปิดตรวจสอบบนข้อมูลภายในองค์กรจริง เพราะโค้ดเอกชนมีความซับซ้อนเฉพาะตัว รวมถึง rủi ro เรื่องการอ้างอิงห้องสมุดที่ไม่ถูกต้อง และ data leakage หากต่อกับระบบภายในโดยไม่มีแยกสิทธิ์",
+      "actionable": "เริ่มจากสร้าง prototype โดยให้ Gemini 4 Neon ช่วย code review อัตโนมัติ อธิบาย dependency และแนะนำ patch โดยใช้ RAG บนเอกสารภายในขององค์กร จากนั้นทำ benchmark เปรียบเทียบกับโมเดลเดิมด้วยชุดงานจริง เช่น bug fixing, unit test generation และ data analysis บน dataset เอกชน ควรมี evaluation framework ที่นิยาม pass rate, false positive และ security check ก่อนนำไปใช้ใน production"
+    }
+  },
+  {
+    "id": "gn_8e87d29a1e453f89",
+    "timestamp": "2026-11-23T20:16:08.000Z",
+    "score": 9,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Anthropic เปิดตัว Claude Ship ช่วยจัดการ Pull Request แบบครบวงจร",
+    "summary_th": "เครื่องมือใหม่ที่ให้ Claude ช่วยพา PR ผ่านกระบวนการรีวิว แก้ไขโค้ด และตัดสินใจอนุมัติได้เองตามนโยบายของทีม | ช่วยลดภาระงานซ้ำซ้อนและเร่งความเร็วในการส่งมอบโค้ดของทีมพัฒนา | นำไปintégration เข้ากับ GitHub CI/CD pipeline เพื่อทำ automated code review และ merge",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5GNlUzNi1Vd0xSUFpXWEhOeTJyNVFrOWFCMUhIS2w4RjJjbl9nWC1RS1lNWGtVZ3pwMEdKbVdvME5MT0lZRUxhazkzVnh3RWtmZVN1dmdpREZha2U3bURVMg?oc=5",
+    "deep_dive_th": {
+      "highlights": "Claude Ship ถูกวางเป็น autonomous PR agent ไม่ใช่แค่ผู้ช่วยรีวิวแบบ passive โดยผูกเข้ากับ GitHub CI/CD อ่าน repo context ตีความ test results และใช้ policy ของทีมตัดสินใจรีวิว แก้ไข หรือ merge ได้เอง ความแตกต่างหลักคือการย้ายจาก code review เชิงข้อเสนอ ไปสู่การ orchestrate วงจร PR แบบปลายเปิดภายใต้นโยบายและ least-privilege",
+      "pros_cons": "ข้อดีคือลดงาน repetitive review ลด cycle time ของการส่งมอบโค้ด และบังคับมาตรฐานได้สม่ำเสมอทุก PR ข้อจำกัดคือความเสี่ยงจาก incorrect auto-approve prompt injection หรือการอนุมัติผิดบริบทเมื่อผลลัพธ์ CI ไม่ครบ จึงต้องมี sandbox, audit trail, สิทธิ์ขั้นต่ำ และ human-in-the-loop สำหรับ PR ที่มีผลกระทบสูง",
+      "actionable": "เริ่มจาก canary ในโปรเจกต์ที่ไม่ critical โดยกำหนด policy ให้รีวิว แก้ หรือ merge เฉพาะ PR ที่ผ่าน test และไม่มี sensitive paths แล้ววัด metrics เช่น review latency, revert rate, false approval และ engineer trust ก่อน expand scope ควรใช้ร่วมกับ branch protection, signed commits และแดชบอร์ด audit เพื่อต่อยอดเป็น self-service PR automation ที่ปลอดภัย"
+    }
+  },
+  {
+    "id": "bsky_bafyreihoofdq3qwsasxx5cxhlpqikris52u4bnf4hzyimgt3llcyeyqzle",
+    "timestamp": "2026-11-24T05:32:53.648Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Datasette-charts เพิ่มการรองรับ Datasette Agent แล้ว",
+    "summary_th": "ปลั๊กอินแสดงผลข้อมูลที่ผสานการทำงานร่วมกับ AI Agent ช่วยเลือกรูปแบบ Visualization อัตโนมัติจากชุดข้อมูลที่ป้อนเข้าไป | ช่วยให้การสร้างกราฟและวิเคราะห์ข้อมูลผ่านแชททำได้ง่ายขึ้นมาก | นำไปใช้ทำแดชบอร์ดข้อมูลแบบไดนามิกผ่าน AI",
+    "url": "https://bsky.app/profile/simonwillison.net/post/3n2zw7g54os2g"
+  },
+  {
     "id": "gn_bb3269d34876fe1d",
     "timestamp": "2026-11-23T20:13:04.000Z",
     "score": 8,
@@ -1982,45 +2037,5 @@
     "title_th": "ผลทดสอบประสิทธิภาพและต้นทุนของ Gemini 4 Carbon เทียบกับ Claude และ GPT",
     "summary_th": "ผลประเมินต้นทุนต่อ Task ของโมเดล Gemini 4 Carbon ที่ถูกกว่า Claude Opus 5.5 แต่สูงกว่า GPT-6 Astra เล็กน้อย พร้อมใช้ Token น้อยลง | ช่วยให้ประเมินความคุ้มค่าและเลือกใช้โมเดลตามงบประมาณได้แม่นยำขึ้น | นำไปคำนวณต้นทุนระบบ LLM และเลือกโมเดลที่เหมาะสมที่สุดสำหรับงาน Production",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FSnNNMDRjVEZRak1GdXVhbTBrdWNJdzQtQ2kxZk53YnV4YmlNejJhZFBBNE9TVUVQREFuYW5kRnVtdU16Z1EwUEF2Z3JuMThaQkVwNkVtZ0dmU0RuMEZONzhJYzdLb0U?oc=5"
-  },
-  {
-    "id": "hn_50276792",
-    "timestamp": "2026-10-28T17:01:23.000Z",
-    "score": 9,
-    "vendor": "Google",
-    "category": "Model Release",
-    "title_th": "เปิดตัว Gemini 4 Carbon โมเดลเรือธงรุ่นใหม่ล่าสุดจาก Google",
-    "summary_th": "โมเดล AI Frontier รุ่นใหม่จาก Google ที่ขึ้นแท่นอันดับ 1 บน Artificial Analysis v5 และทำผลงานได้ยอดเยี่ยมด้านการเขียนโค้ด งานระยะยาว และความปลอดภัยไซเบอร์ | ฉลาดและแม่นยำกว่ารุ่นก่อนหน้าอย่างก้าวกระโดด รองรับงานซับซ้อนได้ดีขึ้น | นำไปใช้พัฒนา AI Agent ขั้นสูง, งาน Coding อัตโนมัติ หรือระบบวิเคราะห์ความปลอดภัยไซเบอร์",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
-  },
-  {
-    "id": "hn_50273731",
-    "timestamp": "2026-10-28T14:02:20.000Z",
-    "score": 8,
-    "vendor": "Tooling",
-    "category": "Dev Tool",
-    "title_th": "Cursor เปิดตัว The Agent SDK สำหรับนักพัฒนา",
-    "summary_th": "ชุดเครื่องมือพัฒนาซอฟต์แวร์ (SDK) จาก Cursor ที่ออกแบบมาเพื่อช่วยให้นักพัฒนาสร้างและปรับแต่ง AI Coding Agents ได้ง่ายขึ้น | ช่วยให้เชื่อมต่อและควบคุมโมเดลในการทำงานแบบอัตโนมัติหลายขั้นตอนได้อย่างมีประสิทธิภาพ | นำไปประยุกต์สร้าง Workflow การเขียนโค้ดและทดสอบระบบแบบอัตโนมัติภายในองค์กร",
-    "url": "https://cursor.com/blog/agent-sdk"
-  },
-  {
-    "id": "or_particle-ai_particle-1",
-    "timestamp": "2026-10-28T17:18:13.000Z",
-    "score": 7,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Particle-1 โมเดลสำหรับงาน Coding ที่พัฒนาต่อจาก DeepSeek V4.1 Flash",
-    "summary_th": "โมเดล AI สายพันธุ์ใหม่จาก Particle AI ที่เน้นความประหยัดเรื่อง Token และออกแบบมาเพื่อการเขียนโค้ดและงาน Terminal โดยเฉพาะ | ทำงานได้รวดเร็วและประหยัดต้นทุนกว่าโมเดลทั่วไปในงานซอฟต์แวร์วิศวกรรม | นำไปใช้เป็น Backend ให้กับเครื่องมือ Dev Agent หรือระบบผู้ช่วยเขียนโค้ด",
-    "url": "https://openrouter.ai/particle-ai/particle-1"
-  },
-  {
-    "id": "bsky_bafyreiasie3ek7mbltecvfw7tywjhqsm7cwu6nobmo6mk5fvljkse67sf4",
-    "timestamp": "2026-10-28T13:15:02.583894+00:00",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "เปิดตัว Flint โมเดล Open Source ขนาด 40B สำหรับรันโค้ดบน Mac โดยเฉพาะ",
-    "summary_th": "โมเดล Open Source แบบผสม (40B total, 2.5B active) ภายใต้ไลเซนส์ Apache 2 | ออกแบบมาให้รันบนเครื่อง Mac ในเครื่องตัวเองได้ปลอดภัยโดยไม่ต้องส่งข้อมูลออกภายนอก | นำไปใช้สร้าง Coding Agent ส่วนตัวที่ทำงานแบบ Local-first เพื่อความปลอดภัยของซอร์สโค้ด",
-    "url": "https://bsky.app/profile/altryne.bsky.social/post/3mywtgx42qc2s"
   }
 ]
