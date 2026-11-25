@@ -1,5 +1,35 @@
 [
   {
+    "id": "gn_b076619196e0060e",
+    "timestamp": "2026-11-25T16:26:59.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "กรณีศึกษาใช้ทีม Claude Agent ไมเกรตระบบ API จาก Python สู่ Rust",
+    "summary_th": "คือการใช้ทีม Claude Agents ช่วยตรวจสอบและแก้ไขความแตกต่างระหว่าง API เดิม (Python) กับระบบใหม่ (Rust) | ช่วยลดเวลาและข้อผิดพลาดในการแปลโค้ดขนาดใหญ่ข้ามภาษาได้อย่างแม่นยำ | นำไปประยุกต์ใช้เป็นแนวทางทำ Large-scale Code Migration หรือ Refactoring อัตโนมัติในโปรเจกต์จริง",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5PdzhXSE9qNXNzMVpkUU9Hek1CZ2J4ZnRvdGo3cVFZcnRQWXR2MUNtbXRpVG5Dby1la3lINmJ6S1ppSzNqUXByWVE1LWk5Y2tuOHpicHliUlRKbHNYMzNIa19R?oc=5",
+    "deep_dive_th": {
+      "highlights": "จุดเปลี่ยนคือการเลิกมอง Code Migration เป็นงานแปลทีละไฟล์ แล้วมาเป็น multi-agent pipeline ที่แยกบทบาท (อ่าน contract ฝั่ง Python / เขียน Rust แบบ idiomatic / รัน differential test เทียบพฤติกรรม) และวน loop ด้วย signal จริง จาก cargo check, clippy และ test result แทนการปล่อยให้โมเดลเดาเองรอบเดียว จุดที่ทำให้แม่นขึ้นคือ ownership/borrow checker กับ error handling แบบ Result ของ Rust ทำหน้าที่เป็น compiler-enforced gate ที่จับ semantic drift ได้ก่อนถึง runtime ซึ่ง Python จับไม่ได้เลย จึงต้องปรับมุมมองจาก line-by-line translation เป็น behavioral parity ที่ agent ต้องรักษาผลลัพธ์ที่ API boundary ให้เท่ากัน รวม ordering, ชนิด error และ edge case ไม่ใช่รักษาโครงสร้างโค้ดเดิม",
+      "pros_cons": "ข้อดีคือ agents รันงาน repetitive ขนาดใหญ่ได้ขนานและลดภาระ human review diff อย่างมีนัยสำคัญ เพราะ compiler กับ parity test ทำหน้าที่เป็น oracle ที่ตรวจอัตโนมัติ ทำให้เกิด tight feedback loop ที่ manual migration ไม่มีมา ข้อจำกัดที่ควรระวังคือ semantic gap ระหว่างสองภาษา เช่น dynamic typing, exception กับ Result/Option, dict ordering, integer overflow และ float behavior ซึ่ง agent มักแก้โดยเน้นให้ compile ผ่านมากกว่ารักษา behavior เดิม และอีกชุดคือ non-determinism, ต้นทุน token, crate/API ที่ hallucinate และ supply-chain risk จาก dependency ใหม่ ดังนั้นไม่ควรให้ merge ลง production อัตโนมัติโดยไม่มี golden test suite กับ human sign-off",
+      "actionable": "เริ่มจากสร้าง characterization tests ก่อน แล้วต่อยอดเป็น differential harness ที่ใช้ fixtures ชุดเดียวกันรันทั้ง pytest และ cargo test แล้ว normalize ผลลัพธ์เป็น JSON ก่อนค่อย diff กัน เป็น hard gate ใน CI ใช้ strangler pattern ผ่าน PyO3/maturin ย้ายทีละ module โดยคง API เดิมไว้ แล้ววัดผลด้วย benchmark ก่อนเลื่อน traffic จริง ไอเดียต่อยอด ให้ agent สกัด API contract ไปเป็น OpenAPI/JSON Schema เป็นฐาน truth ผลิต Rust trait stub จาก contract แล้วบังคับวนด้วย cargo clippy -D warnings, cargo fuzz (หรือ miri หากมี unsafe) จนกว่าจะผ่านทั้งหมด"
+    }
+  },
+  {
+    "id": "gn_b2c9738fac110c78",
+    "timestamp": "2026-11-25T17:12:34.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Dev Tool",
+    "title_th": "OpenAI เริ่มทดสอบ Private Inference สำหรับลูกค้าระดับองค์กร",
+    "summary_th": "คือฟีเจอร์ประมวลผล AI ภายใต้ระบบความปลอดภัยและความเป็นส่วนตัวขั้นสูงในกลุ่ม OpenAI Private Intelligence | ช่วยให้องค์กรสามารถใช้งาน Frontier AI กับข้อมูลลับทางธุรกิจได้โดยไม่ต้องกังวลเรื่องข้อมูลรั่วไหล | นำไปใช้พัฒนาแอปพลิเคชัน AI สำหรับองค์กรที่มีกฎระเบียบข้อบังคับด้าน Data Privacy เข้มงวด",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55RV9Rc09MZ0NUMllrelpKZzNyYWhTbW5kblFlWkFIUEMzYlFMVnh2RnpFN0pHZEZ0U1phbFZFeG5XaHpObXhfM2VERmZPeXNKN2ljTWdQUlQ?oc=5",
+    "deep_dive_th": {
+      "highlights": "จุดเปลี่ยนทางเทคนิคคือการย้ายจากโมเดล Multi-tenant แบบมี Data Controls (ปิด training, Zero Data Retention) ไปสู่ Private Inference ที่มี Dedicated Compute Isolation แยกเป็น tenant เดี่ยวพร้อมขอบเขตเน็ตเวิร์กและคีย์การเข้ารหัสแยกจากโครงสร้างหลัก ทำให้เกิดชั้น Confidential Computing / Trusted Execution Environment ครอบทั้ง Inference Runtime, KV Cache และบันทึก Audit Log ขององค์กรเอง ส่งผลให้ Prompt และ Completion ไม่ปรากฏในสภาพแวดล้อมร่วงกับเจ้าหน้าที่ OpenAI หรือลูกค้ารายอื่น (No cross-tenant data plane) ซึ่งเป็นข้อกำหนดที่ API รุ่นก่อนตอบไม่ได้เมื่อเจอ Regulator ด้าน Data Privacy",
+      "pros_cons": "ข้อดีคือปลดล็อก Use case ข้อมูลลับสุดยอด เช่น hợp đồng M&A, PHI หรือ Source code ทรัพย์สินทางปัญญา ได้โดยไม่ต้องลดโมเดลลงไปใช้รุ่นเล็กหรือ Fine-tune แบบ on-prem และช่วยลดภาระ Evidence Collection ใน Audit มาก แต่ข้อควรระวังคือสถานะนี้ยังเป็น Closed Testing/Waitlist จึงต้องยึด Spec จากเอกสารสัญญาและ DPA จริงมากกว่าโปรโมชั่น ส่วน Latency กับ Cost per Token สูงกว่าปกติชัดเจนเพราะจ่ายเพิ่มให้กับ Isolation และ Capacity ที่จองไว้ บวกกับความเสี่ยง Vendor Lock-in หากสถาปัตยกรรมพึ่งพาฟีเจอร์เฉพาะตัวโดยไม่มี Abstraction Layer รองรับ",
+      "actionable": "เริ่มจากออกแบบ Data Sensitivity Router ให้จัดชั้นข้อมูลเป็น Public/Internal/Restricted แล้วส่งเฉพาะ Restricted ไป Private Inference ส่วน Internal ใช้ Standard API เพื่อคุมต้นทุน จากนั้น สร้าง Eval Harness เปรียบเทียบ Output Drift ระหว่างสอง Endpoints บนชุดคำถามจริง 200-500 เคส พร้อม Red-team Test ตรวจ Prompt Leakage และ Cross-tenant Contamination ก่อน จากนั้นต่อยอดเป็น RAG ภายในองค์กรบนเอกสาร ลับ, Agent ที่ดึงข้อมูลจาก ERP/CRM ภายใต้ Guardrail และ Code Assistant สำหรับ Repository ที่เป็นทรัพย์สินหลัก โดยห่อเป็น Provider-agnostic Interface ตั้งแต่ต้นเพื่อย้ายไปยัง Azure OpenAI, Bedrock หรือ Vertex แบบ Lock-in Low"
+    }
+  },
+  {
     "id": "gn_e005527327304069",
     "timestamp": "2026-11-25T04:25:35.000Z",
     "score": 9,
@@ -2042,25 +2072,5 @@
     "title_th": "Google เผยผลทดสอบ Gemini 4 Carbon และ Argon บน FrontierCode 2.0",
     "summary_th": "ผลประเมินความสามารถในการเขียนโค้ดที่เหนือกว่าข้อกำหนด บนเบนช์มาร์ก FrontierCode 2.0 | Gemini 4 Carbon ทำคะแนนเข้าใกล้ระดับ SOTA ที่ 40% ด้วยต้นทุนที่คุ้มค่า | นำไปพิจารณาเลือกใช้โมเดลสำหรับงานพัฒนาซอฟต์แวร์ที่ซับซ้อนและต้องการความแม่นยำสูง",
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE93STZSSk53WGlFeUxITzlGd1V1ckZOX0ZmZXpsbFBUbHlJVUowcndEWU12M3VQcFNjYkJYVzlhdnpfLUJJb3pKNW5yU3psdDEzN0Z3aU5aN2ZrWEQ1ZDBr?oc=5"
-  },
-  {
-    "id": "hf_baidu_Unlimited-OCR-2",
-    "timestamp": "2026-10-26T03:57:46.000Z",
-    "score": 6,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Baidu เปิดตัว Unlimited-OCR-2 โมเดล OCR รุ่นใหม่บน HuggingFace",
-    "summary_th": "โมเดลประมวลผลภาพและข้อความ (Image-text-to-text) สำหรับงาน OCR ความแม่นยำสูง | รองรับการแปลงเอกสารที่ซับซ้อนได้ดีขึ้นและเร็วกว่าเดิม | นำไปประยุกต์ใช้สร้างไปป์ไลน์ดึงข้อมูลจากเอกสารหรือใบเสร็จอัตโนมัติ",
-    "url": "https://huggingface.co/baidu/Unlimited-OCR-2"
-  },
-  {
-    "id": "gn_142b7f97233d0178",
-    "timestamp": "2026-10-29T17:32:43.000Z",
-    "score": 5,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "แอป Claude บน iPhone รองรับการใช้งานผ่าน Apple CarPlay แล้ว",
-    "summary_th": "ฟีเจอร์ Voice Mode ของ Claude บน iOS ที่ใช้งานร่วมกับระบบ Apple CarPlay ได้ | ช่วยให้สั่งงานด้วยเสียงและพูดคุยกับ AI ได้สะดวกยิ่งขึ้นขณะขับรถโดยไม่ต้องละสายตา | นำไปใช้เพิ่มความคล่องตัวในการเรียกดูข้อมูลหรือระดมความคิดระหว่างเดินทางได้",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DbTU5cVZTcGRCa2s5Zlo5N0VMa1VzWW90dEk2R3ZZNjF4cWFGa0ZZOFFVb2pwZHVEZ3JTaW5MZFdUc2dKQ3JvNWdmbGx6ZzcwaVl2a1hyRzI1UmZ5Wmc?oc=5"
   }
 ]

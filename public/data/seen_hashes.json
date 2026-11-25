@@ -1,4 +1,11 @@
 [
+  "hf_llamaindex_OCRia-nano-1",
+  "hn_50631791",
+  "gn_e849532fc8a59afb",
+  "gn_b076619196e0060e",
+  "gn_f6304c0fc618840e",
+  "gn_b2c9738fac110c78",
+  "gn_0b257e41dfe79e8d",
   "hf_prism-ml_Ternary-Bonsai-2_5-27B-GGUF",
   "hn_50638220",
   "hn_50637871",
@@ -491,12 +498,5 @@
   "gn_388f2d8135660b10",
   "hf_ricursiveAI_Ripple-65B-Preview",
   "hf_AtomicChat_DeepSeek-V4_1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-  "hn_50392118",
-  "hn_50395043",
-  "hn_50393235",
-  "hn_50392499",
-  "hn_50389990",
-  "hn_50394906",
-  "gn_cc625a47f443390a",
-  "gn_9f75920ee6addc30"
+  "hn_50392118"
 ]
