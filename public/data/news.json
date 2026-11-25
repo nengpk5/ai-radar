@@ -1,5 +1,60 @@
 [
   {
+    "id": "gn_e005527327304069",
+    "timestamp": "2026-11-25T04:25:35.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Research",
+    "title_th": "OpenAI พิสูจน์ทฤษฎีคณิตศาสตร์อายุ 57 ปีสำเร็จ",
+    "summary_th": "การพิสูจน์ค่า Matrix Multiplication Exponent (ω) ที่ 9/4 | เป็นก้าวสำคัญของอัลกอริทึมที่ส่งผลต่อประสิทธิภาพการคำนวณ | ใช้เป็นฐานความรู้ในการพัฒนาโมเดล AI ที่ประมวลผลเมทริกซ์ได้เร็วขึ้น",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qWlYxb0FaSy1BMDBLX1RjSWRQNXRwM2ZpdTJRMDlJWFg3MW5ud3BrbmZzdHQ2M0sydXdpRUhZMmJVTFU3T1V4RWRWdEd6QV9XSjlFWURFM0tQS0NoaFE?oc=5",
+    "deep_dive_th": {
+      "highlights": "หัวใจของงานคือการดันค่า Matrix Multiplication Exponent (ω) จาก ~2.371 ซึ่งเป็นสถิติเดิมสาย Coppersmith–Winograd + laser method ลงเหลือ 9/4 = 2.25 โดยค่าที่เป็นเศษส่วน “สะอาด” แบบนี้บ่งชี้ว่ามาจากกรอบเชิงพีคคณิต/กลุ่ม (group-theoretic) ใหม่ ไม่ใช่แค่การขัดพารามิเตอร์เชิงตัวเลขของอัลกอริทึมเดิม และเมื่อเทียบกับขอบล่างที่ทฤษฎีบังคับว่า ω ≥ 2 ก็เหลือช่องว่างให้ไปแค่ราวหนึ่งในสี่ของทาง จาก Strassen 2.807 ที่ใช้กันมาตั้งแต่ทศวรรษ 1960",
+      "pros_cons": "ข้อดีคือย่าุบช่องว่างระหว่างขอบบนกับขอบล่างลงครึ่งหนึ่ง และยืนยันว่ายังเป็นพื้นที่วิจัยที่ให้ผลตอบแทนสูงมาก คู่กับการที่ค่า 2.25 เป็นเป้าหมายที่วิเคราะห์และตรวจสอบง่ายกว่าค่าทศนิยมยาว ๆ ในอดีต ข้อจำกัดที่ต้องระวังคือผลนี้เป็น asymptotic complexity เท่านั้น ทฤษฎีที่ชนะในกระดาษมักมาพร้อมค่าคงที่ซ่อนขนาดใหญ่ ทำให้ threshold ที่มันจะเร็วกว่า cuBLAS/tensor core จริงอาจอยู่ไกลกว่าขนาดที่ทีมไหนใช้ในงานจริง ดังนั้นอย่าคาดหวัง speedup ทันที และควรรอ peer review หรือการ formalize ด้วย Lean/Coq ก่อนถือเป็นข้อสรุปที่ปิดครบ",
+      "actionable": "วิธีใช้ให้ได้ผลจริงในระยะนี้ไม่ใช่การนำ 9/4 ไปเขียน kernel แต่คือสร้าง baseline_recursive Strassen-style blocking บน Triton/CUTLASS แล้ว sweep ขนาด n จาก 1024 ถึง 8192 เพื่อวัด crossover threshold บนฮาร์ดแวร์ของตัวเอง Use case ที่คุ้มที่สุดคือ batched GEMM ขนาดใหญ่ใน recommendation/embedding training, dense attention ฟอร์ม O(n³) และ scientific computing แบบ dense solver ส่วนต่อยอดระยะยาวที่คุ้มลงทุน คือต่อยอด pipeline LLM + formal prover เพื่อตรวจและขยายผลพิสูจน์ใหม่ ๆ พร้อมเก็บเป็น dataset สำหรับ fine-tune และเชื่อมเข้ากับ compiler pass ที่เลือก algorithm ตาม matrix size โดยอัตโนมัติ"
+    }
+  },
+  {
+    "id": "gn_6434726c6b66adb2",
+    "timestamp": "2026-11-25T07:30:08.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "เปิดตัว Claude Ship เครื่องมือช่วยรีวิวและแก้ไขโค้ด",
+    "summary_th": "เครื่องมืออัตโนมัติสำหรับรีวิว Pull Request และแก้ไขบั๊ก | ช่วยลดภาระงานซ้ำซ้อนและเพิ่มความเร็วในการ Deploy | นำไปใช้ใน CI/CD Pipeline เพื่อตรวจสอบคุณภาพโค้ดก่อน Merge",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9YbUNRc2NjU2ljdmN6aktFb0tCTl9qcXltYTZHSjQ3cG1fSmRUbmliWGpkRVAzQjdheXFka0JtUGhoZXZrRkhVMDd0LVlsbHBad2pmUlIxenI5NUZXQXhkbQ?oc=5",
+    "deep_dive_th": {
+      "highlights": "จุดเด่นทางเทคนิคคือการเปลี่ยนจาก PR bot แบบ static rules หรือ lint เฉพาะจุด ไปสู่ agentic code review ที่ดึง repository context มาวิเคราะห์ ตรวจจับบั๊ก และเสนอ patch อัตโนมัติได้ใน CI/CD Pipeline ต่างจากรุ่นก่อนหน้าที่เน้นความช่วยเหลือรายบรรทัดหรือ comment แบบกฎตายตัว คือการผสานการตรวจสอบคุณภาพโค้ดก่อน merge เข้ากับขั้นตอน deploy โดยตรง จุดนี้ช่วยลดงานรีวิวซ้ำซ้อนและเร่งรอบการ release ได้ในระดับ process automation",
+      "pros_cons": "ข้อดีหลักคือลดภาระงานรีวิว PR ซ้ำซ้อน ตรวจจับบั๊กและคุณภาพโค้ดก่อน merge ได้เร็วขึ้น รวมถึงช่วยให้ทีมมีจังหวะ deploy ที่สม่ำเสมอกว่าเดิม ข้อควรระวังคือ false positive หรือ patch ที่ดู hợp lệ แต่กระทบ behavior เดิม รวมถึงความเสี่ยงเรื่องความปลอดภัยและซัพพลายเชนหากให้เครื่องมือรันหรือแก้โค้ดอัตโนมัติมากเกินไป จึงควรใช้เป็น reviewer ที่แนะนำพร้อม approval จากมนุษย์ก่อน merge บน production และไม่ควรให้สิทธิ์เขียนโค้ดหรือรัน CI แบบไม่มีขอบเขต",
+      "actionable": "เริ่ม pilot บน repo ที่ไม่วิกฤตหรือ PR แนว non-blocking ก่อน โดยให้ Claude Ship สร้างรายงาน bug smell security hint และ patch candidate แต่ให้ developer เป็น ผู้ approve สุดท้าย ต่อมาต่อยอดเป็น use case เช่น summarize PR สำหรับ reviewer, suggest tests จาก diff, ตรวจสอบ migration หรือ API contract ก่อน merge และเก็บ metric false positive, latency, cost ต่อ PR เพื่อตัดสินใจขยายไปยัง critical service อย่างมีการควบคุม"
+    }
+  },
+  {
+    "id": "gn_7f34513af3f2b114",
+    "timestamp": "2026-11-24T18:05:47.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "ฉลองครบรอบ 2 ปี MCP พร้อมฟีเจอร์ Skills และ Tasks",
+    "summary_th": "มาตรฐานการเชื่อมต่อ AI เข้ากับเครื่องมือและข้อมูลภายนอก | รองรับการทำงานแบบ Agentic ที่ซับซ้อนและเป็นระบบมากขึ้น | ใช้สร้าง Agent ที่มีความสามารถเฉพาะทางผ่าน Skills และ Tasks",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFByeXRzRjZteGZ6ZEtlbUhUQVVMWGlXeGtwRUVfMU5QTjVmNUZvSnhZeXRrZW4zX0lVUlNscGRENG1CWlNjNEhFTldXbmYtXzg3aU9OVERxUGFkR3NHTTE4QQ?oc=5",
+    "deep_dive_th": {
+      "highlights": "MCP เวอร์ชันล่าสุดแนะนำแนวคิด Skills ที่บรรจุความสามารถเฉพาะทางเป็นมอดูล และ Tasks สำหรับควบคุมเวิร์กโฟลว์แบบหลายขั้นตอนอย่างเป็นระบบ สถาปัตยกรรมเปลี่ยนจากการเรียกเครื่องมือแบบกระจายตัว มาเป็นการจัดการ Agentic Workflow ที่มีสถานะและลำดับขั้นชัดเจน ช่วยให้สร้าง Agent เฉพาะทางได้ง่ายและขยายผลได้เร็วกว่ารุ่นก่อนหน้า",
+      "pros_cons": "ข้อดีคือมาตรฐานกลางลดการพัฒนา connector แบบกำหนดเอง ช่วยให้ AI เชื่อมต่อเครื่องมือและข้อมูลภายนอกได้ปลอดภัยและเป็นระบบมากขึ้น ข้อจำกัดคือระบบนิเวศยังใหม่ ควรระวังเรื่องการจัดการสถานะ ความปลอดภัย และการสังเกตการณ์ ก่อนนำไปใช้จริงบน Production รวมถึงอาจต้องปรับแต่งให้รองรับโหลดสูงและหน่วงน้อยในระดับ enterprise",
+      "actionable": "เริ่มต้นด้วยการติดตั้ง MCP Server ในสภาพแวดล้อมท้องถิ่น แล้วออกแบบ Skill ตัวอย่าง เช่น ดึงข้อมูลจากฐานข้อมูลหรือเรียก API ภายใน ต่อยอดเป็น Task ที่ต่อหลาย Skill เข้าด้วยกันเพื่อสร้าง Agent ช่วยงานด้าน support หรือวิเคราะห์ข้อมูล นักพัฒนาสามารถทดลองผ่าน Anthropic SDK หรือ MCP Client แล้ววัดประสิทธิภาพก่อนผลักสู่ Production"
+    }
+  },
+  {
+    "id": "gn_e4420a055c1312e6",
+    "timestamp": "2026-11-25T00:37:02.000Z",
+    "score": 6,
+    "vendor": "Anthropic",
+    "category": "Dev Tool",
+    "title_th": "Claude Artifacts รองรับการติดตั้งเป็นแอปบน Mac และ Windows",
+    "summary_th": "เปลี่ยน Artifacts ให้เป็นแอปพลิเคชันบน Desktop | ใช้งานสะดวกขึ้นโดยไม่ต้องล็อกอินซ้ำหรือจัดการ API Key | นำไปใช้สร้างเครื่องมือภายในทีมเพื่อแชร์ผลลัพธ์จาก Claude ได้ทันที",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9rcmFUSVQ2M21oODJWSzZSSUxCemtnTmhrYm9EOGhvc1NpOE1mLXk4RHpWYVA0ZXg0QUxXYndYQTUtbnJKR3dHbHRSZFlSTUdEYmNKNkVEbDJkWm5OQ3BVbA?oc=5"
+  },
+  {
     "id": "gn_216b6126c6637745",
     "timestamp": "2026-11-24T19:47:54.000Z",
     "score": 9,
@@ -2007,45 +2062,5 @@
     "title_th": "แอป Claude บน iPhone รองรับการใช้งานผ่าน Apple CarPlay แล้ว",
     "summary_th": "ฟีเจอร์ Voice Mode ของ Claude บน iOS ที่ใช้งานร่วมกับระบบ Apple CarPlay ได้ | ช่วยให้สั่งงานด้วยเสียงและพูดคุยกับ AI ได้สะดวกยิ่งขึ้นขณะขับรถโดยไม่ต้องละสายตา | นำไปใช้เพิ่มความคล่องตัวในการเรียกดูข้อมูลหรือระดมความคิดระหว่างเดินทางได้",
     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DbTU5cVZTcGRCa2s5Zlo5N0VMa1VzWW90dEk2R3ZZNjF4cWFGa0ZZOFFVb2pwZHVEZ3JTaW5MZFdUc2dKQ3JvNWdmbGx6ZzcwaVl2a1hyRzI1UmZ5Wmc?oc=5"
-  },
-  {
-    "id": "hf_nvidia_NVIDIA-Nemotron-3_5-Transcribe-30B-A4B",
-    "timestamp": "2026-10-07T22:50:21.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "เปิดตัว NVIDIA Nemotron-3.5-Transcribe-30B-A4B โมเดลแปลงเสียงเป็นข้อความขนาดใหญ่",
-    "summary_th": "โมเดล Open Source สำหรับการแปลงเสียงเป็นข้อความ (Automatic Speech Recognition) ขนาด 30B จาก NVIDIA | มีประสิทธิภาพสูงและแม่นยำกว่ารุ่นก่อนหน้าในการจัดการกับเสียงพูดที่ซับซ้อน | นำไปปรับใช้สร้างระบบถอดเสียงภาษาต่างๆ หรือพัฒนา Voice Assistant ในองค์กร",
-    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
-  },
-  {
-    "id": "hn_50292727",
-    "timestamp": "2026-10-29T17:24:25.000Z",
-    "score": 8,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Claude Duet ชุดเครื่องมือผู้ช่วยส่วนบุคคลที่ใช้งานได้จริงจริง",
-    "summary_th": "แพลตฟอร์มหรือ Harness สำหรับใช้งาน Claude เป็นผู้ช่วยส่วนบุคคลที่ออกแบบมาให้ตอบโจทย์การทำงานจริง | ช่วยให้การเชื่อมต่อและสั่งการ AI ทำงานร่วมกับระบบผู้ใช้มีความลื่นไหลและมีประโยชน์สูงขึ้น | นำไปเป็นต้นแบบในการพัฒนา AI Agent หรือระบบ Automation ส่วนตัว",
-    "url": "https://fig.blue/posts/duet-is-the-future/"
-  },
-  {
-    "id": "hn_50288019",
-    "timestamp": "2026-10-29T12:41:56.000Z",
-    "score": 9,
-    "vendor": "Google",
-    "category": "Model Release",
-    "title_th": "Gemini 4 Carbon ขึ้นแท่นอันดับ 1 บน Artificial Analysis Intelligence Index v5",
-    "summary_th": "คือโมเดล AI รุ่นใหม่จาก Google ที่คว้าอันดับ 1 บนตารางประเมินประสิทธิภาพ | ทำคะแนนได้เหนือกว่าคู่แข่งในตลาดด้วยความเร็วและความแม่นยำที่ดีขึ้น | นำไปใช้เลือกเป็นโมเดลหลักสำหรับงานประมวลผลที่มีความซับซ้อนสูงได้",
-    "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1"
-  },
-  {
-    "id": "gn_07d392cae541fde7",
-    "timestamp": "2026-10-29T06:13:39.000Z",
-    "score": 6,
-    "vendor": "Anthropic",
-    "category": "Research",
-    "title_th": "เทคนิคการเขียน Prompt สำหรับ Claude รุ่นใหม่ให้สั้นและมีประสิทธิภาพมากขึ้น",
-    "summary_th": "แนวทางปฏิบัติในการลดความซับซ้อนของ Prompt เมื่อใช้โมเดล Claude รุ่นใหม่ | ช่วยให้ประหยัด Token และโมเดลเข้าใจเป้าหมายได้แม่นยำขึ้นโดยไม่ต้องสั่งละเอียดยิบ | นำไปปรับใช้กับการเขียน System Prompt หรือ Agent Workflow ให้กระชับและมีประสิทธิภาพสูงสุด",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuYkVLb2JLb3JZSnJFSmg3SDFHMXkwU2lYb0ZQalFHRzZGeS1LTGYtVXJFd08zTDJwTzJZVzlEWUtHTF93MnlhSnVXTHVnODlCYWVKalJ3TmUxY21zTk5CZQ?oc=5"
   }
 ]

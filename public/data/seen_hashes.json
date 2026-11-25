@@ -1,4 +1,15 @@
 [
+  "hf_prism-ml_Ternary-Bonsai-2_5-27B-GGUF",
+  "hn_50638220",
+  "hn_50637871",
+  "hn_50638070",
+  "hn_50630809",
+  "hn_50638320",
+  "gn_e005527327304069",
+  "gn_611b2838ad3c5ac5",
+  "gn_6434726c6b66adb2",
+  "gn_e4420a055c1312e6",
+  "gn_7f34513af3f2b114",
   "or_upstage_solar-mini-4-5",
   "or_upstage_solar-pro-4-contributor",
   "or_xiaomi_mimo-v2_6-flash-mopd",
@@ -487,16 +498,5 @@
   "hn_50389990",
   "hn_50394906",
   "gn_cc625a47f443390a",
-  "gn_9f75920ee6addc30",
-  "hn_50389448",
-  "hn_50388513",
-  "bsky_bafyreigyhofl6tytiejqiofeiblninhtmqwijtae5p3ovewaqypygbwneu",
-  "hn_50385870",
-  "hn_50386909",
-  "hn_50386597",
-  "gn_73832c4ca7072f34",
-  "gn_64bec8ad64e0dc78",
-  "hf_Lightricks_LTX-2_5",
-  "hn_50385272",
-  "hn_50383963"
+  "gn_9f75920ee6addc30"
 ]
