@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-25T08:57:34.275Z",
-  "date_th": "25 พ.ย. 2569",
-  "headline_th": "AI วันนี้ขยับเป็น Agent ที่ใช้งานจริง ปลอดภัย และต่อยอดได้ในระบบ",
-  "trend_th": "เทรนด์สำคัญคือ AI Agent ถูกแปลงเป็นเครื่องมือสำหรับ developer ที่ติดตั้งและรันได้ พร้อมงานวิจัยและระบบป้องกันเพื่อคุมพฤติกรรมและช่องโหว่ วิศวกรควรเตรียม guardrails sandbox และการผสานกับ OS หรือระบบคลาวด์",
+  "generated_at": "2026-11-26T08:43:41.089Z",
+  "date_th": "26 พ.ย. 2569",
+  "headline_th": "OpenAI พิสูจน์ทฤษฎีคูณเมทริกซ์อายุ 57 ปีสำเร็จ พร้อมขยาย Private Inference และ AI Agent สู่ระดับองค์กรอย่างปลอดภัย",
+  "trend_th": "แนวโน้มวันนี้คือการผสานนวัตกรรมเชิงทฤษฎีด้านประสิทธิภาพการคำนวณกับการนำโมเดลและ AI Agent ไปใช้งานจริงในองค์กร โดยเน้นทั้งความเร็วในการประมวลผล ความเป็นส่วนตัว และการปรับปรุงโค้ดขนาดใหญ่ผ่านเอเจนต์",
   "top_stories": [
     {
-      "title_th": "Claude Artifacts แปลงเป็นเดสก์ท็อปแอปบน Mac และ Windows ได้",
-      "why_it_matters": "ช่วยให้ทีมเปลี่ยน artifact เป็นเครื่องมือภายในหรือแอปจำเพาะได้เร็วขึ้นโดยไม่ต้องตั้งค่าโปรเจกต์เอง จึงเหมาะกับการทำ internal tooling และงาน proof-of-concept ที่ต้องการรันจริงบน OS",
-      "vendor": "Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXWDhqMUFjM3E2c2s4Qk9BZGxZQjdZelBqNFZOc2NERkVLelJBWi1tLTVWUXVITGFxVGtKbE9yb01pMnFCSWVvSUF5SEhQODlUUHpZMG4zcE5QcUwtWVh6ZQ?oc=5"
-    },
-    {
-      "title_th": "Anthropic เผยงานวิจัย Siren ประเมิน AI Agent เมื่อพยายามแหก Sandbox",
-      "why_it_matters": "เป็นข้อมูลเชิงลึกสำหรับออกแบบ guardrails การจำกัดสิทธิ์ และการทดสอบพฤติกรรมอัตโนมัติของ agent ก่อนใช้งานจริง ช่วยลดความเสี่ยงด้านความปลอดภัยในระบบ production",
-      "vendor": "Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1kQ3B2R1c4ZEpxZFRub3VISTdNQ1F5M2tIcElrOUUxR0RpYmVjYjVETE1qcGR4WDI5QXlPQVB6Tlhva1JtNjRweU1iUTAxUjRIcXRqX24tX1llUTRUNzFkTTdn?oc=5"
-    },
-    {
-      "title_th": "OpenAI และ Cisco เปิดตัว Shirudo ใช้ AI Agent เขียนกฎ eBPF ป้องกัน Linux",
-      "why_it_matters": "สำคัญกับวิศวกรที่ดูแล infrastructure เพราะเป็นตัวอย่าง auto-remediation ที่ agent สามารถเพิ่มชั้นป้องกันระบบแบบไดนามิกโดยไม่ต้องรีบูต จึงใช้เป็นแนวทาง security automation และการตอบสนองเหตุการณ์ได้",
+      "title_th": "OpenAI พิสูจน์ทฤษฎีคณิตศาสตร์อายุ 57 ปีสำเร็จ",
+      "why_it_matters": "ค้นพบค่า Matrix Multiplication Exponent ที่ 9/4 ซึ่งเป็นพื้นฐานสำคัญในการเร่งความเร็วการคำนวณเมทริกซ์ วิศวกรสามารถนำไปปรับปรุงอัลกอริทึมและการฝึกโมเดลให้มีประสิทธิภาพสูงขึ้น",
       "vendor": "OpenAI",
-      "url": "https://openai.com/index/introducing-shirudo/"
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qWlYxb0FaSy1BMDBLX1RjSWRQNXRwM2ZpdTJRMDlJWFg3MW5ud3BrbmZzdHQ2M0sydXdpRUhZMmJVTFU3T1V4RWRWdEd6QV9XSjlFWURFM0tQS0NoaFE?oc=5"
+    },
+    {
+      "title_th": "OpenAI เริ่มทดสอบ Private Inference สำหรับลูกค้าระดับองค์กร",
+      "why_it_matters": "ช่วยให้องค์กรใช้ Frontier AI กับข้อมูลลับได้อย่างปลอดภัย วิศวกรสามารถออกแบบแอป AI ระดับองค์กรที่ผ่านกฎระเบียบ Data Privacy ได้มั่นใจยิ่งขึ้น",
+      "vendor": "OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55RV9Rc09MZ0NUMllrelpKZzNyYWhTbW5kblFlWkFIUEMzYlFMVnh2RnpFN0pHZEZ0U1phbFZFeG5XaHpObXhfM2VERmZPeXNKN2ljTWdQUlQ?oc=5"
+    },
+    {
+      "title_th": "กรณีศึกษาใช้ทีม Claude Agent ไมเกรตระบบ API จาก Python สู่ Rust",
+      "why_it_matters": "แสดงให้เห็นถึงการใช้ AI Agent ทำ Large-scale Code Migration ข้ามภาษาได้แม่นยำ วิศวกรนำไปประยุกต์เป็นแนวทาง Rewriting หรือ Refactoring ระบบขนาดใหญ่ได้",
+      "vendor": "Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9PdzhXSE9qNXNzMVpkUU9Hek1CZ2J4ZnRvdGo3cVFZcnRQWXR2MUNtbXRpVG5Dby1la3lINmJ6S1ppSzNqUXByWVE1LWk5Y2tuOHpicHliUlRKbHNYMzNIa19R?oc=5"
     }
   ],
-  "model_used": "baidu/ernie-5.5-flash-preview:free"
+  "model_used": "nvidia/nemotron-3.5-super-vl:free"
 }
