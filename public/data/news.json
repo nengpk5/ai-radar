@@ -1,5 +1,55 @@
 [
   {
+    "id": "hn_50648050",
+    "timestamp": "2026-11-25T21:48:10.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "เวอร์ชันย่อและกระชับขึ้นของการพิสูจน์โค้ด GRH Lean จาก Anthropic",
+    "summary_th": "คือเครื่องมือตรวจสอบความถูกต้องทางคณิตศาสตร์และโค้ดด้วย Lean theorem prover ที่ถูกปรับให้สั้นลง | ดีกว่าเดิมยังไง ช่วยให้เข้าใจและตรวจสอบ Formal verification ได้ง่ายและรวดเร็วขึ้น | นำไปใช้พัฒนา AI Agent ที่ต้องการความแม่นยำสูงระดับพิสูจน์ทฤษฎีได้",
+    "url": "https://github.com/lsernau/grh-lean",
+    "deep_dive_th": {
+      "highlights": "จุดเปลี่ยนหลักอยู่ที่การย่อ proof term ให้สั้นลงและเข้าสู่โหมด term-mode แทน tactic script ยาวๆ ซึ่งทำให้ขนาด proof object เล็กลง ทำให้ elaboration และเวลา compile เร็วขึ้นชัดเจน และ kernel ของ Lean ตรวจสอบได้ครบถ้วนเหมือนเดิมโดยไม่ต้องสละความน่าเชื่อถือ (no soundness trade-off) การเขียนแบบนี้ยังเงอวกว่ามาก เมื่อเทียบกับ proof ที่พัฒนาด้วย automation หนาๆ เพราะโครงสร้างการอ้างอิงของ dependent type ปรากฏชัดในตัว term โดยตรง สำหรับ AI-assisted proving จุดนี้สำคัญเพราะ proof term ที่กระชับหมายถึง search space ที่แคบลงและแยกวิเคราะห์ว่าโมเดลพลาดตรงไหนได้ง่ายขึ้น เมื่อเทียบกับการรีแจกจัด tactic ใหม่ทุกรอบ",
+      "pros_cons": "ข้อดีคือได้ความแม่นยำระดับพิสูจน์ได้จริง เพราะ Lean kernel เป็นผู้ตัดสินความถูกต้อง ไม่ใช่ตัวสร้างโค้ดหรือ LLM ทำให้เกิด trust boundary ที่ชัดเจนและเปิดกว้างต่อการเอา output ของโมเดลไปเป็น proof certificate ที่ machine-checkable ข้อจำกัดที่ต้องระวังคือมันเข้าถึงได้เฉพาะ property ที่สื่อกำหนดการ (specification) ได้เป็นเรขาคณิตเท่านั้น สิ่งที่เป็น non-determinism, I/O, latency หรือ distribution shift ของโมเดล ML ยังพิสูจน์ไม่ได้ และต้นทุนที่ซ่อนอยู่คือความเชี่ยวชาญ Lean, การปักหมุดเวอร์ชัน toolchain, กับปัญหา elaboration timeout หรือค่า search ที่แพงเกินจนหมดเวลาใน CI pipeline ก่อนได้ certificate",
+      "actionable": "ใช้รูปแบบ generate-and-verify loop คือให้โมเดลร่าง proof term แล้วส่ง error message ของ Lean กลับเข้าไปแก้ซ้ำจนผ่าน แล้วใช้ reward แบบ binary จาก kernel ทำ RLVR ต่อยอดได้เลย เหมาะกับ use case ที่ต้องการความแม่นยำสูง เช่น smart contract, crypto primitive, คอมไพเลอร์หรือ DSL ภายในองค์กร และ invariant ของ agent runtime ที่เป็น critical path แนวทางต่อยอดในอนาคตคือทำ treasure hunt บน proof ที่สั้นที่สุดของ invariant เดิม เพื่อวัดว่าโมเดลย่อ proof ได้เท่าไร ซึ่งเป็น proxy metric ที่ดีต่อต้นทุน gas verification หรือเวลา compile ของงานจริง"
+    }
+  },
+  {
+    "id": "hn_50601280",
+    "timestamp": "2026-11-22T16:44:48.000Z",
+    "score": 9,
+    "vendor": "OpenAI",
+    "category": "Benchmark",
+    "title_th": "GPT-6.2 Astra ทำลายสถิติ Code Golf ของวิศวกร Google ได้เป็นรุ่นแรก",
+    "summary_th": "คือโมเดล AI รุ่นใหม่ที่ทำคะแนน Benchmark ด้านการเขียนโปรแกรมแบบย่อส่วน (Code Golf) ชนะมนุษย์ที่เป็นผู้เชี่ยวชาญของ Google | ดีกว่าเดิมยังไง มีความสามารถในการเขียนโค้ดที่สั้น ฉลาด และมีประสิทธิภาพสูงล้ำหน้าไปอีกขั้น | นำไปประยุกต์ใช้เป็น Code Assistant ขั้นสูงสำหรับการ optimize โค้ดให้กระชับและรวดเร็ว",
+    "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+    "deep_dive_th": {
+      "highlights": "จุดเด่นเชิงเทคนิคคือการทำคะแนน Code Golf ชนะวิศวกร Google เป็นรุ่นแรก ซึ่งสะท้อนความสามารถด้าน program synthesis และ token efficiency ที่สูงขึ้นกว่ารุ่นก่อน จากข้อมูลที่เปิดเผย ยังไม่มีการยืนยันสถาปัตยกรรมหรือจำนวนพารามิเตอร์ใหม่ จึงควรนิยามจุดเปลี่ยนในฐานะความสามารถที่วัดได้ใน benchmark เฉพาะทาง คือเขียนโค้ดสั้น ฉลาด และมีประสิทธิภาพสูงขึ้น",
+      "pros_cons": "ข้อดีคือใช้เป็น Code Assistant ระดับสูงเพื่อ optimize โค้ดให้กระชับ ลดความซับซ้อน และอาจลดค่าใช้จ่ายการรันในบาง workload ได้ ข้อจำกัดคือ Code Golf มักแลกความสั้นกับความทนทาน ความปลอดภัย และ maintainability ขณะที่ benchmark เดียวไม่การันตีผลบนโค้ดจริง ก่อนขึ้น Production ควร eval เพิ่มด้วย test, lint, security scan และ human review",
+      "actionable": "เริ่มทดลองบนโค้ด internal ที่มี test coverage ดี เช่น utility functions, data pipeline หรือ migration scripts แล้วเทียบความยาวโค้ด runtime และความถูกต้องกับ baseline สร้าง eval harness ที่วัด correctness, security, readability และ token cost ไม่ใช่แค่ code length; ไอเดียต่อยอดคือ agent ที่เสนอ diff โค้ดสั้นลงพร้อม benchmark ก่อน merge"
+    }
+  },
+  {
+    "id": "hn_50648365",
+    "timestamp": "2026-11-25T22:15:34.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Bare Metal Qwen รันโมเดลภาษาบนฮาร์ดแวร์โดยตรงแบบไม่มี OS",
+    "summary_th": "คือโปรเจกต์ทดลองรันโมเดล Qwen LLM บน Bare-metal หรือระดับฮาร์ดแวร์โดยไม่ผ่านระบบปฏิบัติการ | ดีกว่าเดิมยังไง ลด Overhead ของ OS ทำให้รีดประสิทธิภาพฮาร์ดแวร์และการประมวลผลออกมาได้สูงสุด | นำไปศึกษาเชิงลึกเกี่ยวกับการรัน LLM บน Edge devices หรือฮาร์ดแวร์เฉพาะทาง",
+    "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os"
+  },
+  {
+    "id": "hn_50611593",
+    "timestamp": "2026-11-23T14:02:15.000Z",
+    "score": 7,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Agent Skill ใหม่สำหรับการ optimize โค้ดด้วยสมมติฐานที่พิสูจน์หักล้างได้",
+    "summary_th": "คือทักษะเสริมสำหรับ AI Agent ในการปรับปรุงโค้ดโดยตั้งสมมติฐานและทดสอบเพื่อหาข้อผิดพลาดอย่างเป็นระบบ | ดีกว่าเดิมยังไง ช่วยลดการแก้โค้ดแบบสุ่ม และเพิ่มความน่าเชื่อถือในการ refactor โค้ดอัตโนมัติ | นำไปติดตั้งให้ AI Agent ในระบบ CI/CD เพื่อช่วยตรวจและแก้บั๊กได้อย่างแม่นยำขึ้น",
+    "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/"
+  },
+  {
     "id": "gn_b076619196e0060e",
     "timestamp": "2026-11-25T16:26:59.000Z",
     "score": 8,
@@ -2032,45 +2082,5 @@
     "title_th": "ตอนนี้สามารถใช้งานบัญชีสมัครสมาชิก Claude ใน OpenCode ได้แล้ว",
     "summary_th": "การเชื่อมต่อบัญชีสมัครสมาชิก Claude เข้ากับแพลตฟอร์มพัฒนา OpenCode | ช่วยให้นักพัฒนาใช้งานความสามารถของ Claude ผ่านเครื่องมือเขียนโค้ดได้สะดวกยิ่งขึ้น | นำไปใช้เร่งความเร็วในการเขียนโค้ดและทำ Debugging ภายในสภาพแวดล้อม OpenCode",
     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5iX1lnR21lUDlZNnNRSV96WEE5ZEpVOFNnS0VMS2E4NksxMUhaQ2N5QXM0Q1BLLWVWd3Z6UFdjV1hYbDFRdFk4TUdwLVNLT3U5NUEzRTFFU1Z4S293ZlE?oc=5"
-  },
-  {
-    "id": "hf_mistralai_Mistral-Large-4-1T-A52B",
-    "timestamp": "2026-09-30T18:35:13.000Z",
-    "score": 8,
-    "vendor": "OpenSource",
-    "category": "Model Release",
-    "title_th": "Mistral เปิดตัว Mistral-Large-4 โมเดล Open Weights ขนาดใหญ่รองรับ Multimodal",
-    "summary_th": "คือโมเดลภาษาขนาดใหญ่รุ่นใหม่จาก Mistral ที่รองรับทั้งรูปภาพและข้อความ (image-text-to-text) | มีประสิทธิภาพสูงขึ้นและตอบโจทย์งานซับซ้อนได้ดีกว่าเดิม | นำไป deploy เป็น Self-hosted LLM สำหรับงานวิเคราะห์ภาพและข้อความระดับองค์กร",
-    "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B"
-  },
-  {
-    "id": "hn_50300683",
-    "timestamp": "2026-10-30T07:09:12.000Z",
-    "score": 7,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "เตือนภัย: พบส่วนเสริม Claude Code ปลอม ฝัง Backdoor บน Cursor Marketplace",
-    "summary_th": "ตรวจพบ extension ของ Claude Code ที่ถูกดัดแปลงและแอบอ้างบน Cursor marketplace ส่งผลให้มีความเสี่ยงด้านความปลอดภัย | ช่วยให้ทีมพัฒนาตระหนักและระมัดระวังในการติดตั้ง third-party extensions มากขึ้น | นำไปตรวจสอบความปลอดภัยของ IDE extensions และจำกัดการใช้เฉพาะแหล่งที่เชื่อถือได้",
-    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/"
-  },
-  {
-    "id": "gn_7b23fffa8397488e",
-    "timestamp": "2026-10-29T21:49:21.000Z",
-    "score": 7,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Anthropic ขยายขีดจำกัดขนาด Request บน Claude API จาก 32 MB เป็น 128 MB",
-    "summary_th": "การเพิ่มขนาด Request สูงสุดบน Claude API รองรับข้อมูลได้ถึง 128 MB | ช่วยแก้ปัญหาติดขัดกรณีส่งรูปภาพจำนวนมาก, ไฟล์ PDF ขนาดใหญ่ หรือทำ Computer-use session ยาวๆ | นำไปพัฒนา AI Agent ที่ต้องรับส่งไฟล์เอกสารหนาๆ หรือประมวลผลหน้าจอต่อเนื่องโดยไม่ต้องกังวลเรื่องขนาด Payload",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UZ2ZVcGtvODlSSkNmS2pxbXRrNVcxZWliUHNfYzZlVUFrNEhaVFRKclYyT1FIdGJMVmlnaTdDd1ZLY1phWUNSZ3NmeEtRUzhqUmFhaXBud0NtaDVFMndVbQ?oc=5"
-  },
-  {
-    "id": "gn_7e2fe4703b69bb4e",
-    "timestamp": "2026-10-30T01:45:06.000Z",
-    "score": 7,
-    "vendor": "Google",
-    "category": "Benchmark",
-    "title_th": "Google เผยผลทดสอบ Gemini 4 Carbon และ Argon บน FrontierCode 2.0",
-    "summary_th": "ผลประเมินความสามารถในการเขียนโค้ดที่เหนือกว่าข้อกำหนด บนเบนช์มาร์ก FrontierCode 2.0 | Gemini 4 Carbon ทำคะแนนเข้าใกล้ระดับ SOTA ที่ 40% ด้วยต้นทุนที่คุ้มค่า | นำไปพิจารณาเลือกใช้โมเดลสำหรับงานพัฒนาซอฟต์แวร์ที่ซับซ้อนและต้องการความแม่นยำสูง",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE93STZSSk53WGlFeUxITzlGd1V1ckZOX0ZmZXpsbFBUbHlJVUowcndEWU12M3VQcFNjYkJYVzlhdnpfLUJJb3pKNW5yU3psdDEzN0Z3aU5aN2ZrWEQ1ZDBr?oc=5"
   }
 ]
