@@ -1,5 +1,35 @@
 [
   {
+    "id": "or_inclusionai_lingsante-3_1-air-vl",
+    "timestamp": "2026-11-26T15:01:24.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "เปิดตัว LingSante 3.1 Air VL โมเดลวิเคราะห์ภาพทางการแพทย์",
+    "summary_th": "โมเดล Multimodal MoE ขนาด 124B (ทำงานจริง 5.5B) จาก inclusionAI สำหรับประมวลผลข้อความและภาพทางการแพทย์สูงสุด 16 ภาพพร้อมกัน | ทำงานเฉพาะทางด้านการแพทย์ได้ดีและมีประสิทธิภาพสูงขึ้น | นำไปพัฒนาแอปพลิเคชันช่วยวินิจฉัยโรค วิเคราะห์ผลสแกนหรือรูปภาพผิวหนังและอาหาร",
+    "url": "https://openrouter.ai/inclusionai/lingsante-3.1-air-vl"
+  },
+  {
+    "id": "hf_nvidia_Nemotron-Labs-Image-30B-A3B",
+    "timestamp": "2026-09-24T21:13:25.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Model Release",
+    "title_th": "NVIDIA ปล่อยโมเดล Text-to-Image ตัวใหม่ Nemotron-Labs-Image-30B-A3B บน HuggingFace",
+    "summary_th": "โมเดลสร้างรูปภาพจากข้อความขนาด 30B จาก NVIDIA ที่กำลังได้รับความนิยมสูงบน HuggingFace | ช่วยให้การสร้างภาพมีความแม่นยำและตอบสนองต่อPrompt ภาษาธรรมชาติได้ดีขึ้นตามมาตรฐานฮาร์ดแวร์ NVIDIA | นำไปใช้สร้างรูปภาพประกอบในงานออกแบบหรือทดลองรันโมเดล GenAI ท้องถิ่น",
+    "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B"
+  },
+  {
+    "id": "hn_50657265",
+    "timestamp": "2026-11-26T17:11:29.000Z",
+    "score": 6,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "Llama.cpp ออกแพตช์ปรับแต่งพิเศษสำหรับชิป AMD",
+    "summary_th": "ชุดอัปเดตแพตช์โค้ดใน Llama.cpp ที่ปรับแต่งการทำงานร่วมกับฮาร์ดแวร์ AMD โดยเฉพาะ | ช่วยเพิ่มประสิทธิภาพความเร็วในการรัน LLM บนการ์ดจอและซีพียู AMD ให้สูงขึ้น | นำไปใช้รันโมเดล Open Source บนเครื่อง Local ที่ใช้การ์ดจอ AMD ได้ลื่นไหลยิ่งขึ้น",
+    "url": "https://devnull.land/amd-specific-llama-cpp"
+  },
+  {
     "id": "hn_50652184",
     "timestamp": "2026-11-26T06:32:48.000Z",
     "score": 6,
@@ -2057,35 +2087,5 @@
     "title_th": "เปิดตัว Gemini 4 Carbon โมเดลใหม่เน้นงานวิจัยเชิงลึกระดับ SOTA",
     "summary_th": "โมเดล AI ใหม่จาก Google ที่โดดเด่นด้านการทำวิจัยขนาดยาวและการตอบคำถามเชิงลึก | ทำคะแนนทุบสถิติใหม่บน WANDR benchmark เหนือกว่ารุ่นก่อนหน้า | นำไปประยุกต์ใช้สร้างระบบ Agent สำหรับค้นหาข้อมูลและทำรายงานอัตโนมัติ",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB2MWc5Sm1PbFhNWHpVNGQ1cXJidkJ1d2M3SVFFZ1BZWDN2ajlId1d4bWZER3dVblRhMVRoTDhtcDZiN1VUVFhuQXIwdkxzWFFoSGpQamNyTzZOcnJ2MHdDZTJRbw?oc=5"
-  },
-  {
-    "id": "gn_af02d073716375da",
-    "timestamp": "2026-10-30T14:08:46.000Z",
-    "score": 7,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "แจ้งเตือนความปลอดภัย: พบส่วนเสริม Claude Code ปลอมบน Cursor Marketplace",
-    "summary_th": "เหตุการณ์แฮกเกอร์อัปโหลดส่วนเสริม Claude Code ปลอมเข้าไปใน Cursor marketplace | แจ้งเตือนให้นักพัฒนาตรวจสอบความปลอดภัยและที่มาของเครื่องมืออย่างรอบคอบ | ใช้เป็นกรณีศึกษาในการตรวจสอบ Supply Chain Security และความปลอดภัยของ IDE Extension",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9YNjE5N3hUVExuVGQ2MnJRZlZMMy1rZ2YtU01vakFNZldVTTZoX284UHVSRkx5b19DYjJYZDhocUFwako4UDVjMF9vcVJiUjJkU3gyWUJWMF9WRjJmSTNwZnVnWFNPUQ?oc=5"
-  },
-  {
-    "id": "hn_50306442",
-    "timestamp": "2026-10-30T16:40:22.000Z",
-    "score": 7,
-    "vendor": "OpenSource",
-    "category": "Research",
-    "title_th": "โปรเจกต์ NESFormer รันเครื่องเล่นเกม Nintendo บนน้ำหนักโมเดล Qwen ขนาด 1GB",
-    "summary_th": "การทดลองบีบอัดและจำลองการทำงานของเครื่อง Nintendo ในโมเดลภาษา Qwen ขนาด 1GB | แสดงให้เห็นถึงศักยภาพการจำลองสถาปัตยกรรมซอฟต์แวร์ภายในพารามิเตอร์ของ LLM | นำไปศึกษาต่อยอดเรื่องความเข้าใจ representation ภายในของโมเดลและการสร้าง World Model สำหรับ AI Agent",
-    "url": "https://github.com/dbreunig/nesformer"
-  },
-  {
-    "id": "hn_50305693",
-    "timestamp": "2026-10-30T15:52:18.000Z",
-    "score": 6,
-    "vendor": "Tooling",
-    "category": "Research",
-    "title_th": "บทวิเคราะห์ผลกระทบของ AI ต่อบทบาทวิศวกร SRE: การลดทอนทักษะเชิงลึก",
-    "summary_th": "บทความวิเคราะห์ว่า AI ช่วยให้ทำงานง่ายขึ้นแต่ทำให้ทักษะแก้ปัญหาเฉพาะหน้าของ SRE ลดลง | กระตุ้นให้ตระหนักถึงความสำคัญของการฝึกฝนทักษะพื้นฐานแม้มี AI ช่วยเขียนโค้ด | ใช้เป็นแนวทางออกแบบกระบวนการทำงานและฝึกอบรมทีมวิศวกรไม่ให้พึ่งพา AI จนเกินไป",
-    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
   }
 ]
