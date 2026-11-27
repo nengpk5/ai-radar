@@ -150,6 +150,15 @@
       opacity: 1;
     }
 
+    /* Model Radar card entrance (mirrors .news-card timing) */
+    @keyframes mrCardEnter {
+      0% { opacity: 0; transform: translateY(14px) scale(0.99); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .mr-card {
+      animation: mrCardEnter 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
     /* Breaking News Shimmer Line */
     @keyframes scanLine {
       0% { transform: translateX(-100%); }
@@ -280,8 +289,22 @@
       </div>
     </div>
 
+    <!-- Segmented View Switcher: News Radar (default) | Model Radar -->
+    <div class="border-t border-white/5 bg-black/20">
+      <div class="max-w-4xl mx-auto px-4 py-2">
+        <div class="inline-flex p-1 rounded-xl bg-black/40 border border-radarBorder w-full sm:w-auto">
+          <button id="mrTabNews" type="button" class="flex-1 sm:flex-none text-center px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all duration-200 bg-gradient-to-r from-emerald-400 to-cyan-400 text-gray-950 shadow-[0_0_16px_rgba(16,185,129,0.35)]">
+            📡 News Radar
+          </button>
+          <button id="mrTabModels" type="button" class="flex-1 sm:flex-none text-center px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all duration-200 text-gray-400 hover:text-white">
+            🛰️ Model Radar
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- Live HUD Telemetry Bar -->
-    <div class="border-t border-white/5 bg-black/30">
+    <div id="newsTelemetryBar" class="border-t border-white/5 bg-black/30">
       <div class="max-w-4xl mx-auto px-4 py-1.5 flex items-center justify-between gap-4 text-[10px] md:text-[11px] font-mono text-gray-400 overflow-x-auto custom-scrollbar">
         <div class="flex items-center gap-4 shrink-0">
           <span class="flex items-center gap-1.5">
@@ -302,6 +325,7 @@
   <!-- Main Container -->
   <main class="max-w-4xl mx-auto w-full px-4 pt-5 flex-1">
 
+    <div id="view-news">
     <!-- Holographic Daily Morning Briefing Card -->
     <section id="dailyBriefCard" class="hidden mb-5 rounded-2xl holo-border p-4 md:p-5 shadow-[0_12px_40px_-15px_rgba(16,185,129,0.25)] transition-all">
       <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
@@ -418,6 +442,94 @@
       <p class="text-sm font-semibold text-gray-200">ไม่พบสัญญาณข่าวที่ตรงกับเงื่อนไข</p>
       <p class="text-xs text-gray-500 mt-1">ลองเปลี่ยนคำค้นหา หรือกดเลือกตัวกรองเป็น "ทั้งหมด"</p>
     </div>
+    </div><!-- /#view-news -->
+
+    <!-- ==================== MODEL RADAR VIEW (#models) ==================== -->
+    <div id="view-models" class="hidden">
+
+      <!-- Fallback / offline notice -->
+      <div id="mrFallbackBanner" class="hidden mb-4 px-4 py-3 rounded-xl bg-amber-500/10 border border-amber-400/40 text-amber-200 text-xs md:text-sm font-medium flex items-start gap-2">
+        <span class="shrink-0">⚠️</span><span id="mrFallbackText">ดึงข้อมูลชั่วคราวไม่สำเร็จ</span>
+      </div>
+
+      <!-- KPI Strip -->
+      <section class="mb-4">
+        <div class="flex items-center justify-between gap-2 mb-2.5">
+          <h2 class="font-display text-sm md:text-base font-bold text-white flex items-center gap-2">
+            <span class="text-emerald-400">🛰️</span> OpenRouter Model Radar
+            <span id="mrSyncStatus" class="font-mono text-[10px] font-normal text-gray-500">INITIALIZING…</span>
+          </h2>
+          <button id="mrRefreshBtn" type="button" aria-label="รีเฟรช Model Radar" class="shrink-0 p-2 rounded-xl bg-radarCard/80 border border-radarBorder text-gray-300 hover:text-emerald-300 hover:border-emerald-500/50 transition-all active:scale-90">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          </button>
+        </div>
+        <div id="mrKpis" class="grid grid-cols-5 gap-2">
+          <div class="rounded-xl bg-radarCard/85 border border-radarBorder p-3 text-center"><div class="font-mono text-[10px] uppercase tracking-widest text-gray-500">ทั้งหมด</div><div class="text-xl font-bold text-white">--</div></div>
+          <div class="rounded-xl bg-radarCard/85 border border-radarBorder p-3 text-center"><div class="font-mono text-[10px] uppercase tracking-widest text-gray-500">ตัวฟรี</div><div class="text-xl font-bold text-emerald-300">--</div></div>
+          <div class="rounded-xl bg-radarCard/85 border border-radarBorder p-3 text-center"><div class="font-mono text-[10px] uppercase tracking-widest text-gray-500">ตัวคุ้ม</div><div class="text-xl font-bold text-cyan-300">--</div></div>
+          <div class="rounded-xl bg-radarCard/85 border border-radarBorder p-3 text-center"><div class="font-mono text-[10px] uppercase tracking-widest text-gray-500">ตัวแรง</div><div class="text-xl font-bold text-violet-300">--</div></div>
+          <div class="rounded-xl bg-radarCard/85 border border-radarBorder p-3 text-center"><div class="font-mono text-[10px] uppercase tracking-widest text-gray-500">ใหม่ 14d</div><div class="text-xl font-bold text-amber-300">--</div></div>
+        </div>
+        <div class="mt-1.5 text-right font-mono text-[10px] text-gray-500" id="mrLastUpdated"></div>
+      </section>
+
+      <!-- Filter & Sort Bar -->
+      <section class="space-y-3 mb-4">
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 custom-scrollbar">
+          <button type="button" data-mr-tier="All" class="mr-tier-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 active:scale-95 bg-gradient-to-r from-emerald-400 to-cyan-400 text-gray-950">ทั้งหมด</button>
+          <button type="button" data-mr-tier="Free" class="mr-tier-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 active:scale-95 bg-radarCard/80 border border-radarBorder text-gray-300">ตัวฟรี</button>
+          <button type="button" data-mr-tier="Value" class="mr-tier-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 active:scale-95 bg-radarCard/80 border border-radarBorder text-gray-300">ตัวคุ้ม</button>
+          <button type="button" data-mr-tier="Flagship" class="mr-tier-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 active:scale-95 bg-radarCard/80 border border-radarBorder text-gray-300">ตัวแรง</button>
+          <button type="button" data-mr-tier="New" class="mr-tier-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 active:scale-95 bg-radarCard/80 border border-radarBorder text-gray-300">ใหม่</button>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+          <label class="flex items-center gap-2 cursor-pointer select-none shrink-0">
+            <button id="mrHermesToggle" type="button" role="switch" aria-checked="false" class="w-9 h-5 rounded-full relative transition-colors duration-200 shrink-0 bg-gray-700">
+              <span class="absolute top-0.5 left-0.5 h-4 w-4 rounded-full bg-white shadow transition-all duration-200"></span>
+            </button>
+            <span class="text-xs font-semibold text-gray-300">Hermes Ready <span class="text-gray-500 font-normal">(Tools)</span></span>
+          </label>
+
+          <div class="relative flex-1 group">
+            <input id="mrSearch" type="text" placeholder="ค้นหาโมเดล / ค่าย / ID..." class="w-full bg-radarCard/90 border border-radarBorder rounded-xl pl-10 pr-3 py-2.5 text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-emerald-400/60 transition-all" />
+            <svg class="w-4 h-4 text-emerald-400/70 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+
+          <select id="mrSort" class="bg-radarCard/90 border border-radarBorder rounded-xl px-3 py-2.5 text-xs font-semibold text-gray-200 focus:outline-none focus:border-emerald-400/60 transition-all shrink-0">
+            <option value="rank">เรียง: Rank / Default</option>
+            <option value="price">เรียง: ถูกสุด (Blended)</option>
+            <option value="new">เรียง: ใหม่สุด</option>
+            <option value="context">เรียง: Context กว้างสุด</option>
+          </select>
+        </div>
+
+        <div class="font-mono text-[11px] text-emerald-300/80 px-1" id="mrModelCount">SCANNING MODELS…</div>
+      </section>
+
+      <!-- Model Cards Grid -->
+      <section id="mrModelGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-6"></section>
+
+      <!-- Sub-tabs: Rankings | Hermes Presets -->
+      <section class="mb-6">
+        <div class="inline-flex p-1 rounded-xl bg-black/40 border border-radarBorder w-full sm:w-auto mb-4">
+          <button id="mrSubRankings" type="button" class="flex-1 px-3 py-2 rounded-lg text-xs font-semibold transition-all duration-200 bg-gradient-to-r from-emerald-400 to-cyan-400 text-gray-950">🏆 OpenRouter Rankings</button>
+          <button id="mrSubPresets" type="button" class="flex-1 px-3 py-2 rounded-lg text-xs font-semibold transition-all duration-200 text-gray-400 hover:text-white">⚙️ Hermes Presets</button>
+        </div>
+
+        <div id="mrPanelRankings">
+          <div id="mrRankings" class="space-y-3"></div>
+        </div>
+        <div id="mrPanelPresets" class="hidden">
+          <div id="mrPresets"></div>
+        </div>
+      </section>
+
+      <!-- Footer Attribution -->
+      <footer class="pt-4 pb-2 border-t border-white/5">
+        <p id="mrAttribution" class="text-[11px] text-gray-500 leading-relaxed text-center"></p>
+      </footer>
+    </div><!-- /#view-models -->
 
   </main>
 
@@ -449,5 +561,6 @@
   </div>
 
   <script src="./app.js"></script>
+  <script src="./model-radar.js"></script>
 </body>
 </html>

@@ -1,9 +1,10 @@
 // Service Worker for AI Radar Offline-First PWA
-const CACHE_NAME = 'ai-radar-cache-v2';
+const CACHE_NAME = 'ai-radar-cache-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './app.js',
+  './model-radar.js',
   './manifest.json',
   './data/news.json'
 ];
@@ -37,6 +38,12 @@ self.addEventListener('activate', (event) => {
 // Network-first for news.json, Cache-first / Stale-while-revalidate for static assets
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
+
+  // Let the browser handle every cross-origin request untouched.
+  // The Model Radar JSONP endpoint (script.google.com) must NOT be SW-intercepted.
+  if (url.origin !== self.location.origin) {
+    return;
+  }
 
   if (url.pathname.includes('/data/news.json')) {
     // Network first, fallback to cache
