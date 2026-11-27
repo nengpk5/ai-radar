@@ -65,8 +65,10 @@ function mrWriteCache(payload) {
   } catch (_) { /* quota / private mode — ignore */ }
 }
 
-const MR_URL_READY = () => typeof MODEL_RADAR_API_URL === 'string'
-  && /^https?:\/\/script\.google\.com\/macros\/s\/.+\/exec$/.test(MODEL_RADAR_API_URL.trim());
+const MR_URL_READY = () => {
+  const u = typeof MODEL_RADAR_API_URL === 'string' ? MODEL_RADAR_API_URL.trim() : '';
+  return /^https?:\/\//.test(u) && u !== MR_DEMO;
+};
 
 // ============================================================================
 // 2. DEMO payload (used only until a real /exec URL is configured)
