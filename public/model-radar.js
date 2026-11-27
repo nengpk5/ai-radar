@@ -8,7 +8,7 @@
    Deploy Code.gs as a Web app (Execute as: Me, Who has access: Anyone) and
    paste the URL ending in /exec below. Leave the placeholder to run DEMO mode.
    ========================================================================== */
-const MODEL_RADAR_API_URL = '<PASTE_EXEC_URL>';
+const MODEL_RADAR_API_URL = 'https://script.google.com/macros/s/AKfycbwfAB62BqY2_OPjTAKiBZZQpGZFD5czY-q47_sk_vTtGKg1jFXcg4wNId-D4jDtgRV4uQ/exec';
 
 const MR_CACHE_KEY = 'ai_radar_model_radar_v1';
 const MR_DEMO = '<PASTE_EXEC_URL>'; // when still unchanged -> demo/mock mode
