@@ -1,5 +1,50 @@
 [
   {
+    "id": "hn_50655798",
+    "timestamp": "2026-11-26T14:38:57.000Z",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Model Release",
+    "title_th": "เสียงลือเสียงเล่าอ้าง: ผู้ทดสอบพบร่องรอย Claude Opus 5.6 ผ่านเส้นทางทดสอบใหม่",
+    "summary_th": "รายงานจากกลุ่มผู้ทดสอบเกี่ยวกับเบาะแสและผลลัพธ์ของโมเดลรุ่นถัดไป Claude Opus 5.6 ผ่านเส้นทางทดสอบพิเศษ | คาดว่าจะมีความสามารถด้านการเขียนโค้ดและเหตุผลที่ฉลาดล้ำขึ้นกว่ารุ่นก่อนหน้า | ใช้เป็นข้อมูลอ้างอิงเพื่อเตรียมปรับใช้สถาปัตยกรรม Agent ให้รองรับโมเดลความสามารถสูงรุ่นใหม่",
+    "url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/",
+    "deep_dive_th": {
+      "highlights": "เบาะแสจากผู้ทดสอบชี้ไปที่ความสามารถด้านการเขียนโค้ดและการให้เหตุผลหลายขั้นที่ฉลาดล้ำขึ้น โดยเด่นการรักษาบริบท (context coherence) และการวางแผนในลูป Agent ที่ длиน hơn จึงคาดว่าต้นทุนการ decompose งานหรือการ retry ใน orchestration จะลดลง จากโมเดลเดิมที่ต้องแตกงานย่อยหลายรอบ ส่วนการเปลี่ยนแปลงเชิงสถาปัตยกรรมที่คาดว่าจะสำคัญที่สุดคือประสิทธิภาพต่อ token ที่ดีขึ้น (ทำโจทย์เดียวกันด้วยเหตุผลและ tool call ที่น้อยลง) พร้อมความสามารถในการใช้งาน tool แบบต่อเนื่องที่ลื่นไหลขึ้น อย่างไรก็ดี ข้อมูลทั้งหมดยังเป็นสเปกที่ไม่ยืนยัน ตัวเลข benchmark, ขนาด context window และ latency ต้องรอประกาศอย่างเป็นทางการก่อนนำไปวางแผนงบประมาณ",
+      "pros_cons": "ข้อดีหลักคือโมเดลความสามารถสูงช่วยลด prompt engineering และจำนวนขั้นตอนของ pipeline ลง โดยเฉพาะงาน code review, refactoring และงาน agent ที่ต้องตัดสินใจข้ามหลาย step ทำให้ fewer retries และ latency รวมต่องานถดลง ข้อจำกัดที่ควรระวังคือเป็นเพียงรายงานจากผู้ทดสอบและพฤติกรรมโมเดลอาจยังเปลี่ยนได้ ทำให้ eval suite ที่เคย pass อาจ regress และ prompt ที่ tune ไว้กับรุ่นเดิมอาจ over/under-follow คำสั่ง ควรตั้ง guardrail ทั้ง version pin, fallback model เมื่อเจอ rate limit หรือค่า latency สูงเกินเกณฑ์ และวัด cost-per-task จริงไม่ใช่ราคาต่อ token อย่างเดียว",
+      "actionable": "เตรียม abstraction layer ให้ provider-agnostic (เช่น wrapper เดียวที่ swap model id ได้) แล้วสร้าง golden eval set จากงานจริง 50-100 เคส ได้แก่ SWE-bench-style patch generation, unit test generation และ multi-step tool-use flow เพื่อเทียบกับรุ่นปัจจุบันทั้ง pass rate, จำนวน tool call และ token ที่ใช้ แนะนำทำ canary rollout ด้วย shadow traffic หรือสลับเฉพาะ agent บางตัว (เช่น coding agent) ก่อนขยายทั้ง pipeline พร้อม re-tune system prompt และ temperature ใหม่ เพราะ instruction-following ที่เปลี่ยนไปทำให้ค่าที่ตั้งของเดิมไม่จำเป็นต้องดีที่สุด และระบุ use case ต่อยอดที่คุ้มที่สุดคือ code migration ข้าม framework, root-cause analysis จาก log ขนาดใหญ่ และงาน browser/computer-use agent ที่ต้องวางแผนย้อนกลับได้หลายรอบ"
+    }
+  },
+  {
+    "id": "bsky_bafyreiejzfgqtj4le7gs3bybmrhbk535eqzc23s46noudp7f7lu5wo22vi",
+    "timestamp": "2026-11-26T23:13:02.532267+00:00",
+    "score": 8,
+    "vendor": "Anthropic",
+    "category": "Research",
+    "title_th": "ก้าวสำคัญทางคณิตศาสตร์: พิสูจน์สมมติฐาน Riemann ได้สำเร็จด้วย Claude และ Lean",
+    "summary_th": "การค้นพบการพิสูจน์ทางคณิตศาสตร์ระดับโลกสำหรับสมมติฐาน Riemann โดยใช้ Claude ช่วยค้นหาและตรวจสอบความถูกต้องผ่าน Lean theorem prover | แสดงศักยภาพขั้นสูงในการทำ Formal verification และการแก้โจทย์คณิตศาสตร์ที่ซับซ้อนมากได้ | นำไปประยุกต์ใช้กับการตรวจสอบโค้ดและความถูกต้องของระบบซอฟต์แวร์ระดับ mission-critical ได้อย่างมั่นใจ",
+    "url": "https://bsky.app/profile/altryne.bsky.social/post/3n3asexavgi2y",
+    "deep_dive_th": {
+      "highlights": "จากข่าวนี้ จุดเด่นทางเทคนิคคือ Claude ถูกวางในลูป Formal Verification ร่วมกับ Lean โดยให้ตัวสร้างบทพิสูจน์และตัวตรวจสอบทำงานซ้ำแบบ closed-loop: โมเดลสร้าง/แก้ tactic, Lean ตรวจสอบสถานะบทพิสูจน์และคืน error กลับมาแก้ไข ต่างจาก LLM คณิตศาสตร์แบบเดิมที่มักให้ผลลัพธ์อย่างไม่เป็นทางการและอาจผิดพลาดได้ จุดเปลี่ยนสำคัญคือการใช้ proof state เป็น feedback signal ซึ่งลด hallucination และเพิ่มความน่าเชื่อถือของบทพิสูจน์ที่ผ่าน kernel ของ Lean",
+      "pros_cons": "ข้อดีหลักคือความถูกต้องสามารถตรวจสอบได้โดยกลไกของ Lean ไม่ใช่แค่ความเห็นของโมเดล ทำให้เกิดบทพิสูจน์ที่นำกลับมาใช้และตรวจสอบซ้ำได้ และต่อยอดสู่การสร้าง proof obligation สำหรับโค้ด mission-critical ได้ ข้อจำกัดคือขั้นตอน formalization ยังต้องอาศัยความเชี่ยวชาญ Lean และการค้นหา tactic อาจมีต้นทุนคอมพิวเตอร์สูง สิ่งที่ควรระวังคือบทพิสูจน์จะถูกต้องเท่าที่ axiom, specification และ assumptions ถูกต้องด้วย จึงต้องตรวจสอบ scope และไม่ควรสรุปว่าระบบซอฟต์แวร์ทั้งระบบปลอดภัยอัตโนมัติ",
+      "actionable": "แนะนำให้ทดลองสร้าง pipeline ใน CI ที่แปลงข้อกำหนดสำคัญหรือ invariant ของโมดูลเป็นข้อเรียกร้องของ Lean แล้วให้ Claude เสนอ tactic โดยมี Lean เป็นผู้ตัดสินทุกครั้ง พร้อมจำกัดงบการค้นหาและบันทึก trace เพื่อวัดอัตราความสำเร็จ ต่อยอดได้เร็วที่สุดกับ use case อย่าง state machine, สัญญาอัจฉริยะ, โปรโตคอลความปลอดภัย และ critical section ของ embedded systems โดยยึดแนวทาง human-in-the-loop เพื่อตรวจ spec และ axiom ก่อนนำไปใช้จริง"
+    }
+  },
+  {
+    "id": "gn_a983bebc8185f7eb",
+    "timestamp": "2026-11-26T11:21:09.000Z",
+    "score": 8,
+    "vendor": "OpenAI",
+    "category": "Model Release",
+    "title_th": "OpenAI ปรับปรุงระบบบิลลิ่ง ChatGPT Pro ให้ความคุ้มค่าเพิ่มขึ้น 2.1 เท่า",
+    "summary_th": "การอัปเดตราคาและโควต้าการใช้งาน API สำหรับโมเดล GPT-6.2 Sol ผ่านแพ็กเกจ ChatGPT Pro หลังแก้ปัญหาเรื่องระบบบิลลิ่ง | ให้โควต้าการเรียกใช้งาน API มากขึ้นกว่ารุ่นก่อนหน้าถึง 2.1 เท่าในราคาเท่าเดิม | ช่วยให้นักพัฒนาสามารถทดสอบและรัน Agent ที่ใช้โมเดลรุ่นท็อปได้ในต้นทุนที่ถูกลงอย่างมาก",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXdVVtcHF0THRJU1A2MXFfYmNTcEFMZFBmZzFIV3MydDBKdGczczl2VzdPNkJjOXBxWmFWREdWOGpoOWR4QkIyaWl6RDhubk1lcGNDa3o5LV9YZW5iOTZWeg?oc=5",
+    "deep_dive_th": {
+      "highlights": "จุดเปลี่ยนหลักไม่ใช่สถาปัตยกรรมโมเดล แต่เป็นการแก้ระบบบิลลิ่ง/เมตรและปรับโควต้าการเรียก API ของ GPT-6.2 Sol ผ่าน ChatGPT Pro ให้มากขึ้น 2.1 เท่าที่ราคาเท่าเดิม ทำให้ cost-per-call และต้นทุนต่อ agent run ต่อรอบลดลงอย่างมีนัยสำคัญ โดยไม่ต้องเปลี่ยนรุ่นโมเดล แต่ยังต้องยืนยันสเปกจริงจากเอกสารอย่างเป็นทางการ",
+      "pros_cons": "ข้อดีคือลดต้นทุนการทดสอบและ deploy agent รุ่นท็อปบน production pilot และทำให้ capacity planning ง่ายขึ้นเพราะโควต้าถูกเพิ่มโดยไม่ขึ้นราคา ข้อควรระวังคือโควต้า 2.1 เท่าและการแก้บิลลิ่งอาจเป็นชั่วคราวหรือมีเงื่อนไข regional/account tier, rate limit ต่อวินาที, token accounting และ SLA ที่ยังไม่ได้เปลี่ยนตามสัดส่วน ก่อนใช้จริงต้องตรวจสอบ metering, quota reset, overage และ fallback model",
+      "actionable": "แนะนำทำ benchmark throughput/latency ของ GPT-6.2 Sol บน workload agent จริง เช่น tool-calling, RAG, multi-turn โดยเทียบ cost-per-successful-task กับรุ่นก่อน แล้วตั้งงบและสัญญาณเตือน token และอัตราการเรียก API ก่อนเปิดให้ผู้ใช้จริง ใช้แผนนี้เป็น pilot สำหรับ agent ที่ต้องตอบบ่อย เช่น customer support automation หรือ coding agent และออกแบบ fallback ไปโมเดลหรือผู้ขายถูกลงเมื่อโควต้าหรือ rate limit ถูกกระทบ"
+    }
+  },
+  {
     "id": "or_inclusionai_lingsante-3_1-air-vl",
     "timestamp": "2026-11-26T15:01:24.000Z",
     "score": 7,
@@ -2057,35 +2102,5 @@
     "title_th": "อนาคตของการตรวจสอบความถูกต้องอย่างเป็นทางการด้วย AI และ Lean",
     "summary_th": "บทสัมภาษณ์ Leo de Moura ผู้สร้างภาษา Lean เกี่ยวกับการประยุกต์ใช้ AI ร่วมกับการพิสูจน์ทฤษฎีทางคณิตศาสตร์ | ช่วยให้การตรวจสอบโค้ดมีความแม่นยำระดับสูงและลดข้อผิดพลาดทางตรรกะได้ดีกว่าเดิม | นำไปประยุกต์ใช้กับการพัฒนาซอฟต์แวร์ที่ต้องการความปลอดภัยและความถูกต้องสูงสุด",
     "url": "https://thedataexchange.media/leo-de-moura-lean-aws/"
-  },
-  {
-    "id": "gn_9f60a2e2f9ff2d2a",
-    "timestamp": "2026-10-30T23:01:52.000Z",
-    "score": 7,
-    "vendor": "Google",
-    "category": "Dev Tool",
-    "title_th": "Google เปิดตัว Gemini Drops รองรับ Gemini 4 Argon และ Custom Skills",
-    "summary_th": "อัปเดตชุดฟีเจอร์ใหม่ของ Gemini ที่เปิดตัวพร้อมโมเดล Gemini 4 Argon และระบบสร้าง Custom Skill ช่วยให้การเชื่อมต่อแอปโปรดและสั่งงาน AI ซ้ำๆ ทำได้สะดวกรวดเร็วและเฉพาะทางมากขึ้น นักพัฒนาและผู้ใช้สามารถนำไปปรับแต่งเวิร์กโฟลว์อัตโนมัติสำหรับโปรเจกต์ที่ซับซ้อนได้ทันที",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1WM1ZPS0Z2RkxPRF9iUExXUlJiVDZhcF9RYmhraVdJTkxadmZyTWVkVlpSYjZ2eGpnVkJVZmx6bEE2S0hqQ0dyeTcyRUd0XzZlcW44c2JxTkFkSGNGdVpr?oc=5"
-  },
-  {
-    "id": "gn_369f5b1cef807d8f",
-    "timestamp": "2026-10-31T01:59:06.000Z",
-    "score": 7,
-    "vendor": "Anthropic",
-    "category": "Research",
-    "title_th": "Anthropic วิจัยระบบ Red-Teaming อัตโนมัติด้วย Claude Agents นับพันตัวเพื่อตรวจจับ Misalignment",
-    "summary_th": "งานวิจัยด้าน AI Safety ที่นำเอเจนต์ Claude หลายพันตัวมาร่วมกันทดสอบเจาะระบบและหลบหลีกการตรวจจับความปลอดภัย ช่วยขยายสเกลการทดสอบโมเดลที่เดิมจำกัดด้วยเวลาของมนุษย์ ทำให้ตรวจพบพฤติกรรมเบี่ยงเบนที่ซ่อนอยู่ได้มีประสิทธิภาพกว่าเดิม วิศวกร AI สามารถนำแนวคิดเอเจนต์ทดสอบนี้ไปประยุกต์ใช้ทำ Automated Evaluation ให้กับระบบของตนเองได้",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBpQXg5aVhUUGVMZ0lOYXY5dGNGMHNMUTV0SmI2OTB2UXZNQmFNaVJXa3R6VmswX2Y0Q3Vvb1ZYWE43Y1FLekN6T21GZy1qTEh5djVuRHRlMWl2ZzkyM2tmZDB3?oc=5"
-  },
-  {
-    "id": "gn_62fdc4107c9ee603",
-    "timestamp": "2026-10-30T20:19:56.000Z",
-    "score": 8,
-    "vendor": "Google",
-    "category": "Model Release",
-    "title_th": "เปิดตัว Gemini 4 Carbon โมเดลใหม่เน้นงานวิจัยเชิงลึกระดับ SOTA",
-    "summary_th": "โมเดล AI ใหม่จาก Google ที่โดดเด่นด้านการทำวิจัยขนาดยาวและการตอบคำถามเชิงลึก | ทำคะแนนทุบสถิติใหม่บน WANDR benchmark เหนือกว่ารุ่นก่อนหน้า | นำไปประยุกต์ใช้สร้างระบบ Agent สำหรับค้นหาข้อมูลและทำรายงานอัตโนมัติ",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB2MWc5Sm1PbFhNWHpVNGQ1cXJidkJ1d2M3SVFFZ1BZWDN2ajlId1d4bWZER3dVblRhMVRoTDhtcDZiN1VUVFhuQXIwdkxzWFFoSGpQamNyTzZOcnJ2MHdDZTJRbw?oc=5"
   }
 ]
