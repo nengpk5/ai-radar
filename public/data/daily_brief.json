@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-26T08:43:41.089Z",
-  "date_th": "26 พ.ย. 2569",
-  "headline_th": "OpenAI พิสูจน์ทฤษฎีคูณเมทริกซ์อายุ 57 ปีสำเร็จ พร้อมขยาย Private Inference และ AI Agent สู่ระดับองค์กรอย่างปลอดภัย",
-  "trend_th": "แนวโน้มวันนี้คือการผสานนวัตกรรมเชิงทฤษฎีด้านประสิทธิภาพการคำนวณกับการนำโมเดลและ AI Agent ไปใช้งานจริงในองค์กร โดยเน้นทั้งความเร็วในการประมวลผล ความเป็นส่วนตัว และการปรับปรุงโค้ดขนาดใหญ่ผ่านเอเจนต์",
+  "generated_at": "2026-11-27T08:53:36.844Z",
+  "date_th": "27 พ.ย. 2569",
+  "headline_th": "Anthropic ยกระดับ Claude ทั้งด้านโค้ดและพิสูจน์ Lean ขณะที่ OpenAI ขยายโควตา API ให้คุ้มขึ้น 2.1 เท่า",
+  "trend_th": "เทรนด์วันนี้คือ Anthropic ผลักดันโมเดลสู่การเขียนโค้ด วิเคราะห์ข้อมูลขนาดใหญ่ และ formal verification ด้วย Lean ขณะที่ OpenAI ปรับเศรษฐศาสตร์ API ให้ถูกลง. วิศวกร AI ควรเตรียม eval harness สำหรับตรวจสอบความถูกต้องแบบ theorem-prover และออกแบบ model routing/งบ token ให้ยืดหยุ่น.",
   "top_stories": [
     {
-      "title_th": "OpenAI พิสูจน์ทฤษฎีคณิตศาสตร์อายุ 57 ปีสำเร็จ",
-      "why_it_matters": "ค้นพบค่า Matrix Multiplication Exponent ที่ 9/4 ซึ่งเป็นพื้นฐานสำคัญในการเร่งความเร็วการคำนวณเมทริกซ์ วิศวกรสามารถนำไปปรับปรุงอัลกอริทึมและการฝึกโมเดลให้มีประสิทธิภาพสูงขึ้น",
-      "vendor": "OpenAI",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qWlYxb0FaSy1BMDBLX1RjSWRQNXRwM2ZpdTJRMDlJWFg3MW5ud3BrbmZzdHQ2M0sydXdpRUhZMmJVTFU3T1V4RWRWdEd6QV9XSjlFWURFM0tQS0NoaFE?oc=5"
-    },
-    {
-      "title_th": "OpenAI เริ่มทดสอบ Private Inference สำหรับลูกค้าระดับองค์กร",
-      "why_it_matters": "ช่วยให้องค์กรใช้ Frontier AI กับข้อมูลลับได้อย่างปลอดภัย วิศวกรสามารถออกแบบแอป AI ระดับองค์กรที่ผ่านกฎระเบียบ Data Privacy ได้มั่นใจยิ่งขึ้น",
-      "vendor": "OpenAI",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55RV9Rc09MZ0NUMllrelpKZzNyYWhTbW5kblFlWkFIUEMzYlFMVnh2RnpFN0pHZEZ0U1phbFZFeG5XaHpObXhfM2VERmZPeXNKN2ljTWdQUlQ?oc=5"
-    },
-    {
-      "title_th": "กรณีศึกษาใช้ทีม Claude Agent ไมเกรตระบบ API จาก Python สู่ Rust",
-      "why_it_matters": "แสดงให้เห็นถึงการใช้ AI Agent ทำ Large-scale Code Migration ข้ามภาษาได้แม่นยำ วิศวกรนำไปประยุกต์เป็นแนวทาง Rewriting หรือ Refactoring ระบบขนาดใหญ่ได้",
+      "title_th": "Claude Opus 5.5 โชว์เขียนโค้ด 45,000 บรรทัดและวิเคราะห์ข้อมูลรัฐ 31 แหล่ง",
+      "why_it_matters": "สาธิตความสามารถทำ data engineering และ agent ขนาดใหญ่ในงานจริง ใช้เป็น benchmark ก่อนย้าย workload เขียนโค้ดและวิเคราะห์ข้อมูลไปใช้โมเดลใหม่.",
       "vendor": "Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9PdzhXSE9qNXNzMVpkUU9Hek1CZ2J4ZnRvdGo3cVFZcnRQWXR2MUNtbXRpVG5Dby1la3lINmJ6S1ppSzNqUXByWVE1LWk5Y2tuOHpicHliUlRKbHNYMzNIa19R?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBXdXp2QXpVSzNWcXJxcmprZHJqRm1Pd0I3d0FjRzBDUmFlZ3JGVFRKX29CcFdIOGFVQWxwX3NBR1ZTU1M0Z0JJdkJWUjdEM3ZNMW5TOXlPNDJTMTVTUnc?oc=5"
+    },
+    {
+      "title_th": "พิสูจน์สมมติฐาน Riemann ด้วย Claude และ Lean สำเร็จ",
+      "why_it_matters": "ชี้ศักยภาพ formal verification ที่นำไปตรวจสอบโค้ด mission-critical และลด hallucination ได้ ลองผูก Lean prover เข้ากับ pipeline ทดสอบความถูกต้องของ agent.",
+      "vendor": "Anthropic",
+      "url": "https://bsky.app/profile/altryne.bsky.social/post/3n3asexavgi2y"
+    },
+    {
+      "title_th": "OpenAI เพิ่มโควตา API สำหรับ GPT-6.2 Sol ใน ChatGPT Pro เป็น 2.1 เท่า",
+      "why_it_matters": "ต้นทุนรัน agent ที่ใช้โมเดลท็อปลดลง ให้ทบทวน token budget, batching และ fallback routing เพื่อรับประโยชน์จากโควตาใหม่.",
+      "vendor": "OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXdVVtcHF0THRJU1A2MXFfYmNTcEFMZFBmZzFIV3MydDBKdGczczl2VzdPNkJjOXBxWmFWREdWOGpoOWR4QkIyaWl6RDhubk1lcGNDa3o5LV9YZW5iOTZWeg?oc=5"
     }
   ],
-  "model_used": "nvidia/nemotron-3.5-super-vl:free"
+  "model_used": "baidu/ernie-5.5-flash-preview:free"
 }
