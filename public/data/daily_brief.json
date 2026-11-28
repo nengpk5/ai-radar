@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-27T08:53:36.844Z",
-  "date_th": "27 พ.ย. 2569",
-  "headline_th": "Anthropic ยกระดับ Claude ทั้งด้านโค้ดและพิสูจน์ Lean ขณะที่ OpenAI ขยายโควตา API ให้คุ้มขึ้น 2.1 เท่า",
-  "trend_th": "เทรนด์วันนี้คือ Anthropic ผลักดันโมเดลสู่การเขียนโค้ด วิเคราะห์ข้อมูลขนาดใหญ่ และ formal verification ด้วย Lean ขณะที่ OpenAI ปรับเศรษฐศาสตร์ API ให้ถูกลง. วิศวกร AI ควรเตรียม eval harness สำหรับตรวจสอบความถูกต้องแบบ theorem-prover และออกแบบ model routing/งบ token ให้ยืดหยุ่น.",
+  "generated_at": "2026-11-28T08:14:19.764Z",
+  "date_th": "28 พ.ย. 2569",
+  "headline_th": "AI วันนี้: โค้ดฉลาดขึ้น การพิสูจน์เชิงรูปนรูปแบบจริงขึ้น และต้นทุนรันโมเดลท็อปถูกลง",
+  "trend_th": "เทรนด์หลักคือโมเดล AI รุ่นหน้าขับเคลื่อนการเขียนโค้ดและการให้เหตุผลให้เหนือผู้เชี่ยวชาญ ไปพร้อมกับการใช้ Lean ในการพิสูจน์เชิงรูปนรูปแบบเพื่อความถูกต้องระดับ mission-critical ขณะที่ต้นทุน API ที่ลดลงผลักดันให้วิศวกรนำโมเดลระดับท็อปไปใช้งานเชิงปฏิบัติได้มากขึ้น",
   "top_stories": [
     {
-      "title_th": "Claude Opus 5.5 โชว์เขียนโค้ด 45,000 บรรทัดและวิเคราะห์ข้อมูลรัฐ 31 แหล่ง",
-      "why_it_matters": "สาธิตความสามารถทำ data engineering และ agent ขนาดใหญ่ในงานจริง ใช้เป็น benchmark ก่อนย้าย workload เขียนโค้ดและวิเคราะห์ข้อมูลไปใช้โมเดลใหม่.",
-      "vendor": "Anthropic",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBXdXp2QXpVSzNWcXJxcmprZHJqRm1Pd0I3d0FjRzBDUmFlZ3JGVFRKX29CcFdIOGFVQWxwX3NBR1ZTU1M0Z0JJdkJWUjdEM3ZNMW5TOXlPNDJTMTVTUnc?oc=5"
+      "title_th": "GPT-6.2 Astra ทำลายสถิติ Code Golf ของวิศวกร Google เป็นรุ่นแรก",
+      "why_it_matters": "บ่งชี้ว่าโมเดลโค้ดกำลังแซงผู้เชี่ยวชาญในการทำโค้ดสั้นและมีประสิทธิภาพสูง จึงควรนำมาทดลองเป็น Code Assistant สำหรับ optimize โค้ดและสร้าง benchmark งานวิศวกรรมจริง",
+      "vendor": "OpenAI",
+      "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard"
     },
     {
-      "title_th": "พิสูจน์สมมติฐาน Riemann ด้วย Claude และ Lean สำเร็จ",
-      "why_it_matters": "ชี้ศักยภาพ formal verification ที่นำไปตรวจสอบโค้ด mission-critical และลด hallucination ได้ ลองผูก Lean prover เข้ากับ pipeline ทดสอบความถูกต้องของ agent.",
-      "vendor": "Anthropic",
-      "url": "https://bsky.app/profile/altryne.bsky.social/post/3n3asexavgi2y"
-    },
-    {
-      "title_th": "OpenAI เพิ่มโควตา API สำหรับ GPT-6.2 Sol ใน ChatGPT Pro เป็น 2.1 เท่า",
-      "why_it_matters": "ต้นทุนรัน agent ที่ใช้โมเดลท็อปลดลง ให้ทบทวน token budget, batching และ fallback routing เพื่อรับประโยชน์จากโควตาใหม่.",
+      "title_th": "OpenAI เพิ่มโควตา ChatGPT Pro สำหรับ GPT-6.2 Sol เป็น 2.1 เท่าในราคาเดิม",
+      "why_it_matters": "ต้นทุนรันโมเดลท็อปลดลงอย่างมาก วิศวกร AI ควรทบทวน routing และ budget ของ Agent เนื่องจากย้าย workload ไปใช้โมเดลระดับท็อปได้คุ้มค่าขึ้น",
       "vendor": "OpenAI",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXdVVtcHF0THRJU1A2MXFfYmNTcEFMZFBmZzFIV3MydDBKdGczczl2VzdPNkJjOXBxWmFWREdWOGpoOWR4QkIyaWl6RDhubk1lcGNDa3o5LV9YZW5iOTZWeg?oc=5"
+    },
+    {
+      "title_th": "Claude และ Lean พิสูจน์สมมติฐาน Riemann สำเร็จ",
+      "why_it_matters": "ชี้ศักยภาพของ LLM ร่วมกับ formal prover สำหรับตรวจสอบความถูกต้องของโค้ดและระบบสำคัญ จึงควรศึกษาแนวทางนำมาใช้ใน CI verification และ guardrails ระดับ mission-critical",
+      "vendor": "Anthropic",
+      "url": "https://bsky.app/profile/altryne.bsky.social/post/3n3asexavgi2y"
     }
   ],
   "model_used": "baidu/ernie-5.5-flash-preview:free"
