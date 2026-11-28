@@ -1,5 +1,15 @@
 [
   {
+    "id": "hn_50675831",
+    "timestamp": "2026-11-28T08:37:09.000Z",
+    "score": 7,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Fleetlayer เฟรมเวิร์กสำหรับรัน AI Agent จำนวนมากบนหลายเครื่อง",
+    "summary_th": "คืออะไร: เป็นเฟรมเวิร์กจัดการระบบ Distributed AI Agents | ดีกว่าเดิมยังไง: ช่วยให้ขยายขนาดและรัน Agent หลายตัวข้ามเครื่องเซิร์ฟเวอร์ได้อย่างมีประสิทธิภาพ | เอาไปใช้อะไรต่อได้: นำไปใช้สร้างระบบ Multi-Agent ขนาดยักษ์ที่ต้องประมวลผลพร้อมกันหลายโหนด",
+    "url": "https://fleetlayer.ai/"
+  },
+  {
     "id": "hn_50671651",
     "timestamp": "2026-11-27T21:07:34.000Z",
     "score": 6,
@@ -2097,15 +2107,5 @@
     "title_th": "DeepSeek เปิดตัว dsh-superagent เฟรมเวิร์ก Multi-agent สำหรับจัดการ GitHub issues และ PR แบบคู่ขนาน",
     "summary_th": "นี่คือเฟรมเวิร์ก AI Agent หลายตัวทำงานร่วมกันเพื่อจัดการ GitHub issues และ PR โดยอัตโนมัติ | ดีกว่าเดิมตรงที่ออกแบบมาให้ใช้มนุษย์คอยกำกับดูแลน้อยที่สุด แต่สร้างมูลค่าและทำงานได้รวดเร็วแบบคู่ขนาน | นำไปประยุกต์ใช้เป็นระบบ Automation ในกระบวนการ CI/CD หรือระบบตรวจแก้โค้ดอัตโนมัติในโปรเจกต์ขนาดใหญ่",
     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXNGtTcU5ZXzJqQmdWMXEtZlA2YWZWNlVLNzd6ZWh0VlR0ajdyR25HaTBydExxbDJ6V0tBT0hYRTZlVVdJRXcwNExqUjJWYzUzWm1tdktBVXFocTJr?oc=5"
-  },
-  {
-    "id": "hn_50320599",
-    "timestamp": "2026-10-31T21:50:13.000Z",
-    "score": 5,
-    "vendor": "OpenSource",
-    "category": "Research",
-    "title_th": "การใส่ลายน้ำข้อความ AI (Watermarking) กับผลกระทบต่อคุณภาพผลลัพธ์",
-    "summary_th": "บทความวิเคราะห์ข้อแลกเปลี่ยนระหว่างการฝังลายน้ำเพื่อระบุข้อความที่สร้างโดย AI กับการลดลงของความแม่นยำและความเป็นธรรมชาติของโมเดล | ชี้ให้เห็นว่ากระบวนการ Watermarking ส่งผลกระทบเชิงลบต่อ Perplexity และคุณภาพข้อความอย่างไร | AI Engineer สามารถใช้อ้างอิงในการออกแบบระบบตรวจสอบ AI Text ให้สมดุลระหว่างความปลอดภัยและคุณภาพของระบบ",
-    "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality"
   }
 ]
