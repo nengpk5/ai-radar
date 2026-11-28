@@ -1,4 +1,11 @@
 [
+  "hf_ISTA-DASLab_Inkling-2-Mini-GSQ-RCO-GGUF",
+  "hn_50673521",
+  "hn_50671651",
+  "hn_50671275",
+  "gn_93cbc4cee2788dd1",
+  "gn_c850ef100431ac09",
+  "gn_2c566c4a29f81192",
   "hf_strata-engine_Inkling-2-Mini-Strata",
   "hn_50643158",
   "hn_50662933",
@@ -491,12 +498,5 @@
   "gn_98a0f3808a56bf62",
   "hf_NousResearch_Arete-27B",
   "hn_50418975",
-  "gn_180239031dfdebed",
-  "gn_ea0df59a139519d7",
-  "gn_a5c45f6425e70b17",
-  "hn_50416363",
-  "gn_117371c45ecdd0a5",
-  "gn_52c9e0fd7750f11f",
-  "hn_50415628",
-  "hn_50415817"
+  "gn_180239031dfdebed"
 ]

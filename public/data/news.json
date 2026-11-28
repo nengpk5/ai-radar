@@ -1,5 +1,25 @@
 [
   {
+    "id": "hn_50671651",
+    "timestamp": "2026-11-27T21:07:34.000Z",
+    "score": 6,
+    "vendor": "Tooling",
+    "category": "Dev Tool",
+    "title_th": "SessionGraph: เครื่องมือแสดงผลเซสชันของ Coding Agent ในรูปแบบกราฟอินเทอร์แอกทีฟ",
+    "summary_th": "เครื่องมือสำหรับรวมและแสดงภาพประวัติการทำงานของ Coding Agent ทั้งหมดให้อยู่ในกราฟเดียว | ช่วยให้ตรวจสอบ ติดตาม และเข้าใจเส้นทางการทำงานของ Agent ได้ง่ายกว่าการดู Text Log ทั่วไป | นำไปใช้เป็น Dashboard สำหรับ Debug และวิเคราะห์ประสิทธิภาพของ AI Coding Workflow",
+    "url": "https://sessiongraph.ai/"
+  },
+  {
+    "id": "hn_50671275",
+    "timestamp": "2026-11-27T20:23:14.000Z",
+    "score": 6,
+    "vendor": "OpenSource",
+    "category": "Dev Tool",
+    "title_th": "Prospero: AI Coding Harness แบบเนทีฟน้ำหนักเบาที่ไร้โค้ดส่วนเกินด้วย ImGui",
+    "summary_th": "AI coding harness ประสิทธิภาพสูงที่พัฒนาด้วย ImGui โดยไม่มีซอฟต์แวร์ส่วนเกิน (Bloat-free) | ทำงานรวดเร็ว ใช้ทรัพยากรน้อย และตอบสนองต่อการเขียนโค้ดได้เรียลไทม์มากกว่าเดิม | นำไปใช้เป็นเครื่องมือหลักในการรันและควบคุม AI Agent สำหรับช่วยเขียนโปรแกรมในเครื่อง Local",
+    "url": "https://github.com/skeeto/prospero"
+  },
+  {
     "id": "hn_50664325",
     "timestamp": "2026-11-27T08:28:08.000Z",
     "score": 8,
@@ -2087,25 +2107,5 @@
     "title_th": "การใส่ลายน้ำข้อความ AI (Watermarking) กับผลกระทบต่อคุณภาพผลลัพธ์",
     "summary_th": "บทความวิเคราะห์ข้อแลกเปลี่ยนระหว่างการฝังลายน้ำเพื่อระบุข้อความที่สร้างโดย AI กับการลดลงของความแม่นยำและความเป็นธรรมชาติของโมเดล | ชี้ให้เห็นว่ากระบวนการ Watermarking ส่งผลกระทบเชิงลบต่อ Perplexity และคุณภาพข้อความอย่างไร | AI Engineer สามารถใช้อ้างอิงในการออกแบบระบบตรวจสอบ AI Text ให้สมดุลระหว่างความปลอดภัยและคุณภาพของระบบ",
     "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality"
-  },
-  {
-    "id": "hn_50320255",
-    "timestamp": "2026-10-31T21:07:58.000Z",
-    "score": 6,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Anthropic เริ่มออกมาตรการบล็อก Claude จากการทำ Reverse-Engineering วิดีโอเกม",
-    "summary_th": "นโยบายความปลอดภัยใหม่ของ Anthropic ที่จำกัดการใช้โมเดลวิเคราะห์และโคลนเกม | ช่วยป้องกันความเสี่ยงด้านลิขสิทธิ์และการนำ AI ไปใช้ในทางที่ผิด | วิศวกรต้องระมัดระวังการใช้ Prompt เกี่ยวกับการแกะโค้ดหรือสร้างเกมที่มีต้นแบบใกล้เคียง",
-    "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering"
-  },
-  {
-    "id": "hn_50319358",
-    "timestamp": "2026-10-31T19:39:19.000Z",
-    "score": 6,
-    "vendor": "Anthropic",
-    "category": "Dev Tool",
-    "title_th": "Anthropic เข้มงวดแบนผู้ใช้ที่ใช้งานเกี่ยวข้องกับการฝึกโมเดลขนาดใหญ่",
-    "summary_th": "มาตรการตรวจสอบและระงับบัญชีผู้ใช้ที่ส่งคำขอเข้าข่ายการทำ SFT, RFT หรือช่วยเทรนโมเดลแข่งขัน | ป้องกันการนำโมเดลไป Distill หรือสร้างคู่แข่ง | นักพัฒนาต้องตรวจสอบการใช้งาน API ไม่ให้ละเมิด AUP ของแพลตฟอร์ม",
-    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088"
   }
 ]
